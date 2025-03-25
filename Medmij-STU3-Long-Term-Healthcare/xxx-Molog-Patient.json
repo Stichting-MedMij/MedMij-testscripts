@@ -1,0 +1,274 @@
+{
+	"resourceType": "Patient",
+	"id": "nl-core-patient-eov-cert-1-1b-01",
+	"meta": {
+		"extension": [
+			{
+				"url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+				"valueUri": "#23208c794a344d12"
+			}
+		],
+		"versionId": "1",
+		"lastUpdated": "2025-02-28T06:50:26.624+00:00",
+		"profile": [
+			"http://fhir.nl/fhir/StructureDefinition/nl-core-patient"
+		]
+	},
+	"text": {
+		"status": "extensions",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id 999900080 (BSN), <span title=\"Naamsamenstelling: Eigennaam\">Maria XXX_Molog</span>, Vrouw, 18 september 1963</div>\n      <div>\n        <a href=\"tel:+31620202020\">+31620202020</a> (,  mobile), <a href=\"mailto:mariamolog@provider.nl\">mariamolog@provider.nl</a> (E-mail Privé)</div>\n      <div>Knolweg 1000, 9999XA Stitswerd, NLD (officieel Bezoek)</div>\n      <div>\n        <span title=\"Eerste relatie/contactpersoon (1 - RoleCodeLijst (COD472-VEKT))\">Eerste relatie/contactpersoon</span>, <span title=\"Zoon (SONC - v3/RoleCode)\">Zoon</span>\n        <span title=\"Naamsamenstelling: Eigennaam\">Johan Timmerman</span> (Han)<div>\n          <a href=\"tel:+31645678912\">+31645678912</a> (,  mobile), <a href=\"mailto:jtimmerman@123net.nl\">jtimmerman@123net.nl</a> (E-mail Privé)</div>\n      </div>\n    </div>"
+	},
+	"identifier": [
+		{
+			"use": "official",
+			"system": "http://fhir.nl/fhir/NamingSystem/bsn",
+			"value": "999900080"
+		}
+	],
+	"active": true,
+	"name": [
+		{
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+					"valueCode": "NL1"
+				}
+			],
+			"text": "Maria XXX_Molog",
+			"family": "XXX_Molog",
+			"_family": {
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+						"valueString": "XXX_Molog"
+					}
+				]
+			},
+			"given": [
+				"Maria",
+				"M."
+			],
+			"_given": [
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+							"valueCode": "BR"
+						}
+					]
+				},
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+							"valueCode": "IN"
+						}
+					]
+				}
+			]
+		}
+	],
+	"telecom": [
+		{
+			"extension": [
+				{
+					"url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/v3/AddressUse",
+								"code": "MC",
+								"display": "Mobiel telefoonnummer"
+							}
+						]
+					}
+				}
+			],
+			"system": "phone",
+			"value": "+31620202020",
+			"use": "mobile"
+		},
+		{
+			"system": "email",
+			"value": "mariamolog@provider.nl",
+			"use": "home"
+		}
+	],
+	"gender": "female",
+	"_gender": {
+		"extension": [
+			{
+				"url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/v3/AdministrativeGender",
+							"code": "F",
+							"display": "Vrouw"
+						}
+					]
+				}
+			}
+		]
+	},
+	"birthDate": "1963-09-18",
+	"deceasedBoolean": false,
+	"address": [
+		{
+			"extension": [
+				{
+					"url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/v3/AddressUse",
+								"code": "PHYS",
+								"display": "Officieel adres"
+							}
+						]
+					}
+				},
+				{
+					"url": "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+					"valueBoolean": true
+				}
+			],
+			"use": "home",
+			"line": [
+				"Knolweg 1000"
+			],
+			"_line": [
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+							"valueString": "Knolweg"
+						},
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+							"valueString": "1000"
+						}
+					]
+				}
+			],
+			"city": "Stitswerd",
+			"postalCode": "9999XA",
+			"country": "NLD",
+			"_country": {
+				"extension": [
+					{
+						"url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+									"code": "6030",
+									"display": "Nederland"
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	],
+	"contact": [
+		{
+			"relationship": [
+				{
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+							"code": "1",
+							"display": "Eerste relatie/contactpersoon"
+						}
+					]
+				},
+				{
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/v3/RoleCode",
+							"code": "SONC",
+							"display": "Zoon"
+						}
+					]
+				}
+			],
+			"name": {
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+						"valueCode": "NL1"
+					}
+				],
+				"text": "Johan Timmerman",
+				"family": "Timmerman",
+				"_family": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+							"valueString": "Timmerman"
+						}
+					]
+				},
+				"given": [
+					"Johan",
+					"J.",
+					"Han"
+				],
+				"_given": [
+					{
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+								"valueCode": "BR"
+							}
+						]
+					},
+					{
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+								"valueCode": "IN"
+							}
+						]
+					},
+					{
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+								"valueCode": "CL"
+							}
+						]
+					}
+				]
+			},
+			"telecom": [
+				{
+					"extension": [
+						{
+							"url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/v3/AddressUse",
+										"code": "MC",
+										"display": "Mobiel telefoonnummer"
+									}
+								]
+							}
+						}
+					],
+					"system": "phone",
+					"value": "+31645678912",
+					"use": "mobile"
+				},
+				{
+					"system": "email",
+					"value": "jtimmerman@123net.nl",
+					"use": "home"
+				}
+			]
+		}
+	]
+}

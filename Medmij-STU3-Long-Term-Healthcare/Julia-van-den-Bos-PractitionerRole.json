@@ -1,0 +1,40 @@
+{
+	"resourceType": "PractitionerRole",
+	"id": "nl-core-practitionerrole-eov-cert-1-1b-01",
+	"meta": {
+		"extension": [
+			{
+				"url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+				"valueUri": "#87d466aad4ba23ed"
+			}
+		],
+		"versionId": "1",
+		"lastUpdated": "2025-02-28T10:40:17.431+00:00",
+		"profile": [
+			"http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"
+		]
+	},
+	"text": {
+		"status": "extensions",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgverlenerrol. </caption>\n        <tbody>\n          <tr>\n            <th>Zorgverlener</th>\n            <td>\n              <div>Julia van den Bos</div>\n              <div>WijZorgen Honselerdijk</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Specialisme</th>\n            <td>\n              <span title=\"Verpleegkundigen, niet nader gespecificeerd (9100 - AGB-medisch specialisme)\">Verpleegkundigen, niet nader gespecificeerd</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+	},
+	"practitioner": {
+		"reference": "Practitioner/nl-core-practitioner-eov-cert-1-1b-01",
+		"display": "Julia van den Bos"
+	},
+	"organization": {
+		"reference": "Organization/nl-core-organization-eov-cert-1-1b-02",
+		"display": "WijZorgen Honselerdijk"
+	},
+	"specialty": [
+		{
+			"coding": [
+				{
+					"system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+					"code": "9100",
+					"display": "Verpleegkundigen, niet nader gespecificeerd"
+				}
+			]
+		}
+	]
+}

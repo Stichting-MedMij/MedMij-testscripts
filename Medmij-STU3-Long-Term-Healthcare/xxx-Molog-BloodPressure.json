@@ -1,0 +1,159 @@
+{
+	"resourceType": "Observation",
+	"id": "zib-BloodPressure-eov-cert-1-1b-01",
+	"meta": {
+		"extension": [
+			{
+				"url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+				"valueUri": "#1fdd60635b8a5ac5"
+			}
+		],
+		"versionId": "6",
+		"lastUpdated": "2025-03-17T09:36:34.615+00:00",
+		"profile": [
+			"http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure"
+		]
+	},
+	"text": {
+		"status": "extensions",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Maria XXX_Molog. Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">mevrouw gebruikt medicatie</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2025-03-15T14:45:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Methode</th>\n            <td>\n              <span title=\"Niet-invasief (22762002 - SNOMED CT)\">Niet-invasief</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Deel van lichaam</th>\n            <td>\n              <span title=\"Linker bovenarm (368208006 - SNOMED CT)\">Linker bovenarm</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Blood pressure panel with all children optional (85354-9 - LOINC)\">Blood pressure panel with all children optional</span>\n            </td>\n            <td/>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Systolic blood pressure (8480-6 - LOINC)\">Systolic blood pressure</span>\n            </td>\n            <td>160 mmHg</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Diastolic blood pressure (8462-4 - LOINC)\">Diastolic blood pressure</span>\n            </td>\n            <td>92 mmHg</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Mean blood pressure (8478-0 - LOINC)\">Mean blood pressure</span>\n            </td>\n            <td>109 mmHg</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Blood pressure device Cuff size (8358-4 - LOINC)\">Blood pressure device Cuff size</span>\n            </td>\n            <td>\n              <span title=\"Klein (S - 2.16.840.1.113883.2.4.3.11.60.40.4.15.1)\">Klein</span>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Body position with respect to gravity (8361-8 - LOINC)\">Body position with respect to gravity</span>\n            </td>\n            <td>\n              <span title=\"Zittende posititie (33586001 - SNOMED CT)\">Zittende posititie</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/observation-category",
+					"code": "vital-signs",
+					"display": "Vital Signs"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "85354-9",
+				"display": "Blood pressure panel with all children optional"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/nl-core-patient-eov-cert-1-1b-01",
+		"display": "Maria XXX_Molog"
+	},
+	"effectiveDateTime": "2025-03-15T14:45:00+01:00",
+	"comment": "mevrouw gebruikt medicatie",
+	"bodySite": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "368208006",
+				"display": "Linker bovenarm"
+			}
+		]
+	},
+	"method": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "22762002",
+				"display": "Niet-invasief"
+			}
+		]
+	},
+	"component": [
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "8480-6",
+						"display": "Systolic blood pressure"
+					}
+				]
+			},
+			"valueQuantity": {
+				"value": 160,
+				"unit": "mmHg",
+				"system": "http://unitsofmeasure.org",
+				"code": "mm[Hg]"
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "8462-4",
+						"display": "Diastolic blood pressure"
+					}
+				]
+			},
+			"valueQuantity": {
+				"value": 92,
+				"unit": "mmHg",
+				"system": "http://unitsofmeasure.org",
+				"code": "mm[Hg]"
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "8478-0",
+						"display": "Mean blood pressure"
+					}
+				]
+			},
+			"valueQuantity": {
+				"value": 109,
+				"unit": "mmHg",
+				"system": "http://unitsofmeasure.org",
+				"code": "mm[Hg]"
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "8358-4",
+						"display": "Blood pressure device Cuff size"
+					}
+				]
+			},
+			"valueCodeableConcept": {
+				"coding": [
+					{
+						"system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+						"code": "S",
+						"display": "Klein"
+					}
+				]
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "8361-8",
+						"display": "Body position with respect to gravity"
+					}
+				]
+			},
+			"valueCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "33586001",
+						"display": "Zittende posititie"
+					}
+				]
+			}
+		}
+	]
+}

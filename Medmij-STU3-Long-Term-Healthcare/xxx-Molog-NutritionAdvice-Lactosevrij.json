@@ -1,0 +1,45 @@
+{
+	"resourceType": "NutritionOrder",
+	"id": "zib-NutritionAdvice-eov-cert-1-1b-01",
+	"meta": {
+		"extension": [
+			{
+				"url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+				"valueUri": "#4cde47ec52f2eb86"
+			}
+		],
+		"versionId": "6",
+		"lastUpdated": "2025-03-17T09:36:27.716+00:00",
+		"profile": [
+			"http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice"
+		]
+	},
+	"text": {
+		"status": "extensions",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Voedingsadvies. Patiënt: Maria XXX_Molog. Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Aanvraagdatum</th>\n            <td>2025-02-23</td>\n          </tr>\n          <tr>\n            <th>Toelichting</th>\n            <td>naar eigen zeggen lactose-intolerant</td>\n          </tr>\n          <tr>\n            <td colspan=\"2\">\n              <table>\n                <caption>Orale voeding</caption>\n                <thead>\n                  <tr>\n                    <th>Type</th>\n                    <th>Vloeistofconsistentie</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr>\n                    <td>lactosevrij</td>\n                    <td>solide</td>\n                  </tr>\n                </tbody>\n              </table>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+	},
+	"extension": [
+		{
+			"url": "http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice-Explanation",
+			"valueString": "naar eigen zeggen lactose-intolerant"
+		}
+	],
+	"status": "active",
+	"patient": {
+		"reference": "Patient/nl-core-patient-eov-cert-1-1b-01",
+		"display": "Maria XXX_Molog"
+	},
+	"dateTime": "2025-02-23",
+	"oralDiet": {
+		"type": [
+			{
+				"text": "lactosevrij"
+			}
+		],
+		"fluidConsistencyType": [
+			{
+				"text": "solide"
+			}
+		]
+	}
+}

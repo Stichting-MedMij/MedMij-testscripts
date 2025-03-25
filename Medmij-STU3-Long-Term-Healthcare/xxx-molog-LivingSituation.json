@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "zib-LivingSituation-eov-cert-1-1b-01",
+	"meta": {
+		"extension": [
+			{
+				"url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+				"valueUri": "#34340f967cbcc0ce"
+			}
+		],
+		"versionId": "1",
+		"lastUpdated": "2025-02-28T06:51:09.367+00:00",
+		"profile": [
+			"http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation"
+		]
+	},
+	"text": {
+		"status": "extensions",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Maria XXX_Molog. Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">woning is op de begane grond</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Finding of residence and accommodation circumstances (finding) (365508006 - SNOMED CT)\">Finding of residence and accommodation circumstances (finding)</span>\n            </td>\n            <td>\n              <span title=\"Aanleunwoning (AANLW - 2.16.840.1.113883.2.4.3.11.60.40.4.13.1)\">Aanleunwoning</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+	},
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "365508006",
+				"display": "Finding of residence and accommodation circumstances (finding)"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/nl-core-patient-eov-cert-1-1b-01",
+		"display": "Maria XXX_Molog"
+	},
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1",
+				"code": "AANLW",
+				"display": "Aanleunwoning"
+			}
+		]
+	},
+	"comment": "woning is op de begane grond"
+}
