@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalFitness-jansen",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-DentalFitnessScore"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness Score (NAVO-classificatie)<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2024-09-08 11:43<br/>Dental Fitness: Nooit gezien door een defensie tandarts<br/>Uitgevoerd door: Tandarts</div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "440271000146100",
+        "display": "'dental fitness' volgens NAVO-classificatiesysteem"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/xxx-jansen",
+    "type": "Patient",
+    "display": "Patient, Anita Jansen"
+  },
+  "effectiveDateTime": "2024-09-08T11:43:00+01:00",
+  "performer":  [
+    {
+        "reference": "PractitionerRole/de-ruiter-PractitionerRole",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding":  [
+        {
+            "system": "urn:oid:2.16.528.1.1023.5.1",
+            "code": "fitness0",
+            "display": "Nooit gezien door een defensie tandarts"
+        }
+    ]
+  }
+}

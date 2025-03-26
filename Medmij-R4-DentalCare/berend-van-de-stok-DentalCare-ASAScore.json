@@ -1,0 +1,50 @@
+{
+  "resourceType": "Observation",
+  "id": "ASAscore-vandestok",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-ASAScore"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>ASA Score: ASA-score 3<br/>Opmerking: Allergisch voor gluten, heeft nierziekte en bloedarmoede<br/>Uitgevoerd door: Tandarts</div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "413347006",
+        "display": "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists (bevinding)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/xxx-vandestok",
+    "type": "Patient",
+    "display": "Patient, Berend van de Stok"
+  },
+  "effectiveDateTime": "2024-01-01T10:43:00+01:00",
+  "performer":  [
+    {
+        "reference": "PractitionerRole/Dijkstra-PractitionerRole",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding":  [
+        {
+            "system": "http://snomed.info/sct",
+            "code": "413497009",
+            "display": "ASA-score 3"
+        }
+    ]
+  },
+  "note": [
+    {
+      "text": "Allergisch voor gluten heeft nierziekte en bloedarmoede"
+    }
+  ]
+}

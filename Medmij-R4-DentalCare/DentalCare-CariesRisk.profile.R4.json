@@ -1,0 +1,153 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "DentalCare-CariesRisk",
+    "meta": {
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "dental-care"
+            }
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns='http://www.w3.org/1999/xhtml'>StructureDefinition: DentalCare - Caries Risk<br/>Versie: 0.0.1<br/>Status: Concept<br/>Type: Observation<br/>Uitgever: MedMij<br/>Contact: info@medmij.nl<br/>Beschrijving: Caries Risk assessment.<br/>Doel: This Observation resource represents the Caries Risk.<br/>Copyright: MedMij<br/>FHIR Versie: 4.0.1</div>"
+      },
+    "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-CariesRisk",
+    "version": "0.0.1",
+    "name": "DentalCareCariesRisk",
+    "title": "DentalCare - Caries Risk",
+    "status": "draft",
+    "publisher": "MedMij",
+    "contact": [
+        {
+            "name": "MedMij",
+            "telecom": [
+                {
+                    "system": "email",
+                    "value": "info@medmij.nl",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+    "description": "......",
+    "purpose": "This Observation resource represent the Caries Risk",
+    "copyright": "MedMij",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Observation",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Observation",
+                "path": "Observation",
+                "short": "Caries Risk",
+                "alias": ["Caries Risk"]
+            },
+            {
+                "id": "Observation.code",
+                "path": "Observation.code",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "609399004"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "Observation.subject",
+                "path": "Observation.subject",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "http://hl7.org/fhir/StructureDefinition/Patient",
+                            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Observation.effective[x]",
+                "path": "Observation.effective[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.effective[x]:effectiveDateTime",
+                "path": "Observation.effective[x]",
+                "sliceName": "effectiveDateTime",
+                "short": "CariesRiskDateTime",
+                "definition": "The date and time at which the Caries Risk was measured.",
+                "alias":  [
+                    "CariesRiskDatumTijd"
+                ],
+                "type":  [
+                    {
+                        "code": "dateTime"
+                    }
+                ]
+            },
+            {
+                "id": "Observation.value[x]",
+                "path": "Observation.value[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.value[x]:valueCodeableConcept",
+                "path": "Observation.value[x]",
+                "sliceName": "valueCodeableConcept",
+                "short": "CariesRiskScoreValue",
+                "definition": "The score is a risk...",
+                "alias":  [
+                    "CariesRiskScoreWaarde"
+                ],
+                "type":  [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ],
+                "binding": {
+                    "strength": "required",
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/DentalCare-CariesRisk"
+                }
+            },
+            {
+                "id": "Observation.note",
+                "path": "Observation.note",
+                "max": "1"
+            },
+            {
+                "id": "Observation.note.text",
+                "path": "Observation.note.text",
+                "short": "Comment",
+                "definition": "Comment on the Caries Risk, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+                "alias":  [
+                    "Toelichting"
+                ]
+            }
+        ]
+    }
+}
+

@@ -1,0 +1,59 @@
+{
+    "resourceType": "ValueSet",
+    "id": "DentalCare-CariesRisk",
+    "version": "0.0.1",
+    "name": "CariesRisk",
+    "title": "Caries Risk",
+    "experimental": false,
+    "publisher": "MedMij",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Caries risk</div>"
+    },
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.528.1.1023.11.2.3.11.7"
+        }
+    ],
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+        ],
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "dental-care"
+            }
+        ]
+    },
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-CariesRisk",
+    "status": "draft",
+    "description": "CariesRisk",
+    "compose": {
+        "include": [
+            {
+                "system": "urn:oid:2.16.528.1.1023.5.1.4",
+                "concept": [
+                    {
+                        "code": "caries1",
+                        "display": "Laag"
+                    },
+                    {
+                        "code": "caries2",
+                        "display": "Verlaagd"
+                    },
+                    {
+                        "code": "caries3",
+                        "display": "Verhoogd"
+                    },
+                    {
+                        "code": "caries4",
+                        "display": "Hoog risico"
+                    }
+                ]
+            }
+        ]
+    }
+}

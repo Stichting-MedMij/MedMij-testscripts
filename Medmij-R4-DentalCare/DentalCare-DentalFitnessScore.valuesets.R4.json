@@ -1,0 +1,113 @@
+{
+    "resourceType": "ValueSet",
+    "id": "DentalCare-DentalFitnessScore",
+    "name": "DentalCareDentalFitness",
+    "title": "DentalCare - Dental fitness",
+    "version": "0.0.1",
+    "experimental": false,
+    "publisher": "MedMij",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dental Fitness</div>"
+    },
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.528.1.1023.11.2.3.11.1"
+        }
+    ],
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+        ],
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "dental-care"
+            }
+        ]
+    },
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-DentalFitnessScore",
+    "status": "draft",
+    "description": "Dental Fitness",
+    "compose": {
+        "include": [
+            {
+                "system": "urn:oid:2.16.528.1.1023.5.1",
+                "concept": [
+                    {
+                        "code": "fitness0",
+                        "display": "nooit gezien door een defensie tandarts",
+                        "designation": [
+                            {
+                                "language": "nl",
+                                "value": "nooit gezien door een defensie tandarts"
+                            },
+                            {
+                                "language": "en-US",
+                                "value": "never seen by a military dentist"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "fitness1",
+                        "display": "vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen",
+                        "designation": [
+                            {
+                                "language": "nl",
+                                "value": "vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen"
+                            },
+                            {
+                                "language": "en-US",
+                                "value": "no dental treatment required / low risk for dental emergency"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "fitness2",
+                        "display": "kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden",
+                        "designation": [
+                            {
+                                "language": "nl",
+                                "value": "kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden"
+                            },
+                            {
+                                "language": "en-US",
+                                "value": "may require dental treatment but unlikely to result in a dental emergency within 12 months"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "fitness3",
+                        "display": "huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken",
+                        "designation": [
+                            {
+                                "language": "nl",
+                                "value": "huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken"
+                            },
+                            {
+                                "language": "en-US",
+                                "value": "current dental treatment to correct a dental condition that is likely to cause a dental emergency within 12 months"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "fitness4",
+                        "display": "vereist periodiek tandheelkundig onderzoek, een onbepaalde tandheelkundige status of tandheelkundige gegevens ontbreken of zijn onvolledig",
+                        "designation": [
+                            {
+                                "language": "nl",
+                                "value": "vereist periodiek tandheelkundig onderzoek, een onbepaalde tandheelkundige status of tandheelkundige gegevens ontbreken of zijn onvolledig"
+                            },
+                            {
+                                "language": "en-US",
+                                "value": "periodic dental examination required, undetermined dental status, or dental record is missing or incomplete"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

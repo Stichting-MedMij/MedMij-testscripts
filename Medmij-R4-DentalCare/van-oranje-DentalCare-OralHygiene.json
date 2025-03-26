@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "mondhygiene-vanoranje",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-OralHygieneFinding"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Mondhygiëne: Slechte mondhygiëne<br/>Uitgevoerd door: Tandarts</div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "110298001",
+        "display": "Bevinding betreffende mondhygiëne"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/xxx-vanoranje",
+    "type": "Patient",
+    "display": "Patient, Erik van Oranje"
+  },
+  "effectiveDateTime": "2024-04-29T06:43:00+01:00",
+  "performer":  [
+    {
+        "reference": "PractitionerRole/de-koning-PractitionerRole",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding":  [
+        {
+            "system": "http://snomed.info/sct",
+            "code": "110299009",
+            "display": "Slechte mondhygiëne"
+        }
+    ]
+  }
+}

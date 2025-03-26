@@ -1,0 +1,38 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "Goal-priority",
+    "url": "http://medmij.nl/fhir/SearchParameter/DentalCare-Goal-priority",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/SearchParameter"
+        ],
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "oral-care"
+            }
+        ]
+    },
+    "version": "1.0.0",
+    "name": "goal-priority",
+    "status": "active",
+    "publisher": "MedMij",
+    "contact": [
+        {
+            "name": "MedMij",
+            "telecom": [
+                {
+                    "system": "email",
+                    "value": "info@medmij.nl",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+    "purpose": "To search Goal resources on the value of the '.priority' element.",
+    "code": "priority",
+    "base": ["Goal"],
+    "type": "token",
+    "description": "TSearches on the priority of the goal. such as low-priority or high-priority.",
+    "expression": "Goal.priority"
+}

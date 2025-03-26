@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "ParafunctioneleActiviteit-jansen",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-ParafunctionalActivity"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Activiteit: Erosie door het drinken van vruchtensap<br/>Uitgevoerd door: Tandarts</div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.528.1.1023.5",
+        "code": "PA1",
+        "display": "parafunctionele activiteit"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/xxx-jansen",
+    "type": "Patient",
+    "display": "Patient, Anita Jansen"
+  },
+  "effectiveDateTime": "2022-02-11T10:43:00+01:00",
+  "performer":  [
+    {
+        "reference": "PractitionerRole/de-ruiter-PractitionerRole",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+    }
+  ],
+  "valueString": "Erosie door het drinken van vruchtensap"
+}

@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "Cariesrisico-jansen",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-CariesRisk"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Risico op cariës<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Cariesrisico: Verlaagd<br/>Uitgevoerd door: Tandarts</div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "609399004",
+        "display": "Risico op cariës"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/xxx-jansen",
+    "type": "Patient",
+    "display": "Patient, Anita Jansen"
+  },
+  "effectiveDateTime": "2022-02-11T10:43:00+01:00",
+  "performer":  [
+    {
+        "reference": "PractitionerRole/de-ruiter-PractitionerRole",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding":  [
+        {
+            "system": "urn:oid:2.16.528.1.1023.5.1.4",
+            "code": "caries2",
+            "display": "Verlaagd"
+        }
+    ]
+  }
+}

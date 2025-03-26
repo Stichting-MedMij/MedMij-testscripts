@@ -1,0 +1,82 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-DentalCare-CariesRisk",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "language": "nl-NL",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"nl-NL\" xml:lang=\"nl-NL\">Definitie-resources zijn niet voorzien van een narrative. Een menselijk leesbare versie is te vinden via de implementation guide(s) waarin deze resource gebruikt wordt.</div>"
+  },
+  "url": "urn:oid:2.16.528.1.1023.5.1.4",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.5.1.4"
+    }
+  ],
+  "version": "0.0.1",
+  "name": "CariesRisk",
+  "title": "CariesRisk",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Medmij",
+  "description": "CariesRiskScore",
+  "caseSensitive": false,
+  "content": "complete",
+  "count": 4,
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "description": "A code that indicates the status of the concept. Values found in this version of the code system are: active",
+      "type": "code"
+    }
+  ],
+  "concept": [
+    {
+      "code": "caries1",
+      "display": "Laag",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "caries2",
+      "display": "Verlaagd",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "caries3",
+      "display": "Verhoogd",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+        "code": "caries4",
+        "display": "Hoog risico",
+        "property": [
+          {
+            "code": "status",
+            "valueCode": "active"
+          }
+        ]
+      }
+  ]
+}

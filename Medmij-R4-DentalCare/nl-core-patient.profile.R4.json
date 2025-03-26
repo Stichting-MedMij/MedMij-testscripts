@@ -1,0 +1,239 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nl-core-Patient",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "url": "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient",
+  "name": "NlcorePatient",
+  "title": "nl core Patient",
+  "status": "draft",
+  "publisher": "Nictiz",
+  "contact": [
+    {
+      "name": "Nictiz",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nictiz.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "A person who receives medical, psychological, paramedical or nursing care. In some care settings, the term client or participant is used instead of the term patient.\r\nNationality is used as an indication of the country of citizenship. \r\nMarital status is a person’s formal position as defined by the Dutch civil code. There is a distinction between marriage and civil union.\r\nLinguistic proficiency is the ability to express oneself in a certain language and understand statements made in that language. This includes both oral and written communication.",
+  "purpose": "A derived profile from [zib-Patient](http://nictiz.nl/fhir/StructureDefinition/zib-Patient) to provide a version better suited for implementation purposes. This profile augments the base profile with elements found in the various use cases that have adopted the zib.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "zib-patient-v3.2-2020EN",
+      "uri": "https://zibs.nl/wiki/Patient-v3.2(2020EN)",
+      "name": "zib Patient-v3.2(2020EN)"
+    },
+    {
+      "identity": "zib-nationality-v3.0-2020EN",
+      "uri": "https://zibs.nl/wiki/Nationality-v3.0(2020EN)",
+      "name": "zib Nationality-v3.0(2020EN)"
+    },
+    {
+      "identity": "zib-maritalstatus-v3.1-2020EN",
+      "uri": "https://zibs.nl/wiki/MaritalStatus-v3.1(2020EN)",
+      "name": "zib MaritalStatus-v3.1(2020EN)"
+    },
+    {
+      "identity": "zib-languageproficiency-v3.2-2020EN",
+      "uri": "https://zibs.nl/wiki/LanguageProficiency-v3.2(2020EN)",
+      "name": "zib LanguageProficiency-v3.2(2020EN)"
+    },
+    {
+      "identity": "zib-contactinformation-v1.2-2020EN",
+      "uri": "https://zibs.nl/wiki/ContactInformation-v1.2(2020EN)",
+      "name": "zib ContactInformation-v1.2(2020EN)"
+    },
+    {
+      "identity": "zib-contactperson-v3.4-2020EN",
+      "uri": "https://zibs.nl/wiki/ContactPerson-v3.4(2020EN)",
+      "name": "zib ContactPerson-v3.4(2020EN)"
+    },
+    {
+      "identity": "zib-payer-v3.1.1-2020EN",
+      "uri": "https://zibs.nl/wiki/Payer-v3.1.1(2020EN)",
+      "name": "zib Payer-v3.1.1(2020EN)"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://nictiz.nl/fhir/StructureDefinition/zib-Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "alias": [
+          "nl-core-Patient"
+        ]
+      },
+      {
+        "id": "Patient.name:nameInformation",
+        "path": "Patient.name",
+        "sliceName": "nameInformation",
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-NameInformation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.name:nameInformation-GivenName",
+        "path": "Patient.name",
+        "sliceName": "nameInformation-GivenName",
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-NameInformation.GivenName"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.telecom:telephoneNumbers",
+        "path": "Patient.telecom",
+        "sliceName": "telephoneNumbers",
+        "type": [
+          {
+            "code": "ContactPoint",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactInformation-TelephoneNumbers"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.telecom:emailAddresses",
+        "path": "Patient.telecom",
+        "sliceName": "emailAddresses",
+        "type": [
+          {
+            "code": "ContactPoint",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactInformation-EmailAddresses"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-AddressInformation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "comment": "Whereas the zib ContactPerson includes all (non-healthcare professional) persons that are involved in the care for a patient, FHIR distinguishes two use cases for these persons:\r\n\r\n* The RelatedPerson resource is used to capture information about any person that is related to the patient, using the profile <http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson>.\r\n* Information about persons that should be _contacted_ regarding the care for the patient is captured using the `Patient.contact` resource.\r\n\r\nIf a person is both a related person and a contact person, then some data duplication is inevitable. The nl-core-ContactPerson can be referenced using the extension in `contact:contactPerson`."
+      },
+      {
+        "id": "Patient.contact.extension:contactPerson",
+        "path": "Patient.contact.extension",
+        "sliceName": "contactPerson"
+      },
+      {
+        "id": "Patient.contact.extension:contactPerson.value[x]",
+        "path": "Patient.contact.extension.value[x]",
+        "definition": "Reference to an [nl-core-ContactPerson](http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson) instance containing the full details for the current contact.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.contact.name",
+        "path": "Patient.contact.name",
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-NameInformation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.contact.telecom:telephoneNumbers",
+        "path": "Patient.contact.telecom",
+        "sliceName": "telephoneNumbers",
+        "type": [
+          {
+            "code": "ContactPoint",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactInformation-TelephoneNumbers"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.contact.telecom:emailAddresses",
+        "path": "Patient.contact.telecom",
+        "sliceName": "emailAddresses",
+        "type": [
+          {
+            "code": "ContactPoint",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactInformation-EmailAddresses"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.contact.address",
+        "path": "Patient.contact.address",
+        "comment": "This element can and should not completely capture the AddressInformation concept from zib ContactPerson; it should just be used for the information that is needed for contacting the person in relation to care of the patient. The full address information should instead be captured using an instance of [nl-core-ContactPerson](http://nictiz.nl/fhir/StructureDefintion/nl-core-ContactPerson), which can then be referenced from this resource. See the comment on `Patient.contact` for more information.",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-AddressInformation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

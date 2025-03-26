@@ -1,0 +1,55 @@
+{
+    "resourceType": "ValueSet",
+    "id": "DentalCare-PPSScreening",
+    "name": "DentalCarePPSScreening",
+    "title": "DentalCare - PPS Screening",
+    "version": "0.0.1",
+    "experimental": false,
+    "publisher": "MedMij",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dental Care PPS Screening</div>"
+    },
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.528.1.1023.11.2.3.11.3"
+        }
+    ],
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+        ],
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "dental-care"
+            }
+        ]
+    },
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-PPSScreening",
+    "status": "draft",
+    "description": "PPSScreeningScore",
+    "compose": {
+        "include": [
+            {
+                "system": "urn:oid:2.16.528.1.1023.5.1.2",
+                "concept": [
+                    {
+                        "code": "ppsscore1",
+                        "display": "pockets 0-3 millimeter = in orde"
+                    },
+                    {
+                        "code": "ppsscore2",
+                        "display": "pockets 4-5 millimeter = mogelijk in orde"
+                    },
+                    {
+                        "code": "ppsscore3",
+                        "display": "pockets groter of gelijk aan 6 millimeter = wellicht niet in orde"
+                    }
+                ]            
+            }
+        ]
+    }
+}

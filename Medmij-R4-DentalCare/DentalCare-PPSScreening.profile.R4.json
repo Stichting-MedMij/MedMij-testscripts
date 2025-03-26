@@ -1,0 +1,153 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "DentalCare-PPSScreening",
+    "meta": {
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "dental-care"
+            }
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns='http://www.w3.org/1999/xhtml'>StructureDefinition: DentalCare - PPS Screening<br/>Versie: 0.0.1<br/>Status: Concept<br/>Type: Observation<br/>Uitgever: MedMij<br/>Contact: info@medmij.nl<br/>Beschrijving: Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.<br/>Doel: This Observation resource represents the PPS Screening.<br/>Copyright: MedMij<br/>FHIR Versie: 4.0.1</div>"
+      },
+    "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-PPSScreening",
+    "version": "0.0.1",
+    "name": "DentalCarePPSScreening",
+    "title": "DentalCare - PPS screening",
+    "status": "draft",
+    "publisher": "MedMij",
+    "contact": [
+        {
+            "name": "MedMij",
+            "telecom": [
+                {
+                    "system": "email",
+                    "value": "info@medmij.nl",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+    "description": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
+    "purpose": "This Observation resource represent the PPS Screening",
+    "copyright": "MedMij",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Observation",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Observation",
+                "path": "Observation",
+                "short": "PPS Screening",
+                "alias": ["PPS Screening"]
+            },
+            {
+                "id": "Observation.code",
+                "path": "Observation.code",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "540501000146103"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "Observation.subject",
+                "path": "Observation.subject",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "http://hl7.org/fhir/StructureDefinition/Patient",
+                            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Observation.effective[x]",
+                "path": "Observation.effective[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.effective[x]:effectiveDateTime",
+                "path": "Observation.effective[x]",
+                "sliceName": "effectiveDateTime",
+                "short": "PPSScreeningDateTime",
+                "definition": "The date and time at which the PPS screening was measured.",
+                "alias":  [
+                    "PPSScreeningDatumTijd"
+                ],
+                "type":  [
+                    {
+                        "code": "dateTime"
+                    }
+                ]
+            },
+            {
+                "id": "Observation.value[x]",
+                "path": "Observation.value[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.value[x]:valueCodeableConcept",
+                "path": "Observation.value[x]",
+                "sliceName": "valueCodeableConcept",
+                "short": "PPSScoreValue",
+                "definition": "The score is a ...",
+                "alias":  [
+                    "PPSScoreWaarde"
+                ],
+                "type":  [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ],
+                "binding": {
+                    "strength": "required",
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/DentalCare-PPSScreening"
+                }
+            },
+            {
+                "id": "Observation.note",
+                "path": "Observation.note",
+                "max": "1"
+            },
+            {
+                "id": "Observation.note.text",
+                "path": "Observation.note.text",
+                "short": "Comment",
+                "definition": "Comment on the PPS screening, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+                "alias":  [
+                    "Toelichting"
+                ]
+            }
+        ]
+    }
+}
+

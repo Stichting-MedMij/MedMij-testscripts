@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "mondhygiene-vandestok",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-OralHygieneFinding"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Mondhygiëne: Goede mondhygiëne<br/>Uitgevoerd door: Tandarts</div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "110298001",
+        "display": "Bevinding betreffende mondhygiëne"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/xxx-vandestok",
+    "type": "Patient",
+    "display": "Patient, Berend van de Stok"
+  },
+  "effectiveDateTime": "2024-01-01T08:43:00+01:00",
+  "performer":  [
+    {
+        "reference": "PractitionerRole/Dijkstra-PractitionerRole",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding":  [
+        {
+            "system": "http://snomed.info/sct",
+            "code": "278543008",
+            "display": "Goede mondhygiëne"
+        }
+    ]
+  }
+}

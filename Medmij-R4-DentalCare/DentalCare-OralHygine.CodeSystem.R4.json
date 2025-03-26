@@ -1,0 +1,72 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-DentalCare-OralHygieneFinding",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "language": "nl-NL",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"nl-NL\" xml:lang=\"nl-NL\">Definitie-resources zijn niet voorzien van een narrative. Een menselijk leesbare versie is te vinden via de implementation guide(s) waarin deze resource gebruikt wordt.</div>"
+  },
+  "url": "urn:oid:2.16.528.1.1023.5.1.3",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.5.1.3"
+    }
+  ],
+  "version": "0.0.1",
+  "name": "OralHygieneFinding",
+  "title": "Oral Hygiene Finding",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Medmij",
+  "description": "OralHygieneFinding",
+  "caseSensitive": false,
+  "content": "complete",
+  "count": 3,
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "description": "A code that indicates the status of the concept. Values found in this version of the code system are: active",
+      "type": "code"
+    }
+  ],
+  "concept": [
+    {
+      "code": "hygiene1",
+      "display": "Zeer goed",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "hygiene3",
+      "display": "Normaal",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "hygiene5",
+      "display": "Zeer slecht",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    }
+  ]
+}

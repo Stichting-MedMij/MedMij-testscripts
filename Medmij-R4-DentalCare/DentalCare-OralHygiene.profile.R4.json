@@ -1,0 +1,153 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "DentalCare-OralHygieneFinding",
+    "meta": {
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "dental-care"
+            }
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns='http://www.w3.org/1999/xhtml'>StructureDefinition: DentalCare - Oral Hygiene Finding<br/>Versie: 0.0.1<br/>Status: Concept<br/>Type: Observation<br/>Uitgever: MedMij<br/>Contact: info@medmij.nl<br/>Beschrijving: Oral Hygiene assessment.<br/>Doel: This Observation resource represents the Oral Hygiene Finding.<br/>Copyright: MedMij<br/>FHIR Versie: 4.0.1</div>"
+      },
+    "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-OralHygieneFinding",
+    "version": "0.0.1",
+    "name": "DentalCareOralHygieneFinding",
+    "title": "DentalCare - Oral Hygiene Finding",
+    "status": "draft",
+    "publisher": "MedMij",
+    "contact": [
+        {
+            "name": "MedMij",
+            "telecom": [
+                {
+                    "system": "email",
+                    "value": "info@medmij.nl",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+    "description": "......",
+    "purpose": "This Observation resource represent the Oral Hygiene Finding",
+    "copyright": "MedMij",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Observation",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Observation",
+                "path": "Observation",
+                "short": "Oral Hygiene",
+                "alias": ["Mondhygiëne"]
+            },
+            {
+                "id": "Observation.code",
+                "path": "Observation.code",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "110298001"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "Observation.subject",
+                "path": "Observation.subject",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "http://hl7.org/fhir/StructureDefinition/Patient",
+                            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Observation.effective[x]",
+                "path": "Observation.effective[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.effective[x]:effectiveDateTime",
+                "path": "Observation.effective[x]",
+                "sliceName": "effectiveDateTime",
+                "short": "OralHygieneDateTime",
+                "definition": "The date and time at which the Oral Hygiene was measured.",
+                "alias":  [
+                    "MondhygiëneDatumTijd"
+                ],
+                "type":  [
+                    {
+                        "code": "dateTime"
+                    }
+                ]
+            },
+            {
+                "id": "Observation.value[x]",
+                "path": "Observation.value[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.value[x]:valueCodeableConcept",
+                "path": "Observation.value[x]",
+                "sliceName": "valueCodeableConcept",
+                "short": "OralHygieneScoreValue",
+                "definition": "The score is a ...",
+                "alias":  [
+                    "MondhygiëneWaarde"
+                ],
+                "type":  [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ],
+                "binding": {
+                    "strength": "required",
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/DentalCare-OralHygieneFinding"
+                }
+            },
+            {
+                "id": "Observation.note",
+                "path": "Observation.note",
+                "max": "1"
+            },
+            {
+                "id": "Observation.note.text",
+                "path": "Observation.note.text",
+                "short": "Comment",
+                "definition": "Comment on the Oral Hygiene, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+                "alias":  [
+                    "Toelichting"
+                ]
+            }
+        ]
+    }
+}
+

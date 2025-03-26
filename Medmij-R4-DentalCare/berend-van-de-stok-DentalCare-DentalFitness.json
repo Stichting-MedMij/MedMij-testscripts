@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "vandestok-DentalFitness",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-DentalFitnessScore"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness Score (NAVO-classificatiesysteem)<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-03-03 10:43<br/>Dental Fitness: May require dental treatment but unlikely to result in a dental emergency within 12 months<br/>Uitgevoerd door: Tandarts</div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "440271000146100",
+        "display": "'dental fitness' volgens NAVO-classificatiesysteem"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/xxx-vandestok",
+    "type": "Patient",
+    "display": "Patient, Berend van de Stok"
+  },
+  "effectiveDateTime": "2024-03-03T10:43:00+01:00",
+  "performer":  [
+    {
+        "reference": "PractitionerRole/Dijkstra-PractitionerRole",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding":  [
+        {
+            "system": "urn:oid:2.16.528.1.1023.5.1",
+            "code": "fitness2",
+            "display": "May require dental treatment but unlikely to result in a dental emergency within 12 months"
+        }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+    "resourceType": "Location",
+    "id": "tandartsspoedpraktijk-CWZ-Nijmegen",
+    "meta": {
+      "profile": [
+        "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
+      ]
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: CWZ Nijmegen<br/>Telefoon: 0246412121<br/>Adres: Weg door Jonkerbos 100, 6532 SZ Nijmegen<br/>Beheerde organisatie: Ministerie van Defensie DTD Tandheelkunde</div>"
+    },
+    "name": "CWZ Nijmegen",
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "0246412121",
+        "use": "work"
+      }
+    ],
+    "address": {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                "code": "WP",
+                "display": "Work Place"
+              }
+            ]
+          }
+        }
+      ],
+      "use": "work",
+      "line": [
+        "Weg door Jonkerbos 100"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Weg door Jonkerbos"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "100"
+            }
+          ]
+        }
+      ],
+      "city": "Nijmegen",
+      "postalCode": "6532 SZ"
+    },
+    "managingOrganization": {
+      "reference": "Organization/defensie-tandheelkundige-dienst",
+      "type": "Organization",
+      "display": "Healthcare provider (organization), Ministerie van Defensie DTD Tandheelkunde"
+    }
+  }

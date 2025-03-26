@@ -1,0 +1,43 @@
+{
+  "resourceType": "Procedure",
+  "id": "procedure-vandestok-01",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-ProcedureEvent"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Procedure: Wortelpuntoperatie, per tandwortel, zonder afsluiting<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: Tandarts<br/>Locatie: Tandartspraktijk Dijkstra</div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "https://puc.overheid.nl/nza/doc/PUC_764375_22/1/",
+        "code": "H42",
+        "display": "Wortelpuntoperatie, per tandwortel, zonder afsluiting"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/xxx-vandestok",
+    "type": "Patient",
+    "display": "Patient, Berend van de Stok"
+  },
+  "performedDateTime": "2024-01-01",
+  "performer": [
+    {
+      "actor": {
+        "reference": "PractitionerRole/Dijkstra-PractitionerRole",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/tandartsspoedpraktijk-CWZ-Nijmegen",
+    "type": "Location",
+    "display": "Healthcare provider (location), CWZ Nijmegen"
+  }
+}

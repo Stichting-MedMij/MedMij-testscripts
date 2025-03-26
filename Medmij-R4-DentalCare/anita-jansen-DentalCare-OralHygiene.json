@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "mondhygiene-jansen",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-OralHygieneFinding"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Mondhygiëne: zeer slecht<br/>Uitgevoerd door: Tandarts</div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "110298001",
+        "display": "Bevinding betreffende mondhygiëne"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/xxx-jansen",
+    "type": "Patient",
+    "display": "Patient, Anita Jansen"
+  },
+  "effectiveDateTime": "2022-02-11T10:43:00+01:00",
+  "performer":  [
+    {
+        "reference": "PractitionerRole/de-ruiter-PractitionerRole",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding":  [
+        {
+            "system": "urn:oid:2.16.528.1.1023.5.1.3",
+            "code": "hygiene5",
+            "display": "Zeer slecht"
+        }
+    ]
+  }
+}

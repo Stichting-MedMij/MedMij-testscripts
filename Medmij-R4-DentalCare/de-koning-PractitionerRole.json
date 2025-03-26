@@ -1,0 +1,41 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "de-koning-PractitionerRole",
+    "meta": {
+        "profile":  [
+            "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Koning, de<br/>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+      },
+    "practitioner": {
+        "reference": "Practitioner/de-koning-Practitioner",
+        "type": "Practitioner",
+        "display": "Healthcare professional (person), Koning, de"
+    },
+    "organization": {
+        "reference": "Organization/defensie-tandheelkundige-dienst",
+        "type": "Organization",
+        "display": "Healthcare provider (organization), Ministerie van Defensie DTD Tandheelkunde"
+    },  
+    "specialty":  [
+        {
+            "coding":  [
+                {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+                    "code": "1200",
+                    "display": "Tandartsen, algemeen practicus"
+                }
+            ]
+        }
+    ],
+    "location":  [
+        {
+            "reference": "Location/tandheelkunde-centra-vliegbasis-Gilze-Rijen",
+            "type": "Location",
+            "display": "Vliegbasis Gilze-Rijen"
+        }
+    ]
+}
