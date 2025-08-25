@@ -1,0 +1,30 @@
+{
+  "resourceType": "Goal",
+  "id": "DentalCare-TreatmentObjective-2-Van-De-Stok",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Wortelpuntoperatie (apexresectie)<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Laag</div>"
+  },
+  "lifecycleStatus": "active",
+  "priority": {
+    "coding": [
+      {
+        "code": "low-priority",
+        "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
+        "display": "Low Priority"
+      }
+    ]
+  },
+  "description": {
+    "text": "Wortelpuntoperatie (apexresectie)"
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Van-De-Stok",
+    "display": "Berend van de Stok"
+  }
+}

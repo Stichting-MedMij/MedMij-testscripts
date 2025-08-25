@@ -1,0 +1,52 @@
+{
+  "resourceType": "Coverage",
+  "id": "DentalCare-Payer-Person-Van-Oranje",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson"
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/coverage-selfpay",
+        "code": "pay",
+        "display": "Pay"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation",
+      "extension": [
+        {
+          "url": "bankName",
+          "valueString": "ING"
+        },
+        {
+          "url": "bankCode",
+          "valueString": "INGBNL2A"
+        },
+        {
+          "url": "accountNumber",
+          "valueString": "NL85INGB0001234567"
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Verzekeraar: Zorgkantoor Groningen</div>"
+  },
+  "status": "active",
+  "beneficiary": {
+    "reference": "Patient/DentalCare-Patient-Van-Oranje",
+    "display": "Erik van Oranje"
+  },
+  "payor": [
+    {
+      "reference": "Organization/DentalCare-Organization-Zorgkantoor-Groningen",
+      "display": "Zorgkantoor Groningen"
+    }
+  ]
+}

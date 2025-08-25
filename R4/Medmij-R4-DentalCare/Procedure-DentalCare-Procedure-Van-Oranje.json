@@ -1,0 +1,40 @@
+{
+  "resourceType": "Procedure",
+  "id": "DentalCare-Procedure-Van-Oranje",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "R67",
+        "system": "https://puc.overheid.nl/nza/doc/PUC_764375_22/1",
+        "display": "Plaatsen opbouw ten behoeve van implantaatkroon"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Van-Oranje",
+    "display": "Erik van Oranje"
+  },
+  "performedDateTime": "2024-04-29",
+  "performer": [
+    {
+      "actor": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
+        "display": "A.B.D.O. de Koning, Tandarts"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
+    "display": "Vliegbasis Gilze-Rijen"
+  }
+}

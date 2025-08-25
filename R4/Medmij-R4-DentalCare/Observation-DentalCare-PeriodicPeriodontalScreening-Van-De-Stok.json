@@ -1,0 +1,48 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-PeriodicPeriodontalScreening-Van-De-Stok",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "540501000146103",
+        "system": "http://snomed.info/sct",
+        "display": "score op periodieke parodontale screening"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Score: Pockets groter of gelijk aan 6 millimeter = wellicht niet in orde<br/>Opmerking: Paro-traject<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Van-De-Stok",
+    "display": "Berend van de Stok"
+  },
+  "effectiveDateTime": "2024-01-01T08:43:00+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
+      "display": "B. Dijkstra, Tandarts"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "ppsscore3",
+        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening",
+        "display": "Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Paro-traject"
+    }
+  ]
+}
