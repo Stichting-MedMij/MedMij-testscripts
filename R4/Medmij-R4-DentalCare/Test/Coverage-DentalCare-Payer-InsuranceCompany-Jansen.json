@@ -1,0 +1,38 @@
+{
+  "resourceType": "Coverage",
+  "id": "DentalCare-Payer-InsuranceCompany-Jansen",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: Menzis<br/>Patiënt: Anita Jansen<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
+  },
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "code": "AT",
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1",
+        "display": "Aanvullend + tand"
+      }
+    ]
+  },
+  "subscriberId": "01234567",
+  "beneficiary": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen"
+  },
+  "period": {
+    "start": "2025-01-01",
+    "end": "2026-01-01"
+  },
+  "payor": [
+    {
+      "reference": "Organization/DentalCare-Organization-Menzis",
+      "display": "Menzis Zorgverzekeraar N.V."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType": "Coverage",
+  "id": "DentalCare-Payer-Person-Van-De-Stok",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson"
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/coverage-selfpay",
+        "code": "pay",
+        "display": "Pay"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation",
+      "extension": [
+        {
+          "url": "bankName",
+          "valueString": "ABNA"
+        },
+        {
+          "url": "bankCode",
+          "valueString": "ABNA00NL"
+        },
+        {
+          "url": "accountNumber",
+          "valueString": "NL00ABNA0001234567"
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
+  },
+  "status": "active",
+  "beneficiary": {
+    "reference": "Patient/DentalCare-Patient-Van-De-Stok",
+    "display": "Berend van de Stok"
+  },
+  "payor": [
+    {
+      "reference": "Organization/DentalCare-Organization-ASR",
+      "display": "A.S.R."
+    }
+  ]
+}

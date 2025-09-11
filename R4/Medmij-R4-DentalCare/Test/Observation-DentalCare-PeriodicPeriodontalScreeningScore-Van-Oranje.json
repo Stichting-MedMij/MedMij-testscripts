@@ -1,0 +1,48 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-PeriodicPeriodontalScreeningScore-Van-Oranje",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "540501000146103",
+        "system": "http://snomed.info/sct",
+        "display": "score op periodieke parodontale screening"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen paradontale vervolgbehandeling<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Van-Oranje",
+    "display": "Erik van Oranje"
+  },
+  "effectiveDateTime": "2024-04-29T06:43:00+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
+      "display": "A.B.D.O. de Koning, Tandarts"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "ppsscore1",
+        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore",
+        "display": "Pockets 0-3 millimeter = in orde"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Geen paradontale vervolgbehandeling"
+    }
+  ]
+}

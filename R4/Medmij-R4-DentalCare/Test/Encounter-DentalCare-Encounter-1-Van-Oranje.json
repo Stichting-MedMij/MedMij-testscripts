@@ -1,0 +1,58 @@
+{
+  "resourceType": "Encounter",
+  "id": "DentalCare-Encounter-1-Van-Oranje",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
+    ]
+  },
+  "reasonCode": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
+          "valueString": "Laatste orthopantomogram (röntgenfoto) was in 2025"
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-07-22T10:00:00<br/>Einddatum: 2026-07-22T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+  },
+  "status": "planned",
+  "class": {
+    "code": "OTH",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "display": "Anders"
+  },
+  "type": [
+    {
+      "text": "Tandarts Periodiek Preventief Onderzoek"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Van-Oranje",
+    "display": "Erik van Oranje"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
+        "display": "A.B.D.O. de Koning, Tandarts"
+      }
+    }
+  ],
+  "period": {
+    "start": "2026-07-22T10:00:00+01:00",
+    "end": "2026-07-22T11:00:00+01:00"
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
+        "display": "Vliegbasis Gilze-Rijen"
+      }
+    }
+  ]
+}

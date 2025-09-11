@@ -1,0 +1,48 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-PeriodicPeriodontalScreeningScore-Jansen",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "540501000146103",
+        "system": "http://snomed.info/sct",
+        "display": "score op periodieke parodontale screening"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 08:43<br/>Score: Pockets 4-5 millimeter = mogelijk in orde<br/>Opmerking: Paro-preventietraject<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen"
+  },
+  "effectiveDateTime": "2022-02-11T08:43:00+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+      "display": "D. de Ruiter, Tandarts"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "ppsscore2",
+        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore",
+        "display": "Pockets 4-5 millimeter = mogelijk in orde"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Paro-preventietraject"
+    }
+  ]
+}

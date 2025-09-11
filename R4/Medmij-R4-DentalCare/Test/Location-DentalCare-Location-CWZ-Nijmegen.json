@@ -1,0 +1,61 @@
+{
+  "resourceType": "Location",
+  "id": "DentalCare-Location-CWZ-Nijmegen",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
+    ]
+  },
+  "address": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "WP",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+              "display": "work place"
+            }
+          ]
+        }
+      }
+    ],
+    "line": [
+      "Weg door Jonkerbos 100"
+    ],
+    "_line": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+            "valueString": "Weg door Jonkerbos"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+            "valueString": "100"
+          }
+        ]
+      }
+    ],
+    "use": "work",
+    "city": "Nijmegen",
+    "postalCode": "6532 SZ"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: CWZ Nijmegen<br/>Telefoon: 0246412121<br/>Adres: Weg door Jonkerbos 100, 6532 SZ Nijmegen<br/>Beherende organisatie: Ministerie van Defensie DTD Tandheelkunde</div>"
+  },
+  "name": "CWZ Nijmegen",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0246412121",
+      "use": "work"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/DentalCare-Organization-Defensie-Tandheelkundige-Dienst",
+    "display": "Ministerie van Defensie DTD Tandheelkunde"
+  }
+}

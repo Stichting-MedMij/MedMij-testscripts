@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-ParafunctionalActivity-Van-Oranje",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "110353005",
+        "system": "http://snomed.info/sct",
+        "display": "parafunctionele gewoonte"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Parafunctionele activiteit<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Activiteit: Overmatig knarsen bij stress<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Van-Oranje",
+    "display": "Erik van Oranje"
+  },
+  "effectiveDateTime": "2024-04-29T06:43:00+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
+      "display": "A.B.D.O. de Koning, Tandarts"
+    }
+  ],
+  "valueString": "Overmatig knarsen bij stress"
+}
