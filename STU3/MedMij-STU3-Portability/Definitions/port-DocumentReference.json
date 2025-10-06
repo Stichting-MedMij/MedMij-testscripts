@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "port-DocumentReference",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "url": "http://medmij.nl/fhir/StructureDefinition/port-DocumentReference",
+  "name": "PortDocumentReference",
+  "title": "port DocumentReference",
+  "status": "draft",
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Document which is exchanged between PHRs in the context of MedMij.",
+  "purpose": "This DocumentReference resource represents a document which is exchanged between PHRs in the context of MedMij. This profile is based on the [IHE.MHD.Minimal.DocumentReference profile](http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference), which is maintained by Nictiz and is used in the data service PDF/A. Apart from content attachment type _application/pdf_, additional media mime types are allowed, e.g. _text/xml_.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "3.0.2",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference.type",
+        "path": "DocumentReference.type",
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://medmij.nl/fhir/ValueSet/Portability"
+          }
+        }
+      },
+      {
+        "id": "DocumentReference.class",
+        "path": "DocumentReference.class",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://medmij.nl/fhir/CodeSystem/Portability",
+              "code": "EXPORT"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

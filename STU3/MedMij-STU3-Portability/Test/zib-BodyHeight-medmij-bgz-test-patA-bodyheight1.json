@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "zib-BodyHeight-medmij-bgz-test-patA-bodyheight1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-BodyHeight"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-bodyheight (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief</caption><tfoot><tr><td colspan=\"2\">Zonder schoenen, met sokken</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>14:10:00, 15 oktober 2022</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Lichaamslengte^staand [lengte] in ^patiënt (8308-9 - LOINC)\">Lichaamslengte^staand [lengte] in ^patiënt</span></td><td>178 cm</td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-bodyheight"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8302-2",
+        "display": "Lichaamslengte [lengte] in ^patiënt"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8308-9",
+        "display": "Lichaamslengte^staand [lengte] in ^patiënt"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "effectiveDateTime": "2022-10-15T14:10:00+02:00",
+  "valueQuantity": {
+    "value": 178,
+    "unit": "cm",
+    "system": "http://unitsofmeasure.org",
+    "code": "cm"
+  },
+  "comment": "Zonder schoenen, met sokken"
+}

@@ -1,0 +1,218 @@
+{
+  "resourceType": "Practitioner",
+  "id": "-practitioner-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-01000002",
+  "meta": {
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Id 01000002 (AGB-Z), Id PatA-HealtcareProf1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), <span title=\"Naamsamenstelling: Eigennaam\">Franciscus Dominicus Antonius F.D.A. Pleijster</span> (Frans)</div><div><a href=\"tel:0595-123456\">0595-123456</a> (Vast telefoonnummer Werk), <a href=\"mailto:Fictieve.Huisarts@HetHogeland.nl\">Fictieve.Huisarts@HetHogeland.nl</a> (E-mail Werk)</div><div>Knolweg 10 A, 9999ZA Stitswerd Het Hogeland, NL (WP)<br />Knolweg 11 A-G, 9999ZA Stitswerd Het Hogeland, NLD (Bezoek)<br /></div></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
+      "value": "01000002"
+    },
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "PatA-HealtcareProf1"
+    }
+  ],
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+          "valueCode": "NL1"
+        }
+      ],
+      "family": "Pleijster",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Pleijster"
+          }
+        ]
+      },
+      "given": [
+        "Franciscus Dominicus Antonius",
+        "F.D.A.",
+        "Frans"
+      ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "BR"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "IN"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "CL"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                "code": "LL",
+                "display": "Land Line"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "0595-123456",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "Fictieve.Huisarts@HetHogeland.nl",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/AddressUse",
+                "code": "WP",
+                "display": "Werkadres"
+              }
+            ]
+          }
+        }
+      ],
+      "use": "work",
+      "line": [
+        "Knolweg 10 A"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Knolweg"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "10"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+              "valueString": "A"
+            }
+          ]
+        }
+      ],
+      "city": "Stitswerd",
+      "district": "Het Hogeland",
+      "postalCode": "9999ZA",
+      "country": "NL",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "code": "NL",
+                  "display": "Nederland"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/AddressUse",
+                "code": "PHYS",
+                "display": "Woon-/verblijfadres"
+              }
+            ]
+          }
+        }
+      ],
+      "use": "home",
+      "type": "physical",
+      "line": [
+        "Knolweg 11 A-G"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Knolweg"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "11"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+              "valueString": "A-G"
+            }
+          ]
+        }
+      ],
+      "city": "Stitswerd",
+      "district": "Het Hogeland",
+      "postalCode": "9999ZA",
+      "country": "NLD",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "code": "NLD",
+                  "display": "Nederland"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

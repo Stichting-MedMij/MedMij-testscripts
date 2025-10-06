@@ -1,0 +1,73 @@
+{
+  "resourceType": "Immunization",
+  "id": "zib-Vaccination-medmij-bgz-test-patA-vaccin2",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatie. Patiënt: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-vaccin2 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Status: voltooid</caption><tfoot><tr><td colspan=\"2\">2e prik, eerste is gegeven op 2022-04-26</td></tr></tfoot><tbody><tr><th><span title=\"Hepatitis B vaccin (92975 - G-Standaard PRK)\">Hepatitis B vaccin</span></th><td><div>Toegediend: ja (26 oktober 2022)</div><div>Gemeld door uitvoerende: nee</div></td></tr><tr><th><span title=\"Referrer (REF - v3/ParticipationType)\">Referrer</span></th><td>Franciscus Dominicus Antonius F.D.A. Frans Pleijster || Huisarts || Huisartsenpraktijk het Hogeland</td></tr><tr><th>Vaccinatiedetails</th><td><div>Dosering: 1 ml, 20 mcg HBsAg/ml</div></td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-vaccin2"
+    }
+  ],
+  "status": "completed",
+  "notGiven": false,
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.4.10",
+        "code": "92975",
+        "display": "Hepatitis B vaccin"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "date": "2022-10-26",
+  "primarySource": false,
+  "doseQuantity": {
+    "value": 1,
+    "unit": "ml, 20 mcg HBsAg/ml",
+    "system": "http://unitsofmeasure.org",
+    "code": "{ml, 20 mcg HBsAg/ml}"
+  },
+  "practitioner": [
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v3/ParticipationType",
+            "code": "REF",
+            "display": "Referrer"
+          }
+        ]
+      },
+      "actor": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+            "valueReference": {
+              "reference": "PractitionerRole/nl-core-practitionerrole-medmij-bgz-test-0100000201-01501000001",
+              "display": "Franciscus Dominicus Antonius F.D.A. Frans Pleijster || Huisarts || Huisartsenpraktijk het Hogeland"
+            }
+          }
+        ],
+        "reference": "Practitioner/-practitioner-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-01000002",
+        "display": "Franciscus Dominicus Antonius F.D.A. Frans Pleijster"
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "2e prik, eerste is gegeven op 2022-04-26"
+    }
+  ]
+}

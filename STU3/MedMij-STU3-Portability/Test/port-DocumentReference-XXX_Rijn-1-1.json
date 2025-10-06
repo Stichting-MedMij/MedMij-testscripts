@@ -1,0 +1,48 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "port-DocumentReference-XXX-Rijn-1-1",
+  "meta": {
+    "lastUpdated": "2025-07-21T00:00:00+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference",
+      "http://medmij.nl/fhir/StructureDefinition/port-DocumentReference"
+    ]
+  },
+  "status": "current",
+  "indexed": "2025-09-09T12:00:00+02:00",
+  "masterIdentifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:7a2e5b9f-3c1d-4f6a-8e2b-9d4c3f1a7b65"
+  },
+  "class": {
+    "coding": [
+      {
+        "system": "http://medmij.nl/fhir/CodeSystem/Portability",
+        "code": "EXPORT",
+        "display": "Portabiliteitsexport"
+      }
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://medmij.nl/fhir/CodeSystem/Portability",
+        "code": "REPORT",
+        "display": "Portabiliteitsrapport"
+      }
+    ],
+    "text": "Document met MedMij-portabiliteitsrapport waarin verwijzingen opgenomen naar aanbieders van patiëntinformatie"
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA"
+  },
+  "content": [
+    {
+      "attachment": {
+        "contentType": "text/xml",
+        "url": "Binary/port-Binary-XXX_Rijn-1-1",
+        "title": "Portabiliteitsrapport voor Van XXX_Rijn"
+      }
+    }
+  ]
+}

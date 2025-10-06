@@ -1,0 +1,109 @@
+{
+  "resourceType": "Condition",
+  "id": "zib-Problem-medmij-bgz-test-patA-problem3",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-problem3 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Categorie: <span title=\"Complaint (409586006 - SNOMED CT)\">Complaint</span>, Status: inactief / voorlopig</caption><tfoot><tr><td colspan=\"2\">Na gebruik maagzuurremmers zijn de klachten verdwenen</td></tr></tfoot><tbody><tr><th>Code</th><td><span title=\"Maagpijn (271681002 - SNOMED CT)\">Maagpijn</span></td></tr><tr><th>Eerste symptomen</th><td>25 maart 2021</td></tr><tr><th>Oplossing/remissie</th><td>2 mei 2021</td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-problem3"
+    }
+  ],
+  "clinicalStatus": "inactive",
+  "_clinicalStatus": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "73425007",
+              "display": "Inactive"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "verificationStatus": "provisional",
+  "_verificationStatus": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "415684004",
+              "display": "Suspected"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "409586006",
+          "display": "Complaint"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "271681002",
+        "display": "Maagpijn"
+      }
+    ]
+  },
+  "bodySite": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "7771000",
+                "display": "Left"
+              }
+            ]
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "279995000",
+          "display": "Maagwand"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "onsetDateTime": "2021-03-25",
+  "abatementDateTime": "2021-05-02",
+  "note": [
+    {
+      "text": "Na gebruik maagzuurremmers zijn de klachten verdwenen"
+    }
+  ]
+}

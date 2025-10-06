@@ -1,0 +1,142 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "zib-AllergyIntolerance-medmij-bgz-test-patA-allergy1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Allergie/intolerantie. Patiënt: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-AllergyIntolerance1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Categorie: biologisch materiaal, Status: actief / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"Pinda (762952008 - SNOMED CT)\">Pinda</span></td></tr><tr><th>Eerste symptomen</th><td>14 maart 1997</td></tr><tr><th>Meest recente voorkomen</th><td>3 mei 2017</td></tr><tr><th>Reactie</th><td><ul><li><div>3 mei 2017 ernstig</div><div><span title=\"Anaphylaxis (39579001 - SNOMED CT)\">Anaphylaxis</span></div><div>Zwellen van de luchtweg en aangezicht</div></li></ul></td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-AllergyIntolerance1"
+    }
+  ],
+  "clinicalStatus": "active",
+  "_clinicalStatus": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActStatus",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "verificationStatus": "confirmed",
+  "category": [
+    "biologic"
+  ],
+  "_category": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "419199007",
+                "display": "allergie voor substantie"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "criticality": "high",
+  "_criticality": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "399166001",
+              "display": "fataal"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "762952008",
+        "display": "Pinda"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "onsetDateTime": "1997-03-14",
+  "lastOccurrence": "2017-05-03",
+  "reaction": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "762952008",
+            "display": "Pinda"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39579001",
+              "display": "Anaphylaxis"
+            }
+          ]
+        }
+      ],
+      "description": "Zwellen van de luchtweg en aangezicht",
+      "onset": "2017-05-03",
+      "severity": "severe",
+      "_severity": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "24484000",
+                  "display": "Severe"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "exposureRoute": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26643006",
+            "display": "Oraal"
+          }
+        ]
+      }
+    }
+  ]
+}

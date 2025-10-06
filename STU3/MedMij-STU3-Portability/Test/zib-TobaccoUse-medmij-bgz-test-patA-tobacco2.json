@@ -1,0 +1,85 @@
+{
+  "resourceType": "Observation",
+  "id": "zib-TobaccoUse-medmij-bgz-test-patA-tobacco2",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-TobaccoUse"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-TobaccoUse2 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Status: definitief</caption><tfoot><tr><td colspan=\"2\">Partner rookt</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>Vanaf 2015</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"bevinding betreffende tabakgebruik en blootstelling aan tabaksrook (365980008 - SNOMED CT)\">bevinding betreffende tabakgebruik en blootstelling aan tabaksrook</span></td><td><span title=\"Passive smoker (finding) (43381005 - SNOMED CT)\">Passive smoker (finding)</span></td></tr><tr><td><span title=\"type tabak gebruikt (53661000146106 - SNOMED CT)\">type tabak gebruikt</span></td><td><span title=\"Other (OTH - v3/NullFlavor)\">Other</span></td></tr><tr><td><span title=\"hoeveelheid en type tabak gerookt (266918002 - SNOMED CT)\">hoeveelheid en type tabak gerookt</span></td><td>20 Sigaretten per dag</td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-TobaccoUse2"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "365980008",
+        "display": "bevinding betreffende tabakgebruik en blootstelling aan tabaksrook"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "effectivePeriod": {
+    "start": "2015"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "43381005",
+        "display": "Passive smoker (finding)"
+      }
+    ]
+  },
+  "comment": "Partner rookt",
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "53661000146106",
+            "display": "type tabak gebruikt"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v3/NullFlavor",
+            "code": "OTH",
+            "display": "Other"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "266918002",
+            "display": "hoeveelheid en type tabak gerookt"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 20,
+        "unit": "Sigaretten per dag",
+        "system": "http://unitsofmeasure.org",
+        "code": "{Sigaretten per dag}"
+      }
+    }
+  ]
+}

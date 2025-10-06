@@ -1,0 +1,47 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "port-DocumentReference-XXX-Rijn-1-2",
+  "meta": {
+    "lastUpdated": "2025-07-21T00:00:00+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference",
+      "http://medmij.nl/fhir/StructureDefinition/port-DocumentReference"
+    ]
+  },
+  "status": "current",
+  "indexed": "2025-09-09T12:00:00+02:00",
+  "masterIdentifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:3f9c1d6e-8a4b-4e2a-9c3d-2f1b7e8c9d12"
+  },
+  "class": {
+    "coding": [
+      {
+        "system": "http://medmij.nl/fhir/CodeSystem/Portability",
+        "code": "EXPORT",
+        "display": "Portabiliteitsexport"
+      }
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://medmij.nl/fhir/CodeSystem/Portability",
+        "code": "DOSSIER",
+        "display": "Persoonlijk gezondheidsdossier"
+      }
+    ],
+    "text": "Document met samenvatting patiëntinformatie"
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA"
+  },
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/pdf",
+        "url": "https://deoudepgo.nl/genereer_pdf?id=12345"
+      }
+    }
+  ]
+}

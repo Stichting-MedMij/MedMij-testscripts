@@ -1,0 +1,64 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "nl-core-practitionerrole-medmij-bgz-test-0100000201-01501000001",
+  "meta": {
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Zorgverlenerrol. Id: PatA-HealtcareProf1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7)</caption><tbody><tr><th>Zorgverlener</th><td><div>Franciscus Dominicus Antonius F.D.A. Frans Pleijster</div><div>Huisartsenpraktijk het Hogeland</div></td></tr><tr><th>Specialisme</th><td><span title=\"Huisarts (01.015 - http://fhir.nl/fhir/NamingSystem/uzi-rolcode)\">Huisarts</span></td></tr><tr><th>Contactgegevens</th><td><div><a href=\"tel:0595-123456\">0595-123456</a> (Vast telefoonnummer Werk)</div><div><a href=\"mailto:Fictieve.Huisarts@HetHogeland.nl\">Fictieve.Huisarts@HetHogeland.nl</a> (E-mail Werk)</div></td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "PatA-HealtcareProf1"
+    }
+  ],
+  "practitioner": {
+    "reference": "Practitioner/-practitioner-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-01000002",
+    "display": "Franciscus Dominicus Antonius F.D.A. Frans Pleijster"
+  },
+  "organization": {
+    "reference": "Organization/-organization-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-01000001",
+    "display": "Huisartsenpraktijk het Hogeland"
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.nl/fhir/NamingSystem/uzi-rolcode",
+          "code": "01.015",
+          "display": "Huisarts"
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                "code": "LL",
+                "display": "Land Line"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "0595-123456",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "Fictieve.Huisarts@HetHogeland.nl",
+      "use": "work"
+    }
+  ]
+}

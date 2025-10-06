@@ -1,0 +1,41 @@
+{
+  "resourceType": "Coverage",
+  "id": "zib-Payer-medmij-bgz-test-patA-payer1-2",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Payer"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Verzekering/garantstelling. </caption><tbody><tr><th>Type</th><td><span title=\"Aanvullend verzekerd (A - 2.16.840.1.113883.2.4.3.11.60.101.5.1)\">Aanvullend verzekerd</span></td></tr><tr><th>Periode</th><td>2025-07-17 - 2025-08-17</td></tr><tr><th>verzekerde</th><td>Anouk A. Anouk van XXX_Rijn de XXX_Vries</td></tr><tr><th>Verzekerdenummer</th><td>12345678</td></tr><tr><th>Betaler</th><td>VGZ Zorgverzekeraar N.V.</td></tr><tr><th>begunstigde</th><td>Anouk A. Anouk van XXX_Rijn de XXX_Vries</td></tr></tbody></table></div>"
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1",
+        "code": "A",
+        "display": "Aanvullend verzekerd"
+      }
+    ]
+  },
+  "subscriber": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "subscriberId": "12345678",
+  "beneficiary": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "period": {
+    "start": "2025-07-17",
+    "end": "2025-08-17"
+  },
+  "payor": [
+    {
+      "reference": "Organization/core-organization-medmij-bgz-test-2-16-840-1-113883-2-4-6-4-7095",
+      "display": "VGZ Zorgverzekeraar N.V."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "resourceType": "Observation",
+  "id": "zib-DrugUse-medmij-bgz-test-patA-druguse1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-DrugUse"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-DrugUse (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Status: definitief</caption><tfoot><tr><td colspan=\"2\">Op feestjes en tijdens uitgaan</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>2005 - 2009</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"bevinding betreffende drugsgebruik (228366006 - SNOMED CT)\">bevinding betreffende drugsgebruik</span></td><td><span title=\"Misused drugs in past (finding) (44870007 - SNOMED CT)\">Misused drugs in past (finding)</span></td></tr><tr><td><span title=\"drug of geneesmiddel (410942007 - SNOMED CT)\">drug of geneesmiddel</span></td><td><span title=\"Cocaine (substance) (387085005 - SNOMED CT)\">Cocaine (substance)</span></td></tr><tr><td><span title=\"toedieningsweg (410675002 - SNOMED CT)\">toedieningsweg</span></td><td><span title=\"NASAAL (6 - G-Standaard thesaurus subtabel 0007)\">NASAAL</span></td></tr><tr><td><span title=\"Frequency of drug misuse (228390007 - SNOMED CT)\">Frequency of drug misuse</span></td><td>1 á 2 keer per maand</td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-DrugUse"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "228366006",
+        "display": "bevinding betreffende drugsgebruik"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "effectivePeriod": {
+    "start": "2005",
+    "end": "2009"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "44870007",
+        "display": "Misused drugs in past (finding)"
+      }
+    ]
+  },
+  "comment": "Op feestjes en tijdens uitgaan",
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "410942007",
+            "display": "drug of geneesmiddel"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "387085005",
+            "display": "Cocaine (substance)"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "410675002",
+            "display": "toedieningsweg"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+            "code": "6",
+            "display": "NASAAL"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "228390007",
+            "display": "Frequency of drug misuse"
+          }
+        ]
+      },
+      "valueString": "1 á 2 keer per maand"
+    }
+  ]
+}
