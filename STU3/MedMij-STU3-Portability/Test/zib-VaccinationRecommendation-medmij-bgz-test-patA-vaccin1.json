@@ -1,0 +1,52 @@
+{
+  "resourceType": "ImmunizationRecommendation",
+  "id": "zib-VaccinationRecommendation-medmij-bgz-test-patA-vaccin1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-VaccinationRecommendation"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatieschema. Patiënt: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-vaccin1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7)</caption><tbody><tr><th>Gemaakt: 26 oktober 2022. Status: <span title=\"Due (due - immunization-recommendation-status)\">Due</span><div><span title=\"Hepatitis B vaccin (92975 - G-Standaard PRK)\">Hepatitis B vaccin</span></div></th><td /></tr><tr><th>Eerdere vaccinatie</th><td>Hepatitis B vaccin </td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-vaccin1"
+    }
+  ],
+  "patient": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "recommendation": [
+    {
+      "date": "2022-10-26",
+      "vaccineCode": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.4.10",
+            "code": "92975",
+            "display": "Hepatitis B vaccin"
+          }
+        ]
+      },
+      "forecastStatus": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/immunization-recommendation-status",
+            "code": "due",
+            "display": "Due"
+          }
+        ]
+      },
+      "supportingImmunization": [
+        {
+          "reference": "Immunization/zib-Vaccination-medmij-bgz-test-patA-vaccin1",
+          "display": "Hepatitis B vaccin"
+        }
+      ]
+    }
+  ]
+}

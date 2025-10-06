@@ -1,0 +1,198 @@
+{
+  "resourceType": "Patient",
+  "id": "medmij-bgz-test-patB",
+  "meta": {
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Id <i>afgeschermd (ontbrekend gegeven)</i> (BSN), <span title=\"Naamsamenstelling: Eigennaam\">Joeri J. XXX_Hoff</span> (Joeri), Man, 18 december 1958, Geen meerling</div><div><a href=\"tel:0687654321\">0687654321</a> (Mobiel Privé), <a href=\"mailto:J_XXX_Hoff@hotmail.com\">J_XXX_Hoff@hotmail.com</a> (E-mail Privé)</div><div>Knolweg 1003, 9999ZA Stitswerd Het Hogeland, NLD (officieel Privé (hoofd) Bezoek)</div><div>Huisarts: Franciscus Dominicus Antonius F.D.A. Frans Pleijster<div>Zorgverlenerrol: Huisarts</div></div></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
+    }
+  ],
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+          "valueCode": "NL1"
+        }
+      ],
+      "family": "XXX_Hoff",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "XXX_Hoff"
+          }
+        ]
+      },
+      "given": [
+        "Joeri",
+        "J.",
+        "Joeri"
+      ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "BR"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "IN"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "CL"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/AddressUse",
+                "code": "MC",
+                "display": "Mobile Phone"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "0687654321",
+      "use": "home"
+    },
+    {
+      "system": "email",
+      "value": "J_XXX_Hoff@hotmail.com",
+      "use": "home"
+    }
+  ],
+  "gender": "male",
+  "_gender": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/AdministrativeGender",
+              "code": "M",
+              "display": "Male"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "birthDate": "1958-12-18",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/AddressUse",
+                "code": "HP",
+                "display": "Officieel adres"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+          "valueBoolean": true
+        }
+      ],
+      "use": "home",
+      "type": "physical",
+      "line": [
+        "Knolweg 1003"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Knolweg"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "1003"
+            }
+          ]
+        }
+      ],
+      "city": "Stitswerd",
+      "district": "Het Hogeland",
+      "postalCode": "9999ZA",
+      "country": "NLD",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "code": "NLD",
+                  "display": "Nederland"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "multipleBirthBoolean": false,
+  "generalPractitioner": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+          "valueReference": {
+            "reference": "PractitionerRole/nl-core-practitionerrole-medmij-bgz-test-0100000201-01501000001",
+            "display": "Huisarts"
+          }
+        }
+      ],
+      "reference": "Practitioner/-practitioner-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-01000002",
+      "display": "Franciscus Dominicus Antonius F.D.A. Frans Pleijster"
+    }
+  ]
+}

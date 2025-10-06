@@ -1,0 +1,106 @@
+{
+  "resourceType": "Organization",
+  "id": "-organization-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-06000001",
+  "meta": {
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Organisatie. Id: PatA-HealthcareProvider2 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), 06000001 (AGB-Z)</caption><tbody><tr><th>Naam</th><td>Ziekenhuis het Hogeland</td></tr><tr><th>Type</th><td><div><span title=\"Ziekenhuizen, niet nader gespecificeerd (0600 - AGB-medisch specialisme)\">Ziekenhuizen, niet nader gespecificeerd</span></div><div><span title=\"Ziekenhuis (V4 - organization-type)\">Ziekenhuis</span></div></td></tr><tr><th>Adres</th><td>Knolweg 11 A-G, 9999ZA Stitswerd Het Hogeland, NLD (Bezoek)</td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "PatA-HealthcareProvider2"
+    },
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
+      "value": "06000001"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+          "version": "2017-12-14T00:00:00",
+          "code": "0600",
+          "display": "Ziekenhuizen, niet nader gespecificeerd"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nictiz.nl/fhir/NamingSystem/organization-type",
+          "code": "V4",
+          "display": "Ziekenhuis"
+        }
+      ]
+    }
+  ],
+  "name": "Ziekenhuis het Hogeland",
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/AddressUse",
+                "code": "PHYS",
+                "display": "Woon-/verblijfadres"
+              }
+            ]
+          }
+        }
+      ],
+      "use": "home",
+      "type": "physical",
+      "line": [
+        "Knolweg 11 A-G"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Knolweg"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "11"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+              "valueString": "A-G"
+            }
+          ]
+        }
+      ],
+      "city": "Stitswerd",
+      "district": "Het Hogeland",
+      "postalCode": "9999ZA",
+      "country": "NLD",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "code": "NLD",
+                  "display": "Nederland"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

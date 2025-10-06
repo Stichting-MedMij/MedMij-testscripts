@@ -1,0 +1,109 @@
+{
+  "resourceType": "Condition",
+  "id": "zib-Problem-medmij-bgz-test-patA-problem2",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-problem2 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Categorie: <span title=\"Diagnosis (282291009 - SNOMED CT)\">Diagnosis</span>, Status: actief / differentiaal</caption><tfoot><tr><td colspan=\"2\">Pijn bij normale belasting</td></tr></tfoot><tbody><tr><th>Code</th><td><span title=\"Artrose van rechter kniegewricht (323321000119100 - SNOMED CT)\">Artrose van rechter kniegewricht</span></td></tr><tr><th>Eerste symptomen</th><td>5 augustus 2018</td></tr><tr><th>Oplossing/remissie</th><td>12 december 2022</td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-problem2"
+    }
+  ],
+  "clinicalStatus": "active",
+  "_clinicalStatus": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "55561003",
+              "display": "Active"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "verificationStatus": "differential",
+  "_verificationStatus": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "410590009",
+              "display": "Known possible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "282291009",
+          "display": "Diagnosis"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "323321000119100",
+        "display": "Artrose van rechter kniegewricht"
+      }
+    ]
+  },
+  "bodySite": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "24028007",
+                "display": "Right"
+              }
+            ]
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "735264009",
+          "display": "Rechter knie"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "onsetDateTime": "2018-08-05",
+  "abatementDateTime": "2022-12-12",
+  "note": [
+    {
+      "text": "Pijn bij normale belasting"
+    }
+  ]
+}

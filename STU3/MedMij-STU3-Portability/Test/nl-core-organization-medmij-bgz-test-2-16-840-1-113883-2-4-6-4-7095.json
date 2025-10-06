@@ -1,0 +1,84 @@
+{
+  "resourceType": "Organization",
+  "id": "core-organization-medmij-bgz-test-2-16-840-1-113883-2-4-6-4-7095",
+  "meta": {
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Organisatie. Id: 7095 (UZOVI)</caption><tbody><tr><th>Naam</th><td>VGZ Zorgverzekeraar N.V.</td></tr><tr><th>Contactgegevens</th><td><a href=\"tel:098-7654321\">098-7654321</a> (Vast telefoonnummer Werk)</td></tr><tr><th>Adres</th><td>Nieuwe Stationstraat 12, 6811KS Arnhem Arnhem, NLD</td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/uzovi",
+      "value": "7095"
+    }
+  ],
+  "name": "VGZ Zorgverzekeraar N.V.",
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                "code": "LL",
+                "display": "Land Line"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "098-7654321",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "type": "postal",
+      "line": [
+        "Nieuwe Stationstraat 12"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Nieuwe Stationstraat"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "12"
+            }
+          ]
+        }
+      ],
+      "city": "Arnhem",
+      "district": "Arnhem",
+      "postalCode": "6811KS",
+      "country": "NLD",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "version": "1.0.3166.1.2.2",
+                  "code": "NLD",
+                  "display": "Nederland"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

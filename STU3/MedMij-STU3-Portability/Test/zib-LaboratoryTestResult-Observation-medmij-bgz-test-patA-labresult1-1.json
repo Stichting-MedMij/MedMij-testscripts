@@ -1,0 +1,115 @@
+{
+  "resourceType": "Observation",
+  "id": "boratoryTestResult-Observation-medmij-bgz-test-patA-labresult1-1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-labResult1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, Status: definitief</caption><tfoot><tr><td colspan=\"4\">Onder referentiewaarden</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td colspan=\"3\">08:50:00, 12 mei 2019</td></tr><tr><th>Methode</th><td colspan=\"3\"><span title=\"Dillution (272390001 - SNOMED CT)\">Dillution</span></td></tr><tr><th>Specimen</th><td colspan=\"3\">Bloed</td></tr><tr><th>Code</th><th>Waarde</th><th>Interpretatie</th><th>Referentiewaarden</th></tr><tr><td><span title=\"Hemoglobine [mol/volume] in bloed (10346-5 - LOINC)\">Hemoglobine [mol/volume] in bloed</span></td><td>7.2 mmol/L</td><td><span title=\"Low (L - v2/0078)\">Low</span></td><td><div><span title=\"Normal Range (normal - referencerange-meaning)\">Normal Range</span> 7.4 mmol/L - 9.9 mmol/L</div></td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-labResult1"
+    }
+  ],
+  "status": "final",
+  "_status": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1",
+              "code": "final",
+              "display": "Final"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "49581000146104",
+          "display": "bevinding betreffende laboratoriumonderzoek"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "10346-5",
+        "display": "Hemoglobine [mol/volume] in bloed"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "effectiveDateTime": "2019-05-12T08:50:00+02:00",
+  "valueQuantity": {
+    "value": 7.2,
+    "unit": "mmol/L",
+    "system": "http://unitsofmeasure.org",
+    "code": "mmol/L"
+  },
+  "interpretation": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v2/0078",
+        "code": "L",
+        "display": "Low"
+      }
+    ]
+  },
+  "comment": "Onder referentiewaarden",
+  "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "272390001",
+        "display": "Dillution"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/oryTestResult-Specimen-Isolate-medmij-bgz-test-patA-labresult1-1",
+    "display": "Bloed"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 7.4,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      },
+      "high": {
+        "value": 9.9,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/referencerange-meaning",
+            "code": "normal",
+            "display": "Normal Range"
+          }
+        ]
+      }
+    }
+  ]
+}

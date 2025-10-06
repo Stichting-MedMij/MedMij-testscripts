@@ -1,0 +1,38 @@
+{
+  "resourceType": "Medication",
+  "id": "zib-Product-medmij-bgz-test-patA-product2",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Product"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tbody><tr><th>Code</th><td><span title=\"Ibuprofen 600mg (2613093 - G-Standaard HPK)\">Ibuprofen 600mg</span></td><th>Form</th><td><span title=\"Tablet (230 - G-Standaard tabel 902 thesaurus 0006)\">Tablet</span></td></tr></tbody></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Product-Description",
+      "valueString": "600mg ibuprofen filmomhulde tabletten"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.4.7",
+        "code": "2613093",
+        "display": "Ibuprofen 600mg"
+      }
+    ],
+    "text": "Ibuprofen 600mg"
+  },
+  "form": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.4.11",
+        "code": "230",
+        "display": "Tablet"
+      }
+    ]
+  }
+}

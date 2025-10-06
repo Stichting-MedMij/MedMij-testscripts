@@ -1,0 +1,96 @@
+{
+  "resourceType": "Appointment",
+  "id": "eAfspraak-Appointment-medmij-bgz-test-patA-plannedencounter2",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/eAfspraak-Appointment"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Afspraak. Id: patA-encounter4 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Status: voorgesteld</caption><tbody><tr><th>Type</th><td><span title=\"Inpatient (IMP - v3/ActCode)\">Inpatient</span></td></tr><tr><th>Timing</th><td>2025-07-25 - 2025-07-25</td></tr><tr><th>Deelnemers</th><td><ul><li>geaccepteerd - Anouk A. Anouk van XXX_Rijn de XXX_Vries</li><li>geaccepteerd - Olivier Ruben O.R. Olivier de Rijcke || Orthopedisch chirurg || Ziekenhuis het Hogeland<ul><li><span title=\"Performer (PRF - v3/ParticipationType)\">Performer</span></li></ul></li><li>geaccepteerd - Ziekenhuis het Hogeland</li></ul></td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-encounter4"
+    }
+  ],
+  "status": "proposed",
+  "_status": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActStatus",
+              "code": "new",
+              "display": "Ordered"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "appointmentType": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/ActCode",
+        "code": "IMP",
+        "display": "Inpatient"
+      }
+    ]
+  },
+  "indication": [
+    {
+      "reference": "Condition/zib-Problem-medmij-bgz-test-patA-problem5",
+      "display": "Artrose van linker kniegewricht"
+    }
+  ],
+  "start": "2025-07-25T00:00:00+00:00",
+  "end": "2025-07-25T00:00:00+00:00",
+  "participant": [
+    {
+      "actor": {
+        "reference": "Patient/medmij-bgz-test-patA",
+        "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+      },
+      "status": "accepted"
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/ParticipationType",
+              "code": "PRF",
+              "display": "Performer"
+            }
+          ]
+        }
+      ],
+      "actor": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+            "valueReference": {
+              "reference": "PractitionerRole/nl-core-practitionerrole-medmij-bgz-test-0300000101-03206000001",
+              "display": "Olivier Ruben O.R. Olivier de Rijcke || Orthopedisch chirurg || Ziekenhuis het Hogeland"
+            }
+          }
+        ],
+        "reference": "Practitioner/-practitioner-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-03000001",
+        "display": "Olivier Ruben O.R. Olivier de Rijcke"
+      },
+      "status": "accepted"
+    },
+    {
+      "actor": {
+        "reference": "Location/core-location-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-06000001",
+        "display": "Ziekenhuis het Hogeland"
+      },
+      "status": "accepted"
+    }
+  ]
+}

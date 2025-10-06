@@ -1,0 +1,115 @@
+{
+  "resourceType": "Observation",
+  "id": "boratoryTestResult-Observation-medmij-bgz-test-patA-labresult1-2",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-labResult1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, Status: definitief</caption><tfoot><tr><td colspan=\"4\">Binnen referentiewaarden</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td colspan=\"3\">08:45:00, 12 mei 2019</td></tr><tr><th>Methode</th><td colspan=\"3\"><span title=\"Turbidimetrie (83611000052104 - SNOMED CT)\">Turbidimetrie</span></td></tr><tr><th>Specimen</th><td colspan=\"3\">Bloed</td></tr><tr><th>Code</th><th>Waarde</th><th>Interpretatie</th><th>Referentiewaarden</th></tr><tr><td><span title=\"Ferritine [massa/volume] in bloed (24373-3 - LOINC)\">Ferritine [massa/volume] in bloed</span></td><td>73 ng/ml</td><td><span title=\"Intermediate (I - v2/0078)\">Intermediate</span></td><td><div><span title=\"Normal Range (normal - referencerange-meaning)\">Normal Range</span> 20 ng/ml - 100 ng/ml</div></td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-labResult1"
+    }
+  ],
+  "status": "final",
+  "_status": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1",
+              "code": "final",
+              "display": "Final"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "49581000146104",
+          "display": "bevinding betreffende laboratoriumonderzoek"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "24373-3",
+        "display": "Ferritine [massa/volume] in bloed"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "effectiveDateTime": "2019-05-12T08:45:00+02:00",
+  "valueQuantity": {
+    "value": 73,
+    "unit": "ng/ml",
+    "system": "http://unitsofmeasure.org",
+    "code": "ng/ml"
+  },
+  "interpretation": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v2/0078",
+        "code": "I",
+        "display": "Intermediate"
+      }
+    ]
+  },
+  "comment": "Binnen referentiewaarden",
+  "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "83611000052104",
+        "display": "Turbidimetrie"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/oryTestResult-Specimen-Isolate-medmij-bgz-test-patA-labresult1-1",
+    "display": "Bloed"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 20,
+        "unit": "ng/ml",
+        "system": "http://unitsofmeasure.org",
+        "code": "ng/ml"
+      },
+      "high": {
+        "value": 100,
+        "unit": "ng/ml",
+        "system": "http://unitsofmeasure.org",
+        "code": "ng/ml"
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/referencerange-meaning",
+            "code": "normal",
+            "display": "Normal Range"
+          }
+        ]
+      }
+    }
+  ]
+}

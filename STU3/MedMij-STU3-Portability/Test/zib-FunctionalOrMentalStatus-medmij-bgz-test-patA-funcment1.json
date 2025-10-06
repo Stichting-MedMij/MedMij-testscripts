@@ -1,0 +1,66 @@
+{
+  "resourceType": "Observation",
+  "id": "zib-FunctionalOrMentalStatus-medmij-bgz-test-patA-funcment1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-FunctionalOrMentalStatus"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-funcstat1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Categorie: <span title=\"bevinding betreffende mentale toestand, gedrag en/of psychosociaal functioneren (384821006 - SNOMED CT)\">bevinding betreffende mentale toestand, gedrag en/of psychosociaal functioneren</span>, Status: definitief</caption><tfoot><tr><td colspan=\"2\">Pijn bij normale belasting van rechterknie</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>Vanaf 5 augustus 2018</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><th>Medisch hulpmiddel</th><td>Krukken Verstelbare elleboogkrukken met gesloten manchet</td></tr><tr><td><span title=\"Verminderde mobiliteit (8510008 - SNOMED CT)\">Verminderde mobiliteit</span></td><td><span title=\"Intermediair (11896004 - SNOMED CT)\">Intermediair</span></td></tr></tbody></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-FunctionalOrMentalStatus-MedicalDevice",
+      "valueReference": {
+        "reference": "DeviceUseStatement/zib-MedicalDevice-medmij-bgz-test-patA-medDevice1",
+        "display": "Krukken Verstelbare elleboogkrukken met gesloten manchet"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-funcstat1"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "384821006",
+          "display": "bevinding betreffende mentale toestand, gedrag en/of psychosociaal functioneren"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "8510008",
+        "display": "Verminderde mobiliteit"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "effectivePeriod": {
+    "start": "2018-08-05"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "11896004",
+        "display": "Intermediair"
+      }
+    ]
+  },
+  "comment": "Pijn bij normale belasting van rechterknie"
+}

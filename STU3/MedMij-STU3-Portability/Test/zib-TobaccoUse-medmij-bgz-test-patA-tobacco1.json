@@ -1,0 +1,102 @@
+{
+  "resourceType": "Observation",
+  "id": "zib-TobaccoUse-medmij-bgz-test-patA-tobacco1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-TobaccoUse"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-TobaccoUse1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Status: definitief</caption><tfoot><tr><td colspan=\"2\">Zelf gestopt maar partner rookt nog</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>2005 - 2015</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"bevinding betreffende tabakgebruik en blootstelling aan tabaksrook (365980008 - SNOMED CT)\">bevinding betreffende tabakgebruik en blootstelling aan tabaksrook</span></td><td><span title=\"Ex-smoker (finding) (8517006 - SNOMED CT)\">Ex-smoker (finding)</span></td></tr><tr><td><span title=\"type tabak gebruikt (53661000146106 - SNOMED CT)\">type tabak gebruikt</span></td><td><span title=\"Rolls own cigarettes (finding) (160619003 - SNOMED CT)\">Rolls own cigarettes (finding)</span></td></tr><tr><td><span title=\"hoeveelheid en type tabak gerookt (266918002 - SNOMED CT)\">hoeveelheid en type tabak gerookt</span></td><td>15 Sigaretten per dag</td></tr><tr><td><span title=\"pakjaren (401201003 - SNOMED CT)\">pakjaren</span></td><td>8 {PackYears}</td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-TobaccoUse1"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "365980008",
+        "display": "bevinding betreffende tabakgebruik en blootstelling aan tabaksrook"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "effectivePeriod": {
+    "start": "2005",
+    "end": "2015"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "8517006",
+        "display": "Ex-smoker (finding)"
+      }
+    ]
+  },
+  "comment": "Zelf gestopt maar partner rookt nog",
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "53661000146106",
+            "display": "type tabak gebruikt"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "160619003",
+            "display": "Rolls own cigarettes (finding)"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "266918002",
+            "display": "hoeveelheid en type tabak gerookt"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 15,
+        "unit": "Sigaretten per dag",
+        "system": "http://unitsofmeasure.org",
+        "code": "{Sigaretten per dag}"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "401201003",
+            "display": "pakjaren"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 8,
+        "system": "http://unitsofmeasure.org",
+        "code": "{PackYears}"
+      }
+    }
+  ]
+}

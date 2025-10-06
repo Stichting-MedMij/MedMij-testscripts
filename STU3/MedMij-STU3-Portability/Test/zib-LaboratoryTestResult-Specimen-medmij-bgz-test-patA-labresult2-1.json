@@ -1,0 +1,78 @@
+{
+  "resourceType": "Specimen",
+  "id": "-LaboratoryTestResult-Specimen-medmij-bgz-test-patA-labresult2-1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Specimen"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Specimen. Subject: Toilet. Id: Specimen2 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7)</caption><tbody><tr><th>Type</th><td><span title=\"Feces (39477002 - SNOMED CT)\">Feces</span></td></tr><tr><th>Ontvangen</th><td>08:30:00, 12 mei 2019</td></tr><tr><th>Inzameling</th><td>08:15:00, 12 mei 2019<div>Methode: <span title=\"Verkrijgingstechniek onbekend (62801000146108 - SNOMED CT)\">Verkrijgingstechniek onbekend</span></div></td></tr><tr><th>Container</th><td><div>Id: Specimen2-1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7)</div><div>Type: <span title=\"Monsterpotje (434746001 - SNOMED CT)\">Monsterpotje</span></div></td></tr></tbody></table></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Device",
+      "id": "d56e426",
+      "meta": {
+        "profile": [
+          "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct"
+        ]
+      },
+      "type": {
+        "text": "Toilet"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "Specimen2"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "39477002",
+        "display": "Feces"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "#d56e426",
+    "display": "Toilet"
+  },
+  "receivedTime": "2019-05-12T08:30:00+02:00",
+  "collection": {
+    "collectedDateTime": "2019-05-12T08:15:00+02:00",
+    "method": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "62801000146108",
+          "display": "Verkrijgingstechniek onbekend"
+        }
+      ]
+    }
+  },
+  "container": [
+    {
+      "identifier": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+          "value": "Specimen2-1"
+        }
+      ],
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "434746001",
+            "display": "Monsterpotje"
+          }
+        ]
+      }
+    }
+  ]
+}

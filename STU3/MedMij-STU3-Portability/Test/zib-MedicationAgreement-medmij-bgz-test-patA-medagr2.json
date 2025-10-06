@@ -1,0 +1,191 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "zib-MedicationAgreement-medmij-bgz-test-patA-medagr2",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationAgreement"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Medicatieafspraak. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: 6c000b5e-cebf-41f1-b7fb-5a470b498a19 (http://example-implementer.com/fhir/MedicationRequest-ID), Categorie: <span title=\"Voorschrijven (verrichting) (16076005 - SNOMED CT)\">Voorschrijven (verrichting)</span>, <span style=\"display: block;\">Intentie: aanvraag</span><span style=\"display: block;\">Aangevraagd door: Franciscus Dominicus Antonius F.D.A. Frans Pleijster<span style=\"display: block;\">Zorgverlenerrol: Huisarts</span></span></caption><tfoot><tr><td colspan=\"2\">Voor gebruik tot maximaal 3 weken na plaatsing kunstknie</td></tr></tfoot><tbody><tr><th colspan=\"2\">Medicatie is gestopt: <span title=\"Definitief (2 - 2.16.840.1.113883.2.4.3.11.60.20.77.5.2.1)\">Definitief</span></th></tr><tr><th>Medicatie</th><td>Ibuprofen 600mg</td></tr><tr><th>Ondersteunende informatie</th><td><div><span title=\"Medische noodzaak (4 - 2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2050)\">Medische noodzaak</span></div></td></tr><tr><th>Gemaakt</th><td>11:00:00, 28 november 2022</td></tr><tr><th>Reden</th><td><ul><li><span title=\"Geplande procedure (15 - 2.16.840.1.113883.2.4.3.11.60.20.77.5.2.2)\">Geplande procedure</span></li><li>Artrose van rechter kniegewricht</li></ul></td></tr><tr><th>Herhaalperiode cyclisch schedule</th><td>8 dagen</td></tr><tr><th>Gebruiksduur</th><td>28 november 2022 00:00:00 - 12 december 2022 23:59:59</td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Tekst: Gedurende 24 dagen, cyclus van 8 dagen: steeds gedurende 7 dagen, elke 4 uur één tablet, zo nodig één tablet extra, oraal</div><div>Instructie: Na 7 dagen één dag niet gebruiken</div><div>Timing: <div>21 dagen, 4 uren</div></div><div>Toedieningsweg: <span title=\"Oraal (9 - G-Standaard thesaurus subtabel 0007)\">Oraal</span></div><div>Dosering: 600 mg</div></td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Zo nodig: <span title=\"Bij pijn (1028 - NHG Tabel 25 B-codes)\">Bij pijn</span></div><div>Dosering:  - 600 mg</div><div>Max dosering: 600 mg / 1 dag (per period)</div></td></tr></tbody></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-PeriodOfUse",
+      "valuePeriod": {
+        "start": "2022-11-28T00:00:00+02:00",
+        "end": "2022-12-12T23:59:59+02:00"
+      }
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-AdditionalInformation",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2050",
+            "code": "4",
+            "display": "Medische noodzaak"
+          }
+        ]
+      }
+    }
+  ],
+  "modifierExtension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-StopType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.1",
+            "code": "2",
+            "display": "Definitief"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-RepeatPeriodCyclicalSchedule",
+      "valueDuration": {
+        "value": 8,
+        "unit": "dagen",
+        "system": "http://unitsofmeasure.org",
+        "code": "d"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://example-implementer.com/fhir/MedicationRequest-ID",
+      "value": "6c000b5e-cebf-41f1-b7fb-5a470b498a19"
+    }
+  ],
+  "intent": "order",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "16076005",
+        "display": "Voorschrijven (verrichting)"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "Medication/zib-Product-medmij-bgz-test-patA-product2",
+    "display": "Ibuprofen 600mg"
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "authoredOn": "2022-11-28T11:00:00+02:00",
+  "requester": {
+    "agent": {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+          "valueReference": {
+            "reference": "PractitionerRole/nl-core-practitionerrole-medmij-bgz-test-0100000201-01501000001",
+            "display": "Huisarts"
+          }
+        }
+      ],
+      "reference": "Practitioner/-practitioner-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-01000002",
+      "display": "Franciscus Dominicus Antonius F.D.A. Frans Pleijster"
+    }
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.2",
+          "code": "15",
+          "display": "Geplande procedure"
+        }
+      ]
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/zib-Problem-medmij-bgz-test-patA-problem2",
+      "display": "Artrose van rechter kniegewricht"
+    }
+  ],
+  "note": [
+    {
+      "text": "Voor gebruik tot maximaal 3 weken na plaatsing kunstknie"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "sequence": 1,
+      "text": "Gedurende 24 dagen, cyclus van 8 dagen: steeds gedurende 7 dagen, elke 4 uur één tablet, zo nodig één tablet extra, oraal",
+      "additionalInstruction": [
+        {
+          "text": "Na 7 dagen één dag niet gebruiken"
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "boundsDuration": {
+            "value": 21,
+            "unit": "dagen",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          },
+          "period": 4,
+          "periodUnit": "h"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+            "code": "9",
+            "display": "Oraal"
+          }
+        ]
+      },
+      "doseQuantity": {
+        "value": 600,
+        "unit": "mg",
+        "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+        "code": "229"
+      }
+    },
+    {
+      "sequence": 1,
+      "asNeededCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.4.5",
+            "code": "1028",
+            "display": "Bij pijn"
+          }
+        ]
+      },
+      "doseRange": {
+        "high": {
+          "value": 600,
+          "unit": "mg",
+          "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+          "code": "229"
+        }
+      },
+      "maxDosePerPeriod": {
+        "numerator": {
+          "value": 600,
+          "unit": "mg",
+          "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+          "code": "229"
+        },
+        "denominator": {
+          "value": 1,
+          "unit": "dag",
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        }
+      }
+    }
+  ]
+}

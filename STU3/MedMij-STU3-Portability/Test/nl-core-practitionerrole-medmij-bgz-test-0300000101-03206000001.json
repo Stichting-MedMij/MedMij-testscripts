@@ -1,0 +1,64 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "nl-core-practitionerrole-medmij-bgz-test-0300000101-03206000001",
+  "meta": {
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Zorgverlenerrol. Id: PatA-HealtcareProf2 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7)</caption><tbody><tr><th>Zorgverlener</th><td><div>Olivier Ruben O.R. Olivier de Rijcke</div><div>Ziekenhuis het Hogeland</div></td></tr><tr><th>Specialisme</th><td><span title=\"Orthopedisch chirurg (01.032 - http://fhir.nl/fhir/NamingSystem/uzi-rolcode)\">Orthopedisch chirurg</span></td></tr><tr><th>Contactgegevens</th><td><div><a href=\"tel:012-3456789\">012-3456789</a> (Vast telefoonnummer Werk)</div><div><a href=\"mailto:Fictieve.Chirurg@HetHogeland.nl\">Fictieve.Chirurg@HetHogeland.nl</a> (E-mail Werk)</div></td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "PatA-HealtcareProf2"
+    }
+  ],
+  "practitioner": {
+    "reference": "Practitioner/-practitioner-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-03000001",
+    "display": "Olivier Ruben O.R. Olivier de Rijcke"
+  },
+  "organization": {
+    "reference": "Organization/-organization-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-06000001",
+    "display": "Ziekenhuis het Hogeland"
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.nl/fhir/NamingSystem/uzi-rolcode",
+          "code": "01.032",
+          "display": "Orthopedisch chirurg"
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                "code": "LL",
+                "display": "Land Line"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "012-3456789",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "Fictieve.Chirurg@HetHogeland.nl",
+      "use": "work"
+    }
+  ]
+}

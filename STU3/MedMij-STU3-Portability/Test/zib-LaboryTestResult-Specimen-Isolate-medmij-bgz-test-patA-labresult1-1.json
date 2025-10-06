@@ -1,0 +1,140 @@
+{
+  "resourceType": "Specimen",
+  "id": "oryTestResult-Specimen-Isolate-medmij-bgz-test-patA-labresult1-1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Specimen-Isolate"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Specimen. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: Specimen1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7)</caption><tfoot><tr><td colspan=\"2\">Twee buisjes van 10ml. één nuchter en één 's avonds</td></tr></tfoot><tbody><tr><th>Type</th><td><span title=\"Staphylococcus aureus (3092008 - SNOMED CT)\">Staphylococcus aureus</span></td></tr><tr><th>Container</th><td><div>Id: Specimen1-1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7)</div><div>Type: <span title=\"Container voor bloed- of weefselopslag of -kweek (700957004 - SNOMED CT)\">Container voor bloed- of weefselopslag of -kweek</span></div></td></tr></tbody></table></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Specimen",
+      "id": "d56e75",
+      "meta": {
+        "profile": [
+          "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Specimen"
+        ]
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "87612001",
+            "display": "Bloed"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "Patient/medmij-bgz-test-patA",
+        "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+      },
+      "receivedTime": "2019-05-12T08:30:00+02:00",
+      "collection": {
+        "collectedDateTime": "2019-05-12T08:15:00+02:00",
+        "quantity": {
+          "value": 20,
+          "unit": "ml",
+          "system": "http://unitsofmeasure.org",
+          "code": "ml"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "22778000",
+              "display": "Venapunctie"
+            }
+          ]
+        },
+        "bodySite": {
+          "extension": [
+            {
+              "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "24028007",
+                    "display": "Right"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Morphology",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "399881009",
+                    "display": "Afwijkende vasculaire verbinding (afwijkende morfologie)"
+                  }
+                ]
+              }
+            }
+          ],
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "76248009",
+              "display": "Gehele regio cubiti"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "Specimen1"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "3092008",
+        "display": "Staphylococcus aureus"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "parent": [
+    {
+      "reference": "#d56e75",
+      "display": "87612001: Bloed"
+    }
+  ],
+  "container": [
+    {
+      "identifier": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+          "value": "Specimen1-1"
+        }
+      ],
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "700957004",
+            "display": "Container voor bloed- of weefselopslag of -kweek"
+          }
+        ]
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Twee buisjes van 10ml. één nuchter en één 's avonds"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "resourceType": "MedicationDispense",
+  "id": "zib-AdministrationAgreement-medmij-bgz-test-patA-admagr1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-AdministrationAgreement"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toedieningsafspraak. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-AdminAgreement1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Categorie: <span title=\"instrueren door zorgverlener over toediening van medicatie (verrichting) (422037009 - SNOMED CT)\">instrueren door zorgverlener over toediening van medicatie (verrichting)</span>, Status: voltooid<span style=\"display: block;\">Uitvoerende: Petrus P. Peter Poeder<span style=\"display: block;\">Zorgverlenerrol: Apotheker</span></span></caption><tbody><tr><th colspan=\"2\">Medicatie is gestopt: <span title=\"Tijdelijk (1 - 2.16.840.1.113883.2.4.3.11.60.20.77.5.2.1)\">Tijdelijk</span></th></tr><tr><th>Gemaakt</th><td>10:00:00, 28 november 2022</td></tr><tr><th>Medicatie</th><td>Apixaban 2.5mg</td></tr><tr><th>Gebruiksduur</th><td><ul><li>Vanaf 00:00:00, 28 november 2022</li><li>14 dagen</li></ul></td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Tekst: Vanaf 28 november, gedurende 14 dagen, 2 maal per dag 1T, oraal</div><div>Timing: <div>14 dagen, MORN, NIGHT</div></div><div>Toedieningsweg: <span title=\"Oraal (9 - G-Standaard thesaurus subtabel 0007)\">Oraal</span></div><div>Dosering: 2.5 mg</div></td></tr></tbody></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AdministrationAgreement-AuthoredOn",
+      "valueDateTime": "2022-11-28T10:00:00+02:00"
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AdministrationAgreement-AgreementReason",
+      "valueString": "Plaatsing Knieprothese"
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-PeriodOfUse",
+      "valuePeriod": {
+        "start": "2022-11-28T00:00:00+02:00"
+      }
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Duration",
+      "valueDuration": {
+        "value": 14,
+        "unit": "dagen",
+        "system": "http://unitsofmeasure.org",
+        "code": "d"
+      }
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-AdditionalInformation",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.999",
+            "code": "10",
+            "display": "Gebruiksinstructie gegeven"
+          }
+        ]
+      }
+    }
+  ],
+  "modifierExtension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-StopType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.1",
+            "code": "1",
+            "display": "Tijdelijk"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-AdminAgreement1"
+    }
+  ],
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "422037009",
+        "display": "instrueren door zorgverlener over toediening van medicatie (verrichting)"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "Medication/zib-Product-medmij-bgz-test-patA-product1",
+    "display": "Apixaban 2.5mg"
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "performer": [
+    {
+      "actor": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+            "valueReference": {
+              "reference": "PractitionerRole/nl-core-practitionerrole-medmij-bgz-test-0200000117-00006000001",
+              "display": "Apotheker"
+            }
+          }
+        ],
+        "reference": "Practitioner/-practitioner-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-02000001",
+        "display": "Petrus P. Peter Poeder"
+      }
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "sequence": 1,
+      "text": "Vanaf 28 november, gedurende 14 dagen, 2 maal per dag 1T, oraal",
+      "timing": {
+        "repeat": {
+          "boundsDuration": {
+            "value": 14,
+            "unit": "dagen",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          },
+          "when": [
+            "MORN",
+            "NIGHT"
+          ]
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+            "code": "9",
+            "display": "Oraal"
+          }
+        ]
+      },
+      "doseQuantity": {
+        "value": 2.5,
+        "unit": "mg",
+        "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+        "code": "229"
+      }
+    }
+  ]
+}

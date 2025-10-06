@@ -1,0 +1,51 @@
+{
+  "resourceType": "Coverage",
+  "id": "zib-Payer-medmij-bgz-test-patB-payer1-1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Payer"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Verzekering/garantstelling. Id: patB-payer (urn:oid:2.16.840.1.113883.2.4.3.11.999.7)</caption><tbody><tr><th>verzekerde</th><td>Joeri J. Joeri XXX_Hoff</td></tr><tr><th>Betaler</th><td>J. XXX_Hoff<div><div>Bank naam: ABN Bank</div><div>Rekeningnummer: NL64ABNC0417164300</div>Bank code: ABNANL2A</div></td></tr><tr><th>begunstigde</th><td>Joeri J. Joeri XXX_Hoff</td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patB-payer"
+    }
+  ],
+  "subscriber": {
+    "reference": "Patient/medmij-bgz-test-patB",
+    "display": "Joeri J. Joeri XXX_Hoff"
+  },
+  "beneficiary": {
+    "reference": "Patient/medmij-bgz-test-patB",
+    "display": "Joeri J. Joeri XXX_Hoff"
+  },
+  "payor": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "BankName",
+              "valueString": "ABN Bank"
+            },
+            {
+              "url": "AccountNumber",
+              "valueString": "NL64ABNC0417164300"
+            },
+            {
+              "url": "Bankcode",
+              "valueString": "ABNANL2A"
+            }
+          ],
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation"
+        }
+      ],
+      "display": "J. XXX_Hoff"
+    }
+  ]
+}

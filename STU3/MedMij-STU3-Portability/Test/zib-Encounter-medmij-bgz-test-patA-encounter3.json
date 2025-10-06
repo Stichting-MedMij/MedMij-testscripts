@@ -1,0 +1,104 @@
+{
+  "resourceType": "Encounter",
+  "id": "zib-Encounter-medmij-bgz-test-patA-encounter3",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Contact. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-encounter3 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Status: voltooid</caption><tbody><tr><th>Type contact</th><td><div><span title=\"Inpatient (IMP - v3/ActCode)\">Inpatient</span></div></td></tr><tr><th>Periode</th><td>30 november 2022</td></tr><tr><th>Reden</th><td>Nabloeding</td></tr><tr><th>Participant</th><td><div><span title=\"Performer (PRF - v3/ParticipationType)\">Performer</span> - Olivier Ruben O.R. Olivier de Rijcke || Orthopedisch chirurg || Ziekenhuis het Hogeland</div></td></tr><tr><th>Zorgaanbieder</th><td>Ziekenhuis het Hogeland</td></tr><tr><th>Opnamegegevens</th><td><ul><li>Opname vanuit: <span title=\"Home (264362003 - SNOMED CT)\">Home</span></li><li>Ontslagwijze: <span title=\"Home (264362003 - SNOMED CT)\">Home</span></li></ul></td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-encounter3"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActCode",
+              "code": "IMP",
+              "display": "Inpatient"
+            }
+          ]
+        }
+      }
+    ],
+    "system": "http://hl7.org/fhir/v3/ActCode",
+    "code": "IMP",
+    "display": "Inpatient"
+  },
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/ParticipationType",
+              "code": "PRF",
+              "display": "Performer"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+            "valueReference": {
+              "reference": "PractitionerRole/nl-core-practitionerrole-medmij-bgz-test-0300000101-03206000001",
+              "display": "Olivier Ruben O.R. Olivier de Rijcke || Orthopedisch chirurg || Ziekenhuis het Hogeland"
+            }
+          }
+        ],
+        "reference": "Practitioner/-practitioner-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-03000001",
+        "display": "Olivier Ruben O.R. Olivier de Rijcke"
+      }
+    }
+  ],
+  "period": {
+    "start": "2022-11-30",
+    "end": "2022-11-30"
+  },
+  "reason": [
+    {
+      "text": "Nabloeding"
+    }
+  ],
+  "hospitalization": {
+    "admitSource": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "264362003",
+          "display": "Home"
+        }
+      ]
+    },
+    "dischargeDisposition": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "264362003",
+          "display": "Home"
+        }
+      ]
+    }
+  },
+  "serviceProvider": {
+    "reference": "Organization/-organization-medmij-bgz-test-2-16-840-1-113883-2-4-6-1-06000001",
+    "display": "Ziekenhuis het Hogeland"
+  }
+}

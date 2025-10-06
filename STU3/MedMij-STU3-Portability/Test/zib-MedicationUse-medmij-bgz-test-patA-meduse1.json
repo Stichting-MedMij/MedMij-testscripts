@@ -1,0 +1,119 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "zib-MedicationUse-medmij-bgz-test-patA-meduse1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>MedicationStatement. Subject: Anouk A. Anouk van XXX_Rijn de XXX_Vries. Id: patA-MedUse1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Categorie: <span title=\"Medicatiegebruik (6 - 2.16.840.1.113883.2.4.3.11.60.20.77.5.3)\">Medicatiegebruik</span>, Status: in de wacht</caption><tfoot><tr><td colspan=\"2\">Volgens afspraak 2 weken na plaatsing kunstknie gestopt met medicatie</td></tr></tfoot><tbody><tr><th>Voorschrijver</th><td>Huisarts</td></tr><tr><th>Medicatie</th><td>Apixaban 2.5mg</td></tr><tr><th>Datum/tijd</th><td>Vanaf 00:00:00, 28 november 2022, 14 dagen</td></tr><tr><th>Informant</th><td>10:00:00, 28 november 2022</td></tr><tr><th>Dosering</th><td><div>Volgnummer: 1</div><div>Tekst: Vanaf 28 november, gedurende 14 dagen, 2 maal per dag 1T, oraal</div><div>Timing: <div>14 dagen, MORN, NIGHT</div></div><div>Toedieningsweg: <span title=\"Oraal (9 - G-Standaard thesaurus subtabel 0007)\">Oraal</span></div><div>Dosering: 2.5 mg</div></td></tr><tr><th>Medicatie gebruikt</th><td>ja. Reden voor wijzigen of stoppen: <span title=\"Volgens afspraak (13 - 2.16.840.1.113883.2.4.3.11.60.20.77.5.2.2)\">Volgens afspraak</span></td></tr><tr><th>Reden voor medicatie</th><td>Plaatsing Knieprothese</td></tr></tbody></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Prescriber",
+      "valueReference": {
+        "reference": "PractitionerRole/nl-core-practitionerrole-medmij-bgz-test-0100000201-01501000001",
+        "display": "Huisarts"
+      }
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-ReasonForChangeOrDiscontinuationOfUse",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.2",
+            "code": "13",
+            "display": "Volgens afspraak"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7",
+      "value": "patA-MedUse1"
+    }
+  ],
+  "status": "on-hold",
+  "category": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3",
+        "code": "6",
+        "display": "Medicatiegebruik"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "Medication/zib-Product-medmij-bgz-test-patA-product1",
+    "display": "Apixaban 2.5mg"
+  },
+  "effectivePeriod": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Duration",
+        "valueDuration": {
+          "value": 14,
+          "unit": "dagen",
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        }
+      }
+    ],
+    "start": "2022-11-28T00:00:00+02:00"
+  },
+  "dateAsserted": "2022-11-28T10:00:00+02:00",
+  "subject": {
+    "reference": "Patient/medmij-bgz-test-patA",
+    "display": "Anouk A. Anouk van XXX_Rijn de XXX_Vries"
+  },
+  "taken": "y",
+  "reasonCode": [
+    {
+      "text": "Plaatsing Knieprothese"
+    }
+  ],
+  "note": [
+    {
+      "text": "Volgens afspraak 2 weken na plaatsing kunstknie gestopt met medicatie"
+    }
+  ],
+  "dosage": [
+    {
+      "sequence": 1,
+      "text": "Vanaf 28 november, gedurende 14 dagen, 2 maal per dag 1T, oraal",
+      "timing": {
+        "repeat": {
+          "boundsDuration": {
+            "value": 14,
+            "unit": "dagen",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          },
+          "when": [
+            "MORN",
+            "NIGHT"
+          ]
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+            "code": "9",
+            "display": "Oraal"
+          }
+        ]
+      },
+      "doseQuantity": {
+        "value": 2.5,
+        "unit": "mg",
+        "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+        "code": "229"
+      }
+    }
+  ]
+}
