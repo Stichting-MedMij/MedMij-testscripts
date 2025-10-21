@@ -39,7 +39,7 @@
   "content": [
     {
       "attachment": {
-        "contentType": "text/xml",
+        "contentType": "application/xml",
         "url": "Binary/port-Binary-XXX-Rijn-1-1",
         "title": "Portabiliteitsrapport voor Van XXX_Rijn"
       }
