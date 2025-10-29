@@ -1,6 +1,6 @@
 {
   "resourceType": "DocumentReference",
-  "id": "ImageAvailability-DocumentReference-XXX-AansluittestB-Image-5-2",
+  "id": "ImageAvailability-DocumentReference-Blaak-Report-1-1",
   "meta": {
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/bbs-DocumentReference"
@@ -11,44 +11,39 @@
     {
       "coding": [
         {
-          "code": "18726-0",
-          "system": "http://loinc.org",
-          "display": "Radiology studies (set)"
-        },
-        {
-          "code": "IMAGES",
+          "code": "REPORTS",
           "system": "urn:oid:1.3.6.1.4.1.19376.1.2.6.1",
-          "display": "Images"
+          "display": "Reports"
         }
       ]
     }
   ],
   "masterIdentifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:14206553-b245-4f16-bd9b-78e3b667d879"
+    "value": "urn:uuid:b042e5cc-442d-4abd-840d-57f3c9f86f73"
   },
   "type": {
     "coding": [
       {
-        "code": "77477000",
+        "code": "3511000087103",
         "system": "http://snomed.info/sct",
-        "display": "CT"
+        "display": "röntgenfoto van rechter sleutelbeen"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/ImageAvailability-Patient-XXX-Aansluittest-B",
-    "display": "B. XXX-Aansluittest-B"
+    "reference": "Patient/ImageAvailability-Patient-Blaak",
+    "display": "Pieter Blaak"
   },
-  "date": "2025-01-17T08:44:00+01:00",
+  "date": "2024-05-24T12:00:00+02:00",
   "author": [
     {
-      "reference": "PractitionerRole/ImageAvailability-PractitionerRole-Cardioloog",
-      "display": "Cardioloog"
+      "reference": "PractitionerRole/ImageAvailability-PractitionerRole-De-Pater",
+      "display": "A.C.H. de Pater, Orthopedisch chirurg"
     },
     {
-      "reference": "Organization/ImageAvailability-Organization-CZE-Radiotherapie",
-      "display": "Catharina Ziekenhuis Eindhoven, Radiotherapie, Algemeen ziekenhuis"
+      "reference": "Organization/ImageAvailability-Organization-OLVG",
+      "display": "OLVG, Radiologie, Algemeen ziekenhuis"
     }
   ],
   "securityLabel": [
@@ -65,21 +60,21 @@
   "content": [
     {
       "attachment": {
-        "contentType": "application/dicom+json",
+        "contentType": "application/pdf",
         "language": "nl",
-        "url": "https://examplepacs.xis/wado/studies/1.3.12.2.1107.5.1.7.130290.30000025011708292397300000003/metadata",
-        "title": "MedMij PGO CT",
-        "creation": "2025-01-17T08:44:00+01:00"
+        "url": "Binary/ImageAvailability-Binary-Report-1-1",
+        "title": "Röntgen Clavicula rechts",
+        "creation": "2024-05-24T12:00:00+02:00"
       },
       "format": {
-        "code": "1.2.840.10008.5.1.4.1.1.88.59",
-        "system": "urn.oid:1.2.840.10008.2.6.1"
+        "code": "urn.ihe.rad:PDF",
+        "system": "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
       }
     }
   ],
   "context": {
     "period": {
-      "start": "2025-01-17"
+      "start": "2024-05-23"
     },
     "facilityType": {
       "coding": [
@@ -100,8 +95,8 @@
       ]
     },
     "sourcePatientInfo": {
-      "reference": "Patient/ImageAvailability-Patient-XXX-Aansluittest-B",
-      "display": "B. XXX-Aansluittest-B"
+      "reference": "Patient/ImageAvailability-Patient-Blaak",
+      "display": "Pieter Blaak"
     },
     "related": [
       {
@@ -114,11 +109,11 @@
               }
             ]
           },
-          "system": "urn:oid:2.16.528.1.1023.19.1.1",
-          "value": "EXT-14114",
+          "system": "urn:oid:2.16.528.1.1007.3.3.14332",
+          "value": "RAD-20250212-83472",
           "assigner": {
-            "reference": "Organization/ImageAvailability-Organization-CZE-Radiotherapie",
-            "display": "Catharina Ziekenhuis Eindhoven, Radiotherapie, Algemeen ziekenhuis"
+            "reference": "Organization/ImageAvailability-Organization-OLVG",
+            "display": "OLVG, Radiologie, Algemeen ziekenhuis"
           }
         }
       },
@@ -132,7 +127,8 @@
               }
             ]
           },
-          "value": "1.3.12.2.1107.5.1.7.130290.30000025011708292397300000003"
+          "system": "urn:dicom:uid",
+          "value": "urn:oid:2.16.528.1.1007.3.1.20250212.123456"
         }
       }
     ]

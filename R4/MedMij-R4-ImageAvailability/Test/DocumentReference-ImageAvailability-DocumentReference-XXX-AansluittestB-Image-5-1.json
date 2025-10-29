@@ -1,6 +1,6 @@
 {
   "resourceType": "DocumentReference",
-  "id": "ImageAvailability-DocumentReference-XXX-AansluittestB-Report-5-3",
+  "id": "ImageAvailability-DocumentReference-XXX-AansluittestB-Image-5-1",
   "meta": {
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/bbs-DocumentReference"
@@ -11,28 +11,23 @@
     {
       "coding": [
         {
-          "code": "18726-0",
-          "system": "http://loinc.org",
-          "display": "Radiology studies (set)"
-        },
-        {
-          "code": "REPORTS",
+          "code": "IMAGES",
           "system": "urn:oid:1.3.6.1.4.1.19376.1.2.6.1",
-          "display": "Reports"
+          "display": "Images"
         }
       ]
     }
   ],
   "masterIdentifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:cc9008c2-8a08-457e-a928-c42d43b1efb7"
+    "value": "urn:uuid:a013c0cf-d4f9-4bc5-aa76-ac41347454bd"
   },
   "type": {
     "coding": [
       {
-        "code": "44491008",
+        "code": "77477000",
         "system": "http://snomed.info/sct",
-        "display": "röntgendoorlichting"
+        "display": "CT"
       }
     ]
   },
@@ -40,15 +35,15 @@
     "reference": "Patient/ImageAvailability-Patient-XXX-Aansluittest-B",
     "display": "B. XXX-Aansluittest-B"
   },
-  "date": "2025-02-25T14:07:00+01:00",
+  "date": "2024-08-22T16:45:00+02:00",
   "author": [
     {
-      "reference": "PractitionerRole/ImageAvailability-PractitionerRole-Huisarts",
-      "display": "Huisarts"
+      "reference": "PractitionerRole/ImageAvailability-PractitionerRole-Cardioloog",
+      "display": "Cardioloog"
     },
     {
-      "reference": "Organization/ImageAvailability-Organization-CZE",
-      "display": "Catharina Ziekenhuis Eindhoven, Algemeen ziekenhuis"
+      "reference": "Organization/ImageAvailability-Organization-CZE-Radiotherapie",
+      "display": "Catharina Ziekenhuis Eindhoven, Radiotherapie, Algemeen ziekenhuis"
     }
   ],
   "securityLabel": [
@@ -65,21 +60,32 @@
   "content": [
     {
       "attachment": {
-        "contentType": "application/pdf",
+        "contentType": "application/dicom+json",
         "language": "nl",
-        "url": "Binary/ImageAvailability-Binary-Report-5-3",
-        "title": "CR CWK MedMij",
-        "creation": "2025-02-25T14:07:00+01:00"
+        "url": "https://examplepacs.example.com/wado/studies/1.3.12.2.1107.5.1.7.130290.30000024082216430327200000003/series/1.3.6.1.4.1.40371.1.2.5339.4775.58000.21082.26972.30098.27044/instances/1.3.6.1.4.1.40371.1.2.62771.65477.14037.18246.59242.13152.33179",
+        "title": "MedMij PGO test CT",
+        "creation": "2024-08-22T16:45:00+02:00"
       },
       "format": {
-        "code": "urn.ihe.rad:PDF",
-        "system": "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
+        "code": "1.2.840.10008.5.1.4.1.1.88.59",
+        "system": "http://dicom.nema.org/resources/ontology/DCMUID"
       }
     }
   ],
   "context": {
+    "event": [
+      {
+        "coding": [
+          {
+            "code": "CT",
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "display": "Computed Tomography"
+          }
+        ]
+      }
+    ],
     "period": {
-      "start": "2025-02-25"
+      "start": "2024-08-22"
     },
     "facilityType": {
       "coding": [
@@ -114,11 +120,11 @@
               }
             ]
           },
-          "system": "urn:oid:2.16.528.1.1023.19.1.1",
-          "value": "5003249215",
+          "system": "urn:oid:2.16.840.1.113883.2.4.3.104",
+          "value": "EXT-14117",
           "assigner": {
-            "reference": "Organization/ImageAvailability-Organization-CZE",
-            "display": "Catharina Ziekenhuis Eindhoven, Algemeen ziekenhuis"
+            "reference": "Organization/ImageAvailability-Organization-CZE-Radiotherapie",
+            "display": "Catharina Ziekenhuis Eindhoven, Radiotherapie, Algemeen ziekenhuis"
           }
         }
       },
@@ -132,7 +138,8 @@
               }
             ]
           },
-          "value": "1.2.752.24.7.3059655634.36522"
+          "system": "urn:dicom:uid",
+          "value": "urn:oid:1.3.12.2.1107.5.1.7.130290.30000024082216430327200000003"
         }
       }
     ]
