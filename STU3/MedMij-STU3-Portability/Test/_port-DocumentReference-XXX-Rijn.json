@@ -13,24 +13,14 @@
     "system": "urn:ietf:rfc:3986",
     "value": "urn:uuid:3f9c1d6e-8a4b-4e2a-9c3d-2f1b7e8c9d12"
   },
-  "class": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "371535009",
-        "display": "Verslag van overdracht"
-      }
-    ]
-  },
   "type": {
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "408403008",
-        "display": "Patient held record"
+        "code": "371535009",
+        "display": "verslag van overdracht"
       }
-    ],
-    "text": "Document met samenvatting patiëntinformatie"
+    ]
   },
   "subject": {
     "reference": "Patient/medmij-bgz-test-patA"
