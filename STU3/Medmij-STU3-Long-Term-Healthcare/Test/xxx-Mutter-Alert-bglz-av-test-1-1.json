@@ -1,0 +1,54 @@
+{
+  "resourceType": "Flag",
+  "id": "Alert-bglz-av-test-1-1",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-05-20T02:10:00.774+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Alert"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Attentievlag. Subject: Fiona XXX_Mutter. Categorie: <span title=\"waarschuwing (74018-3 - LOINC)\">waarschuwing</span>, Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Categorie</th>\n            <td>\n              <span title=\"waarschuwing (74018-3 - LOINC)\">waarschuwing</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <td>\n              <span title=\"Drager MRSA (432415000 - SNOMED CT)\">Drager MRSA</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2025-04-30</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "4a95538a-28a3-45c1-9231-7a60f4a26d9a"
+    }
+  ],
+  "status": "active",
+  "category": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "74018-3",
+        "display": "waarschuwing"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "432415000",
+        "display": "Drager MRSA"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-1",
+    "display": "Fiona XXX_Mutter"
+  },
+  "period": {
+    "start": "2025-04-30"
+  }
+}

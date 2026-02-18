@@ -1,0 +1,55 @@
+{
+  "resourceType": "Flag",
+  "id": "Alert-bglz-av-test-1-2",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2025-03-10T06:25:54.458+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Alert"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Attentievlag. Subject: Gea G. XXX_Valk. Categorie: <span title=\"waarschuwing (74018-3 - LOINC)\">waarschuwing</span>, Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Categorie</th>\n            <td>\n              <span title=\"waarschuwing (74018-3 - LOINC)\">waarschuwing</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <td>\n              <span title=\"Anders ernstige claustrofobie (OTH - http://hl7.org/fhir/v3/NullFlavor)\">Anders ernstige claustrofobie</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2025-02-02</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "4438ecfd-b15d-4eb6-82ea-ba379d59d4ec"
+    }
+  ],
+  "status": "active",
+  "category": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "74018-3",
+        "display": "waarschuwing"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/NullFlavor",
+        "code": "OTH",
+        "display": "Anders"
+      }
+    ],
+    "text": "ernstige claustrofobie"
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-2",
+    "display": "Gea G. XXX_Valk"
+  },
+  "period": {
+    "start": "2025-02-02"
+  }
+}

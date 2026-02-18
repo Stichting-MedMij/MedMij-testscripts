@@ -1,0 +1,59 @@
+{
+  "resourceType": "Observation",
+  "id": "LivingSituation-bglz-av-test-1-3",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-02-28T06:51:09.367+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Maria XXX_Molog. Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">woning is op de begane grond</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Finding of residence and accommodation circumstances (finding) (365508006 - SNOMED CT)\">Finding of residence and accommodation circumstances (finding)</span>\n            </td>\n            <td>\n              <span title=\"Aanleunwoning (AANLW - 2.16.840.1.113883.2.4.3.11.60.40.4.13.1)\">Aanleunwoning</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "f966086a-7222-4104-bc0e-e349ca0d80f3"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "365508006",
+        "display": "Finding of residence and accommodation circumstances (finding)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "performer": [
+    {
+      "reference": "Organization/Organization-bglz-av-test-WijZorgen",
+      "display": "WijZorgen Honselerdijk"
+    }
+  ],
+  "effectiveDateTime": "2025-05-15T13:30:00+00:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1",
+        "code": "AANLW",
+        "display": "Aanleunwoning"
+      }
+    ]
+  },
+  "comment": "woning is op de begane grond"
+}

@@ -1,0 +1,55 @@
+{
+  "resourceType": "Flag",
+  "id": "Alert-bglz-av-test-1-3-02",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2025-03-10T06:25:56.019+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Alert"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Attentievlag. Subject: Maria XXX_Molog. Categorie: <span title=\"waarschuwing (74018-3 - LOINC)\">waarschuwing</span>, Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Categorie</th>\n            <td>\n              <span title=\"waarschuwing (74018-3 - LOINC)\">waarschuwing</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <td>verhoogd valrisico</td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2015-03-10</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "ac9f55e2-76ab-48d3-a6a6-8f59038023fb"
+    }
+  ],
+  "status": "active",
+  "category": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "74018-3",
+        "display": "waarschuwing"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/NullFlavor",
+        "code": "OTH",
+        "display": "Anders"
+      }
+    ],
+    "text": "verhoogd valrisico"
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "period": {
+    "start": "2015-03-10"
+  }
+}

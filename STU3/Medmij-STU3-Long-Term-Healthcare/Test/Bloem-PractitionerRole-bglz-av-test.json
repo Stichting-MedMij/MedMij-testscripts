@@ -1,0 +1,37 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "PractitionerRole-bglz-av-test-Bloem",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-02-28T06:59:44.213+00:00",
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgverlenerrol. </caption>\n        <tbody>\n          <tr>\n            <th>Zorgverlener</th>\n            <td>\n              <div>W. Bloem</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Specialisme</th>\n            <td>\n              <span title=\"Ergotherapeuten (8800 - AGB-medisch specialisme)\">Ergotherapeuten</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "practitioner": {
+    "reference": "Practitioner/Practitioner-bglz-av-test-Bloem",
+    "display": "W. Bloem"
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+          "code": "8800",
+          "display": "Ergotherapeuten"
+        }
+      ]
+    }
+  ]
+}

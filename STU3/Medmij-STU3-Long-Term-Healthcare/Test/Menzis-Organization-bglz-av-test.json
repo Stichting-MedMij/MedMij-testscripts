@@ -1,0 +1,29 @@
+{
+  "resourceType": "Organization",
+  "id": "Organization-bglz-av-test-Menzis",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-02-28T06:51:35.127+00:00",
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Organisatie. Id: 3332 (UZOVI)</caption>\n        <tbody>\n          <tr>\n            <th>Naam</th>\n            <td>Menzis</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/uzovi",
+      "value": "3332"
+    }
+  ],
+  "name": "Menzis"
+}

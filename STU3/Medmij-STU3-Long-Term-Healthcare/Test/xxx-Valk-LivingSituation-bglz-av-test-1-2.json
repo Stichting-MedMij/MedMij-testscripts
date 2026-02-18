@@ -1,0 +1,60 @@
+{
+  "resourceType": "Observation",
+  "id": "LivingSituation-bglz-av-test-1-2",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-05-21T02:11:42.17+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Gea G. XXX_Valk Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">woont tijdelijk in hotel</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Finding of residence and accommodation circumstances (finding) (365508006 - SNOMED CT)\">Finding of residence and accommodation circumstances (finding)</span>\n            </td>\n            <td>hotel</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "e5f0efa9-abf1-4c40-a8f8-1bec526e4d81"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "365508006",
+        "display": "Finding of residence and accommodation circumstances (finding)"
+      }
+    ]
+  },
+  "effectiveDateTime": "2025-01-02T10:30:00+00:00",
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-2",
+    "display": "Gea G. XXX_Valk"
+  },
+  "performer": [
+    {
+      "reference": "Organization/Organization-bglz-av-test-WijkverplegingOrg-Zuid",
+      "display": "WijkverplegingOrg Zuid"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/NullFlavor",
+        "code": "OTH",
+        "display": "Anders"
+      }
+    ],
+    "text": "hotel"
+  },
+  "comment": "woont tijdelijk in hotel"
+}

@@ -1,0 +1,135 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Practitioner-bglz-av-test-Pinxteren",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-02-28T06:59:03.595+00:00",
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>\n        <span title=\"Naamsamenstelling: Partnernaam gevolgd door eigennaam\">Nicolaas de Mol-van Pinxteren</span> (Klaas)</div>\n      <div>\n        <a href=\"tel:+31689898989\">+31689898989</a> (,  mobile), <a href=\"tel:+31203232323\">+31203232323</a> (Vast telefoonnummer Werk), <a href=\"mailto:klaas@huisartspraktijk.nl\">klaas@huisartspraktijk.nl</a> (E-mail Werk), <a href=\"mailto:klaas@huisartspraktijk.nl\">klaas@huisartspraktijk.nl</a> (E-mail Werk)</div>\n    </div>"
+  },
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+          "valueCode": "NL3"
+        }
+      ],
+      "text": "Nicolaas de Mol-van Pinxteren",
+      "family": "van Pinxteren-de Mol",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+            "valueString": "van"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Pinxteren"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix",
+            "valueString": "de"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-name",
+            "valueString": "Mol"
+          }
+        ]
+      },
+      "given": [
+        "Nicolaas",
+        "N.",
+        "Klaas"
+      ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "BR"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "IN"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "CL"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/AddressUse",
+                "code": "MC",
+                "display": "Mobiel telefoonnummer"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "+31689898989",
+      "use": "mobile"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                "code": "LL",
+                "display": "Vast telefoonnummer"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "+31203232323",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "klaas@huisartspraktijk.nl",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "klaas@huisartspraktijk.nl",
+      "use": "work"
+    }
+  ]
+}

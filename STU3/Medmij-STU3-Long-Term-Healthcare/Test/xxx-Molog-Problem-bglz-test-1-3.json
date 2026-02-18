@@ -1,0 +1,75 @@
+{
+  "resourceType": "Condition",
+  "id": "Problem-bglz-test-1-3",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-02-18T10:35:08.332+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Aandoening. Subject: Maria XXX_Molog. Categorie: <span title=\"Diagnose (282291009 - SNOMED CT)\">Diagnose</span>, Status: actief / bevestigd</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">naast beven ook somberheid en moeheid</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <td>\n              <span title=\"ziekte van Parkinson (49049000 - SNOMED CT)\">ziekte van Parkinson</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Eerste symptomen</th>\n            <td>2022-05-15</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "13243016-53e7-4a5f-a2c5-c813ab7610c0"
+    }
+  ],
+  "clinicalStatus": "active",
+  "_clinicalStatus": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "55561003",
+              "display": "Actueel"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "282291009",
+          "display": "Diagnose"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "49049000",
+        "display": "ziekte van Parkinson"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "onsetDateTime": "2022-05-14T23:00:00+00:00",
+  "note": [
+    {
+      "text": "naast beven ook somberheid en moeheid"
+    }
+  ]
+}

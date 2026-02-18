@@ -1,0 +1,63 @@
+{
+  "resourceType": "Consent",
+  "id": "AdvanceDirective-bglz-test-1-3",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-03-12T08:10:33.527+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-AdvanceDirective"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Toestemming. Patiënt: Maria XXX_Molog. Id: 96b7d97b-e3e1-11eb-4371-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"levenstestament en wilsverklaring in dossier (11341000146107 - SNOMED CT)\">levenstestament en wilsverklaring in dossier</span>, <span title=\"Niet reanimeren verklaring (NR - 2.16.840.1.113883.2.4.3.11.60.40.4.14.1)\">Niet reanimeren verklaring</span>, Status: actief<span style=\"display: block;\">Toestemminggevende partij: Robert Prins</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Gemaakt</th>\n            <td>2020-01-20</td>\n          </tr>\n          <tr>\n            <th>Toestemminggevende partij</th>\n            <td>\n              <ul>\n                <li>Robert Prins</li>\n              </ul>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": {
+    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+    "value": "941dadb0-52a6-4ab3-af7c-bf843d0dbd19"
+  },
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "11341000146107",
+          "display": "levenstestament en wilsverklaring in dossier"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+          "code": "NR",
+          "display": "Niet reanimeren verklaring"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "dateTime": "2020-01-20",
+  "consentingParty": [
+    {
+      "reference": "RelatedPerson/RelatedPerson-bglz-av-test-Timmerman",
+      "display": "Johan Timmerman"
+    }
+  ],
+  "policy": [
+    {
+      "uri": "http://wetten.overheid.nl/"
+    }
+  ]
+}
