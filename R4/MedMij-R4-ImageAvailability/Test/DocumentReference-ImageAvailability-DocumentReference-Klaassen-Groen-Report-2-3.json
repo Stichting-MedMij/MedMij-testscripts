@@ -1,6 +1,6 @@
 {
   "resourceType": "DocumentReference",
-  "id": "ImageAvailability-DocumentReference-Klaassen-Groen-Report-2-2",
+  "id": "ImageAvailability-DocumentReference-Klaassen-Groen-Report-2-3",
   "meta": {
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/bbs-DocumentReference"
@@ -11,11 +11,6 @@
     {
       "coding": [
         {
-          "code": "18726-0",
-          "system": "http://loinc.org",
-          "display": "Radiology studies (set)"
-        },
-        {
           "code": "REPORTS",
           "system": "urn:oid:1.3.6.1.4.1.19376.1.2.6.1",
           "display": "Reports"
@@ -25,7 +20,7 @@
   ],
   "masterIdentifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:c4a902d3-1259-4881-9dd1-17376cef5ce5"
+    "value": "urn:uuid:53338e45-a078-4886-8501-7cf1ec838afd"
   },
   "type": {
     "coding": [
@@ -43,12 +38,12 @@
   "date": "1993-02-06T12:00:00+01:00",
   "author": [
     {
-      "reference": "PractitionerRole/ImageAvailability-PractitionerRole-Van-Der-Ham",
-      "display": "van der Ham, Orthopedisch chirurg"
+      "reference": "PractitionerRole/ImageAvailability-PractitionerRole-Janssen",
+      "display": "Janssen, Orthopedisch chirurg"
     },
     {
       "reference": "Organization/ImageAvailability-Organization-ErasmusMC-Radiologie-Universitair",
-      "display": "Erasmus MC, Radiologie, Universitair ziekenhuis"
+      "display": "Erasmus MC, Radiologie, Universitair Medisch Centrum"
     }
   ],
   "securityLabel": [
@@ -67,7 +62,7 @@
       "attachment": {
         "contentType": "application/pdf",
         "language": "nl",
-        "url": "Binary/ImageAvailability-Binary-Report-2-2",
+        "url": "Binary/ImageAvailability-Binary-Report-2-3",
         "title": "longfoto",
         "creation": "1993-02-06T12:00:00+01:00"
       },
@@ -86,7 +81,7 @@
         {
           "code": "V5",
           "system": "http://nictiz.nl/fhir/NamingSystem/organization-type",
-          "display": "Universitair ziekenhuis"
+          "display": "Universitair Medisch Centrum"
         }
       ]
     },
@@ -109,12 +104,31 @@
           "type": {
             "coding": [
               {
+                "code": "urn:ihe:iti:xds:2013:accession",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ]
+          },
+          "system": "urn:oid:2.16.840.1.113883.2.4.3.6",
+          "value": "RAD-20250212-50637",
+          "assigner": {
+            "reference": "Organization/ImageAvailability-Organization-ErasmusMC-Radiologie-Universitair",
+            "display": "Erasmus MC, Radiologie, Universitair Medisch Centrum"
+          }
+        }
+      },
+      {
+        "identifier": {
+          "type": {
+            "coding": [
+              {
                 "code": "urn:ihe:iti:xds:2016:studyInstanceUID",
                 "system": "urn:ietf:rfc:3986"
               }
             ]
           },
-          "value": "2.16.528.1.1007.3.1.20250212.789012"
+          "system": "urn:dicom:uid",
+          "value": "urn:oid:2.16.528.1.1007.3.1.20250212.456789"
         }
       }
     ]

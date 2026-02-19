@@ -1,6 +1,6 @@
 {
   "resourceType": "DocumentReference",
-  "id": "ImageAvailability-DocumentReference-XXX-AansluittestB-Image-5-3",
+  "id": "ImageAvailability-DocumentReference-XXX-AansluittestB-Image-5-4",
   "meta": {
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/bbs-DocumentReference"
@@ -11,11 +11,6 @@
     {
       "coding": [
         {
-          "code": "18726-0",
-          "system": "http://loinc.org",
-          "display": "Radiology studies (set)"
-        },
-        {
           "code": "IMAGES",
           "system": "urn:oid:1.3.6.1.4.1.19376.1.2.6.1",
           "display": "Images"
@@ -25,7 +20,7 @@
   ],
   "masterIdentifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:63bab3df-700c-4640-906c-b75e5d028437"
+    "value": "urn:uuid:550e8400-e29b-41d4-a716-446655440000"
   },
   "type": {
     "coding": [
@@ -40,15 +35,15 @@
     "reference": "Patient/ImageAvailability-Patient-XXX-Aansluittest-B",
     "display": "B. XXX-Aansluittest-B"
   },
-  "date": "2025-02-25T13:53:00+01:00",
+  "date": "2025-10-16T16:11:00+02:00",
   "author": [
     {
       "reference": "PractitionerRole/ImageAvailability-PractitionerRole-Huisarts",
       "display": "Huisarts"
     },
     {
-      "reference": "Organization/ImageAvailability-Organization-CZE",
-      "display": "Catharina Ziekenhuis Eindhoven, Algemeen ziekenhuis"
+      "reference": "Organization/ImageAvailability-Organization-AUMC",
+      "display": "Amsterdam UMC, Universitair Medisch Centrum"
     }
   ],
   "securityLabel": [
@@ -67,26 +62,37 @@
       "attachment": {
         "contentType": "application/dicom+json",
         "language": "nl",
-        "url": "https://examplepacs.xis/wado/studies/1.2.752.24.7.3059655634.36522/metadata",
-        "title": "CR CWK MedMij",
-        "creation": "2025-02-25T13:53:00+01:00"
+        "url": "https://examplepacs.example.com/wado/studies/1.2.40.0.13.1.309496748046569320805636965993460666632/series/2.25.92864427782257641375402563416912250814/instances/2.25.143915543518206872168207688572280834499",
+        "title": "CR Thorax",
+        "creation": "2025-10-16T16:11:00+02:00"
       },
       "format": {
         "code": "1.2.840.10008.5.1.4.1.1.88.59",
-        "system": "urn.oid:1.2.840.10008.2.6.1"
+        "system": "http://dicom.nema.org/resources/ontology/DCMUID"
       }
     }
   ],
   "context": {
+    "event": [
+      {
+        "coding": [
+          {
+            "code": "DX",
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "display": "Digital Radiography"
+          }
+        ]
+      }
+    ],
     "period": {
-      "start": "2025-02-25"
+      "start": "2025-10-16"
     },
     "facilityType": {
       "coding": [
         {
-          "code": "V6",
+          "code": "V5",
           "system": "http://nictiz.nl/fhir/NamingSystem/organization-type",
-          "display": "Algemeen ziekenhuis"
+          "display": "Universitair Medisch Centrum"
         }
       ]
     },
@@ -114,11 +120,11 @@
               }
             ]
           },
-          "system": "urn:oid:2.16.528.1.1023.19.1.1",
-          "value": "5003249215",
+          "system": "urn:oid:2.16.840.1.113883.2.4.3.114",
+          "value": "AGFA00000173699",
           "assigner": {
-            "reference": "Organization/ImageAvailability-Organization-CZE",
-            "display": "Catharina Ziekenhuis Eindhoven, Algemeen ziekenhuis"
+            "reference": "Organization/ImageAvailability-Organization-AUMC",
+            "display": "Amsterdam UMC, Universitair Medisch Centrum"
           }
         }
       },
@@ -132,7 +138,8 @@
               }
             ]
           },
-          "value": "1.2.752.24.7.3059655634.36522"
+          "system": "urn:dicom:uid",
+          "value": "urn:oid:1.2.40.0.13.1.309496748046569320805636965993460666632"
         }
       }
     ]

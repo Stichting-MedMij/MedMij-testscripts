@@ -1,6 +1,6 @@
 {
   "resourceType": "DocumentReference",
-  "id": "ImageAvailability-DocumentReference-Klaassen-Groen-Image-2-4",
+  "id": "ImageAvailability-DocumentReference-XXX-AansluittestB-Report-5-3",
   "meta": {
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/bbs-DocumentReference"
@@ -11,44 +11,39 @@
     {
       "coding": [
         {
-          "code": "18726-0",
-          "system": "http://loinc.org",
-          "display": "Radiology studies (set)"
-        },
-        {
-          "code": "IMAGES",
+          "code": "REPORTS",
           "system": "urn:oid:1.3.6.1.4.1.19376.1.2.6.1",
-          "display": "Images"
+          "display": "Reports"
         }
       ]
     }
   ],
   "masterIdentifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:d7236f3e-5c10-4caf-9864-255baa23611b"
+    "value": "urn:uuid:cc9008c2-8a08-457e-a928-c42d43b1efb7"
   },
   "type": {
     "coding": [
       {
-        "code": "142771000146105",
+        "code": "44491008",
         "system": "http://snomed.info/sct",
-        "display": "röntgenfoto van linker kaakgewricht"
+        "display": "röntgendoorlichting"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/ImageAvailability-Patient-Klaassen-Groen",
-    "display": "José Klaassen-Groen"
+    "reference": "Patient/ImageAvailability-Patient-XXX-Aansluittest-B",
+    "display": "B. XXX-Aansluittest-B"
   },
-  "date": "2020-08-10T12:00:00+02:00",
+  "date": "2025-02-25T14:07:00+01:00",
   "author": [
     {
-      "reference": "PractitionerRole/ImageAvailability-PractitionerRole-Coenen",
-      "display": "C.H. Coenen, Kaakchirurg"
+      "reference": "PractitionerRole/ImageAvailability-PractitionerRole-Huisarts",
+      "display": "Huisarts"
     },
     {
-      "reference": "Organization/ImageAvailability-Organization-ErasmusMC-Mondzorg-Universitair",
-      "display": "Erasmus MC, Mondzorg en kaakchirurgie, Universitair ziekenhuis"
+      "reference": "Organization/ImageAvailability-Organization-CZE",
+      "display": "Catharina Ziekenhuis Eindhoven, Algemeen ziekenhuis"
     }
   ],
   "securityLabel": [
@@ -65,28 +60,28 @@
   "content": [
     {
       "attachment": {
-        "contentType": "application/dicom+json",
+        "contentType": "application/pdf",
         "language": "nl",
-        "url": "https://examplepacs.xis/wado/metadata",
-        "title": "röntgenfoto van linker kaakgewricht",
-        "creation": "2020-08-10T12:00:00+02:00"
+        "url": "Binary/ImageAvailability-Binary-Report-5-3",
+        "title": "CR CWK MedMij",
+        "creation": "2025-02-25T14:07:00+01:00"
       },
       "format": {
-        "code": "1.2.840.10008.5.1.4.1.1.88.59",
-        "system": "urn.oid:1.2.840.10008.2.6.1"
+        "code": "urn.ihe.rad:PDF",
+        "system": "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
       }
     }
   ],
   "context": {
     "period": {
-      "start": "2020-08-10"
+      "start": "2025-02-25"
     },
     "facilityType": {
       "coding": [
         {
-          "code": "V5",
+          "code": "V6",
           "system": "http://nictiz.nl/fhir/NamingSystem/organization-type",
-          "display": "Universitair ziekenhuis"
+          "display": "Algemeen ziekenhuis"
         }
       ]
     },
@@ -100,8 +95,8 @@
       ]
     },
     "sourcePatientInfo": {
-      "reference": "Patient/ImageAvailability-Patient-Klaassen-Groen",
-      "display": "José Klaassen-Groen"
+      "reference": "Patient/ImageAvailability-Patient-XXX-Aansluittest-B",
+      "display": "B. XXX-Aansluittest-B"
     },
     "related": [
       {
@@ -114,11 +109,11 @@
               }
             ]
           },
-          "system": "urn:oid:2.16.528.1.1023.19.1.1",
-          "value": "RAD-20250212-74920",
+          "system": "urn:oid:2.16.840.1.113883.2.4.3.104",
+          "value": "5003249215",
           "assigner": {
-            "reference": "Organization/ImageAvailability-Organization-ErasmusMC-Mondzorg-Universitair",
-            "display": "Erasmus MC, Mondzorg en kaakchirurgie, Universitair ziekenhuis"
+            "reference": "Organization/ImageAvailability-Organization-CZE",
+            "display": "Catharina Ziekenhuis Eindhoven, Algemeen ziekenhuis"
           }
         }
       },
@@ -132,7 +127,8 @@
               }
             ]
           },
-          "value": "2.16.528.1.1007.3.1.20250212.456342"
+          "system": "urn:dicom:uid",
+          "value": "urn:oid:1.2.752.24.7.3059655634.36522"
         }
       }
     ]
