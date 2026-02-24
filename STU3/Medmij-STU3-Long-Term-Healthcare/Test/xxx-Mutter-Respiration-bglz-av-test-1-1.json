@@ -1,0 +1,156 @@
+{
+  "resourceType": "Observation",
+  "id": "Respiration-bglz-av-test-1-1",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-05-20T02:11:24.469+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Fiona XXX_Mutter. Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">meneer lijkt angstig</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2025-05-17T14:45:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Respiratory assessment (422834003 - SNOMED CT)\">Respiratory assessment</span>\n            </td>\n            <td/>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Ritme (48064009 - SNOMED CT)\">Ritme</span>\n            </td>\n            <td>\n              <span title=\"Abnormaal ademhalingsritme (85617008 - SNOMED CT)\">Abnormaal ademhalingsritme</span>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Diepte (271626009 - SNOMED CT)\">Diepte</span>\n            </td>\n            <td>\n              <span title=\"Normale ademhalingsdiepte (301284009 - SNOMED CT)\">Normale ademhalingsdiepte</span>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Ademfrequentie (9279-1 - LOINC)\">Ademfrequentie</span>\n            </td>\n            <td>18 breaths per minute</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Ademhalingspatroon (278907009 - SNOMED CT)\">Ademhalingspatroon</span>\n            </td>\n            <td>\n              <span title=\"Apneu (1023001 - SNOMED CT)\">Apneu</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "a33f01df-4791-4421-a63e-4a71d08f9604"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen",
+      "extension": [
+        {
+          "url": "extraOxygenAdministration",
+          "valueBoolean": true
+        },
+        {
+          "url": "flowRate",
+          "valueQuantity": {
+            "value": 2,
+            "unit": "l/min",
+            "system": "http://unitsofmeasure.org",
+            "code": "l/min"
+          }
+        },
+        {
+          "url": "fiO2",
+          "valueQuantity": {
+            "value": 0.29,
+            "unit": "fractionele inspiratoire zuurstofconcentratie"
+          }
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "422834003",
+        "display": "Respiratory assessment"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-1",
+    "display": "Fiona XXX_Mutter"
+  },
+  "performer": [
+    {
+      "reference": "Organization/Organization-bglz-av-test-ThuiszorgOrg-Noord",
+      "display": "ThuiszorgOrg Noord"
+    }
+  ],
+  "effectiveDateTime": "2025-05-17T13:45:00+00:00",
+  "comment": "meneer lijkt angstig",
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "48064009",
+            "display": "Ritme"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "85617008",
+            "display": "Abnormaal ademhalingsritme"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "271626009",
+            "display": "Diepte"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "301284009",
+            "display": "Normale ademhalingsdiepte"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "9279-1",
+            "display": "Ademfrequentie"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 18,
+        "unit": "breaths per minute",
+        "system": "http://unitsofmeasure.org",
+        "code": "{breaths}/min"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "278907009",
+            "display": "Ademhalingspatroon"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1023001",
+            "display": "Apneu"
+          }
+        ]
+      }
+    }
+  ]
+}

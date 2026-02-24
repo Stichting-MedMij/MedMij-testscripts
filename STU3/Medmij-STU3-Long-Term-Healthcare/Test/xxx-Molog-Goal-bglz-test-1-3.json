@@ -1,0 +1,36 @@
+{
+  "resourceType": "Goal",
+  "id": "Goal-bglz-test-1-3",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-02-18T10:35:11.841+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentObjective"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Doel. Subject: Maria XXX_Molog., Status: geaccepteerd</caption>\n        <tbody>\n          <tr>\n            <th>Omschrijving</th>\n            <td>zelfstandig aankleden</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "edbab65c-49e2-4c73-ad71-71c05b69af27"
+    }
+  ],
+  "status": "accepted",
+  "description": {
+    "text": "zelfstandig aankleden"
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  }
+}

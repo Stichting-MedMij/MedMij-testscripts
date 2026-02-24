@@ -1,0 +1,171 @@
+{
+  "resourceType": "Organization",
+  "id": "Organization-bglz-av-test-Huisarts-de-Huisarts",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-02-28T06:58:09.74+00:00",
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Organisatie. Id: 01565656 (AGB-Z)</caption>\n        <tbody>\n          <tr>\n            <th>Naam</th>\n            <td>Huisarts de Huisarts</td>\n          </tr>\n          <tr>\n            <th>Type</th>\n            <td>\n              <div>\n                <span title=\"Huisartspraktijk (zelfstandig of groepspraktijk) (Z3 - organization-type)\">Huisartspraktijk (zelfstandig of groepspraktijk)</span>\n              </div>\n              <div>\n                <span title=\"Huisartsen, niet nader gespecificeerd (0100 - AGB-medisch specialisme)\">Huisartsen, niet nader gespecificeerd</span>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <th>Contactgegevens</th>\n            <td>\n              <a href=\"tel:+31203232323\">+31203232323</a> (Vast telefoonnummer Werk)<br/>\n              <a href=\"tel:+31203232000\">+31203232000</a> (Vast telefoonnummer Werk)<br/>\n              <a href=\"mailto:info@huisartspraktijk.nl\">info@huisartspraktijk.nl</a> (E-mail Werk)<br/>\n              <a href=\"mailto:assistente@huisartspraktijk.nl\">assistente@huisartspraktijk.nl</a> (E-mail Werk)<br/>\n            </td>\n          </tr>\n          <tr>\n            <th>Adres</th>\n            <td>Knolweg 100aIII, 4000KK Stitswerd, NLD (officieel WP)</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
+      "value": "01565656"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://nictiz.nl/fhir/NamingSystem/organization-type",
+          "code": "Z3",
+          "display": "Huisartspraktijk (zelfstandig of groepspraktijk)"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+          "code": "0100",
+          "display": "Huisartsen, niet nader gespecificeerd"
+        }
+      ]
+    }
+  ],
+  "name": "Huisarts de Huisarts",
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                "code": "LL",
+                "display": "Vast telefoonnummer"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "+31203232323",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                "code": "LL",
+                "display": "Vast telefoonnummer"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "+31203232000",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "info@huisartspraktijk.nl",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "assistente@huisartspraktijk.nl",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/AddressUse",
+                "code": "WP",
+                "display": "Werkadres"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+          "valueBoolean": true
+        }
+      ],
+      "line": [
+        "Knolweg 100aIII"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Kastanjelaan"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "100"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+              "valueString": "a III"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
+              "valueString": "bedrijfsgebrouw 'De Stits'"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+              "valueString": "by"
+            }
+          ]
+        }
+      ],
+      "city": "Stitswerd",
+      "postalCode": "4000KK",
+      "country": "NLD",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "code": "NL",
+                  "display": "Nederland"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType": "NutritionOrder",
+  "id": "NutritionAdvice-bglz-av-test-1-1",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-05-20T02:10:16.648+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Voedingsadvies. Patiënt: Fiona XXX_Mutter. Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Aanvraagdatum</th>\n            <td>2025-05-20</td>\n          </tr>\n          <tr>\n            <th>Toelichting</th>\n            <td>eet naar eigen keuze minder vlees</td>\n          </tr>\n          <tr>\n            <td colspan=\"2\">\n              <table>\n                <caption>Orale voeding</caption>\n                <thead>\n                  <tr>\n                    <th>Type</th>\n                    <th>Vloeistofconsistentie</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr>\n                    <td>suikervrij, diabetes dieet</td>\n                    <td>dik vloeibaar</td>\n                  </tr>\n                </tbody>\n              </table>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "ce1368b1-21dd-4fbe-9720-ec4ddda018c3"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice-Explanation",
+      "valueString": "eet naar eigen keuze minder vlees"
+    }
+  ],
+  "status": "active",
+  "patient": {
+    "reference": "Patient/Patient-bglz-test-1-1",
+    "display": "Fiona XXX_Mutter"
+  },
+  "dateTime": "2025-05-20",
+  "oralDiet": {
+    "type": [
+      {
+        "text": "suikervrij, diabetes dieet"
+      }
+    ],
+    "fluidConsistencyType": [
+      {
+        "text": "dik vloeibaar"
+      }
+    ]
+  }
+}

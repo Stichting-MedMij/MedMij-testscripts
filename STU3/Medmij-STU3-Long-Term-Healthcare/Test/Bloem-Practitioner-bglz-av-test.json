@@ -1,0 +1,68 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Practitioner-bglz-av-test-Bloem",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-02-28T06:58:59.443+00:00",
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id 88131313 (AGB-Z), <span title=\"Naamsamenstelling: Eigennaam\">W. Bloem</span>\n      </div>\n      <div>\n        <a href=\"mailto:bloem@ergotherapie.nl\">bloem@ergotherapie.nl</a> (E-mail Werk)</div>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
+      "value": "88131313"
+    }
+  ],
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+          "valueCode": "NL1"
+        }
+      ],
+      "text": "W. Bloem",
+      "family": "Bloem",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Bloem"
+          }
+        ]
+      },
+      "given": [
+        "W."
+      ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "IN"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "bloem@ergotherapie.nl",
+      "use": "work"
+    }
+  ]
+}

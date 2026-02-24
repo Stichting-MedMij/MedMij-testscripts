@@ -1,0 +1,192 @@
+{
+  "resourceType": "Observation",
+  "id": "BloodPressure-bgzl-av-test-1-1",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2025-05-16T02:11:32.97+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Fiona XXX_Mutter. Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">mevrouw gebruikt medicatie</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2025-04-26T14:45:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Methode</th>\n            <td>\n              <span title=\"Niet-invasief (22762002 - SNOMED CT)\">Niet-invasief</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Deel van lichaam</th>\n            <td>\n              <span title=\"Rechter bovenarm (368209003 - SNOMED CT)\">Rechter bovenarm</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Blood pressure panel with all children optional (85354-9 - LOINC)\">Blood pressure panel with all children optional</span>\n            </td>\n            <td/>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Systolic blood pressure (8480-6 - LOINC)\">Systolic blood pressure</span>\n            </td>\n            <td>170 mmHg</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Diastolic blood pressure (8462-4 - LOINC)\">Diastolic blood pressure</span>\n            </td>\n            <td>90 mmHg</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Mean blood pressure (8478-0 - LOINC)\">Mean blood pressure</span>\n            </td>\n            <td>110 mmHg</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Korotkoff sounds (85549003 - SNOMED CT)\">Korotkoff sounds</span>\n            </td>\n            <td>\n              <span title=\"Fase V (255272007 - SNOMED CT)\">Fase V</span>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Blood pressure device Cuff size (8358-4 - LOINC)\">Blood pressure device Cuff size</span>\n            </td>\n            <td>\n              <span title=\"Standaard (STD - 2.16.840.1.113883.2.4.3.11.60.40.4.15.1)\">Standaard</span>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Body position with respect to gravity (8361-8 - LOINC)\">Body position with respect to gravity</span>\n            </td>\n            <td>\n              <span title=\"Liggende posititie (102538003 - SNOMED CT)\">Liggende posititie</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "12768551-c421-46c5-bd43-6dae738b8568"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "85354-9",
+        "display": "Blood pressure panel with all children optional"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-1",
+    "display": "Fiona XXX_Mutter"
+  },
+  "performer": [
+    {
+      "reference": "Organization/Organization-bglz-av-test-ThuiszorgOrg-Noord",
+      "display": "ThuiszorgOrg Noord"
+    }
+  ],
+  "effectiveDateTime": "2025-04-26T13:45:00+00:00",
+  "comment": "mevrouw gebruikt medicatie",
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "368209003",
+        "display": "Rechter bovenarm"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "22762002",
+        "display": "Niet-invasief"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 170,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 90,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8478-0",
+            "display": "Mean blood pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 110,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "85549003",
+            "display": "Korotkoff sounds"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "255272007",
+            "display": "Fase V"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8358-4",
+            "display": "Blood pressure device Cuff size"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+            "code": "STD",
+            "display": "Standaard"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8361-8",
+            "display": "Body position with respect to gravity"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "102538003",
+            "display": "Liggende posititie"
+          }
+        ]
+      }
+    }
+  ]
+}

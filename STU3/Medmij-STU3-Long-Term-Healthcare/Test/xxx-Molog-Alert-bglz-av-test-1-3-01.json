@@ -1,0 +1,54 @@
+{
+  "resourceType": "Flag",
+  "id": "Alert-bglz-av-test-1-3-01",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2025-03-10T06:25:54.458+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Alert"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Attentievlag. Subject: Maria XXX_Molog. Categorie: <span title=\"waarschuwing (74018-3 - LOINC)\">waarschuwing</span>, Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Categorie</th>\n            <td>\n              <span title=\"waarschuwing (74018-3 - LOINC)\">waarschuwing</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <td>\n              <span title=\"Drager VRE (431109006 - SNOMED CT)\">Drager VRE</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2025-02-18</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "6b287b32-fef6-411b-b001-f0d512829d2e"
+    }
+  ],
+  "status": "active",
+  "category": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "74018-3",
+        "display": "waarschuwing"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "431109006",
+        "display": "Drager VRE"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "period": {
+    "start": "2025-02-18"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "resourceType": "Coverage",
+  "id": "Payer-bglz-av-test-1-1",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-05-20T02:08:37.868+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Payer"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Verzekering/garantstelling. </caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"Basis verzekerd (B - 2.16.840.1.113883.2.4.3.11.60.101.5.1)\">Basis verzekerd</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td> tot 2026-05-20</td>\n          </tr>\n          <tr>\n            <th>verzekerde</th>\n            <td>Fiona XXX_Mutter</td>\n          </tr>\n          <tr>\n            <th>Verzekerdenummer</th>\n            <td>12345678</td>\n          </tr>\n          <tr>\n            <th>Betaler</th>\n            <td>Trias</td>\n          </tr>\n          <tr>\n            <th>begunstigde</th>\n            <td>Erik XXX_Altenborg</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "204cd46e-6b70-48ea-8e78-a9072670c6fa"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1",
+        "code": "B",
+        "display": "Basis verzekerd"
+      }
+    ]
+  },
+  "subscriber": {
+    "reference": "Patient/Patient-bglz-test-1-1",
+    "display": "Fiona XXX_Mutter"
+  },
+  "subscriberId": "12345678",
+  "beneficiary": {
+    "reference": "Patient/Patient-bglz-test-1-1",
+    "display": "Fiona XXX_Mutter"
+  },
+  "period": {
+    "end": "2026-05-20"
+  },
+  "payor": [
+    {
+      "reference": "Organization/Organization-bglz-av-test-Trias",
+      "display": "Trias"
+    }
+  ]
+}

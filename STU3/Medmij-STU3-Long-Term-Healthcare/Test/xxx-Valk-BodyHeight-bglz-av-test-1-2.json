@@ -1,0 +1,67 @@
+{
+  "resourceType": "Observation",
+  "id": "BodyHeight-bglz-av-test-1-2",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2025-03-17T09:36:39.826+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-BodyHeight"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Gea G. XXX_Valk. Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">in de ochtend gemeten</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2025-04-14T16:30:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Body height (8302-2 - LOINC)\">Body height</span>\n            </td>\n            <td>165 cm</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "0bef2c47-1a2a-461c-85de-8c2f0b74c0d9"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8302-2",
+        "display": "Body height"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-2",
+    "display": "Gea G. XXX_Valk"
+  },
+  "performer": [
+    {
+      "reference": "Organization/Organization-bglz-av-test-WijkverplegingOrg-Zuid",
+      "display": "WijkverplegingOrg Zuid"
+    }
+  ],
+  "effectiveDateTime": "2025-04-14T15:30:00+00:00",
+  "valueQuantity": {
+    "value": 165,
+    "unit": "cm",
+    "system": "http://unitsofmeasure.org",
+    "code": "cm"
+  },
+  "comment": "in de ochtend gemeten"
+}

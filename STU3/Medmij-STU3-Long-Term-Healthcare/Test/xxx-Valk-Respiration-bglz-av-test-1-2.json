@@ -1,0 +1,139 @@
+{
+  "resourceType": "Observation",
+  "id": "Respiration-bglz-av-test-1-2",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-05-21T02:06:27.346+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Gea G. XXX_Valk, Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: WijkverplegingOrg Zuid</span>\n        </caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">na het traplopen</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2025-05-19</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"evaluatie van ademhaling (422834003 - SNOMED CT)\">evaluatie van ademhaling</span>\n            </td>\n            <td/>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Respiratory rate (9279-1 - LOINC)\">Respiratory rate</span>\n            </td>\n            <td>22 breaths per minute</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"ademhalingsritme (48064009 - SNOMED CT)\">ademhalingsritme</span>\n            </td>\n            <td>\n              <span title=\"Normaal ademhalingsritme (5467003 - SNOMED CT)\">Normaal ademhalingsritme</span>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"diepte van ademhaling (271626009 - SNOMED CT)\">diepte van ademhaling</span>\n            </td>\n            <td>\n              <span title=\"oppervlakkige ademhaling (386616007 - SNOMED CT)\">oppervlakkige ademhaling</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen",
+      "extension": [
+        {
+          "url": "extraOxygenAdministration",
+          "valueBoolean": true
+        },
+        {
+          "url": "fiO2",
+          "valueQuantity": {
+            "value": 0.3,
+            "unit": "{fraction}",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "387aa2fe-9212-4526-92d3-4dd3279b5fdb"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "422834003",
+        "display": "evaluatie van ademhaling"
+      }
+    ]
+  },
+  "effectiveDateTime": "2025-05-19",
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-2",
+    "display": "Gea G. XXX_Valk"
+  },
+  "performer": [
+    {
+      "reference": "Organization/Organization-bglz-av-test-WijkverplegingOrg-Zuid",
+      "display": "WijkverplegingOrg Zuid"
+    }
+  ],
+  "comment": "na het traplopen",
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "9279-1",
+            "display": "Respiratory rate"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 22,
+        "unit": "breaths per minute",
+        "system": "http://unitsofmeasure.org",
+        "code": "{breaths}/min"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "48064009",
+            "display": "ademhalingsritme"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "5467003",
+            "display": "Normaal ademhalingsritme"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "271626009",
+            "display": "diepte van ademhaling"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "386616007",
+            "display": "oppervlakkige ademhaling"
+          }
+        ]
+      }
+    }
+  ]
+}

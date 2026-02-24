@@ -1,0 +1,177 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-bglz-test-1-2",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-02-18T10:35:07.401+00:00",
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id <i>afgeschermd (ontbrekend gegeven)</i> (BSN), <span title=\"Naamsamenstelling: Eigennaam\">Gea G. XXX_Valk</span>, Vrouw, 8 februari 1964, Meerling</div>\n      <div>\n        <a href=\"tel:+31645678912\">+31645678912</a> (Mobiel Privé), <a href=\"mailto:gvalk@hotmail.com\">gvalk@hotmail.com</a> (E-mail Privé)</div>\n      <div>Knolweg 1003, 9999ZA Stitswerd, Nederland (Bezoek)</div>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
+    }
+  ],
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+          "valueCode": "NL1"
+        }
+      ],
+      "family": "XXX_Valk",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "XXX_Valk"
+          }
+        ]
+      },
+      "given": [
+        "Gea",
+        "G."
+      ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "BR"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "IN"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/AddressUse",
+                "code": "MC",
+                "display": "Mobiel telefoonnummer"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "+31645678912",
+      "use": "home"
+    },
+    {
+      "system": "email",
+      "value": "gvalk@hotmail.com",
+      "use": "home"
+    }
+  ],
+  "gender": "female",
+  "_gender": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/AdministrativeGender",
+              "code": "F",
+              "display": "Vrouw"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "birthDate": "1964-02-08",
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/AddressUse",
+                "code": "PHYS",
+                "display": "Woon-/verblijfadres"
+              }
+            ]
+          }
+        }
+      ],
+      "use": "home",
+      "type": "physical",
+      "line": [
+        "Knolweg 1003"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Knolweg"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "1003"
+            }
+          ]
+        }
+      ],
+      "city": "Stitswerd",
+      "postalCode": "9999ZA",
+      "country": "Nederland",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                  "code": "6030",
+                  "display": "Nederland"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "multipleBirthBoolean": true
+}

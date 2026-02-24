@@ -1,0 +1,43 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "PractitionerRole-bglz-av-test-Lanen",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-02-28T06:51:25.482+00:00",
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgverlenerrol. Id: 9980e48b-e3e1-11eb-1501-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption>\n        <tbody>\n          <tr>\n            <th>Zorgverlener</th>\n            <td>\n              <div>Laura Lanen</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Specialisme</th>\n            <td>\n              <span title=\"Huisarts (01.015 - http://fhir.nl/fhir/NamingSystem/uzi-rolcode)\">Huisarts</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "9980e48b-e3e1-11eb-1501-020000000000"
+    }
+  ],
+  "practitioner": {
+    "reference": "Practitioner/Practitioner-bglz-av-test-Lanen",
+    "display": "Laura Lanen"
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.nl/fhir/NamingSystem/uzi-rolcode",
+          "code": "01.015",
+          "display": "Huisarts"
+        }
+      ]
+    }
+  ]
+}

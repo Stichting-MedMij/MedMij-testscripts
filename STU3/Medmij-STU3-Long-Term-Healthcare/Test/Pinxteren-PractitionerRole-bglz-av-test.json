@@ -1,0 +1,41 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "PractitionerRole-bglz-av-test-Pinxteren",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-02-28T06:59:48.105+00:00",
+    "profile": [
+      "http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgverlenerrol. </caption>\n        <tbody>\n          <tr>\n            <th>Zorgverlener</th>\n            <td>\n              <div>N. de Mol-van Pinxteren</div>\n              <div>Huisarts de Huisarts</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Specialisme</th>\n            <td>\n              <span title=\"Huisartsen, niet nader gespecificeerd (0100 - AGB-medisch specialisme)\">Huisartsen, niet nader gespecificeerd</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "practitioner": {
+    "reference": "Practitioner/Practitioner-bglz-av-test-Pinxteren",
+    "display": "N. de Mol-van Pinxteren"
+  },
+  "organization": {
+    "reference": "Organization/Organization-bglz-av-test-Huisarts-de-Huisarts",
+    "display": "Huisarts de Huisarts"
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+          "code": "0100",
+          "display": "Huisartsen, niet nader gespecificeerd"
+        }
+      ]
+    }
+  ]
+}

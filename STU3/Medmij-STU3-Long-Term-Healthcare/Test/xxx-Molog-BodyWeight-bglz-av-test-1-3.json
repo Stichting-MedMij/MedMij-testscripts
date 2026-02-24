@@ -1,0 +1,89 @@
+{
+  "resourceType": "Observation",
+  "id": "BodyWeight-bglz-av-test-1-3",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2025-03-17T09:36:44.333+00:00",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-BodyWeight"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Maria XXX_Molog. Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">mevrouw is aan het aansterken</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2025-03-12T14:30:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Body weight (29463-7 - LOINC)\">Body weight</span>\n            </td>\n            <td>58 kg</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Clothing worn during measure (8352-7 - LOINC)\">Clothing worn during measure</span>\n            </td>\n            <td>\n              <span title=\"Lichte kleding/ondergoed (MINIMAL - 2.16.840.1.113883.2.4.3.11.60.40.4.8.1)\">Lichte kleding/ondergoed</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "3f42f660-9de8-4c2a-b3e5-c5caca7800de"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7",
+        "display": "Body weight"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "performer": [
+    {
+      "reference": "Organization/Organization-bglz-av-test-WijZorgen",
+      "display": "WijZorgen Honselerdijk"
+    }
+  ],
+  "effectiveDateTime": "2025-03-12T13:30:00+00:00",
+  "valueQuantity": {
+    "value": 58,
+    "unit": "kg",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg"
+  },
+  "comment": "mevrouw is aan het aansterken",
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8352-7",
+            "display": "Clothing worn during measure"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.8.1",
+            "code": "MINIMAL",
+            "display": "Lichte kleding/ondergoed"
+          }
+        ]
+      }
+    }
+  ]
+}
