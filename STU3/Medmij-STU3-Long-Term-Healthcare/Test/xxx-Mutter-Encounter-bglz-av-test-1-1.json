@@ -1,0 +1,63 @@
+{
+    "resourceType": "Encounter",
+    "id": "Encounter-bglz-av-test-1-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2025-05-20T02:09:55.449+00:00",
+      "profile": [
+        "http://medmij.nl/fhir/StructureDefinition/lz-Encounter"
+      ],
+      "tag": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+          "code": "7500",
+          "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+        }
+      ]
+    },
+    "text": {
+      "status": "extensions",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Contact. Subject: Fiona XXX_Mutter. Status: gepland</caption>\n        <tbody>\n          <tr>\n            <th>Type contact</th>\n            <td>\n              <div>\n                <span title=\"Home (HH - v3/ActCode)\">Home</span>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2025-06-01T15:15:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Reden</th>\n            <td>Controle voortgang revalidatie</td>\n          </tr>\n          <tr>\n            <th>Participant</th>\n            <td>\n              <div>W. Bloem<div>Zorgverlenerrol: Ergotherapeuten</div>\n              </div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+    },
+    "identifier": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+        "value": "20ca252b-7eae-4722-9b8e-17199d868c0f"
+      }
+    ],
+    "status": "planned",
+    "class": {
+      "system": "http://hl7.org/fhir/v3/ActCode",
+      "code": "HH",
+      "display": "Home"
+    },
+    "subject": {
+      "reference": "Patient/Patient-bglz-test-1-1",
+      "display": "Fiona XXX_Mutter"
+    },
+    "participant": [
+      {
+        "individual": {
+          "extension": [
+            {
+              "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+              "valueReference": {
+                "reference": "PractitionerRole/PractitionerRole-bglz-av-test-Bloem",
+                "display": "Ergotherapeuten"
+              }
+            }
+          ],
+          "reference": "Practitioner/Practitioner-bglz-av-test-Bloem",
+          "display": "W. Bloem"
+        }
+      }
+    ],
+    "period": {
+      "start": "2025-06-01T14:15:00+00:00"
+    },
+    "reason": [
+      {
+        "text": "Controle voortgang revalidatie"
+      }
+    ]
+  }

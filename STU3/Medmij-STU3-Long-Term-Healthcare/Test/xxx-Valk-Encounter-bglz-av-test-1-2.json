@@ -1,0 +1,56 @@
+{
+    "resourceType": "Encounter",
+    "id": "Encounter-bglz-av-test-1-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2025-05-21T02:10:33.343+00:00",
+      "profile": [
+        "http://medmij.nl/fhir/StructureDefinition/lz-Encounter"
+      ],
+      "tag": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+          "code": "7500",
+          "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+        }
+      ]
+    },
+    "text": {
+      "status": "extensions",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Contact. Subject: Gea G. XXX_Valk. Status: gepland</caption>\n        <tbody>\n          <tr>\n            <th>Type contact</th>\n            <td>\n              <div>\n                <span title=\"ambulatory (AMB - v3/ActCode)\">ambulatory</span>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2025-05-26</td>\n          </tr>\n          <tr>\n            <th>Participant</th>\n            <td>\n              <div>N. de van Pinxteren-de Mol<div>Zorgverlenerrol: Huisartsen, niet nader gespecificeerd</div>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <th>Zorgaanbieder</th>\n            <td>Huisarts de Huisarts</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+    },
+    "status": "planned",
+    "class": {
+      "system": "http://hl7.org/fhir/v3/ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "subject": {
+      "reference": "Patient/Patient-bglz-test-1-2",
+      "display": "Gea G. XXX_Valk"
+    },
+    "participant": [
+      {
+        "individual": {
+          "extension": [
+            {
+              "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+              "valueReference": {
+                "reference": "PractitionerRole/PractitionerRole-bglz-av-test-Pinxteren",
+                "display": "Huisartsen, niet nader gespecificeerd"
+              }
+            }
+          ],
+          "reference": "Practitioner/Practitioner-bglz-av-test-Pinxteren",
+          "display": "N. de van Pinxteren-de Mol"
+        }
+      }
+    ],
+    "period": {
+      "start": "2025-05-26"
+    },
+    "serviceProvider": {
+      "reference": "Organization/Organization-bglz-av-test-Huisarts-de-Huisarts",
+      "display": "Huisarts de Huisarts"
+    }
+  }

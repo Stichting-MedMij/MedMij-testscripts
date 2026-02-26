@@ -1,0 +1,39 @@
+{
+  "resourceType": "Device",
+  "id": "Respiration-Device-bglz-av-test-1-3",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDeviceProduct"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Medisch hulpmiddel. Subject: Maria XXX_Molog</caption><tbody><tr><th>Type</th><td>Neusbril (336623009 - SNOMED CT)</td></tr></tbody></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "2ffb5823-399a-4fbb-8c2a-9dc2fa4a6df5"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "336623009",
+        "display": "neusbril"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  }
+}

@@ -1,0 +1,56 @@
+{
+    "resourceType": "Observation",
+    "id": "NursingReport-bglz-av-test-1-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2025-05-20T02:11:24.469+00:00",
+      "profile": [
+        "http://medmij.nl/fhir/StructureDefinition/lz-NursingReport"
+      ],
+      "tag": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+          "code": "7500",
+          "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+        }
+      ]
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Dagrapportage</h3><table class=\"grid\"><tr><td><b>Patiënt:</b></td><td>Fiona XXX_Mutter</td></tr><tr><td><b>Datum/Tijd:</b></td><td>17 mei 2025, 16:45</td></tr><tr><td><b>Zorgverlener:</b></td><td>ThuiszorgOrg Noord</td></tr><tr><td><b>Type rapport:</b></td><td>patiëntcontactverslag</td></tr><tr><td><b>Status:</b></td><td>Geregistreerd</td></tr></table><h4>Observatie:</h4><p>Patiënt heeft moeite met het begrijpen en produceren van gesproken taal. Tijdens het ochtendcontact kon ze haar behoefte aan hulp bij het wassen niet verbaal aangeven, maar maakte gebruik van gebaren. Er is ondersteuning geboden bij ADL. Geadviseerd om pictogrammen te gebruiken en overleg met logopedie is aangevraagd.</p></div>"
+    },
+    "identifier": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+        "value": "4d8d57bc-211a-4123-b7d5-82ecf89e4999"
+      }
+    ],
+    "extension": [
+      {
+        "url": "http://medmij.nl/fhir/StructureDefinition/ext-NursingReport.ReportTitle",
+        "valueString": "Dagrapportage"
+      }
+    ],
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "11591000146107",
+          "display": "patiëntcontactverslag"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/Patient-bglz-test-1-1",
+      "display": "Fiona XXX_Mutter"
+    },
+    "performer": [
+      {
+        "reference": "Organization/Organization-bglz-av-test-ThuiszorgOrg-Noord",
+        "display": "ThuiszorgOrg Noord"
+      }
+    ],
+    "effectiveDateTime": "2025-05-17T15:45:00+00:00",
+    "valueString": "Patiënt heeft moeite met het begrijpen en produceren van gesproken taal. Tijdens het ochtendcontact kon ze haar behoefte aan hulp bij het wassen niet verbaal aangeven, maar maakte gebruik van gebaren. Er is ondersteuning geboden bij ADL. Geadviseerd om pictogrammen te gebruiken en overleg met logopedie is aangevraagd."
+  }

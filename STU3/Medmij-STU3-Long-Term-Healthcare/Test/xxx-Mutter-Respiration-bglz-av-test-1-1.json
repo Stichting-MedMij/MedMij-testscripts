@@ -46,7 +46,8 @@
           "url": "fiO2",
           "valueQuantity": {
             "value": 0.29,
-            "unit": "fractionele inspiratoire zuurstofconcentratie"
+            "unit": "{fraction}",
+            "system": "http://unitsofmeasure.org"
           }
         }
       ]

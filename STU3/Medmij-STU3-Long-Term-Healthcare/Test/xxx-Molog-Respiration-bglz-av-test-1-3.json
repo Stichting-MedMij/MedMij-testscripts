@@ -29,16 +29,17 @@
           "url": "flowRate",
           "valueQuantity": {
             "value": 2,
-            "unit": "2/min",
+            "unit": "l/min",
             "system": "http://unitsofmeasure.org",
-            "code": "2/min"
+            "code": "l/min"
           }
         },
         {
           "url": "fiO2",
           "valueQuantity": {
             "value": 0.29,
-            "unit": "fractionele inspiratoire zuurstofconcentratie"
+            "unit": "{fraction}",
+            "system": "http://unitsofmeasure.org"
           }
         }
       ]
