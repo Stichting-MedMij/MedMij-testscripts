@@ -1,0 +1,63 @@
+{
+    "resourceType": "Encounter",
+    "id": "Encounter-bglz-av-test-1-3",
+    "meta": {
+      "versionId": "3",
+      "lastUpdated": "2025-03-21T08:55:28.609+00:00",
+      "profile": [
+        "http://medmij.nl/fhir/StructureDefinition/lz-Encounter"
+      ],
+      "tag": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7", 
+          "code": "7500",
+          "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+        }
+      ]
+    },
+    "text": {
+      "status": "extensions",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Contact. Subject: Maria XXX_Molog. Status: gepland</caption>\n        <tbody>\n          <tr>\n            <th>Type contact</th>\n            <td>\n              <div>\n                <span title=\"Thuis (HH - v3/ActCode)\">Thuis</span>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2025-03-30T10:20:00+00:00</td>\n          </tr>\n          <tr>\n            <th>Reden</th>\n            <td>advies over veilige en passende lichaamsbeweging</td>\n          </tr>\n          <tr>\n            <th>Participant</th>\n            <td>\n              <div>Julia van den Bos<div>Zorgverlenerrol: Verpleegkundige, niet nader gespecificeerd</div>\n              </div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+    },
+    "identifier": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+        "value": "115a703d-8f2b-4b10-bf80-58ecd85e548b"
+      }
+    ],
+    "status": "planned",
+    "class": {
+      "system": "http://hl7.org/fhir/v3/ActCode",
+      "code": "HH",
+      "display": "Thuis"
+    },
+    "subject": {
+      "reference": "Patient/Patient-bglz-test-1-3",
+      "display": "Maria XXX_Molog"
+    },
+    "participant": [
+      {
+        "individual": {
+          "extension": [
+            {
+              "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+              "valueReference": {
+                "reference": "PractitionerRole/PractitionerRole-bglz-av-test-Bos",
+                "display": "Verpleegkundige, niet nader gespecificeerd"
+              }
+            }
+          ],
+          "reference": "Practitioner/Practitioner-bglz-av-test-Bos",
+          "display": "Julia van den Bos"
+        }
+      }
+    ],
+    "period": {
+      "start": "2025-03-30T10:20:00+00:00"
+    },
+    "reason": [
+      {
+        "text": "advies over veilige en passende lichaamsbeweging"
+      }
+    ]
+  }

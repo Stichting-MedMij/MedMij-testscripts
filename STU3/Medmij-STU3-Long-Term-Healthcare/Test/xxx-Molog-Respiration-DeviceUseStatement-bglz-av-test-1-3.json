@@ -1,0 +1,47 @@
+{
+  "resourceType": "DeviceUseStatement",
+  "id": "Respiration-DeviceUseStatement-bglz-av-test-1-3",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDevice"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Medisch hulpmiddel. Subject: Maria XXX_Molog</caption><tbody><tr><th>Begindatum</th><td>17 februari 2015</td></tr></tbody></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/deviceUseStatement-reasonReferenceSTU3",
+      "valueReference": {
+        "reference": "Observation/Respiration-bglz-av-test-1-3",
+        "display": "Ademhaling"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "1a88164c-f574-4905-9ba7-81830fc3dcb3"
+    }
+  ],
+  "status": "active",
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "whenUsed": {
+    "start": "2015-02-17"
+  },
+  "device": {
+    "reference": "Device/Respiration-Device-bglz-av-test-1-3",
+    "display": "Maria XXX_Molog"
+  }
+}
