@@ -1,6 +1,6 @@
 {
   "resourceType": "DocumentReference",
-  "id": "ImageAvailability-DocumentReference-Klaassen-Groen-Report-2-4",
+  "id": "ImageAvailability-DocumentReference-Klaassen-Groen-Image-2-3",
   "meta": {
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/bbs-DocumentReference"
@@ -11,28 +11,23 @@
     {
       "coding": [
         {
-          "code": "18726-0",
-          "system": "http://loinc.org",
-          "display": "Radiology studies (set)"
-        },
-        {
-          "code": "REPORTS",
+          "code": "IMAGES",
           "system": "urn:oid:1.3.6.1.4.1.19376.1.2.6.1",
-          "display": "Reports"
+          "display": "Images"
         }
       ]
     }
   ],
   "masterIdentifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:0a61a231-1b52-4ba5-b86c-9edac0bfa044"
+    "value": "urn:uuid:57b49159-5c9e-424d-8a09-b240c13a395d"
   },
   "type": {
     "coding": [
       {
-        "code": "142771000146105",
+        "code": "399208008",
         "system": "http://snomed.info/sct",
-        "display": "röntgenfoto van linker kaakgewricht"
+        "display": "longfoto"
       }
     ]
   },
@@ -40,15 +35,15 @@
     "reference": "Patient/ImageAvailability-Patient-Klaassen-Groen",
     "display": "José Klaassen-Groen"
   },
-  "date": "2020-08-10T12:00:00+02:00",
+  "date": "1993-02-06T12:00:00+01:00",
   "author": [
     {
-      "reference": "PractitionerRole/ImageAvailability-PractitionerRole-Coenen",
-      "display": "C.H. Coenen, Kaakchirurg"
+      "reference": "PractitionerRole/ImageAvailability-PractitionerRole-Janssen",
+      "display": "Janssen, Orthopedisch chirurg"
     },
     {
-      "reference": "Organization/ImageAvailability-Organization-ErasmusMC-Mondzorg-Universitair",
-      "display": "Erasmus MC, Mondzorg en kaakchirurgie, Universitair ziekenhuis"
+      "reference": "Organization/ImageAvailability-Organization-ErasmusMC-Radiologie-Universitair",
+      "display": "Erasmus MC, Radiologie, Universitair Medisch Centrum"
     }
   ],
   "securityLabel": [
@@ -65,28 +60,39 @@
   "content": [
     {
       "attachment": {
-        "contentType": "application/pdf",
+        "contentType": "application/dicom+json",
         "language": "nl",
-        "url": "Binary/ImageAvailability-Binary-Report-2-4",
-        "title": "röntgenfoto van linker kaakgewricht",
-        "creation": "2020-08-10T12:00:00+02:00"
+        "url": "https://examplepacs.example.com/wado/studies/2.16.528.1.1007.3.1.20250212.456789/series/2.25.99377514515580500840839615593451061523/instances/2.25.258000159807854729618851821502203021554",
+        "title": "longfoto",
+        "creation": "1993-02-06T12:00:00+01:00"
       },
       "format": {
-        "code": "urn.ihe.rad:PDF",
-        "system": "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
+        "code": "1.2.840.10008.5.1.4.1.1.88.59",
+        "system": "http://dicom.nema.org/resources/ontology/DCMUID"
       }
     }
   ],
   "context": {
+    "event": [
+      {
+        "coding": [
+          {
+            "code": "OT",
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "display": "Other"
+          }
+        ]
+      }
+    ],
     "period": {
-      "start": "2020-08-10"
+      "start": "1993-02-06"
     },
     "facilityType": {
       "coding": [
         {
           "code": "V5",
           "system": "http://nictiz.nl/fhir/NamingSystem/organization-type",
-          "display": "Universitair ziekenhuis"
+          "display": "Universitair Medisch Centrum"
         }
       ]
     },
@@ -114,11 +120,11 @@
               }
             ]
           },
-          "system": "urn:oid:2.16.528.1.1023.19.1.1",
-          "value": "RAD-20250212-74920",
+          "system": "urn:oid:2.16.840.1.113883.2.4.3.6",
+          "value": "RAD-20250212-50637",
           "assigner": {
-            "reference": "Organization/ImageAvailability-Organization-ErasmusMC-Mondzorg-Universitair",
-            "display": "Erasmus MC, Mondzorg en kaakchirurgie, Universitair ziekenhuis"
+            "reference": "Organization/ImageAvailability-Organization-ErasmusMC-Radiologie-Universitair",
+            "display": "Erasmus MC, Radiologie, Universitair Medisch Centrum"
           }
         }
       },
@@ -132,7 +138,8 @@
               }
             ]
           },
-          "value": "2.16.528.1.1007.3.1.20250212.456342"
+          "system": "urn:dicom:uid",
+          "value": "urn:oid:2.16.528.1.1007.3.1.20250212.456789"
         }
       }
     ]
