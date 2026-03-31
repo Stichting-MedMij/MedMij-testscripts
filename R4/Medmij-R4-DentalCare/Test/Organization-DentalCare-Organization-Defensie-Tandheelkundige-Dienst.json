@@ -2,6 +2,13 @@
   "resourceType": "Organization",
   "id": "DentalCare-Organization-Defensie-Tandheelkundige-Dienst",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
     ]
@@ -41,12 +48,29 @@
       ],
       "use": "work",
       "city": "Utrecht",
-      "postalCode": "3584 AB"
+      "postalCode": "3584 AB",
+      "country": "Nederland",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NL",
+                  "system": "urn:iso:std:iso:3166",
+                  "display": "Netherlands"
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>AGB-code: 12095095<br/>Telefoon: +31653603740<br/>E-mail: PJ.Jumpertz.01@mindef.nl<br/>Adres: Herculeslaan 1, 3584 AB Utrecht</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Defensie Tandheelkundige Dienst<br/>AGB-code: 12095095<br/>Telefoon: +31653603740<br/>E-mail: PJ.Jumpertz.01@mindef.nl<br/>Adres: Herculeslaan 1, 3584 AB Utrecht</div>"
   },
   "identifier": [
     {
@@ -54,7 +78,7 @@
       "value": "12095095"
     }
   ],
-  "name": "Ministerie van Defensie DTD Tandheelkunde",
+  "name": "Defensie Tandheelkundige Dienst",
   "telecom": [
     {
       "system": "phone",

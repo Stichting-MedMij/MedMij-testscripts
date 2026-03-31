@@ -2,6 +2,13 @@
   "resourceType": "Observation",
   "id": "DentalCare-PeriodicPeriodontalScreeningScore-Jansen",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
     ]
@@ -22,13 +29,15 @@
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen"
+    "display": "Anita Jansen",
+    "type": "Patient"
   },
   "effectiveDateTime": "2022-02-11T08:43:00+01:00",
   "performer": [
     {
       "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
-      "display": "D. de Ruiter, Tandarts"
+      "display": "D. de Ruiter, Tandarts",
+      "type": "PractitionerRole"
     }
   ],
   "valueCodeableConcept": {

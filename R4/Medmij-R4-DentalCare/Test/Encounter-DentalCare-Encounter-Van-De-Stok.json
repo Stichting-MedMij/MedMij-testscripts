@@ -2,6 +2,13 @@
   "resourceType": "Encounter",
   "id": "DentalCare-Encounter-Van-De-Stok",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
     ]
@@ -12,9 +19,9 @@
   },
   "status": "planned",
   "class": {
-    "code": "AMB",
-    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-    "display": "Ambulatory"
+    "code": "OTH",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "display": "Anders"
   },
   "type": [
     {
@@ -23,13 +30,15 @@
   ],
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",
-    "display": "Berend van de Stok"
+    "display": "Berend van de Stok",
+    "type": "Patient"
   },
   "participant": [
     {
       "individual": {
         "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
-        "display": "B. Dijkstra, Tandarts"
+        "display": "B. Dijkstra, Tandarts",
+        "type": "PractitionerRole"
       }
     }
   ],
@@ -41,7 +50,8 @@
     {
       "location": {
         "reference": "Location/DentalCare-Location-CWZ-Nijmegen",
-        "display": "CWZ Nijmegen"
+        "display": "CWZ Nijmegen",
+        "type": "Location"
       }
     }
   ]
