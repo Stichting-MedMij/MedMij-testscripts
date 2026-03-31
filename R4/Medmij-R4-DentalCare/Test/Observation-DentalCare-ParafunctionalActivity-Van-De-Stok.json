@@ -2,6 +2,13 @@
   "resourceType": "Observation",
   "id": "DentalCare-ParafunctionalActivity-Van-De-Stok",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
     ]
@@ -22,13 +29,15 @@
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",
-    "display": "Berend van de Stok"
+    "display": "Berend van de Stok",
+    "type": "Patient"
   },
   "effectiveDateTime": "2024-01-01T08:43:00+01:00",
   "performer": [
     {
       "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
-      "display": "B. Dijkstra, Tandarts"
+      "display": "B. Dijkstra, Tandarts",
+      "type": "PractitionerRole"
     }
   ],
   "valueString": "Tanden knarsen tijdens slaap"

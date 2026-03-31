@@ -2,6 +2,13 @@
   "resourceType": "Patient",
   "id": "DentalCare-Patient-Jansen",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
     ]
@@ -21,6 +28,7 @@
   ],
   "name": [
     {
+      "use": "official",
       "given": [
         "Anita"
       ],
@@ -34,7 +42,6 @@
           ]
         }
       ],
-      "use": "official",
       "text": "Anita Jansen",
       "family": "Jansen",
       "_family": {
@@ -72,7 +79,8 @@
           }
         ]
       },
-      "value": "+31612345678"
+      "value": "+31612345678",
+      "use": "home"
     },
     {
       "system": "email",

@@ -2,6 +2,13 @@
   "resourceType": "Coverage",
   "id": "DentalCare-Payer-InsuranceCompany-Van-Oranje",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany"
     ]
@@ -23,7 +30,8 @@
   "subscriberId": "12345678",
   "beneficiary": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje"
+    "display": "Erik van Oranje",
+    "type": "Patient"
   },
   "period": {
     "start": "2025-01-01",
@@ -32,7 +40,8 @@
   "payor": [
     {
       "reference": "Organization/DentalCare-Organization-Zorgkantoor-Groningen",
-      "display": "Zorgkantoor Groningen"
+      "display": "Zorgkantoor Groningen",
+      "type": "Organization"
     }
   ]
 }

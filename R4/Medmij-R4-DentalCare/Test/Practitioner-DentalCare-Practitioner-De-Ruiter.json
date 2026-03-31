@@ -2,12 +2,20 @@
   "resourceType": "Practitioner",
   "id": "DentalCare-Practitioner-De-Ruiter",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
     ]
   },
   "name": [
     {
+      "use": "official",
       "given": [
         "D."
       ],
@@ -21,7 +29,6 @@
           ]
         }
       ],
-      "use": "official",
       "text": "D. de Ruiter",
       "family": "de Ruiter",
       "_family": {
@@ -55,7 +62,7 @@
         }
       ],
       "line": [
-        "Smitweg 1"
+        "Simon Smitweg 1"
       ],
       "_line": [
         {
@@ -95,7 +102,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: D. de Ruiter<br/>BIG-nummer: 12101002<br/>Telefoon: +31612345678<br/>E-mail: deruiter@tandarts.nl<br/>Adres: Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: D. de Ruiter<br/>BIG-nummer: 12101002<br/>Telefoon: +31612345678<br/>E-mail: deruiter@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
   },
   "identifier": [
     {
