@@ -2,6 +2,13 @@
   "resourceType": "Location",
   "id": "DentalCare-Location-Vliegbasis-Gilze-Rijen",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
     ]
@@ -40,11 +47,28 @@
     ],
     "use": "work",
     "city": "Rijen",
-    "postalCode": "5120 AA"
+    "postalCode": "5120 AA",
+    "country": "Nederland",
+    "_country": {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "NL",
+                "system": "urn:iso:std:iso:3166",
+                "display": "Netherlands"
+              }
+            ]
+          }
+        }
+      ]
+    }
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Vliegbasis Gilze-Rijen<br/>Telefoon: 0889502753<br/>Adres: Rijksweg 121, 5120 AA Rijen<br/>Beherende organisatie: Ministerie van Defensie DTD Tandheelkunde</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Vliegbasis Gilze-Rijen<br/>Telefoon: 0889502753<br/>Adres: Rijksweg 121, 5120 AA Rijen<br/>Beherende organisatie: Defensie Tandheelkundige Dienst</div>"
   },
   "name": "Vliegbasis Gilze-Rijen",
   "telecom": [
@@ -56,6 +80,7 @@
   ],
   "managingOrganization": {
     "reference": "Organization/DentalCare-Organization-Defensie-Tandheelkundige-Dienst",
-    "display": "Ministerie van Defensie DTD Tandheelkunde"
+    "display": "Defensie Tandheelkundige Dienst",
+    "type": "Organization"
   }
 }

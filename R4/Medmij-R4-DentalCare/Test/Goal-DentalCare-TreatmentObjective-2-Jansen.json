@@ -2,8 +2,15 @@
   "resourceType": "Goal",
   "id": "DentalCare-TreatmentObjective-2-Jansen",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective"
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
     ]
   },
   "text": {
@@ -25,6 +32,7 @@
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen"
+    "display": "Anita Jansen",
+    "type": "Patient"
   }
 }

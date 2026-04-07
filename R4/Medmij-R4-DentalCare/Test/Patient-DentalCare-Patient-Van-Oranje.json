@@ -2,6 +2,13 @@
   "resourceType": "Patient",
   "id": "DentalCare-Patient-Van-Oranje",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
     ]
@@ -40,6 +47,7 @@
   ],
   "name": [
     {
+      "use": "official",
       "given": [
         "Erik"
       ],
@@ -53,7 +61,6 @@
           ]
         }
       ],
-      "use": "official",
       "text": "Erik van Oranje",
       "family": "van Oranje",
       "_family": {
@@ -95,7 +102,8 @@
           }
         ]
       },
-      "value": "+31612345600"
+      "value": "+31612345600",
+      "use": "home"
     },
     {
       "system": "email",

@@ -2,6 +2,13 @@
   "resourceType": "Encounter",
   "id": "DentalCare-Encounter-2-Van-Oranje",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
     ]
@@ -22,9 +29,9 @@
   },
   "status": "finished",
   "class": {
-    "code": "AMB",
-    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-    "display": "Ambulatory"
+    "code": "OTH",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "display": "Anders"
   },
   "type": [
     {
@@ -33,13 +40,15 @@
   ],
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje"
+    "display": "Erik van Oranje",
+    "type": "Patient"
   },
   "participant": [
     {
       "individual": {
         "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
-        "display": "A.B.D.O. de Koning, Tandarts"
+        "display": "A.B.D.O. de Koning, Tandarts",
+        "type": "PractitionerRole"
       }
     }
   ],
@@ -51,7 +60,8 @@
     {
       "location": {
         "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-        "display": "Vliegbasis Gilze-Rijen"
+        "display": "Vliegbasis Gilze-Rijen",
+        "type": "Location"
       }
     }
   ]

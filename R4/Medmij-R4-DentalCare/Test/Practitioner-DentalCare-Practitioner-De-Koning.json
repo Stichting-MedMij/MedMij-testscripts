@@ -2,12 +2,20 @@
   "resourceType": "Practitioner",
   "id": "DentalCare-Practitioner-De-Koning",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
     ]
   },
   "name": [
     {
+      "use": "official",
       "given": [
         "A.",
         "B.",
@@ -48,7 +56,6 @@
           ]
         }
       ],
-      "use": "official",
       "text": "A.B.D.O. de Koning",
       "family": "de Koning",
       "_family": {
@@ -122,7 +129,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: A.B.D.O de Koning<br/>BIG-nummer: 12070100<br/>Telefoon: +31612345600<br/>E-mail: dekoning@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: A.B.D.O de Koning<br/>BIG-nummer: 12070100<br/>Telefoon: +31612345601<br/>E-mail: dekoning@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
   },
   "identifier": [
     {
@@ -133,7 +140,7 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "+31612345600",
+      "value": "+31612345601",
       "use": "work"
     },
     {
