@@ -7,6 +7,11 @@
         "code": "1200",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
         "display": "Tandartsen"
+      },
+      {
+        "code": "1201",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandarts, implantoloog"
       }
     ],
     "profile": [
@@ -31,7 +36,7 @@
     "coding": [
       {
         "code": "R67",
-        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.010",
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.10",
         "display": "Plaatsen opbouw ten behoeve van implantaatkroon"
       }
     ]
