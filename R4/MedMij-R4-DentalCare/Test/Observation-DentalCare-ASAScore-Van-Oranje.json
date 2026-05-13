@@ -16,8 +16,8 @@
   "code": {
     "coding": [
       {
-        "code": "413347006",
         "system": "http://snomed.info/sct",
+        "code": "413347006",
         "display": "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
       }
     ]

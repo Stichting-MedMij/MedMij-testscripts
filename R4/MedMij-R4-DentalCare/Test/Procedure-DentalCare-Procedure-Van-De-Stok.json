@@ -4,9 +4,9 @@
   "meta": {
     "tag": [
       {
-        "code": "1200",
+        "code": "1300",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Tandartsen"
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
       }
     ],
     "profile": [
@@ -24,14 +24,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Wortelpuntoperatie, per tandwortel, zonder afsluiting<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Tandarts<br/>Locatie: Tandartspraktijk Dijkstra</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eerste consult<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Tandarts<br/>Locatie: Tandartspraktijk Dijkstra</div>"
   },
   "status": "completed",
   "code": {
     "coding": [
       {
         "code": "F121A",
-        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.010",
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.10",
         "display": "Eerste consult"
       }
     ]

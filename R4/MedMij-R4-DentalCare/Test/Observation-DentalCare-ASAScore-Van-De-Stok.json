@@ -4,9 +4,9 @@
   "meta": {
     "tag": [
       {
-        "code": "1200",
+        "code": "1300",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Tandartsen"
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
       }
     ],
     "profile": [
@@ -16,8 +16,8 @@
   "code": {
     "coding": [
       {
-        "code": "413347006",
         "system": "http://snomed.info/sct",
+        "code": "413347006",
         "display": "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
       }
     ]
