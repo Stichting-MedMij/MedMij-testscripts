@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-OralHygiene-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      },
+      {
+        "code": "8700",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Mondhygiënisten"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "364126007",
+        "system": "http://snomed.info/sct",
+        "display": "oral hygiene status"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Mondhygiëne: zeer slecht<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2022-02-11T10:43:00+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+      "display": "D. de Ruiter, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "1336219002",
+        "system": "http://snomed.info/sct",
+        "display": "zeer slecht"
+      }
+    ]
+  }
+}

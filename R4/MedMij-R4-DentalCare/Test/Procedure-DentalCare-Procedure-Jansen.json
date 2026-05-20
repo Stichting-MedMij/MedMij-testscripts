@@ -1,0 +1,59 @@
+{
+  "resourceType": "Procedure",
+  "id": "DentalCare-Procedure-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "225362009",
+        "system": "http://snomed.info/sct",
+        "display": "tandheelkundige zorg"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Maken en beoordelen kleine röntgenfoto<br/>Patiënt: Anita Jansen<br/>Status: Voltooid<br/>Datum: 2022-02-11<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Tandartspraktijk de Ruiter</div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "X10",
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.10",
+        "display": "Maken en beoordelen kleine röntgenfoto"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen",
+    "type": "Patient"
+  },
+  "performedDateTime": "2022-02-11",
+  "performer": [
+    {
+      "actor": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+        "display": "D. de Ruiter, Tandarts",
+        "type": "PractitionerRole"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
+    "display": "Vliegbasis Gilze-Rijen",
+    "type": "Location"
+  }
+}

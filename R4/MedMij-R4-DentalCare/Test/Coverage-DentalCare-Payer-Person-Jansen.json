@@ -1,0 +1,61 @@
+{
+  "resourceType": "Coverage",
+  "id": "DentalCare-Payer-Person-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson"
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/coverage-selfpay",
+        "code": "pay",
+        "display": "Pay"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation",
+      "extension": [
+        {
+          "url": "bankName",
+          "valueString": "RABO"
+        },
+        {
+          "url": "bankCode",
+          "valueString": "RABO21NL"
+        },
+        {
+          "url": "accountNumber",
+          "valueString": "NL21RABO0001234567"
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
+  },
+  "status": "active",
+  "beneficiary": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen",
+    "type": "Patient"
+  },
+  "payor": [
+    {
+      "reference": "Patient/DentalCare-Patient-Jansen",
+      "display": "Anita Jansen",
+      "type": "Patient"
+    }
+  ]
+}
