@@ -5,7 +5,7 @@
    </meta>
    <contained>
       <Practitioner>
-         <id value="p1"/>
+         <id value="practitioner-slachter"/>
          <name>
             <family value="Slachter">
                <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
@@ -55,7 +55,7 @@
    </subject>
    <indexed value="2025-05-29T00:00:00+01:00"/>
    <author>
-      <reference value="#p1"/>
+      <reference value="practitioner-slachter"/>
       <display value="A.B.C. Slachter"/>
    </author>
    <description value="Description - Brief ter ontslag neurochirurgie"/>
