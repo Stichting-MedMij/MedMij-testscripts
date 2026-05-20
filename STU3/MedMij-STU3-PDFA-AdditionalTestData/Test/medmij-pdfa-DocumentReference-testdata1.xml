@@ -7,12 +7,12 @@
       <Practitioner>
          <id value="p1"/>
          <name>
-            <family value="Snijder">
+            <family value="Slachter">
                <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-                  <valueString value="Snijder"/>
+                  <valueString value="Slachter"/>
                </extension>
             </family>
-            <given value="A.F.">
+            <given value="A.B.C.">
                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
                   <valueCode value="IN"/>
                </extension>
@@ -56,7 +56,7 @@
    <indexed value="2025-05-29T00:00:00+01:00"/>
    <author>
       <reference value="#p1"/>
-      <display value="A.F. Snijder"/>
+      <display value="A.B.C. Slachter"/>
    </author>
    <description value="Description - Brief ter ontslag neurochirurgie"/>
    <securityLabel>
