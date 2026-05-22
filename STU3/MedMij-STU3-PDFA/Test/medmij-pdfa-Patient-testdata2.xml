@@ -1,0 +1,56 @@
+<Patient xmlns="http://hl7.org/fhir">
+   <id value="example-pdfa-testdata-patient2"/>
+   <meta>
+      <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient"/>
+   </meta>
+   <identifier>
+      <system value="http://fhir.nl/fhir/NamingSystem/bsn" />
+      <value>
+         <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked" />
+         </extension>
+      </value>
+   </identifier>
+   <name>
+      <text value="Jenny de Doeg"/>
+      <family value="de Doeg">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+         <valueString value="de Doeg"/>
+      </extension>
+      </family>
+      <given value="Jenny">
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+            <valueCode value="BR"/>
+         </extension>
+      </given>
+      <given value="J">
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+            <valueCode value="IN"/>
+         </extension>
+      </given>
+   </name>
+   <gender value="female">
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+         <valueCodeableConcept>
+            <coding>
+               <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+               <code value="F"/>
+               <display value="Vrouw"/>
+            </coding>
+         </valueCodeableConcept>
+      </extension>
+   </gender>
+   <birthDate value="1974-08-02"/>
+   <address>
+      <line value="Teststraat 9">
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+            <valueString value="Teststraat"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+            <valueString value="9"/>
+         </extension>
+      </line>
+      <city value="Alkmaar"/>
+      <postalCode value="1111XX"/>
+   </address>
+</Patient>
