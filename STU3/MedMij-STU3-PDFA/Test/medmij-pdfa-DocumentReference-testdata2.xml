@@ -1,0 +1,76 @@
+<DocumentReference xmlns="http://hl7.org/fhir">
+   <id value="pdfa-documentreference-testdata2"/>
+   <meta>
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference"/>
+   </meta>
+   <contained>
+      <Practitioner>
+         <id value="practitioner-slachter"/>
+         <name>
+            <family value="Slachter">
+               <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                  <valueString value="Slachter"/>
+               </extension>
+            </family>
+            <given value="A.B.C.">
+               <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                  <valueCode value="IN"/>
+               </extension>
+            </given>
+         </name>
+      </Practitioner>
+   </contained>
+   <masterIdentifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:1.2.276.0.7230010.3.1.2.1787205428.3024.1522314975.230113"/>
+   </masterIdentifier>
+   <identifier>
+      <system value="http://xis.org/fhir/NamingSystem/DocumentReferenceID"/>
+      <value value="852889"/>
+   </identifier>
+   <status value="current"/>
+   <type>
+      <coding>
+         <system value="http://loinc.org"/>
+         <code value="68688-1"/>
+         <display value="Neurological surgery Discharge summary"/>
+      </coding>
+      <coding>
+         <system value="http://ziekenhuis.nl/fhir/CodeSystem/document-types"/>
+         <code value="NS-DS-001"/>
+         <display value="Niet-LOINC Ontslagbrief neurochirurgie"/>
+      </coding>
+      <text value="TypeText - dit is een ontslagbrief"/>
+   </type>
+   <class>
+      <coding>
+         <system value="http://loinc.org"/>
+         <code value="18842-5"/>
+         <display value="Discharge summary"/>
+      </coding>
+   </class>
+   <subject>
+      <reference value="Patient/example-pdfa-testdata-patient1"/>
+      <display value="Tinus Testus"/>
+   </subject>
+   <indexed value="2025-06-29T00:00:00+01:00"/>
+   <author>
+      <reference value="#practitioner-slachter"/>
+      <display value="A.B.C. Slachter"/>
+   </author>
+   <description value="Description - Brief ter ontslag neurochirurgie"/>
+   <securityLabel>
+      <coding>
+         <system value="http://hl7.org/fhir/v3/Confidentiality"/>
+         <code value="V"/>
+         <display value="very restricted"/>
+      </coding>
+   </securityLabel>
+   <content>
+      <attachment>
+         <contentType value="application/pdf"/>
+         <language value="en"/>
+         <url value="Binary/pdfa-binary-testdata1"/>
+      </attachment>
+   </content>
+</DocumentReference>

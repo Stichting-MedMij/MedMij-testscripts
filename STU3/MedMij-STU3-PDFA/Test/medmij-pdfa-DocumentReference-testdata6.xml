@@ -1,0 +1,71 @@
+<DocumentReference xmlns="http://hl7.org/fhir">
+   <id value="pdfa-documentreference-testdata6"/>
+   <meta>
+      <profile value="http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference"/>
+   </meta>
+   <contained>
+      <Practitioner>
+         <id value="practitioner-sloetjes"/>
+         <name>
+            <family value="Sloetjes">
+               <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                  <valueString value="Sloetjes"/>
+               </extension>
+            </family>
+            <given value="C.B.C.">
+               <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                  <valueCode value="IN"/>
+               </extension>
+            </given>
+         </name>
+      </Practitioner>
+   </contained>
+   <masterIdentifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:1.2.276.0.7230010.3.1.2.1787205428.3024.1522314975.230513"/>
+   </masterIdentifier>
+   <identifier>
+      <system value="http://xis.org/fhir/NamingSystem/DocumentReferenceID"/>
+      <value value="852893"/>
+   </identifier>
+   <status value="current"/>
+   <type>
+      <coding>
+         <system value="http://loinc.org"/>
+         <code value="24606-6"/>
+         <display value="Breast Mammogram screening"/>
+      </coding>
+      <text value="TypeText - Uitslag_Bevolkingsonderzoek_Borstkanker"/>
+   </type>
+   <class>
+      <coding>
+         <system value="http://loinc.org"/>
+         <code value="27898-6"/>
+         <display value="Pathology studies (set)"/>
+      </coding>
+   </class>
+   <subject>
+      <reference value="Patient/example-pdfa-testdata-patient2"/>
+      <display value="Jenny de Doeg"/>
+   </subject>
+   <indexed value="2026-05-20T00:00:00+01:00"/>
+   <author>
+      <reference value="#practitioner-sloetjes"/>
+      <display value="C.B.C. Sloetjes"/>
+   </author>
+   <securityLabel>
+      <coding>
+         <system value="http://hl7.org/fhir/v3/Confidentiality"/>
+         <code value="V"/>
+         <display value="very restricted"/>
+      </coding>
+   </securityLabel>
+   <content>
+      <attachment>
+         <contentType value="application/pdf"/>
+         <language value="nl"/>
+         <url value="Binary/pdfa-binary-testdata2"/>
+         <title value="2026_05_20_Uitslag_Bevolkingsonderzoek_Borstkanker"/>
+      </attachment>
+   </content>
+</DocumentReference>
