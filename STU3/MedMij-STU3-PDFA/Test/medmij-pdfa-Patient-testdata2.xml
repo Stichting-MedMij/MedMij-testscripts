@@ -14,9 +14,12 @@
    <name>
       <text value="Jenny de Doeg"/>
       <family value="de Doeg">
-      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-         <valueString value="de Doeg"/>
-      </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+            <valueString value="de"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+            <valueString value="Doeg"/>
+         </extension>
       </family>
       <given value="Jenny">
          <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
