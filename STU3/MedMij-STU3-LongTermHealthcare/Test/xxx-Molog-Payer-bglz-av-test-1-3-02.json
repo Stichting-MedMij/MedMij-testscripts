@@ -1,0 +1,56 @@
+{
+  "resourceType": "Coverage",
+  "id": "Payer-bglz-av-test-1-3-02",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Payer"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Verzekering</caption>\n        <tbody>\n          <tr>\n            <th>Betaler</th>\n            <td>Johan Timmerman</td>\n          </tr>\n          <tr>\n            <th>Begunstigde</th>\n            <td>Maria XXX_Molog</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "9904c239-1326-46e4-8256-ea42fdf51235"
+    }
+  ],
+  "status": "active",
+  "beneficiary": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "payor": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation",
+          "extension": [
+            {
+              "url": "BankName",
+              "valueString": "RABO"
+            },
+            {
+              "url": "Bankcode",
+              "valueString": "RABO21NL"
+            },
+            {
+              "url": "AccountNumber",
+              "valueString": "NL21RABO0001234567"
+            }
+          ]
+        }
+      ],
+      "reference": "RelatedPerson/RelatedPerson-bglz-av-test-Timmerman",
+      "display": "Johan Timmerman"
+    }
+  ]
+}

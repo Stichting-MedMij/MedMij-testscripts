@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "LivingSituation-bglz-av-test-1-1",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Fiona XXX_Mutter. Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">woning is op derde verdieping, is gelijkvloers en er is een lift aanwezig</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"bevinding betreffende woon- en huisvestingssituatie (365508006 - SNOMED CT)\">bevinding betreffende woon- en huisvestingssituatie</span>\n            </td>\n            <td>\n              <span title=\"Appartement of flatwoning (FLATW - 2.16.840.1.113883.2.4.3.11.60.40.4.13.1)\">Appartement of flatwoning</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "c4d34903-4f91-479d-906d-47ceb18f6076"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "365508006",
+        "display": "bevinding betreffende woon- en huisvestingssituatie"
+      }
+    ]
+  },
+  "effectiveDateTime": "2025-06-18T15:30:00+00:00",
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-1",
+    "display": "Fiona XXX_Mutter"
+  },
+  "performer": [
+    {
+      "reference": "Organization/Organization-bglz-av-test-ThuiszorgOrg-Noord",
+      "display": "ThuiszorgOrg Noord"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1",
+        "code": "FLATW",
+        "display": "Appartement of flatwoning"
+      }
+    ]
+  },
+  "comment": "woning is op derde verdieping, is gelijkvloers en er is een lift aanwezig"
+}

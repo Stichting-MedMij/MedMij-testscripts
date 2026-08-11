@@ -1,0 +1,179 @@
+{
+  "resourceType": "Observation",
+  "id": "BloodPressure-bglz-av-test-1-3",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Maria XXX_Molog. Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">mevrouw gebruikt medicatie</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2025-03-15T14:45:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Methode</th>\n            <td>\n              <span title=\"non-invasief (22762002 - SNOMED CT)\">non-invasief</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Deel van lichaam</th>\n            <td>\n              <span title=\"structuur van linker bovenarm (368208006 - SNOMED CT)\">structuur van linker bovenarm</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Bloeddruk panel waarvan alle leden optioneel in arterieel vaatstelsel (85354-9 - LOINC)\">Bloeddruk panel waarvan alle leden optioneel in arterieel vaatstelsel</span>\n            </td>\n            <td/>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel (8480-6 - LOINC)\">Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel</span>\n            </td>\n            <td>160 mmHg</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel (8462-4 - LOINC)\">Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel</span>\n            </td>\n            <td>92 mmHg</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"gemiddelde bloeddruk (6797001 - SNOMED CT)\">gemiddelde bloeddruk</span>\n            </td>\n            <td>109 mmHg</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"bloeddrukmanchet (70665002 - SNOMED CT)\">bloeddrukmanchet</span>\n            </td>\n            <td>\n              <span title=\"Klein (S - 2.16.840.1.113883.2.4.3.11.60.40.4.15.1)\">Klein</span>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"lichaamspositie voor bepalen van bloeddruk (424724000 - SNOMED CT)\">lichaamspositie voor bepalen van bloeddruk</span>\n            </td>\n            <td>\n              <span title=\"zittende positie (33586001 - SNOMED CT)\">zittende positie</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "38312db0-5aa8-4338-9afa-7b1f62dcb17b"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "85354-9",
+        "display": "Bloeddruk panel waarvan alle leden optioneel in arterieel vaatstelsel"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "performer": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+          "valueReference": {
+            "reference": "PractitionerRole/PractitionerRole-bglz-av-test-Bos",
+            "display": "Julia van den Bos, Verpleegkundige, niet nader gespecificeerd"
+          }
+        }
+      ],
+      "reference": "Practitioner/Practitioner-bglz-av-test-Bos",
+      "display": "Julia van den Bos"
+    }
+  ],
+  "effectiveDateTime": "2025-03-15T13:45:00+00:00",
+  "comment": "mevrouw gebruikt medicatie",
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "368208006",
+        "display": "structuur van linker bovenarm"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "22762002",
+        "display": "non-invasief"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 160,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 92,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "6797001",
+            "display": "gemiddelde bloeddruk"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 109,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "70665002",
+            "display": "bloeddrukmanchet"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+            "code": "S",
+            "display": "Klein"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "424724000",
+            "display": "lichaamspositie voor bepalen van bloeddruk"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "33586001",
+            "display": "zittende positie"
+          }
+        ]
+      }
+    }
+  ]
+}

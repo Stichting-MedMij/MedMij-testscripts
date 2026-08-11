@@ -1,0 +1,68 @@
+{
+  "resourceType": "Condition",
+  "id": "Problem-bglz-test-1-3-02",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Aandoening. Subject: Maria XXX_Molog. Categorie: <span title=\"symptoom gerapporteerd door patiënt of andere bron van voorgeschiedenis (418799008 - SNOMED CT)\">symptoom gerapporteerd door patiënt of andere bron van voorgeschiedenis</span>, Status: actief / bevestigd</caption>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <td>\n              <span title=\"benauwdheid (267036007 - SNOMED CT)\">benauwdheid</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Eerste symptomen</th>\n            <td>2014-12-31</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "4ab7687c-babd-40df-b1e3-f46bc095227c"
+    }
+  ],
+  "clinicalStatus": "active",
+  "_clinicalStatus": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "55561003",
+              "display": "actief"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "418799008",
+          "display": "symptoom gerapporteerd door patiënt of andere bron van voorgeschiedenis"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "267036007",
+        "display": "benauwdheid"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "onsetDateTime": "2014-12-31T23:00:00+00:00"
+}

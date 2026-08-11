@@ -1,0 +1,101 @@
+{
+  "resourceType": "Encounter",
+  "id": "Encounter-bglz-av-test-1-3",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/lz-Encounter"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Contact. Subject: Maria XXX_Molog. Status: gepland</caption>\n        <tbody>\n          <tr>\n            <th>Type contact</th>\n            <td>\n              <div>\n                <span title=\"Anders (OTH - v3/NullFlavor)\">Opname in verpleeghuis</span>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2025-03-30T10:20:00+00:00</td>\n          </tr>\n          <tr>\n            <th>Reden</th>\n            <td>ziekte van Parkinson</td>\n          </tr>\n          <tr>\n            <th>Participant</th>\n            <td>\n              <div>Julia van den Bos<div>Zorgverlenerrol: Verpleegkundige, niet nader gespecificeerd</div>\n              </div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "115a703d-8f2b-4b10-bf80-58ecd85e548b"
+    }
+  ],
+  "status": "planned",
+  "class": {
+    "system": "http://hl7.org/fhir/v3/NullFlavor",
+    "code": "OTH",
+    "display": "Anders"
+  },
+  "type": [
+    {
+      "text": "Opname in verpleeghuis"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/ParticipationType",
+              "code": "PRF",
+              "display": "performer"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+            "valueReference": {
+              "reference": "PractitionerRole/PractitionerRole-bglz-av-test-Bos",
+              "display": "Julia van den Bos, Verpleegkundige, niet nader gespecificeerd"
+            }
+          }
+        ],
+        "reference": "Practitioner/Practitioner-bglz-av-test-Bos",
+        "display": "Julia van den Bos"
+      }
+    }
+  ],
+  "period": {
+    "start": "2025-03-30T10:20:00+00:00"
+  },
+  "diagnosis": [
+    {
+      "condition":
+        {
+          "reference": "Condition/Problem-bglz-test-1-3-01",
+          "display": "ziekte van Parkinson"
+        }
+    }
+  ],
+  "hospitalization": {
+    "admitSource": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "264362003",
+          "display": "thuis"
+        }
+      ]
+    },
+    "dischargeDisposition": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "42665001",
+          "display": "verpleeghuis"
+        }
+      ]
+    }
+  }
+}
