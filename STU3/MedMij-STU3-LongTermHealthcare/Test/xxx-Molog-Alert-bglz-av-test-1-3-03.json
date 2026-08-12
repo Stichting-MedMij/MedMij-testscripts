@@ -1,0 +1,74 @@
+{
+  "resourceType": "Flag",
+  "id": "Alert-bglz-av-test-1-3-03",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-Alert"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Attentievlag. Subject: Maria XXX_Molog. Categorie: <span title=\"Condition (75323-6 - LOINC)\">Condition</span>, Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <td>Anders (OTH - http://hl7.org/fhir/v3/NullFlavor)</td>\n          </tr>\n          <tr>\n            <th>Detail</th>\n            <td>Probleem, ziekte van Parkinson</td>\n          </tr>\n        <tr>\n            <th>Periode</th>\n            <td>Vanaf 2022-05-15</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/flag-detail",
+        "valueReference": {
+          "reference": "Condition/Problem-bglz-test-1-3-01",
+          "display": "ziekte van Parkinson"
+        }
+      }
+    ],
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "a78ea57a-5bcf-4db4-a5d7-ca3db871db00"
+    }
+  ],
+  "status": "active",
+  "category": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "75323-6",
+        "display": "Condition"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/NullFlavor",
+        "code": "OTH",
+        "display": "Anders"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "period": {
+    "start": "2022-05-15"
+  },
+  "author": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+        "valueReference": {
+          "reference": "PractitionerRole/PractitionerRole-bglz-av-test-Bos",
+          "display": "Julia van den Bos, Verpleegkundige, niet nader gespecificeerd"
+        }
+      }
+    ],
+    "reference": "Practitioner/Practitioner-bglz-av-test-Bos",
+    "display": "Julia van den Bos"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "AllergyIntolerance-bglz-test-1-3",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Allergie/intolerantie. Patiënt: Maria XXX_Molog / bevestigd</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">betreft zowel gekookte als rauwe selderij</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <td>\n              <span title=\"selderij (256326004 - SNOMED CT)\">selderij</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Eerste symptomen</th>\n            <td>2015-05-15</td>\n          </tr>\n          <tr>\n            <th>Reactie</th>\n            <td>\n              <ul>\n                <li>\n                  <div>\n                    <span title=\"misselijkheid en overgeven (16932000 - SNOMED CT)\">misselijkheid en overgeven</span>\n                  </div>\n                  <div>Misselijkheid en braken</div>\n                </li>\n              </ul>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+      "value": "c62ab43e-f6f0-4018-a0c9-43e344d5d00d"
+    }
+  ],
+  "clinicalStatus": "active",
+  "_clinicalStatus": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActStatus",
+              "code": "active",
+              "display": "Actief"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "verificationStatus": "confirmed",
+  "criticality": "high",
+  "_criticality": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "6736007",
+              "display": "matig"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "category": [
+    "food"
+  ],
+  "_category": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "418471000",
+                "display": "voedselovergevoeligheid"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "256326004",
+        "display": "selderij"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/Patient-bglz-test-1-3",
+    "display": "Maria XXX_Molog"
+  },
+  "onsetDateTime": "2015-05-15",
+  "note": [
+    {
+      "text": "betreft zowel gekookte als rauwe selderij"
+    }
+  ],
+  "reaction": [
+    {
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "16932000",
+              "display": "misselijkheid en overgeven"
+            }
+          ]
+        }
+      ],
+      "description": "Misselijkheid en braken"
+    }
+  ]
+}
