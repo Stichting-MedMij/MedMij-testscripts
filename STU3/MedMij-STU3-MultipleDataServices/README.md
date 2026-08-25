@@ -1,6 +1,6 @@
 # MedMij-STU3-MultipleDataServices
 
-This folder contains FHIR STU3 test data for the fictional test patient **Gé Gevens-Dienst**. The dataset combines information from multiple data services, including data services that are still under development.
+This folder contains FHIR STU3 test data for the fictional test patient **Gé Gevens-Dienst**. The dataset combines information from multiple active MedMij data services.
 
 ## Test patient
 
@@ -25,7 +25,8 @@ The applicable information standards and implementation guides remain authoritat
 ## Included data services
 
 - [Afspraken 2.0.57](Afspraken-2.0.57/README.md) — data service 47, FHIR STU3
-- [BgZ 1.2.2](BgZ-1.2.2/README.md) — Basisgegevensset Zorg (BgZ MSZ 2017), FHIR STU3
+- [BgZ 1.2.2](BgZ-1.2.2/README.md) — data service 48, Basisgegevensset Zorg (BgZ MSZ 2017), FHIR STU3
+- [Documenten 3.0.58](Documenten-3.0.58/README.md) — data service 51, PDF/A, FHIR STU3
 - [Huisartsgegevens 2.0.55](Huisartsgegevens-2.0.55/README.md) — data service 49, FHIR STU3
 - [Integrale Zwangerschapskaart 2.0.10](Integrale-Zwangerschapskaart-2.0.10/README.md) — data service 67, covering Verloskunde, Echo and Kraam, FHIR STU3
-- [Documenten]
+- [Laboratoriumresultaten 2.0.52](Laboratoriumresultaten-2.0.52/README.md) — data service 46, FHIR STU3

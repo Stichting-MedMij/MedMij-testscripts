@@ -1,6 +1,6 @@
 # MedMij-R4-MultipleDataServices
 
-This folder contains FHIR R4 test data for the fictional test patient **Gé Gevens-Dienst**. The dataset combines information from multiple data services, including data services that are still under development.
+This folder is reserved for FHIR R4 test data for the fictional test patient **Gé Gevens-Dienst**. Only active MedMij data services will be added.
 
 ## Test patient
 
@@ -24,3 +24,4 @@ The applicable information standards and implementation guides remain authoritat
 
 ## Included data services
 
+No R4 data services are included yet.
