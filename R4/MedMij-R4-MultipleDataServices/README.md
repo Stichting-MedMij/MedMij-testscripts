@@ -7,8 +7,10 @@ This folder contains FHIR R4 test data for the fictional test patient **Gé Geve
 - **Given name:** Gé
 - **Own family name:** Gevens
 - **Partner's family name:** Dienst
-- **Name usage:** NL4 (own family name followed by the partner's family name)
+- **Name usage:** NL4 — own family name followed by the partner's family name
 - **Display name:** Gé Gevens-Dienst
+
+All persons and clinical data represented in this folder are fictional and may only be used in test environments.
 
 ## Intended use
 
@@ -20,4 +22,6 @@ The dataset is based on existing fictional test patients and test data from the 
 
 The applicable information standards and implementation guides remain authoritative. The content of this folder is non-normative test data and does not introduce or change MedMij requirements.
 
-This test data was created within a limited timeframe and partly with the assistance of AI, and may therefore contain errors or inaccuracies. No rights may be derived from its contents.
+## Included data services
+
+- [Aanbiedertaken 1.0.0-alpha.1](Aanbiedertaken-1.0.0-alpha.1/README.md) — five provider tasks using the MedMij ontwikkel/verplicht provider module, FHIR R4

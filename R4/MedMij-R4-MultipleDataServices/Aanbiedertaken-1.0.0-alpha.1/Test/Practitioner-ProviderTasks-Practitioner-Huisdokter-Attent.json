@@ -1,0 +1,78 @@
+{
+  "resourceType": "Practitioner",
+  "id": "ProviderTasks-Practitioner-Huisdokter-Attent",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Huisdokter H. Huisarts Attent. Fictional test practitioner.</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://van-aanpakken.example.test/fhir/NamingSystem/practitioner-id",
+      "value": "TEST-PRAC-ATTENT-01"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "text": "Huisdokter H. Huisarts Attent",
+      "family": "Attent",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Attent"
+          }
+        ]
+      },
+      "given": [
+        "Huisdokter",
+        "H.",
+        "Huisarts"
+      ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "BR"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "IN"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "CL"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+31699990005",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "huisdokter.attent@van-aanpakken.example.test",
+      "use": "work"
+    }
+  ]
+}
+

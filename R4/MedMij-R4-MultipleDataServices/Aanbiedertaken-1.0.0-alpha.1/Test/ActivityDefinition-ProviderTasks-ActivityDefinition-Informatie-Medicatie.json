@@ -1,0 +1,34 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "ProviderTasks-ActivityDefinition-Informatie-Medicatie",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/pt-ActivityDefinition"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Information: inhaled medication during pregnancy.</div>"
+  },
+  "extension": [
+    {
+      "url": "http://koppeltaal.nl/fhir/StructureDefinition/KT2EndpointExtension",
+      "valueReference": {
+        "reference": "Endpoint/ProviderTasks-Endpoint-Aanbiedermodule"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://provider-tasks.example.test/fhir/NamingSystem/activity-id",
+      "value": "TEST-ACT-INHALER-INFORMATION-01"
+    }
+  ],
+  "url": "https://provider-tasks.example.test/fhir/ActivityDefinition/inhaled-medication-pregnancy",
+  "version": "1.0.0-test",
+  "name": "InformatieInhalatiemedicatieZwangerschap",
+  "title": "Inhalatiemedicatie tijdens de zwangerschap",
+  "status": "active",
+  "publisher": "MedMij Testteam",
+  "description": "Fictieve voorlichtingsmodule over juist gebruik van voorgeschreven inhalatiemedicatie tijdens de zwangerschap en wanneer contact met de huisarts nodig is."
+}

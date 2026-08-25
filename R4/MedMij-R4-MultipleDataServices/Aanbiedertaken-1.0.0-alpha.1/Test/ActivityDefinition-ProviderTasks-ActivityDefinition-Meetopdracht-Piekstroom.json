@@ -1,0 +1,34 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "ProviderTasks-ActivityDefinition-Meetopdracht-Piekstroom",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/pt-ActivityDefinition"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Measurement activity: peak expiratory flow.</div>"
+  },
+  "extension": [
+    {
+      "url": "http://koppeltaal.nl/fhir/StructureDefinition/KT2EndpointExtension",
+      "valueReference": {
+        "reference": "Endpoint/ProviderTasks-Endpoint-Aanbiedermodule"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://provider-tasks.example.test/fhir/NamingSystem/activity-id",
+      "value": "TEST-ACT-PEAK-FLOW-01"
+    }
+  ],
+  "url": "https://provider-tasks.example.test/fhir/ActivityDefinition/peak-flow-measurement",
+  "version": "1.0.0-test",
+  "name": "MeetopdrachtPiekstroom",
+  "title": "Piekstroom meten",
+  "status": "active",
+  "publisher": "MedMij Testteam",
+  "description": "Eenmalige fictieve meetopdracht voor drie piekstroommetingen vóór gebruik van de voorgeschreven inhalatiemedicatie."
+}

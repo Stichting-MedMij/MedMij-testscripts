@@ -1,0 +1,32 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ProviderTasks-ServiceRequestDigitalGroup-Zwanger-En-Luchtig",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/pt-ServiceRequest-DigitalGroupPlan"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Digital group plan Zwanger en luchtig for Gé Gevens-Dienst.</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://van-aanpakken.example.test/fhir/NamingSystem/service-request-id",
+      "value": "TEST-GROUP-GE-2026-01"
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "code": {
+    "text": "Digitale zorgmodule Zwanger en luchtig"
+  },
+  "subject": {
+    "reference": "Patient/GE-GEVENS-DIENST",
+    "display": "Gé Gevens-Dienst"
+  },
+  "requester": {
+    "reference": "PractitionerRole/ProviderTasks-PractitionerRole-Attent",
+    "display": "Huisdokter H. Huisarts Attent"
+  }
+}

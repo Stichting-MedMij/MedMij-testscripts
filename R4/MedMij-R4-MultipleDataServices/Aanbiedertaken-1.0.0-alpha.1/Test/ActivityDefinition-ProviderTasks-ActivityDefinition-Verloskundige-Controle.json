@@ -1,0 +1,34 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "ProviderTasks-ActivityDefinition-Verloskundige-Controle",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/pt-ActivityDefinition"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire: preparation for the midwife appointment.</div>"
+  },
+  "extension": [
+    {
+      "url": "http://koppeltaal.nl/fhir/StructureDefinition/KT2EndpointExtension",
+      "valueReference": {
+        "reference": "Endpoint/ProviderTasks-Endpoint-Aanbiedermodule"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://provider-tasks.example.test/fhir/NamingSystem/activity-id",
+      "value": "TEST-ACT-MIDWIFE-PREP-01"
+    }
+  ],
+  "url": "https://provider-tasks.example.test/fhir/ActivityDefinition/midwife-appointment-preparation",
+  "version": "1.0.0-test",
+  "name": "VoorbereidingVerloskundigeControle",
+  "title": "Voorbereiding op de verloskundigencontrole",
+  "status": "active",
+  "publisher": "MedMij Testteam",
+  "description": "Fictieve vragenlijst voor klachten, kindsbewegingen, medicatiegebruik en vragen die Gé tijdens de volgende controle wil bespreken."
+}

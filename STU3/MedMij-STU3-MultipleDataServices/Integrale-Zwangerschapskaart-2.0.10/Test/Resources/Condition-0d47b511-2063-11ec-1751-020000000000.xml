@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="0d47b511-2063-11ec-1751-020000000000"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Problem"/>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-DisorderOfPregnancy"/>
+  </meta>
+  <text>
+    <status value="extensions"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <table>
+        <caption>Aandoening. Subject: Gé Gevens-Dienst. Id: 7b4aa0cf-a6d9-11ed-1544-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title="zwangerschapsstoornis (aandoening) (173300003 - SNOMED CT)">zwangerschapsstoornis (aandoening)</span>, <span title="bevinding gerapporteerd door patiënt of andere bron van voorgeschiedenis (bevinding) (418799008 - SNOMED CT)">bevinding gerapporteerd door patiënt of andere bron van voorgeschiedenis (bevinding)</span>, Status: inactief</caption>
+        <tbody>
+          <tr>
+            <th>Code</th>
+            <td>
+              <span title="zwakke foetale bewegingen (bevinding) (276372004 - SNOMED CT)">zwakke foetale bewegingen (bevinding)</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Eerste symptomen</th>
+            <td>2026-08-15</td>
+          </tr>
+          <tr>
+            <th>Oplossing/remissie</th>
+            <td>2026-08-19</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/condition-partOf">
+    <valueReference>
+      <reference value="Condition/GE-PREGNANCY-CONDITION-2026"/>
+      <display value="Zwangerschap 2 Gé Gevens-Dienst"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6"/>
+    <value value="7b4aa0cf-a6d9-11ed-1544-020000000000"/>
+  </identifier>
+  <clinicalStatus value="inactive"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="173300003"/>
+      <display value="zwangerschapsstoornis (aandoening)"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="418799008"/>
+      <display value="bevinding gerapporteerd door patiënt of andere bron van voorgeschiedenis (bevinding)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="276372004"/>
+      <display value="zwakke foetale bewegingen (bevinding)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/GE-GEVENS-DIENST"/>
+    <display value="Gé Gevens-Dienst"/>
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/GE-PREGNANCY-2026"/>
+    <display value="Zwangerschap 2 Gé Gevens-Dienst"/>
+  </context>
+  <onsetDateTime value="2026-08-15"/>
+  <abatementDateTime value="2026-08-19"/>
+  <note>
+    <text value="Gé merkte minder beweging tijdens een opvallend rustige werkdag. Na controle bleek alles in orde."/>
+  </note>
+</Condition>

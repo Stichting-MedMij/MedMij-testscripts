@@ -1,0 +1,161 @@
+{
+  "resourceType": "Patient",
+  "id": "GE-GEVENS-DIENST",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Gé Gevens-Dienst, female, born 1 February 2000. Fictional test patient.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
+    }
+  ],
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+          "valueCode": "NL4"
+        }
+      ],
+      "use": "official",
+      "text": "Gé Gevens-Dienst",
+      "family": "Gevens-Dienst",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Gevens"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-name",
+            "valueString": "Dienst"
+          }
+        ]
+      },
+      "given": [
+        "Gé",
+        "G."
+      ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "BR"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "IN"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+31699990011",
+      "use": "home"
+    },
+    {
+      "system": "email",
+      "value": "ge.gevens-dienst@example.test",
+      "use": "home"
+    }
+  ],
+  "gender": "female",
+  "_gender": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+              "code": "F",
+              "display": "Female"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "birthDate": "2000-02-01",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                "code": "HP",
+                "display": "primary home"
+              }
+            ]
+          }
+        }
+      ],
+      "use": "home",
+      "type": "both",
+      "line": [
+        "Teststraat 1"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Teststraat"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "1"
+            }
+          ]
+        }
+      ],
+      "city": "Testdorp",
+      "postalCode": "9999 ZZ",
+      "country": "Nederland",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "code": "NL",
+                  "display": "Netherlands"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,56 @@
+{
+  "resourceType": "Task",
+  "id": "ProviderTasks-Task-Informatie-Medicatie",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/pt-Task"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Read information about inhaled medication during pregnancy.</div>"
+  },
+  "extension": [
+    {
+      "url": "http://vzvz.nl/fhir/StructureDefinition/instantiates",
+      "valueReference": {
+        "reference": "ActivityDefinition/ProviderTasks-ActivityDefinition-Informatie-Medicatie",
+        "type": "ActivityDefinition"
+      }
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/ProviderTasks-ServiceRequestDigitalGroup-Zwanger-En-Luchtig",
+      "display": "Digitale zorgmodule Zwanger en luchtig"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://van-aanpakken.example.test/fhir/NamingSystem/task-id",
+      "value": "TEST-TASK-GE-INHALER-20260825"
+    }
+  ],
+  "status": "requested",
+  "intent": "order",
+  "priority": "routine",
+  "description": "Lees hoe u de voorgeschreven inhalatiemedicatie tijdens de zwangerschap gebruikt en wanneer u contact opneemt met de huisarts.",
+  "for": {
+    "reference": "Patient/GE-GEVENS-DIENST",
+    "display": "Gé Gevens-Dienst"
+  },
+  "executionPeriod": {
+    "start": "2026-08-25",
+    "end": "2026-08-31"
+  },
+  "authoredOn": "2026-08-25T09:05:00+02:00",
+  "lastModified": "2026-08-25T09:05:00+02:00",
+  "requester": {
+    "reference": "PractitionerRole/ProviderTasks-PractitionerRole-Attent",
+    "display": "Huisdokter H. Huisarts Attent"
+  },
+  "owner": {
+    "reference": "Patient/GE-GEVENS-DIENST",
+    "display": "Gé Gevens-Dienst"
+  }
+}

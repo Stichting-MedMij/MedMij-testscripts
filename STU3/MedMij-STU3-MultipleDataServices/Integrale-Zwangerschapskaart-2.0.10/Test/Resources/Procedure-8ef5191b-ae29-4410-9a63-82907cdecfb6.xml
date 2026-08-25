@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="8ef5191b-ae29-4410-9a63-82907cdecfb6"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Procedure"/>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-ObstetricProcedure"/>
+  </meta>
+  <text>
+    <status value="extensions"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <table>
+        <caption>Verrichting. Subject: Gé Gevens-Dienst. Categorie: <span title="obstetrische verrichting (verrichting) (386637004 - SNOMED CT)">obstetrische verrichting (verrichting)</span>, Status: voltooid<span style="display: block;">Uitvoerende: Eef Echo<span style="display: block;">Zorgverlenerrol: <a href="http://nictiz.nl/fhir/PractitionerRole/2-13-572-2-1217-3-1157740001">Eef Echo Echopraktijk Kijk Eens</a>
+            </span>
+          </span>
+        </caption>
+        <tbody>
+          <tr>
+            <td>
+              <span title="echografie ter bepaling van geschatte datum van partus (verrichting) (133601000146101 - SNOMED CT)">echografie ter bepaling van geschatte datum van partus (verrichting)</span>
+            </td>
+            <td>
+              <div>Uitgevoerd: 2026-05-15</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </text>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="386637004"/>
+      <display value="obstetrische verrichting (verrichting)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="133601000146101"/>
+      <display value="echografie ter bepaling van geschatte datum van partus (verrichting)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/GE-GEVENS-DIENST"/>
+    <display value="Gé Gevens-Dienst"/>
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/GE-PREGNANCY-2026"/>
+    <display value="Zwangerschap 2 Gé Gevens-Dienst"/>
+  </context>
+  <performedDateTime value="2026-05-15"/>
+  <performer>
+    <actor>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+        <valueReference>
+          <reference value="http://nictiz.nl/fhir/PractitionerRole/2-13-572-2-1217-3-1157740001"/>
+          <display value="Eef Echo Echopraktijk Kijk Eens"/>
+        </valueReference>
+      </extension>
+      <reference value="Practitioner/2-16-368-1-1357-3-115650601"/>
+      <display value="Eef Echo"/>
+    </actor>
+  </performer>
+</Procedure>
