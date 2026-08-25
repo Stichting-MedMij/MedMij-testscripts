@@ -24,4 +24,3 @@ The applicable information standards and implementation guides remain authoritat
 
 ## Included data services
 
-- [Aanbiedertaken 1.0.0-alpha.1](Aanbiedertaken-1.0.0-alpha.1/README.md) — five provider tasks using the MedMij ontwikkel/verplicht provider module, FHIR R4
