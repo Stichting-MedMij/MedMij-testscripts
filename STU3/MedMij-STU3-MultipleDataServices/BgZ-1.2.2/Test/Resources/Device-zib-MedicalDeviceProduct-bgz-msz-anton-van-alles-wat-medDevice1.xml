@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Device xmlns="http://hl7.org/fhir">
+  <id value="zib-MedicalDeviceProduct-bgz-msz-anton-van-alles-wat-medDevice1" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct" />
+  </meta>
+  <identifier>
+    <system value="https://www.gs1.org/gtin" />
+    <value value="9321502032612" />
+  </identifier>
+  <udi>
+    <carrierHRF value="9321502032612" />
+  </udi>
+  <status value="active" />
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="360283003" />
+      <display value="gehoorapparaat" />
+    </coding>
+  </type>
+  <patient>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </patient>
+  <note>
+    <text value="Gehoorapparaat" />
+  </note>
+</Device>

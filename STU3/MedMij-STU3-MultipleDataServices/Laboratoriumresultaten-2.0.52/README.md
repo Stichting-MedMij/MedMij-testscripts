@@ -1,5 +1,7 @@
 # Laboratoriumresultaten 2.0.52 - gegevensdienst 46
 
+> **MultipleDataServices note:** In addition to the original Gé Gevens-Dienst scenario described below, this folder now contains a separate fictional test record for **Anton van Alles-Wat**. Clinical resources do not cross-reference the other patient. Anton's additions are summarized at the end of this README.
+
 This folder contains non-normative FHIR STU3 test data for retrieving laboratory results for the fictional patient **Gé Gevens-Dienst** through MedMij data service **46**.
 
 The material is intended for exploratory, integration, and functional testing only. It is **not qualification material** and must not be used to demonstrate compliance with MedMij qualification requirements.
@@ -87,3 +89,11 @@ The structure is based on the active MedMij data service, the Nictiz implementat
 The applicable information standards and implementation guides remain authoritative. This dataset does not introduce or change MedMij requirements.
 
 This material was created in a short period of time with the assistance of AI and may therefore contain errors, and no rights may be derived from this material or from any errors or omissions it contains.
+
+<!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
+## Additional test patient — Anton van Alles-Wat
+
+Anton's results cover chronic-disease and anticoagulation monitoring in June and July 2026. In addition to haemoglobin, MCV, ferritin, glucose, eosinophils, CRP, platelets and urine albumin, the set includes HbA1c **52 mmol/mol**, eGFR **68 mL/min/1.73 m²** and INR **2.4**. These are plausible fictional test values and must not be used for clinical interpretation.
+
+The folder now contains **42 XML resources**, of which **18 directly refer to Anton**. Specimens and observations use fixed dates and resolve to resources inside this service folder.
+<!-- ANTON-MULTIPLE-DATA-SERVICES:END -->

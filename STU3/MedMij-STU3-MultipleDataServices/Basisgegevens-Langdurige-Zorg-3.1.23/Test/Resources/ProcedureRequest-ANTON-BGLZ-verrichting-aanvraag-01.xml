@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ProcedureRequest xmlns="http://hl7.org/fhir">
+  <id value="ANTON-BGLZ-verrichting-aanvraag-01" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-ProcedureRequest" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="9557862b-e3e1-11eb-1355-020000000000" />
+  </identifier>
+  <status value="completed" />
+  <intent value="plan" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="34227000" />
+      <display value="Computertomografie van hersenen" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <requester>
+    <agent>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+        <valueReference>
+          <reference value="PractitionerRole/ANTON-BGLZ-zorgverlenerrol-02" />
+          <display value="Neuroloog" />
+        </valueReference>
+      </extension>
+      <reference value="Practitioner/ANTON-BGLZ-zorgverlener-02" />
+      <display value="Niels Helmond" />
+    </agent>
+  </requester>
+  <performer>
+    <reference value="Organization/ANTON-BGLZ-zorgaanbieder-01" />
+    <display value="AA-zkh - Noord" />
+  </performer>
+  <reasonReference>
+    <reference value="Condition/ANTON-BGLZ-probleem-01" />
+    <display value="ischemisch cerebrovasculair accident" />
+  </reasonReference>
+</ProcedureRequest>

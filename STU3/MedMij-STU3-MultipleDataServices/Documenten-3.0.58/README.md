@@ -1,5 +1,7 @@
 # Documenten 3.0.58 - gegevensdienst 51
 
+> **MultipleDataServices note:** In addition to the original Gé Gevens-Dienst scenario described below, this folder now contains a separate fictional test record for **Anton van Alles-Wat**. Clinical resources do not cross-reference the other patient. Anton's additions are summarized at the end of this README.
+
 This folder contains non-normative FHIR STU3 test data for retrieving documents for the fictional patient **Gé Gevens-Dienst** through MedMij data service **51**.
 
 The material is intended for exploratory, integration, and functional testing only. It is **not qualification material** and must not be used to demonstrate compliance with MedMij qualification requirements.
@@ -53,3 +55,17 @@ The structure follows the Nictiz PDF/A implementation guide and the existing fic
 The applicable information standards and implementation guides remain authoritative. This dataset does not introduce or change MedMij requirements.
 
 This material was created in a short period of time with the assistance of AI and may therefore contain errors, and no rights may be derived from this material or from any errors or omissions it contains.
+
+<!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
+## Additional test patient — Anton van Alles-Wat
+
+| Date | Document | Author | Organization |
+| --- | --- | --- | --- |
+| 18 November 2025 | Discharge letter after left hip fracture | Beendokter B. Beendokter Aangenaam | Ziekenhuis de Aandacht |
+| 10 February 2026 | Cardiology letter about atrial fibrillation | Hartslag H. Ritme | Cardiologiecentrum Regelmaat |
+| 22 April 2026 | Geriatric memory assessment | Geheugen G. Helder | Geheugenpoli Goed Onthouden |
+| 5 May 2026 | Home-care and fall-prevention plan | Nora N. Nabij | Thuiszorg Alles Geregeld |
+| 3 July 2026 | Polypharmacy medication review | Huisdokter H. Huisarts Attent | Huisartsenpraktijk van Aanpakken |
+
+Each Anton document has a FHIR `Binary`, a `DocumentReference` with contained author and custodian, and an inspectable PDF/A-1b copy in `Test/Attachment`. The folder now contains **25 XML resources** and **10 PDFs** in total; **11 XML resources directly refer to Anton**. For all five Anton documents, the Binary base64 decodes byte-for-byte to the PDF, and attachment size and SHA-256 hash match.
+<!-- ANTON-MULTIPLE-DATA-SERVICES:END -->

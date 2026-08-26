@@ -1,5 +1,7 @@
 # BgZ 1.2.2 — Gé Gevens-Dienst
 
+> **MultipleDataServices note:** In addition to the original Gé Gevens-Dienst scenario described below, this folder now contains a separate fictional test record for **Anton van Alles-Wat**. Clinical resources do not cross-reference the other patient. Anton's additions are summarized at the end of this README.
+
 This folder contains a FHIR STU3 test dataset for **Basisgegevensset Zorg (BgZ MSZ 2017), version 1.2.2**. It represents the fictional patient **Gé Gevens-Dienst** and forms part of the MultipleDataServices test patient.
 
 > This is exploratory test material. It is **not qualification material** and must not be used to demonstrate compliance with MedMij qualification requirements.
@@ -70,3 +72,11 @@ Medication is not included in this folder. In the BgZ 1.2.2 qualification materi
 - The embedded PDF has been rendered and visually inspected.
 
 Modern releases of the HL7 FHIR validator report legacy snapshot and slicing errors for the old STU3 zib2017 profiles. The same errors can be reproduced with unchanged resources from the Nictiz BgZ 1.2.2 test material. This compatibility limitation is another reason this dataset must not be presented as qualification material.
+
+<!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
+## Additional test patient — Anton van Alles-Wat
+
+Anton's BgZ is an older-adult medical summary. It covers hypertension, type 2 diabetes, COPD, atrial fibrillation, an ischemic stroke with mild residual weakness, mild cognitive impairment, a left hip fracture, a right hip prosthesis, mobility and hearing aids, advance directives, insurance, allergies, social history, laboratory observations and vital signs. The contact person is his wife **Ria van Alles**. His name uses `NL3`: partner name **van Alles** followed by own name **Wat**.
+
+The folder now contains **104 XML resources**, of which **50 directly refer to Anton**. Anton's synthetic BSN `999990123` passes the Dutch 11-test. The Patient copies and the fixed clinical timeline are checked in the [cross-service validation report](../ANTON-VALIDATION.md).
+<!-- ANTON-MULTIPLE-DATA-SERVICES:END -->

@@ -1,5 +1,7 @@
 # Afspraken 2.0.57 — Gé Gevens-Dienst
 
+> **MultipleDataServices note:** In addition to the original Gé Gevens-Dienst scenario described below, this folder now contains a separate fictional test record for **Anton van Alles-Wat**. Clinical resources do not cross-reference the other patient. Anton's additions are summarized at the end of this README.
+
 This folder contains a FHIR STU3 test dataset for **data service 47 — Verzamelen Afspraken 2.0**. The technical material uses **eAfspraak 2.0.57** and represents the fictional patient **Gé Gevens-Dienst** as part of the MultipleDataServices test patient.
 
 > This is exploratory test material. It is **not qualification material** and must not be used to demonstrate compliance with MedMij qualification requirements.
@@ -51,3 +53,21 @@ The structure and coding of the resources were adapted from the [Nictiz eAppoint
 - Appointment dates include an explicit time-zone offset.
 
 All seven Appointment resources passed profile validation with HL7 FHIR Validator 6.10.2, the official eAfspraak package content `nictiz.fhir.nl.stu3.eafspraak#1.0.6` and `nictiz.fhir.nl.stu3.zib2017#2.2.20`, with terminology-server validation disabled. The validator reported only warnings for the legacy AGB specialty code system and the unavailable eAfspraak contact-type value set; it reported no errors in the Appointment resources.
+
+<!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
+## Additional test patient — Anton van Alles-Wat
+
+Anton has seven GP appointments:
+
+| Date | Status | Appointment |
+| --- | --- | --- |
+| 2026-01-15 | `fulfilled` | Annual diabetes and blood-pressure review |
+| 2026-02-10 | `fulfilled` | Atrial-fibrillation and anticoagulation review |
+| 2026-03-19 | `fulfilled` | COPD review and inhaler instruction |
+| 2026-04-22 | `fulfilled` | Memory assessment with Ria |
+| 2026-05-05 | `fulfilled` | Home-care and fall-prevention review |
+| 2026-07-03 | `fulfilled` | Polypharmacy medication review |
+| 2026-10-14 | `booked` | Seasonal vaccination |
+
+The folder now contains **28 XML resources**, of which **8 directly refer to Anton** (the Patient and seven Appointment resources). Provider and location support is present within the same folder.
+<!-- ANTON-MULTIPLE-DATA-SERVICES:END -->

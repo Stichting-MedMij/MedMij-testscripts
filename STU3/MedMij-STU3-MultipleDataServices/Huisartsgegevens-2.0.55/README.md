@@ -1,5 +1,7 @@
 # Huisartsgegevens 2.0.55 — Gé Gevens-Dienst
 
+> **MultipleDataServices note:** In addition to the original Gé Gevens-Dienst scenario described below, this folder now contains a separate fictional test record for **Anton van Alles-Wat**. Clinical resources do not cross-reference the other patient. Anton's additions are summarized at the end of this README.
+
 This folder contains a FHIR STU3 test dataset for **data service 49 — Verzamelen Huisartsgegevens 2.0**, system role `MM-2.0-HGR-FHIR`. The technical material follows **GP Patient Data 2.0.55** and represents the fictional patient **Gé Gevens-Dienst** as part of the MultipleDataServices test patient.
 
 > This is exploratory test material. It is **not qualification material** and must not be used to demonstrate compliance with MedMij qualification requirements.
@@ -60,3 +62,11 @@ The structure and coding were adapted from the [Nictiz GP Patient Data 2.0 test 
 - Introduced identifiers and contact details use clearly fictional test values.
 
 All 34 resources were checked with HL7 FHIR Validator 6.10.2 and `nictiz.fhir.nl.stu3.zib2017#2.2.20`, with terminology-server validation disabled. The remaining messages concern terminology systems and value sets that are unavailable to the offline validator; no structural or profile errors remain.
+
+<!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
+## Additional test patient — Anton van Alles-Wat
+
+Anton's GP record covers COPD, a left hip fracture, atrial fibrillation, hypertension, type 2 diabetes, stroke sequelae and mild cognitive impairment. Five encounters and their E/P journal entries align with the hip-fracture follow-up and the completed atrial-fibrillation, COPD, memory and medication-review appointments. Pregnancy-specific content from the original scenario is deliberately absent from Anton's resources.
+
+The folder now contains **74 XML resources**, of which **39 directly refer to Anton**. Every relative reference resolves inside this service folder and Anton's identifiers, appointment times, episode codes and dates match his other data services.
+<!-- ANTON-MULTIPLE-DATA-SERVICES:END -->

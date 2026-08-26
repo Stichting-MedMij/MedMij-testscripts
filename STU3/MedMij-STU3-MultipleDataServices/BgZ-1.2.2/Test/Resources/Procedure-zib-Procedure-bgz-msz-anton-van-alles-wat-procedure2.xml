@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="zib-Procedure-bgz-msz-anton-van-alles-wat-procedure2" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Procedure" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6" />
+    <value value="bgz-msz-anton-van-alles-wat-procedure2" />
+  </identifier>
+  <basedOn>
+    <reference value="ProcedureRequest/zib-ProcedureRequest-bgz-msz-anton-van-alles-wat-procedure2" />
+    <display value="postoperatieve mobilisatietraining" />
+  </basedOn>
+  <status value="in-progress" />
+  <category>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="unknown" />
+    </extension>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="122531000146102" />
+      <display value="postoperatieve mobilisatietraining" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <performedPeriod>
+    <start value="2025-11-03T09:30:00+01:00" />
+  </performedPeriod>
+  <performer>
+    <actor>
+      <reference value="Organization/nl-core-organization-bgz-msz-2-16-840-1-113883-2-4-6-1-20000002" />
+      <display value="Ziekenhuis de Aandacht" />
+    </actor>
+  </performer>
+  <reasonReference>
+    <reference value="Condition/zib-Problem-bgz-msz-anton-van-alles-wat-problem5" />
+    <display value="fractuur van heup" />
+  </reasonReference>
+  <bodySite>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="7771000" />
+          <display value="Left" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="70258002" />
+      <display value="structuur van heupgewricht" />
+    </coding>
+  </bodySite>
+</Procedure>
