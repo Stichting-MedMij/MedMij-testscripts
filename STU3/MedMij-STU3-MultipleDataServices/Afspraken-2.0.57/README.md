@@ -64,7 +64,7 @@ Anton has seven GP appointments:
 | 2026-01-15 | `fulfilled` | Annual diabetes and blood-pressure review |
 | 2026-02-10 | `fulfilled` | Atrial-fibrillation and anticoagulation review |
 | 2026-03-19 | `fulfilled` | COPD review and inhaler instruction |
-| 2026-04-22 | `fulfilled` | Memory assessment with Ria |
+| 2026-04-22 | `fulfilled` | Memory assessment with Manusje |
 | 2026-05-05 | `fulfilled` | Home-care and fall-prevention review |
 | 2026-07-03 | `fulfilled` | Polypharmacy medication review |
 | 2026-10-14 | `booked` | Seasonal vaccination |

@@ -16,7 +16,7 @@ This folder contains a FHIR STU3 test dataset for **data service 67 — Verzamel
 | Name usage | `NL4` — own family name followed by the partner's family name |
 | Administrative gender | Female |
 | Date of birth | 2000-02-01 |
-| Address | Teststraat 1, 9999 ZZ Testdorp, Nederland |
+| Address | Teststraat 1, 9999ZZ Testdorp, Nederland |
 | Mobile phone | +316-99990011 |
 | Email | ge.gevens-dienst@example.test |
 | Marital status | Married |
@@ -93,3 +93,5 @@ The [MedMij Catalog](https://catalogus.medmij.nl/overzicht/actueel/actuele-gegev
 - The content remains non-normative and must be assessed against the applicable profiles and implementation guide before use in a specific test setup.
 
 Representative profile validation was performed with HL7 FHIR Validator 6.10.2, `nictiz.fhir.nl.stu3.zib2017#2.2.20` and `nictiz.fhir.nl.stu3.geboortezorg#1.3.3`. The maternal records, pregnancy conditions, coverage, ultrasound report and tested clinical observations passed profile validation. The validator reports legacy display and value-set errors for the Dutch HL7 v3 codes in Patient and RelatedPerson. The same errors are reproduced with the unchanged current Nictiz `Kraam-Casus1` patient resource, so these findings are retained as a known compatibility issue rather than silently changing the published test pattern.
+
+All resources in this copied pregnancy scenario use an `mds-ge-izk-` resource-id namespace so they cannot collide with the original Geboortezorg test fixtures when both sets are loaded.

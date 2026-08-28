@@ -53,7 +53,7 @@
     <reference value="Patient/GE-GEVENS-DIENST" />
     <display value="Gé Gevens-Dienst" />
   </patient>
-  <onsetDateTime value="2019-01-01" />
+  <onsetDateTime value="2011-01-01" />
   <lastOccurrence value="2011-01-01" />
   <note>
     <text value="Alleen voor amoxicilline." />

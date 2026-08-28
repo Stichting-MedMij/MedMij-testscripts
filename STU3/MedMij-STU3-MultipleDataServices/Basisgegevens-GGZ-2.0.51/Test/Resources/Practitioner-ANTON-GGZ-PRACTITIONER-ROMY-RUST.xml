@@ -54,7 +54,7 @@
       </extension>
     </line>
     <city value="Testdorp" />
-    <postalCode value="9999 ZR" />
+    <postalCode value="9999ZR" />
     <country value="NLD">
       <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
         <valueCodeableConcept>

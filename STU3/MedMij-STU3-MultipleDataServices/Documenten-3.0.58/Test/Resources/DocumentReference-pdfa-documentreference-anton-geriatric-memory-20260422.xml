@@ -19,12 +19,6 @@
       </name>
     </Practitioner>
   </contained>
-  <contained>
-    <Organization>
-      <id value="custodian-geriatric-memory-20260422" />
-      <name value="Geheugenpoli Goed Onthouden" />
-    </Organization>
-  </contained>
   <masterIdentifier>
     <system value="urn:ietf:rfc:3986" />
     <value value="urn:uuid:889d4fa3-e981-5965-8c95-a4b2941a7795" />
@@ -58,10 +52,6 @@
     <reference value="#author-geriatric-memory-20260422" />
     <display value="Geheugen G. Helder" />
   </author>
-  <custodian>
-    <reference value="#custodian-geriatric-memory-20260422" />
-    <display value="Geheugenpoli Goed Onthouden" />
-  </custodian>
   <description value="Dit is het verslag van het geriatrisch geheugenonderzoek, waarbij een milde cognitieve stoornis en praktische compensatieafspraken zijn vastgelegd." />
   <securityLabel>
     <coding>
@@ -76,9 +66,8 @@
       <language value="nl-NL" />
       <url value="Binary/pdfa-binary-anton-geriatric-memory-20260422" />
       <size value="24456" />
-      <hash value="J9a6DUeapApsmtwOekzbDyP1JH2Qd+BRXlCrUo1gvLs=" />
+      <hash value="Gsq02Wajgni/dsLLGhi6kt3mK1AqGp/bATmWrzd7Grs=" />
       <title value="Verslag geriatrisch geheugenonderzoek" />
-      <creation value="2026-04-22T15:10:00+02:00" />
     </attachment>
   </content>
 </DocumentReference>

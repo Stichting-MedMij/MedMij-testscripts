@@ -41,5 +41,5 @@
     <reference value="Practitioner/nl-core-practitioner-bgz-msz-2-16-840-1-113883-2-4-6-1-10000001" />
     <display value="Huisdokter H. Huisarts Attent" />
   </performer>
-  <valueString value="Afspraken ook schriftelijk meegeven; Ria ondersteunt bij het overzicht en neemt contact op bij duidelijke achteruitgang." />
+  <valueString value="Afspraken ook schriftelijk meegeven; Manusje ondersteunt bij het overzicht en neemt contact op bij duidelijke achteruitgang." />
 </Observation>

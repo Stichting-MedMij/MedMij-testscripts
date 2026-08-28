@@ -21,8 +21,8 @@
     <display value="Anton van Alles-Wat" />
   </subject>
   <effectivePeriod>
-    <start value="2022-01-01" />
-    <end value="2023-01-01" />
+    <start value="1972-01-01" />
+    <end value="1973-01-01" />
   </effectivePeriod>
   <valueCodeableConcept>
     <coding>
@@ -31,7 +31,7 @@
       <display value="Misused drugs in past (finding)" />
     </coding>
   </valueCodeableConcept>
-  <comment value="Alleen met de schoonfamilie." />
+  <comment value="Eenmalig gebruikt ergens in 1972; volgens Anton was dat voldoende veldonderzoek." />
   <component>
     <code>
       <coding>
@@ -72,6 +72,6 @@
         <display value="Frequency of drug misuse" />
       </coding>
     </code>
-    <valueString value="Eenmalig in 2022" />
+    <valueString value="Eenmalig in 1972" />
   </component>
 </Observation>

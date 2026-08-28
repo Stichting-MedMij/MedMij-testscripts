@@ -68,7 +68,7 @@
   </policy>
   <except>
     <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Restrictions">
-      <valueString value="Eerst overleg met Ria van Alles" />
+      <valueString value="Eerst overleg met Manusje van Alles" />
     </extension>
     <type value="deny" />
   </except>

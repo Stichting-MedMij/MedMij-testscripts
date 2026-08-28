@@ -21,48 +21,17 @@
     <display value="Anton van Alles-Wat" />
   </subject>
   <effectivePeriod>
-    <start value="2023-01-01" />
-    <end value="2024-12-31" />
+    <start value="1963-01-01" />
+    <end value="1998-01-01" />
   </effectivePeriod>
   <valueCodeableConcept>
     <coding>
       <system value="http://snomed.info/sct" />
-      <code value="230059006" />
-      <display value="Occasional cigarette smoker (finding)" />
+      <code value="8517006" />
+      <display value="Ex-smoker" />
     </coding>
   </valueCodeableConcept>
-  <comment value="Alleen bij een uitzonderlijk lange familiedag." />
-  <component>
-    <code>
-      <coding>
-        <system value="http://snomed.info/sct" />
-        <code value="53661000146106" />
-        <display value="type tabak gebruikt" />
-      </coding>
-    </code>
-    <valueCodeableConcept>
-      <coding>
-        <system value="http://snomed.info/sct" />
-        <code value="59978006" />
-        <display value="Cigar smoker (finding)" />
-      </coding>
-    </valueCodeableConcept>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="http://snomed.info/sct" />
-        <code value="266918002" />
-        <display value="hoeveelheid en type tabak gerookt" />
-      </coding>
-    </code>
-    <valueQuantity>
-      <value value="1" />
-      <unit value="{cigars}/wk" />
-      <system value="http://unitsofmeasure.org" />
-      <code value="{cigars}/wk" />
-    </valueQuantity>
-  </component>
+  <comment value="Ex-roker; gestopt in 1998 na circa 35 pakjaren." />
   <component>
     <code>
       <coding>
@@ -72,7 +41,7 @@
       </coding>
     </code>
     <valueQuantity>
-      <value value="0.1" />
+      <value value="35" />
       <system value="http://unitsofmeasure.org" />
       <code value="{PackYears}" />
     </valueQuantity>

@@ -66,7 +66,7 @@ All 34 resources were checked with HL7 FHIR Validator 6.10.2 and `nictiz.fhir.nl
 <!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
 ## Additional test patient — Anton van Alles-Wat
 
-Anton's GP record covers COPD, a left hip fracture, atrial fibrillation, hypertension, type 2 diabetes, stroke sequelae and mild cognitive impairment. Five encounters and their E/P journal entries align with the hip-fracture follow-up and the completed atrial-fibrillation, COPD, memory and medication-review appointments. Pregnancy-specific content from the original scenario is deliberately absent from Anton's resources.
+Anton's GP record covers COPD, a left hip fracture, hypertension, type 2 diabetes, stroke sequelae and mild cognitive impairment. Encounters and E/P journal entries align with the completed GP appointments, the home-care situation and the medication review. Pregnancy-specific content from the original scenario is deliberately absent from Anton's resources.
 
-The folder now contains **74 XML resources**, of which **39 directly refer to Anton**. Every relative reference resolves inside this service folder and Anton's identifiers, appointment times, episode codes and dates match his other data services.
+The folder now contains **69 XML resources**, of which **34 directly refer to Anton**. Every relative reference resolves inside this service folder and Anton's identifiers and dates match his other data services.
 <!-- ANTON-MULTIPLE-DATA-SERVICES:END -->

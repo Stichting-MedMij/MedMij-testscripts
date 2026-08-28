@@ -37,7 +37,7 @@
     <reference value="Patient/ANTON-VAN-ALLES-WAT" />
     <display value="Anton van Alles-Wat" />
   </subject>
-  <onsetDateTime value="2018-01-01" />
+  <onsetDateTime value="2018-06-01" />
   <asserter>
     <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
       <valueReference>

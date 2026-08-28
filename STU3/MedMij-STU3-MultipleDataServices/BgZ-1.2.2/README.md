@@ -18,7 +18,7 @@ This folder contains a FHIR STU3 test dataset for **Basisgegevensset Zorg (BgZ M
 | Name usage | `NL4` — own family name followed by the partner's family name |
 | Administrative gender | Female |
 | Date of birth | 2000-02-01 |
-| Address | Teststraat 1, 9999 ZZ Testdorp, Nederland |
+| Address | Teststraat 1, 9999ZZ Testdorp, Nederland |
 | Mobile phone | +316-99990011 |
 | Email | ge.gevens-dienst@example.test |
 | Marital status | Married |
@@ -66,7 +66,7 @@ Medication is not included in this folder. In the BgZ 1.2.2 qualification materi
 
 - All XML resources are well formed.
 - Resource ids are unique, legal FHIR ids and no longer than 64 characters.
-- All 98 local `ResourceType/id` references resolve within this dataset.
+- All 195 local `ResourceType/id` references resolve within this dataset.
 - No relative-date placeholders remain; the clinical timeline uses fixed dates.
 - The synthetic BSN passes the Dutch 11-test.
 - The embedded PDF has been rendered and visually inspected.
@@ -76,7 +76,9 @@ Modern releases of the HL7 FHIR validator report legacy snapshot and slicing err
 <!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
 ## Additional test patient — Anton van Alles-Wat
 
-Anton's BgZ is an older-adult medical summary. It covers hypertension, type 2 diabetes, COPD, atrial fibrillation, an ischemic stroke with mild residual weakness, mild cognitive impairment, a left hip fracture, a right hip prosthesis, mobility and hearing aids, advance directives, insurance, allergies, social history, laboratory observations and vital signs. The contact person is his wife **Ria van Alles**. His name uses `NL3`: partner name **van Alles** followed by own name **Wat**.
+Anton's BgZ is an older-adult medical summary. It covers hypertension, type 2 diabetes, COPD, atrial fibrillation, an ischemic stroke with mild residual weakness, mild cognitive impairment, a left hip fracture, a right hip prosthesis, mobility and hearing aids, advance directives, insurance, allergies, social history, laboratory observations and vital signs. The contact person is his wife **Manusje van Alles**. His name uses `NL3`: partner name **van Alles** followed by own name **Wat**.
 
-The folder now contains **104 XML resources**, of which **50 directly refer to Anton**. Anton's synthetic BSN `999990123` passes the Dutch 11-test. The Patient copies and the fixed clinical timeline are checked in the [cross-service validation report](../ANTON-VALIDATION.md).
+The folder now contains **108 XML resources**, of which **54 belong to Anton's record**. His lifestyle history contains separate, mutually consistent observations for wine, whisky, beer, historic MDMA and cannabis use, and historic cigarette and cigar use. Anton's synthetic BSN `999990123` passes the Dutch 11-test. The Patient copies and the fixed clinical timeline are checked in the [cross-service validation report](../ANTON-VALIDATION.md).
+
+Anton's advance directive contains an embedded copy of [`Testwilsverklaring-Anton-van-Alles-Wat.pdf`](Test/Attachment/Testwilsverklaring-Anton-van-Alles-Wat.pdf), with **Manusje van Alles** recorded as his representative and first contact person.
 <!-- ANTON-MULTIPLE-DATA-SERVICES:END -->

@@ -26,6 +26,8 @@ Load the Patient, Practitioner, PractitionerRole and Organization resources befo
 
 This material was created in a short period of time with the assistance of AI and may therefore contain errors, and no rights may be derived from this material or from any errors or omissions it contains.
 
+The historical metformin dispense contains 850 mg tablets from 15 November 2011. The active medication chain starts on 15 January 2012 with 500 mg tablets, making the dose change explicit.
+
 <!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
 ## Additional test patient — Anton van Alles-Wat
 

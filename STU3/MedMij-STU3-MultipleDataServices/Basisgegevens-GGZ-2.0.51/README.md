@@ -39,7 +39,7 @@ This material was created in a short period of time with the assistance of AI an
 <!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
 ## Additional test patient — Anton van Alles-Wat
 
-Anton receives low-intensity support for mild adjustment and anxiety symptoms following loss of independence, the stroke and the hip fracture. He is afraid of falling again and sometimes avoids loose rugs with more determination than necessary. There are no indications of crisis, psychosis or suicidality. Ria provides practical support and helps him maintain an overview.
+Anton receives low-intensity support for mild adjustment and anxiety symptoms following loss of independence, the stroke and the hip fracture. He is afraid of falling again and sometimes avoids loose rugs with more determination than necessary. There are no indications of crisis, psychosis or suicidality. Manusje provides practical support and helps him maintain an overview.
 
-The folder now contains **42 XML resources**, of which **16 directly refer to Anton**. The social, functional and mental-health narrative is consistent with his BgZ, GP and long-term-care records.
+The folder now contains **46 XML resources**, of which **20 belong to Anton's record**. Separate alcohol, historic drug-use and historic tobacco-use observations match the corresponding BgZ timeline. The social, functional and mental-health narrative is consistent with his BgZ, GP and long-term-care records.
 <!-- ANTON-MULTIPLE-DATA-SERVICES:END -->

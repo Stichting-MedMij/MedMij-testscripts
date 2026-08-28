@@ -1,7 +1,7 @@
 # Anton van Alles-Wat — validation report
 
 **Result: PASS**  
-Validation date: 2026-08-26
+Validation date: 2026-08-28
 
 This report covers the fictional patient **Anton van Alles-Wat** across the STU3 and R4 MultipleDataServices folders. It records automated structural and consistency checks; it is not a MedMij qualification result.
 
@@ -13,9 +13,9 @@ This report covers the fictional patient **Anton van Alles-Wat** across the STU3
 | 35 — Medicatiegegevens 9.A.1 | STU3 | 18 | 4 | 0 |
 | 46 — Laboratoriumresultaten 2.0.52 | STU3 | 42 | 18 | 0 |
 | 47 — Afspraken 2.0.57 | STU3 | 28 | 8 | 0 |
-| 48 — BgZ 1.2.2 | STU3 | 104 | 50 | 0 |
+| 48 — BgZ 1.2.2 | STU3 | 108 | 54 | 0 |
 | 49 — Huisartsgegevens 2.0.55 | STU3 | 74 | 39 | 0 |
-| 50 — Basisgegevens GGZ 2.0.51 | STU3 | 42 | 16 | 0 |
+| 50 — Basisgegevens GGZ 2.0.51 | STU3 | 46 | 20 | 0 |
 | 51 — Documenten 3.0.58 | STU3 | 25 | 11 | 5 |
 | 52 — Meetwaarden vitale functies 2.0.43 | STU3 | 25 | 13 | 0 |
 | 54 — Overgevoeligheden 2.0 | STU3 | 11 | 4 | 0 |
@@ -28,6 +28,9 @@ This report covers the fictional patient **Anton van Alles-Wat** across the STU3
 - 5 PDFs: one-page A4, exact Binary match, SHA-256/size match, OutputIntent and PDF/A-1b XMP marker;
 - 13 consistent Patient copies across 12 STU3 services and 1 R4 service;
 - Cross-service clinical story, chronic medication, appointments, laboratory markers, BgLZ timeline and vaccination coding;
+- separate but mutually consistent alcohol, historic drug-use and historic tobacco-use observations in BgZ and Basisgegevens GGZ;
+- every `zib-DrugUse` effective value uses the profile-supported `Period` type;
+- `MC` uses HL7 v3 `AddressUse`, while `LL` uses the Nictiz telecom-type OID from the qualification fixtures;
 - FHIR id syntax/length, uniqueness and local/contained reference integrity in all 13 services;
 - every XML document is well-formed;
 - every FHIR id matches the FHIR id character/length constraint and is unique by resource type within its data-service folder;

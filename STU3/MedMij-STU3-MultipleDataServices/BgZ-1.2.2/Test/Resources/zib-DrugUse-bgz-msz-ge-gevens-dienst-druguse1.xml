@@ -21,8 +21,8 @@
     <display value="Gé Gevens-Dienst" />
   </subject>
   <effectivePeriod>
-    <start value="2022-01-01" />
-    <end value="2023-01-01" />
+    <start value="2026-02-14" />
+    <end value="2026-02-15" />
   </effectivePeriod>
   <valueCodeableConcept>
     <coding>
@@ -31,7 +31,7 @@
       <display value="Misused drugs in past (finding)" />
     </coding>
   </valueCodeableConcept>
-  <comment value="Alleen met de schoonfamilie." />
+  <comment value="Eenmalig gebruikt, alleen met de schoonfamilie. Gestopt vanwege de huidige zwangerschap." />
   <component>
     <code>
       <coding>
@@ -72,6 +72,6 @@
         <display value="Frequency of drug misuse" />
       </coding>
     </code>
-    <valueString value="Eenmalig in 2022" />
+    <valueString value="Eenmalig vóór de huidige zwangerschap" />
   </component>
 </Observation>

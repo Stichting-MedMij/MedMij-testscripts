@@ -19,12 +19,6 @@
       </name>
     </Practitioner>
   </contained>
-  <contained>
-    <Organization>
-      <id value="custodian-cardiology-af-20260210" />
-      <name value="Cardiologiecentrum Regelmaat" />
-    </Organization>
-  </contained>
   <masterIdentifier>
     <system value="urn:ietf:rfc:3986" />
     <value value="urn:uuid:8b8dac7f-c1c3-598c-8758-c48fb5387242" />
@@ -58,10 +52,6 @@
     <reference value="#author-cardiology-af-20260210" />
     <display value="Hartslag H. Ritme" />
   </author>
-  <custodian>
-    <reference value="#custodian-cardiology-af-20260210" />
-    <display value="Cardiologiecentrum Regelmaat" />
-  </custodian>
   <description value="Dit is de cardiologiebrief over de controle van atriumfibrilleren, antistolling en cardiovasculair risico." />
   <securityLabel>
     <coding>
@@ -76,9 +66,8 @@
       <language value="nl-NL" />
       <url value="Binary/pdfa-binary-anton-cardiology-af-20260210" />
       <size value="23690" />
-      <hash value="LBHQJZsY55PO5nwMjKvTur/CT/vWBUqr+fYi0IUtXX8=" />
+      <hash value="mI2lO9TNQLNJL+d9Zzn7v6IaxlA8NeORHI6v0WzySIs=" />
       <title value="Cardiologiebrief atriumfibrilleren" />
-      <creation value="2026-02-10T11:15:00+01:00" />
     </attachment>
   </content>
 </DocumentReference>

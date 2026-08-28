@@ -5,7 +5,7 @@
     <profile value="http://nictiz.nl/fhir/StructureDefinition/eAfspraak-Appointment" />
   </meta>
   <extension url="http://nictiz.nl/fhir/StructureDefinition/eAfspraak-Appointment-PatientInstructions">
-    <valueString value="Ria van Alles is welkom om observaties en de afsprakenagenda mee te nemen." />
+    <valueString value="Manusje van Alles is welkom om observaties en de afsprakenagenda mee te nemen." />
   </extension>
   <identifier>
     <system value="https://afspraken.example.test/identifier" />

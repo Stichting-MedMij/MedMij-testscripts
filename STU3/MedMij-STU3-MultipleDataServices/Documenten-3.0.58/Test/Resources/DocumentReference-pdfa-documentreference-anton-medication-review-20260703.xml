@@ -19,12 +19,6 @@
       </name>
     </Practitioner>
   </contained>
-  <contained>
-    <Organization>
-      <id value="custodian-medication-review-20260703" />
-      <name value="Huisartsenpraktijk van Aanpakken" />
-    </Organization>
-  </contained>
   <masterIdentifier>
     <system value="urn:ietf:rfc:3986" />
     <value value="urn:uuid:1906f76a-8b6e-5099-aed3-3bd1ae229cf1" />
@@ -58,10 +52,6 @@
     <reference value="#author-medication-review-20260703" />
     <display value="Huisdokter H. Huisarts Attent" />
   </author>
-  <custodian>
-    <reference value="#custodian-medication-review-20260703" />
-    <display value="Huisartsenpraktijk van Aanpakken" />
-  </custodian>
   <description value="Dit is de huisartsbrief over de medicatiebeoordeling bij polyfarmacie, inclusief afspraken over de medicatierol en controle door de trombosedienst." />
   <securityLabel>
     <coding>
@@ -76,9 +66,8 @@
       <language value="nl-NL" />
       <url value="Binary/pdfa-binary-anton-medication-review-20260703" />
       <size value="24251" />
-      <hash value="fqxg1i6ehqi6uUYpCmmCBdDrbiarGSjccHSVMLjqaHo=" />
+      <hash value="W3zVtXwTKmwUP0ZGONlbVpC4qwJQM5yNjZHqRuS8k+I=" />
       <title value="Medicatiebeoordeling polyfarmacie" />
-      <creation value="2026-07-03T14:10:00+02:00" />
     </attachment>
   </content>
 </DocumentReference>

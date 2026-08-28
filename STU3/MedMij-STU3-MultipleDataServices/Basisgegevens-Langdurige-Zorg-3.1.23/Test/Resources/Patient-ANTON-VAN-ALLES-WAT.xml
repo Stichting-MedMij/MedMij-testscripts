@@ -72,7 +72,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
         <valueCode value="NL1" />
       </extension>
-      <text value="Ria van Alles" />
+      <text value="Manusje van Alles" />
       <family value="van Alles">
         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
           <valueString value="van" />
@@ -81,17 +81,17 @@
           <valueString value="Alles" />
         </extension>
       </family>
-      <given value="Ria">
+      <given value="Manusje">
         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
           <valueCode value="BR" />
         </extension>
       </given>
-      <given value="R.">
+      <given value="M.">
         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
           <valueCode value="IN" />
         </extension>
       </given>
-      <given value="Ria">
+      <given value="Manusje">
         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
           <valueCode value="CL" />
         </extension>
@@ -113,7 +113,7 @@
     </telecom>
     <telecom>
       <system value="email" />
-      <value value="ria.van.alles@example.test" />
+      <value value="manusje.van.alles@example.test" />
       <use value="home" />
     </telecom>
     <address>
@@ -140,7 +140,7 @@
         </extension>
       </line>
       <city value="Testdorp" />
-      <postalCode value="9999 AV" />
+      <postalCode value="9999AV" />
       <country value="Nederland">
         <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
           <valueCodeableConcept>
@@ -207,7 +207,7 @@
       </extension>
     </line>
     <city value="Testdorp" />
-    <postalCode value="9999 AV" />
+    <postalCode value="9999AV" />
     <country value="Nederland">
       <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
         <valueCodeableConcept>

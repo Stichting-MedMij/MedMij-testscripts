@@ -19,12 +19,6 @@
       </name>
     </Practitioner>
   </contained>
-  <contained>
-    <Organization>
-      <id value="custodian-homecare-plan-20260505" />
-      <name value="Thuiszorg Alles Geregeld" />
-    </Organization>
-  </contained>
   <masterIdentifier>
     <system value="urn:ietf:rfc:3986" />
     <value value="urn:uuid:b6d3c899-708a-5b09-85df-fb367474588f" />
@@ -58,10 +52,6 @@
     <reference value="#author-homecare-plan-20260505" />
     <display value="Nora N. Nabij" />
   </author>
-  <custodian>
-    <reference value="#custodian-homecare-plan-20260505" />
-    <display value="Thuiszorg Alles Geregeld" />
-  </custodian>
   <description value="Dit is het thuiszorgplan voor ondersteuning bij douchen, medicatieoverzicht, valpreventie en veilig gebruik van de rollator." />
   <securityLabel>
     <coding>
@@ -76,9 +66,8 @@
       <language value="nl-NL" />
       <url value="Binary/pdfa-binary-anton-homecare-plan-20260505" />
       <size value="24103" />
-      <hash value="oqJL01CCCvNgW+iBsK7Mwj88XYBPz3tuVm98c8wNPRc=" />
+      <hash value="9OljdwAf/6e//p4lO+gDSUvsWTMLT2DlwV0sHLi5k58=" />
       <title value="Thuiszorgplan en valpreventie" />
-      <creation value="2026-05-05T10:30:00+02:00" />
     </attachment>
   </content>
 </DocumentReference>

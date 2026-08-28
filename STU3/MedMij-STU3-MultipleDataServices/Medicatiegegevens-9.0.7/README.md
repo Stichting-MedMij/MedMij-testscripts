@@ -38,7 +38,7 @@ This material was created in a short period of time with the assistance of AI an
 <!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
 ## Additional test patient — Anton van Alles-Wat
 
-Anton has six coherent active treatment chains: metformin for type 2 diabetes, daily tiotropium and as-needed salbutamol for COPD, acenocoumarol for atrial fibrillation, ezetimibe/simvastatin for cardiovascular risk and paracetamol when required after the hip fracture. Each chain includes a medication agreement, dispense request, dispense, medication use and referenced product. Instructions and start dates are consistent with his broader history.
+Anton has five coherent active treatment chains: metformin for type 2 diabetes, tiotropium for COPD, acenocoumarol for atrial fibrillation, ezetimibe/simvastatin for cardiovascular risk and paracetamol when required after the hip fracture. Each chain includes a medication agreement, dispense request, dispense, medication use and referenced product. Instructions and start dates are consistent with his broader history.
 
-The folder now contains **51 XML resources**, of which **25 directly refer to Anton** (the Patient plus twenty-four clinical medication resources). Existing provider support is reused within this service. Anton's FHIR id is `ANTON-VAN-ALLES-WAT`.
+The folder now contains **46 XML resources**, of which **21 directly refer to Anton** (the Patient plus twenty clinical medication resources). Existing provider support is reused within this service. Anton's FHIR id is `ANTON-VAN-ALLES-WAT`.
 <!-- ANTON-MULTIPLE-DATA-SERVICES:END -->

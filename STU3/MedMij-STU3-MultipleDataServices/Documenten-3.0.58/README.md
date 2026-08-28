@@ -25,7 +25,7 @@ All names, organizations, identifiers, addresses, telephone numbers, clinical in
 - Every `Binary` contains the complete corresponding PDF/A document in `Binary.content` as base64.
 - Every `DocumentReference.content.attachment.url` refers to the logical FHIR id as `Binary/<id>`.
 - Every `DocumentReference.content.attachment.hash` contains the SHA-256 digest of the decoded PDF/A document.
-- The document author and custodian organization are contained in the corresponding `DocumentReference` to keep each document record self-contained.
+- The document author is contained in the corresponding `DocumentReference`. The custodian organization remains visible in the PDF, because `IHE.MHD.Minimal.DocumentReference` does not permit `DocumentReference.custodian`.
 
 The resources additionally include the patient, the patient's general practitioner, the practitioner's role, and the general practice organization. These support the references already present in the patient resource.
 
@@ -67,5 +67,5 @@ This material was created in a short period of time with the assistance of AI an
 | 5 May 2026 | Home-care and fall-prevention plan | Nora N. Nabij | Thuiszorg Alles Geregeld |
 | 3 July 2026 | Polypharmacy medication review | Huisdokter H. Huisarts Attent | Huisartsenpraktijk van Aanpakken |
 
-Each Anton document has a FHIR `Binary`, a `DocumentReference` with contained author and custodian, and an inspectable PDF/A-1b copy in `Test/Attachment`. The folder now contains **25 XML resources** and **10 PDFs** in total; **11 XML resources directly refer to Anton**. For all five Anton documents, the Binary base64 decodes byte-for-byte to the PDF, and attachment size and SHA-256 hash match.
+Each Anton document has a FHIR `Binary`, a `DocumentReference` with a contained author, and an inspectable PDF/A-1b copy in `Test/Attachment`. The folder now contains **25 XML resources** and **10 PDFs** in total; **11 XML resources directly refer to Anton**. For all five Anton documents, the Binary base64 decodes byte-for-byte to the PDF, and attachment size and SHA-256 hash match.
 <!-- ANTON-MULTIPLE-DATA-SERVICES:END -->

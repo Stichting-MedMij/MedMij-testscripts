@@ -23,9 +23,9 @@
     <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
       <valueCodeableConcept>
         <coding>
-          <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1" />
+          <system value="http://hl7.org/fhir/v3/AddressUse" />
           <code value="MC" />
-          <display value="Mobiel telefoonnummer" />
+          <display value="Mobile Phone" />
         </coding>
       </valueCodeableConcept>
     </extension>

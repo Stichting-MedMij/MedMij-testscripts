@@ -4,9 +4,9 @@ This folder contains non-qualification FHIR STU3 test data for the fictional pat
 
 ## Scenario
 
-Anton lives at home with his wife and first contact person **Ria van Alles**. Following an ischemic stroke in 2021 and a left hip fracture in 2025, he has mild residual weakness and aphasia, needs partial help with washing and dressing, uses a rollator and sometimes a wheelchair, and receives home-care support three times per week. The record also covers diabetes, skin-integrity risk and monitoring of Ria's informal-care burden.
+Anton lives at home with his wife and first contact person **Manusje van Alles**. Following an ischemic stroke in 2021 and a left hip fracture in 2025, he has mild residual weakness and aphasia, needs partial help with washing and dressing, uses a rollator and sometimes a wheelchair, and receives home-care support three times per week. The record also covers diabetes, skin-integrity risk and monitoring of Manusje's informal-care burden.
 
-The five treatment goals address independent washing, independent dressing, supported walking, intact skin and keeping Ria's informal-care burden manageable. The procedures and dates are aligned with Anton's cross-service history: cerebral CT and thrombolysis on 2021-09-12, speech therapy from 2021-09-20 and physiotherapy after the 2025 hip fracture.
+The five treatment goals address independent washing, independent dressing, supported walking, intact skin and keeping Manusje's informal-care burden manageable. The procedures and dates are aligned with Anton's cross-service history: cerebral CT and thrombolysis on 2021-09-12, speech therapy from 2021-09-20 and physiotherapy after the 2025 hip fracture.
 
 ## Contents
 

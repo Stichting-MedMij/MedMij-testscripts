@@ -30,7 +30,7 @@
   <dateTime value="2026-05-05" />
   <consentingParty>
     <reference value="RelatedPerson/ANTON-BGLZ-contactpersoon-01" />
-    <display value="Ria van Alles" />
+    <display value="Manusje van Alles" />
   </consentingParty>
   <policy>
     <uri value="http://wetten.overheid.nl/" />

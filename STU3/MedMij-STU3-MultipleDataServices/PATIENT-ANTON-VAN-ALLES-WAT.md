@@ -16,11 +16,11 @@ Anton van Alles-Wat is a wholly fictional MultipleDataServices test patient. He 
 | Administrative gender | Male |
 | Date of birth | 1946-03-14 |
 | Marital status | Married |
-| Address | Allesweg 80, 9999 AV Testdorp, Nederland |
+| Address | Allesweg 80, 9999AV Testdorp, Nederland |
 | Mobile phone | +316-99990080 |
 | Email | anton.van.alles-wat@example.test |
-| Contact person | Ria van Alles, wife and first contact person |
-| Contact telecom | +316-99990081; ria.van.alles@example.test |
+| Contact person | Manusje van Alles, wife and first contact person |
+| Contact telecom | +316-99990081; manusje.van.alles@example.test |
 | Insurance | Basic insurance (`B`), Interpolis, synthetic subscriber id `99990011` |
 
 The names, BSN, subscriber id, telephone numbers, email addresses and address are synthetic and must not be interpreted as belonging to a real person.
@@ -38,7 +38,7 @@ The names, BSN, subscriber id, telephone numbers, email addresses and address ar
 | 2018 | Atrial fibrillation; anticoagulation monitored by the thrombosis service |
 | 2021-09-12 | Ischemic stroke treated with cerebral CT and thrombolysis; mild residual left-sided weakness and aphasia |
 | From 2022 | Mild adjustment and anxiety symptoms related to loss of independence and fear of falling; no crisis, psychosis or suicidality |
-| 2024 | Mild cognitive impairment; written instructions and support from Ria are helpful |
+| 2024 | Mild cognitive impairment; written instructions and support from Manusje are helpful |
 | 2025-11-02 | Left hip fracture after a low fall from a household step ladder; hemiarthroplasty and rehabilitation |
 | 2026 | Uses a rollator, wheelchair for longer distances and a hearing aid; home care supports him three times per week |
 

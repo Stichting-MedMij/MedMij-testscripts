@@ -19,12 +19,6 @@
       </name>
     </Practitioner>
   </contained>
-  <contained>
-    <Organization>
-      <id value="custodian-discharge-hip-20251118" />
-      <name value="Ziekenhuis de Aandacht" />
-    </Organization>
-  </contained>
   <masterIdentifier>
     <system value="urn:ietf:rfc:3986" />
     <value value="urn:uuid:512c343b-5c0b-5969-bf3d-e83181b6b563" />
@@ -58,10 +52,6 @@
     <reference value="#author-discharge-hip-20251118" />
     <display value="Beendokter B. Beendokter Aangenaam" />
   </author>
-  <custodian>
-    <reference value="#custodian-discharge-hip-20251118" />
-    <display value="Ziekenhuis de Aandacht" />
-  </custodian>
   <description value="Dit is de ontslagbrief na opname en operatie wegens een linker heupfractuur na een val van een huishoudtrapje." />
   <securityLabel>
     <coding>
@@ -76,9 +66,8 @@
       <language value="nl-NL" />
       <url value="Binary/pdfa-binary-anton-discharge-hip-20251118" />
       <size value="24525" />
-      <hash value="/KiXxdCwqxCyjQ7jDB6BCgSy7ujpMu5/dL9Q/4otHkI=" />
+      <hash value="eO9ybbaK2K4+PhjosYEp8/sxjIiYs8xkfjuqCBEhG1Y=" />
       <title value="Ontslagbrief na heupfractuur" />
-      <creation value="2025-11-18T14:20:00+01:00" />
     </attachment>
   </content>
 </DocumentReference>
