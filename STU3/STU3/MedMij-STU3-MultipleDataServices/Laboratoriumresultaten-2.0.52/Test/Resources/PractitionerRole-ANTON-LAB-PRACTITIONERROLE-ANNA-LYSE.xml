@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="ANTON-LAB-PRACTITIONERROLE-ANNA-LYSE" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole" />
+  </meta>
+  <identifier>
+    <system value="https://example.test/fhir/NamingSystem/practitioner-role" />
+    <value value="TEST-CHEM-ROLE-0001" />
+  </identifier>
+  <practitioner>
+    <reference value="Practitioner/ANTON-LAB-PRACTITIONER-ANNA-LYSE" />
+    <display value="Klinisch chemicus dr. Anna Lyse" />
+  </practitioner>
+  <organization>
+    <reference value="Organization/ANTON-LAB-ORGANIZATION-PRIK-PRECIES" />
+    <display value="Diagnostisch Laboratorium Prik &amp; Precies" />
+  </organization>
+  <specialty>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.6.7" />
+      <code value="0386" />
+      <display value="Medisch specialisten, Klinische Chemie" />
+    </coding>
+  </specialty>
+</PractitionerRole>

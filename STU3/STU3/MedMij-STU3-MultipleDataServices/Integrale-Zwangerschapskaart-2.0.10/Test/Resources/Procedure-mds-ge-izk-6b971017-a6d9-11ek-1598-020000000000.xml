@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Procedure xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-6b971017-a6d9-11ek-1598-020000000000" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Procedure" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-Birth" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Verrichting. Subject: Joris Dienst. Id: 6b971817-a7d9-11ed-1698-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <html:span title="obstetrische verrichting (verrichting) (386637004 - SNOMED CT)">obstetrische verrichting (verrichting)</html:span>, Status: voltooid</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:td>
+              <html:span title="geboorte (bevinding) (3950001 - SNOMED CT)">geboorte (bevinding)</html:span>
+            </html:td>
+            <html:td />
+          </html:tr>
+          <html:tr>
+            <html:th>Reden</html:th>
+            <html:td>Zwangerschap 1 Gé Gevens-Dienst</html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="6b971817-a7d9-11ed-1698-020000000000" />
+  </identifier>
+  <partOf>
+    <reference value="Procedure/mds-ge-izk-d135d241-2062-11ec-2089-020000000000" />
+    <display value="Bevalling Zwangerschap 1 Gé Gevens-Dienst" />
+  </partOf>
+  <status value="completed" />
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="386637004" />
+      <display value="obstetrische verrichting (verrichting)" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="3950001" />
+      <display value="geboorte (bevinding)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-JORIS-DIENST" />
+    <display value="Joris Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2023" />
+    <display value="Zwangerschap 1 Gé Gevens-Dienst" />
+  </context>
+  <reasonReference>
+    <reference value="Condition/mds-ge-izk-GE-PREGNANCY-CONDITION-2023" />
+    <display value="Zwangerschap 1 Gé Gevens-Dienst" />
+  </reasonReference>
+</Procedure>

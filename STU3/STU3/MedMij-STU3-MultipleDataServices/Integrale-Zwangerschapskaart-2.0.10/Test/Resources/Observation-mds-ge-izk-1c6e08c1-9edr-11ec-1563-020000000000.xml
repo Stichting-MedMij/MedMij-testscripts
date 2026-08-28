@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-1c6e08c1-9edr-11ec-1563-020000000000" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-ParticipationInSociety" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Id: 1c6e08c1-9edr-11ec-1563-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Zwangerschap 1 Gé Gevens-Dienst</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="status van participatie van patiënt (bevinding) (314845004 - SNOMED CT)">status van participatie van patiënt (bevinding)</html:span>
+            </html:td>
+            <html:td />
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="arbeidssituatie (waarneembare entiteit) (364703007 - SNOMED CT)">arbeidssituatie (waarneembare entiteit)</html:span>
+            </html:td>
+            <html:td>Werkt 3 dagen in de week in de kinderopvang</html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="1c6e08c1-9edr-11ec-1563-020000000000" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="314845004" />
+      <display value="status van participatie van patiënt (bevinding)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2023" />
+    <display value="Zwangerschap 1 Gé Gevens-Dienst" />
+  </context>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="364703007" />
+        <display value="arbeidssituatie (waarneembare entiteit)" />
+      </coding>
+    </code>
+    <valueString value="Werkt 3 dagen in de week in de kinderopvang" />
+  </component>
+</Observation>

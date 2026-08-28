@@ -13,7 +13,7 @@
       <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
         <valueCodeableConcept>
           <coding>
-            <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1" />
+            <system value="http://hl7.org/fhir/v3/AddressUse" />
             <code value="LL" />
             <display value="Land Line" />
           </coding>
@@ -48,7 +48,7 @@
     </line>
     <city value="Den Haag" />
     <district value="'s Gravenhage" />
-    <postalCode value="2521 ZE" />
+    <postalCode value="2521ZE" />
     <country value="Nederland">
       <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
         <valueCodeableConcept>

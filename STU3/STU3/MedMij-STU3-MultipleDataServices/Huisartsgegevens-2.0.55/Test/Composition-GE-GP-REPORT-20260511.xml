@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="GE-GP-REPORT-20260511"/>
+  <meta>
+    <lastUpdated value="2026-05-11T09:35:00+02:00"/>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"/>
+  </meta>
+  <text>
+    <status value="extensions"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <b>Contactverslag 2026-05-11</b>
+      <p>Consult voor linker enkelfractuur</p>
+      <p>Auteur: Huisdokter H. Huisarts Attent</p>
+    </div>
+  </text>
+  <identifier>
+    <system value="https://huisartsgegevens.example.test/identifier"/>
+    <value value="GE-GP-REPORT-20260511"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="67781-5"/>
+      <display value="Summarization of encounter note Narrative"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/GE-GEVENS-DIENST"/>
+    <display value="Gé Gevens-Dienst"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/GE-GP-ENCOUNTER-20260511"/>
+    <display value="Consult voor linker enkelfractuur"/>
+  </encounter>
+  <date value="2026-05-11T09:35:00+02:00"/>
+  <author>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+      <valueReference>
+        <reference value="PractitionerRole/nl-core-practitionerrole-bgz-msz-1000000101-01520000001"/>
+        <display value="Huisdokter H. Huisarts Attent"/>
+      </valueReference>
+    </extension>
+    <reference value="Practitioner/nl-core-practitioner-bgz-msz-2-16-840-1-113883-2-4-6-1-10000001"/>
+    <display value="Huisdokter H. Huisarts Attent"/>
+  </author>
+  <title value="Contactverslag 2026-05-11"/>
+  <section>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/sid/icpc-1-nl"/>
+          <code value="L73"/>
+          <display value="Fractuur tibia/fibula"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://fhir.nl/fhir/NamingSystem/journaalregeltypen"/>
+        <code value="E"/>
+        <display value="Evaluatie"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Linker enkelfractuur na botsing met een fatbike in de Teststraat.</div>
+    </text>
+    <entry>
+      <reference value="Observation/GE-GP-JOURNAL-20260511-E"/>
+      <display value="Linker enkelfractuur na botsing met een fatbike in de Teststraat."/>
+    </entry>
+    <entry>
+      <reference value="EpisodeOfCare/GE-GP-EPISODE-ANKLE-FRACTURE-2026"/>
+      <display value="Episode Linker enkelfractuur"/>
+    </entry>
+  </section>
+  <section>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/sid/icpc-1-nl"/>
+          <code value="L73"/>
+          <display value="Fractuur tibia/fibula"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://fhir.nl/fhir/NamingSystem/journaalregeltypen"/>
+        <code value="P"/>
+        <display value="Plan"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Enkel ontlasten en hoog houden; beoordeling en beeldvorming via de spoedzorg; contact opnemen bij meer pijn of gevoelsverlies.</div>
+    </text>
+    <entry>
+      <reference value="Observation/GE-GP-JOURNAL-20260511-P"/>
+      <display value="Enkel ontlasten en hoog houden; beoordeling en beeldvorming via de spoedzorg; contact opnemen bij meer pijn of gevoelsverlies."/>
+    </entry>
+    <entry>
+      <reference value="EpisodeOfCare/GE-GP-EPISODE-ANKLE-FRACTURE-2026"/>
+      <display value="Episode Linker enkelfractuur"/>
+    </entry>
+  </section>
+</Composition>

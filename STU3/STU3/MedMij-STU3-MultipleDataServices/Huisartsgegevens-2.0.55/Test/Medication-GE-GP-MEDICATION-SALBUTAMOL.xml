@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="GE-GP-MEDICATION-SALBUTAMOL"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Product"/>
+  </meta>
+  <text>
+    <status value="extensions"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <b>Medicatieproduct</b>
+      <p>SALBUTAMOL AEROSOL 100 microgram/dosis, 200 doses, autohaler</p>
+    </div>
+  </text>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.10"/>
+      <code value="43281"/>
+      <display value="SALBUTAMOL AEROSOL 100UG/DO 200DO AUTOH"/>
+    </coding>
+  </code>
+</Medication>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PractitionerRole xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-1234000103-000" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Zorgverlenerrol. Id: 7d48bb79-a6d9-11ed-4511-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Zorgverlener</html:th>
+            <html:td>
+              <html:div>Veer Los-Baren</html:div>
+              <html:div>Verloskundigenpraktijk Goede Hoop</html:div>
+            </html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Specialisme</html:th>
+            <html:td>
+              <html:span title="Verloskundige (03.000 - http://fhir.nl/fhir/NamingSystem/uzi-rolcode)">Verloskundige</html:span>
+            </html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="7d48bb79-a6d9-11ed-4511-020000000000" />
+  </identifier>
+  <practitioner>
+    <reference value="Practitioner/mds-ge-izk-2-16-528-1-1007-3-112340001" />
+    <display value="Veer Los-Baren" />
+  </practitioner>
+  <organization>
+    <reference value="Organization/mds-ge-izk-2-16-840-1-113883-2-4-6-108001234" />
+    <display value="Verloskundigenpraktijk Goede Hoop" />
+  </organization>
+  <specialty>
+    <coding>
+      <system value="http://fhir.nl/fhir/NamingSystem/uzi-rolcode" />
+      <version value="2020-04-01T00:00:00" />
+      <code value="03.000" />
+      <display value="Verloskundige" />
+    </coding>
+  </specialty>
+</PractitionerRole>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Procedure xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-0d47b519-2063-11ec-1751-020000000000" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Procedure" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-ObstetricProcedure" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Verrichting. Subject: Gé Gevens-Dienst. Id: 7c38a6af-a6d9-11ed-1217-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <html:span title="obstetrische verrichting (verrichting) (386637004 - SNOMED CT)">obstetrische verrichting (verrichting)</html:span>, Status: voltooid</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:td>
+              <html:span title="aanbieden van voorlichtingsmateriaal (verrichting) (445283009 - SNOMED CT)">aanbieden van voorlichtingsmateriaal (verrichting)</html:span>
+            </html:td>
+            <html:td>
+              <html:div>Uitgevoerd: Vanaf 2026-04-08</html:div>
+            </html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Reden</html:th>
+            <html:td>Zwangerschap 2 Gé Gevens-Dienst</html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="7c38a6af-a6d9-11ed-1217-020000000000" />
+  </identifier>
+  <status value="completed" />
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="386637004" />
+      <display value="obstetrische verrichting (verrichting)" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="445283009" />
+      <display value="aanbieden van voorlichtingsmateriaal (verrichting)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2026" />
+    <display value="Zwangerschap 2 Gé Gevens-Dienst" />
+  </context>
+  <performedPeriod>
+    <start value="2026-04-08" />
+  </performedPeriod>
+  <reasonReference>
+    <reference value="Condition/mds-ge-izk-GE-PREGNANCY-CONDITION-2026" />
+    <display value="Zwangerschap 2 Gé Gevens-Dienst" />
+  </reasonReference>
+</Procedure>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="ANTON-MP-VV-HIP-PAIN-20251103" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-DispenseRequest" />
+  </meta>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-DispenseRequest-RelatedMedicationAgreement">
+    <valueReference>
+      <identifier>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.77.16076005.1" />
+        <value value="ANTON-MP-MA-HIP-PAIN-20251103" />
+      </identifier>
+      <display value="Relatie naar medicatieafspraak ANTON-MP-MA-HIP-PAIN-20251103" />
+    </valueReference>
+  </extension>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-Medication-MedicationTreatment">
+    <valueIdentifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1" />
+      <value value="ANTON-MBT-HIP-PAIN" />
+    </valueIdentifier>
+  </extension>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.77.52711000146108.1" />
+    <value value="ANTON-MP-VV-HIP-PAIN-20251103" />
+  </identifier>
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="52711000146108" />
+      <display value="Request to dispense medication to patient (situation)" />
+    </coding>
+    <text value="Verstrekkingsverzoek" />
+  </category>
+  <medicationReference>
+    <reference value="Medication/zib-Product-mp9-2-16-840-1-113883-2-4-4-10-67903" />
+    <display value="PARACETAMOL 500MG TABLET" />
+  </medicationReference>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <authoredOn value="2025-11-03T10:16:00+01:00" />
+  <requester>
+    <agent>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+        <valueReference>
+          <reference value="PractitionerRole/nl-core-practitionerrole-bgz-msz-1000000101-01520000001" />
+          <display value="Huisdokter H. Huisarts Attent || Huisarts || Huisartsenpraktijk van Aanpakken" />
+        </valueReference>
+      </extension>
+      <reference value="Practitioner/nl-core-practitioner-bgz-msz-2-16-840-1-113883-2-4-6-1-10000001" />
+      <display value="Huisdokter H. Huisarts Attent" />
+    </agent>
+  </requester>
+  <dispenseRequest>
+    <quantity>
+      <value value="60" />
+      <unit value="stuk" />
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.1.900.2" />
+      <code value="245" />
+    </quantity>
+    <performer>
+      <reference value="Organization/ANTON-MP-ORGANIZATION-APOTHEEK-BIJSLUITER" />
+      <display value="Apotheek Bijsluiter" />
+    </performer>
+  </dispenseRequest>
+</MedicationRequest>
