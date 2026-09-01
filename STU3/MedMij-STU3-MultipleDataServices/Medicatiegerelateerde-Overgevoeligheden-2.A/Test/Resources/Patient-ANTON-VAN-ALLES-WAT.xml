@@ -94,7 +94,7 @@
           <valueCode value="BR" />
         </extension>
       </given>
-      <given value="R.">
+      <given value="M.">
         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
           <valueCode value="IN" />
         </extension>
@@ -109,7 +109,7 @@
       <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
         <valueCodeableConcept>
           <coding>
-            <system value="http://hl7.org/fhir/v3/AddressUse" />
+            <system value="http://hl7.org/fhir/v3/TelecommunicationAddressUse" />
             <code value="MC" />
             <display value="Mobile Phone" />
           </coding>
@@ -176,7 +176,7 @@
     <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
       <valueCodeableConcept>
         <coding>
-          <system value="http://hl7.org/fhir/v3/AddressUse" />
+          <system value="http://hl7.org/fhir/v3/TelecommunicationAddressUse" />
           <code value="MC" />
           <display value="Mobile Phone" />
         </coding>

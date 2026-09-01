@@ -11,7 +11,7 @@ All persons, organizations, identifiers, addresses, contact details and clinical
 | Gé Gevens-Dienst | `GE-GEVENS-DIENST` | 2000-02-01 | Female | `NL4` — own name followed by partner name | Broad young-adult record, including birth care |
 | Anton van Alles-Wat | `ANTON-VAN-ALLES-WAT` | 1946-03-14 | Male | `NL3` — partner name followed by own name | Broad older-adult record, including long-term care and vaccinations |
 
-See [Anton van Alles-Wat — patient manifest](PATIENT-ANTON-VAN-ALLES-WAT.md) for Anton's demographics, clinical timeline, service coverage and deliberate exclusions. Anton's automated checks are recorded in [ANTON-VALIDATION.md](ANTON-VALIDATION.md).
+See the patient manifests for [Gé Gevens-Dienst](PATIENT-GE-GEVENS-DIENST.md) and [Anton van Alles-Wat](PATIENT-ANTON-VAN-ALLES-WAT.md).
 
 ## Intended use
 
@@ -34,10 +34,13 @@ The applicable information standards, implementation guides and MedMij catalog r
 | 52 | [Meetwaarden vitale functies 2.0.43](Meetwaarden-Vitale-Functies-2.0.43/README.md) | Gé and Anton | STU3 |
 | 54 | [Overgevoeligheden 2.0](Overgevoeligheden-2.0/README.md) | Gé and Anton | STU3 |
 | 58 | [Medicatiegerelateerde Overgevoeligheden 2.A](Medicatiegerelateerde-Overgevoeligheden-2.A/README.md) | Gé and Anton | STU3 |
+| 59/60 | [Vragenlijsten 2.0.54](Vragenlijsten-2.0.54/README.md) | Gé and Anton | STU3 |
+| 900000401-412 | [MedMij Core rc.3](MedMij-Core-1.0.0-rc.3/README.md) | Gé and Anton | STU3 |
+| 900000413 | [LZ Dagrapportage rc.3](Langdurige-Zorg-Dagrapportage-1.0.0-rc.3/README.md) | Anton | STU3 |
 | 61 | [Basisgegevens Langdurige Zorg 3.1.23](Basisgegevens-Langdurige-Zorg-3.1.23/README.md) | Anton | STU3 |
 | 67 | [Integrale Zwangerschapskaart 2.0.10](Integrale-Zwangerschapskaart-2.0.10/README.md) | Gé | STU3 |
 
-Anton also has R4 resources for [data service 66 — Vaccinaties 2.0.4](../../R4/MedMij-R4-MultipleDataServices/Vaccinaties-2.0.4/README.md).
+The R4 folder adds Vaccinaties (66), Medicatieproces 9 v3 (68), Beeldbeschikbaarheid (9000002), Mondzorg and R4 MedMij Core for the same patients.
 
 ## Loading
 

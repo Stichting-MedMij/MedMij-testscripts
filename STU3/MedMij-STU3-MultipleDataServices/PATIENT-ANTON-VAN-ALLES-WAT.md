@@ -34,7 +34,6 @@ The names, BSN, subscriber id, telephone numbers, email addresses and address ar
 | 2004 | Hypertension diagnosed; lisinopril later stopped because of cough |
 | 2012 | Diabetes mellitus type 2; ongoing metformin treatment |
 | 2015 | COPD diagnosed; ongoing tiotropium treatment |
-| 2016 | Right total hip replacement |
 | 2018 | Atrial fibrillation; anticoagulation monitored by the thrombosis service |
 | 2021-09-12 | Ischemic stroke treated with cerebral CT and thrombolysis; mild residual left-sided weakness and aphasia |
 | From 2022 | Mild adjustment and anxiety symptoms related to loss of independence and fear of falling; no crisis, psychosis or suicidality |
@@ -60,18 +59,21 @@ Current medication includes metformin, daily tiotropium, salbutamol when require
 | 54 — Overgevoeligheden 2.0 | STU3 | Pecan, amoxicillin and latex records |
 | 58 — Medicatiegerelateerde Overgevoeligheden 2.A | STU3 | Converted amoxicillin and lisinopril records |
 | 61 — Basisgegevens Langdurige Zorg 3.1.23 | STU3 | ADL, mobility, care plan, care team, goals and informal-care context |
+| 59/60 — Vragenlijsten 2.0.54 | STU3 | Volledige valrisico- en herstelflow |
+| 68 — Medicatieproces 9 v3.0.0-rc.3 | R4 | Medication agreements and administration agreement |
+| 9000002 — Beeldbeschikbaarheid rc.2 | R4 | Left-hip KOS metadata and corrected PDF report |
+| 900000102-111 — Mondzorg/Core rc.1 | R4 | Poor dentition, partial upper denture and coherent dental plan |
+| 900000413 — LZ Dagrapportage rc.3 | STU3 | Home-care morning report |
 | 66 — Vaccinaties 2.0.4 | R4 | Six COVID-19, pneumococcal and influenza immunizations |
 
 ## Deliberate exclusions
 
 - Data service 67, Integrale Zwangerschapskaart, is intentionally not populated for Anton.
-- Provider tasks are not included because that data service was still alpha for this work.
-- Medication data service 68 was not included because the reviewed version was a release candidate rather than a stable generally available version.
-- Questionnaire services 59 and 60 were not included because they form an interactive collect/share workflow rather than an independent static patient-data collection in this scenario.
+- Alpha and beta data services remain excluded.
 
 ## Loading and validation
 
-Load each service independently and preserve all logical ids. See the service-level README files for folder layout and representative retrieval interactions. The automated structural and cross-service result is recorded in [ANTON-VALIDATION.md](ANTON-VALIDATION.md).
+Load each service independently and preserve all logical ids. See the service-level README files for folder layout and representative retrieval interactions.
 
 The validation report does not constitute profile qualification, terminology-server validation, clinical validation or a MedMij qualification result.
 

@@ -1,0 +1,52 @@
+{
+  "resourceType": "MedicationDispense",
+  "id": "MDS-MP3-AdministrationAgreement-GE-BUDESONIDE",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier",
+      "valueIdentifier": {
+        "system": "https://medmij.example.test/fhir/NamingSystem/pharmaceutical-treatment",
+        "value": "MDS-GE-BUDESONIDE"
+      }
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime",
+      "valueDateTime": "2026-01-15T10:00:00+01:00"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://medmij.example.test/fhir/NamingSystem/administration-agreement",
+      "value": "MDS-MP3-AdministrationAgreement-GE-BUDESONIDE"
+    }
+  ],
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "422037009",
+        "display": "Medication administration agreement"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "Medication/MDS-MP3-Medication-GE-BUDESONIDE",
+    "display": "budesonide 200 microgram/dosis inhalatiepoeder"
+  },
+  "subject": {
+    "reference": "Patient/GE-GEVENS-DIENST",
+    "display": "Gé Gevens-Dienst"
+  },
+  "whenPrepared": "2026-01-15T10:00:00+01:00",
+  "dosageInstruction": [
+    {
+      "text": "2 inhalaties per dag; mond spoelen na gebruik"
+    }
+  ]
+}

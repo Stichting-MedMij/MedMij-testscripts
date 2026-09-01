@@ -1,6 +1,6 @@
 # Vaccinaties 2.0.4 — data service 66
 
-This folder contains non-qualification FHIR R4 test data for the fictional patient **Anton van Alles-Wat**. It is intended for exploratory, integration and functional testing of MedMij data service 66 and must not be used as qualification material.
+This folder contains non-qualification FHIR R4 test data for the fictional patients **Gé Gevens-Dienst** and **Anton van Alles-Wat**. It is intended for exploratory, integration and functional testing of MedMij data service 66 and must not be used as qualification material.
 
 ## Vaccination history
 
@@ -13,11 +13,13 @@ This folder contains non-qualification FHIR R4 test data for the fictional patie
 | 2025-10-16 | COVID-19 booster, Pfizer/BioNTech |
 | 2025-10-16 | Seasonal influenza vaccination |
 
+Gé has an influenza vaccination on 8 April 2026 and a maternal pertussis vaccination on 20 August 2026. These dates and products align with her pregnancy timeline.
+
 All dates, identifiers and provider information are fictional or adapted from published test fixtures.
 
 ## Contents and retrieval
 
-`Test/Resources` contains 27 XML resources: one Patient, six Immunization resources, five Medication vaccine products, four Location resources, seven Organization resources, two Practitioners and two PractitionerRoles. The 2022 and 2025 Pfizer events deliberately use separate product/batch resources. All local references resolve within this folder.
+`Test/Resources` contains 32 XML resources: two Patients, eight Immunization resources, seven Medication vaccine products, four Location resources, seven Organization resources, two Practitioners and two PractitionerRoles. The 2022 and 2025 Pfizer events deliberately use separate product/batch resources. All local references resolve within this folder.
 
 The primary retrieval interaction is an `Immunization` search in the authorized patient context. A separate patient search parameter is deliberately omitted in the MedMij exchange.
 

@@ -1,6 +1,6 @@
 # Meetwaarden vitale functies 2.0.43 — data service 52
 
-> **MultipleDataServices note:** In addition to the original Gé Gevens-Dienst scenario described below, this folder now contains a separate fictional test record for **Anton van Alles-Wat**. Clinical resources do not cross-reference the other patient. Anton's additions are summarized at the end of this README.
+> This service contains separate, coherent records for **Gé Gevens-Dienst** and **Anton van Alles-Wat**. Clinical resources never cross-reference the other patient.
 
 This folder contains non-qualification FHIR STU3 test data for the fictional patient **Gé Gevens-Dienst**. It is intended for exploratory, integration, and functional testing of MedMij data service 52 and must not be used as qualification material.
 
@@ -26,10 +26,8 @@ Load the Patient, Practitioner, PractitionerRole and Organization resources befo
 
 This material was created in a short period of time with the assistance of AI and may therefore contain errors, and no rights may be derived from this material or from any errors or omissions it contains.
 
-<!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
-## Additional test patient — Anton van Alles-Wat
+## Anton van Alles-Wat
 
 Anton has twelve fixed-date observations: two blood pressures (138/78 and 132/74 mmHg), two weights (78.4 and 76.8 kg), two heart rates (82 and 76/min), two glucose values (7.1 and 6.8 mmol/L), two oxygen saturations (94% and 95%) and two respiratory rates (18 and 17/min). The values are fictional but consistent with his diabetes and COPD history.
 
 The folder now contains **25 XML resources**, of which **13 directly refer to Anton** (the Patient and twelve Observation resources).
-<!-- ANTON-MULTIPLE-DATA-SERVICES:END -->

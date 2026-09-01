@@ -52,6 +52,14 @@
     </extension>
   </gender>
   <birthDate value="1946-03-14" />
+  <deceasedBoolean value="false" />
+  <maritalStatus>
+    <coding>
+      <system value="http://hl7.org/fhir/v3/MaritalStatus" />
+      <code value="M" />
+      <display value="Married" />
+    </coding>
+  </maritalStatus>
   <multipleBirthBoolean value="false" />
   <contact>
     <relationship>
@@ -101,7 +109,7 @@
       <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
         <valueCodeableConcept>
           <coding>
-            <system value="http://hl7.org/fhir/v3/AddressUse" />
+            <system value="http://hl7.org/fhir/v3/TelecommunicationAddressUse" />
             <code value="MC" />
             <display value="Mobile Phone" />
           </coding>
@@ -157,18 +165,18 @@
   <generalPractitioner>
     <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
       <valueReference>
-        <reference value="PractitionerRole/ANTON-BGLZ-zorgverlenerrol-01" />
-        <display value="Huisarts" />
+        <reference value="PractitionerRole/nl-core-practitionerrole-bgz-msz-1000000101-01520000001" />
+        <display value="Huisdokter H. Huisarts Attent || Huisarts || Huisartsenpraktijk van Aanpakken" />
       </valueReference>
     </extension>
-    <reference value="Practitioner/ANTON-BGLZ-zorgverlener-01" />
-    <display value="Laura Lanen" />
+    <reference value="Practitioner/nl-core-practitioner-bgz-msz-2-16-840-1-113883-2-4-6-1-10000001" />
+    <display value="Huisdokter H. Huisarts Attent" />
   </generalPractitioner>
   <telecom>
     <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
       <valueCodeableConcept>
         <coding>
-          <system value="http://hl7.org/fhir/v3/AddressUse" />
+          <system value="http://hl7.org/fhir/v3/TelecommunicationAddressUse" />
           <code value="MC" />
           <display value="Mobile Phone" />
         </coding>
@@ -220,11 +228,4 @@
       </extension>
     </country>
   </address>
-  <maritalStatus>
-    <coding>
-      <system value="http://hl7.org/fhir/v3/MaritalStatus" />
-      <code value="M" />
-      <display value="Married" />
-    </coding>
-  </maritalStatus>
 </Patient>

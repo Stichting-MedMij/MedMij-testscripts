@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "MDS-DentalCare-ParafunctionalActivity-Anton",
+  "meta": {
+    "tag": [
+      {
+        "code": "1300",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "110353005",
+        "system": "http://snomed.info/sct",
+        "display": "parafunctionele gewoonte"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/MDS-DentalCare-Patient-Anton",
+    "display": "Berend van de Stok",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2026-07-09T10:00:00+02:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/MDS-DentalCare-PractitionerRole-Tandenborstel",
+      "display": "B. Dijkstra, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueString": "Klemt bij concentratie; de prothese noemt dat geen hobby maar overwerk."
+}

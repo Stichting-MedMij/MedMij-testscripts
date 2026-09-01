@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "MDS-DentalCare-ASAScore-Anton",
+  "meta": {
+    "tag": [
+      {
+        "code": "1300",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "413347006",
+        "display": "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/MDS-DentalCare-Patient-Anton",
+    "display": "Berend van de Stok",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2026-07-09T10:00:00+02:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/MDS-DentalCare-PractitionerRole-Tandenborstel",
+      "display": "B. Dijkstra, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "413497009",
+        "display": "ASA-score 3"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Diabetes, COPD, atriumfibrilleren en antistolling; medicatieverificatie voor invasieve behandeling."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "Observation",
+  "id": "MDS-CORE-ANTON-FLUID-20251103",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-FluidBalance"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "34549-3",
+        "display": "Fluid input and output panel"
+      }
+    ],
+    "text": "Vochtbalans"
+  },
+  "subject": {
+    "reference": "Patient/ANTON-VAN-ALLES-WAT",
+    "display": "Anton van Alles-Wat"
+  },
+  "effectivePeriod": {
+    "start": "2025-11-03T07:00:00+01:00",
+    "end": "2025-11-04T07:00:00+01:00"
+  },
+  "comment": "Postoperatieve 24-uursvochtbalans na de linker heupoperatie; klinisch in evenwicht.",
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "9187-6",
+            "display": "Fluid intake total"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1850,
+        "unit": "mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mL"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "9192-6",
+            "display": "Fluid output total"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1650,
+        "unit": "mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mL"
+      }
+    }
+  ]
+}

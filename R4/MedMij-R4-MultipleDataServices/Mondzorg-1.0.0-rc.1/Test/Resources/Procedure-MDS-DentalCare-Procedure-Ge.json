@@ -1,0 +1,61 @@
+{
+  "resourceType": "Procedure",
+  "id": "MDS-DentalCare-Procedure-Ge",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      },
+      {
+        "code": "1201",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandarts, implantoloog"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "225362009",
+        "system": "http://snomed.info/sct",
+        "display": "tandheelkundige zorg"
+      }
+    ]
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.10",
+        "code": "V91",
+        "display": "Eénvlaksvulling composiet"
+      }
+    ],
+    "text": "Kleine composietrestauratie in element 26"
+  },
+  "subject": {
+    "reference": "Patient/MDS-DentalCare-Patient-Ge",
+    "display": "Gé Gevens-Dienst",
+    "type": "Patient"
+  },
+  "performedDateTime": "2026-06-18",
+  "performer": [
+    {
+      "actor": {
+        "reference": "PractitionerRole/MDS-DentalCare-PractitionerRole-Tandenborstel",
+        "display": "T. Tandenborstel, Tandarts",
+        "type": "PractitionerRole"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/MDS-DentalCare-Location-Kieskeurig",
+    "display": "Tandartspraktijk Kieskeurig",
+    "type": "Location"
+  }
+}

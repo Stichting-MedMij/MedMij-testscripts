@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="GE-IMM-INFLUENZA-20260408" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/imm-Vaccination-event" />
+  </meta>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-imm-Vaccination.PharmaceuticalProduct">
+    <valueReference>
+      <reference value="Medication/GE-IMM-PRODUCT-INFLUENZA-2026" />
+      <type value="Medication" />
+      <display value="vaccin met antigeen van influenzavirus" />
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.131.2" />
+    <value value="GE-IMM-INFLUENZA-20260408" />
+  </identifier>
+  <status value="completed" />
+  <vaccineCode>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="836377006" />
+      <display value="vaccin met antigeen van influenzavirus" />
+    </coding>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/GE-GEVENS-DIENST" />
+    <type value="Patient" />
+    <display value="Patient, Gé Gevens-Dienst" />
+  </patient>
+  <occurrenceDateTime value="2026-04-08" />
+  <performer>
+    <function>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0443" />
+        <code value="AP" />
+        <display value="Administering Provider" />
+      </coding>
+    </function>
+    <actor>
+      <reference value="Organization/nl-core-HPrv-Org--Org-2165281100733-20000005" />
+      <type value="Organization" />
+      <display value="Verloskundigenpraktijk De Eerste Stap" />
+    </actor>
+  </performer>
+</Immunization>

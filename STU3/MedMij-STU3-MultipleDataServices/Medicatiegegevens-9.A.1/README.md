@@ -1,6 +1,6 @@
 # Medicatiegegevens 9.A.1 — data service 35
 
-> **MultipleDataServices note:** In addition to the original Gé Gevens-Dienst scenario described below, this folder now contains a separate fictional test record for **Anton van Alles-Wat**. Clinical resources do not cross-reference the other patient. Anton's additions are summarized at the end of this README.
+> This service contains separate, coherent records for **Gé Gevens-Dienst** and **Anton van Alles-Wat**. Clinical resources never cross-reference the other patient.
 
 This folder contains non-qualification FHIR STU3 conversion test data for the fictional patient **Gé Gevens-Dienst**. It is intended for exploratory, integration, and functional testing of MedMij data service 35 and must not be used as qualification material.
 
@@ -28,10 +28,8 @@ This material was created in a short period of time with the assistance of AI an
 
 The historical metformin dispense contains 850 mg tablets from 15 November 2011. The active medication chain starts on 15 January 2012 with 500 mg tablets, making the dose change explicit.
 
-<!-- ANTON-MULTIPLE-DATA-SERVICES:START -->
-## Additional test patient — Anton van Alles-Wat
+## Anton van Alles-Wat
 
 Anton has three converted historical pharmacy dispenses: acenocoumarol, metformin and paracetamol after the 2025 hip fracture. The dates and treatment identifiers match the corresponding medication and clinical history in the other services.
 
 The folder now contains **18 XML resources**, of which **4 directly refer to Anton** (the Patient and three MedicationDispense resources). Referenced products and provider support are available in the same service folder.
-<!-- ANTON-MULTIPLE-DATA-SERVICES:END -->
