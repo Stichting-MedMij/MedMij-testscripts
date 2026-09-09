@@ -52,7 +52,7 @@
       <display value="Hoog" />
     </coding>
   </interpretation>
-  <comment value="Licht verhoogd bij bekend astma. Schoonfamilie is niet als allergeen meegenomen in dit panel." />
+  <comment value="Licht verhoogd; beoordelen in samenhang met bekend COPD." />
   <specimen>
     <reference value="Specimen/ANTON-LAB-SPECIMEN-BLOOD-20260701" />
     <display value="Monster ANTON-LAB-SPECIMEN-BLOOD-20260701" />
