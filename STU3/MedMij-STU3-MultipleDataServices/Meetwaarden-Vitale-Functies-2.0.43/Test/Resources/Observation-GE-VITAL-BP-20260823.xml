@@ -36,14 +36,14 @@
     <coding>
       <system value="http://snomed.info/sct" />
       <code value="368209003" />
-      <display value="Rechter bovenarm" />
+      <display value="structuur van rechter bovenarm" />
     </coding>
   </bodySite>
   <method>
     <coding>
       <system value="http://snomed.info/sct" />
       <code value="22762002" />
-      <display value="Niet-invasief" />
+      <display value="non-invasief" />
     </coding>
   </method>
   <component>
@@ -104,7 +104,7 @@
       <coding>
         <system value="http://snomed.info/sct" />
         <code value="33586001" />
-        <display value="Zittende positie" />
+        <display value="zittende positie" />
       </coding>
     </valueCodeableConcept>
   </component>

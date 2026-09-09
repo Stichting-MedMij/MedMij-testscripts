@@ -20,7 +20,7 @@
     <coding>
       <system value="http://loinc.org" />
       <code value="29463-7" />
-      <display value="Lichaamsgewicht [massa] in ^patiënt" />
+      <display value="Lichaamsgewicht [massa]" />
     </coding>
   </code>
   <subject>

@@ -55,8 +55,8 @@
       </coding>
     </code>
     <text>
-      <status value="generated">Geheugenklachten besproken met Anton en Manusje; milde cognitieve stoornis zonder aanwijzingen voor acute verwardheid.</status>
-      <html:div>COPD met tijdelijk meer klachten tijdens het pollenseizoen; geen benauwdheid in rust.</html:div>
+      <status value="generated" />
+      <html:div>Geheugenklachten besproken met Anton en Manusje; milde cognitieve stoornis zonder aanwijzingen voor acute verwardheid.</html:div>
     </text>
     <entry>
       <reference value="Observation/ANTON-GP-JOURNAL-20260422-E" />
@@ -85,8 +85,8 @@
       </coding>
     </code>
     <text>
-      <status value="generated">Afspraken ook schriftelijk meegeven; Manusje ondersteunt bij het overzicht en neemt contact op bij duidelijke achteruitgang.</status>
-      <html:div>Inhalatietechniek opnieuw besproken; salbutamol zo nodig en vervolgcontrole ingepland.</html:div>
+      <status value="generated" />
+      <html:div>Afspraken ook schriftelijk meegeven; Manusje ondersteunt bij het overzicht en neemt contact op bij duidelijke achteruitgang.</html:div>
     </text>
     <entry>
       <reference value="Observation/ANTON-GP-JOURNAL-20260422-P" />

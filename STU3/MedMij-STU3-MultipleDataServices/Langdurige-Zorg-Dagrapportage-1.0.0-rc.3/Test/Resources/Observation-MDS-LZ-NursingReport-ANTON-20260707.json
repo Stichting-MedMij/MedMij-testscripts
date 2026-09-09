@@ -40,5 +40,11 @@
     "display": "Anton van Alles-Wat"
   },
   "effectiveDateTime": "2026-07-07T08:15:00+02:00",
+  "performer": [
+    {
+      "reference": "Organization/ANTON-BGLZ-zorgaanbieder-01",
+      "display": "AA-zkh - Noord"
+    }
+  ],
   "valueString": "Anton heeft zelfstandig gedoucht met toezicht en is met de rollator naar de keuken gelopen. Geen valincidenten. Medicatie ingenomen volgens afspraak. De partiële bovenprothese lag al klaar; Anton meldde dat die vandaag eerder wakker was dan hijzelf. Eetlust goed. Afgesproken om de looproute vrij te houden en de oefeningen van de fysiotherapeut te herhalen."
 }

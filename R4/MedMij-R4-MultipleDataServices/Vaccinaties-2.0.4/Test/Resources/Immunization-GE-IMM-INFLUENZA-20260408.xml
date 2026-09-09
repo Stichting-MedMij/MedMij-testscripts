@@ -38,7 +38,7 @@
       </coding>
     </function>
     <actor>
-      <reference value="Organization/nl-core-HPrv-Org--Org-2165281100733-20000005" />
+      <reference value="Organization/GE-IMM-ORG-DE-EERSTE-STAP" />
       <type value="Organization" />
       <display value="Verloskundigenpraktijk De Eerste Stap" />
     </actor>

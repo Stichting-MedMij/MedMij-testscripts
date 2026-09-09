@@ -10,7 +10,7 @@
     <coding>
       <system value="http://snomed.info/sct" />
       <code value="33879002" />
-      <display value="toedienen van vaccin" />
+      <display value="vaccinatie" />
     </coding>
   </code>
   <subject>

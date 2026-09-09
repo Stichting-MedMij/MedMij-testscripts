@@ -55,8 +55,8 @@
       </coding>
     </code>
     <text>
-      <status value="generated">Medicatiebeoordeling bij polyfarmacie uitgevoerd; geen actuele bijwerkingen en de medicatierol wordt correct gebruikt.</status>
-      <html:div>COPD momenteel stabiel; geen alarmsymptomen en longonderzoek zonder afwijkingen.</html:div>
+      <status value="generated" />
+      <html:div>Medicatiebeoordeling bij polyfarmacie uitgevoerd; geen actuele bijwerkingen en de medicatierol wordt correct gebruikt.</html:div>
     </text>
     <entry>
       <reference value="Observation/ANTON-GP-JOURNAL-20260703-E" />
@@ -85,8 +85,8 @@
       </coding>
     </code>
     <text>
-      <status value="generated">Medicatieoverzicht afgestemd; medicatierol en acenocoumarol volgens het schema van de trombosedienst voortzetten.</status>
-      <html:div>Salbutamol zo nodig voortzetten; inhalator meenemen bij controles en opnieuw contact opnemen bij toename van klachten.</html:div>
+      <status value="generated" />
+      <html:div>Medicatieoverzicht afgestemd; medicatierol en acenocoumarol volgens het schema van de trombosedienst voortzetten.</html:div>
     </text>
     <entry>
       <reference value="Observation/ANTON-GP-JOURNAL-20260703-P" />

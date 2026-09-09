@@ -32,7 +32,7 @@
       <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
         <valueCodeableConcept>
           <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-TelecommunicationAddressUse" />
+            <system value="http://terminology.hl7.org/CodeSystem/v3-AddressUse" />
             <code value="LL" />
             <display value="Land Line" />
           </coding>

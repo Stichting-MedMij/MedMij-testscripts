@@ -12,21 +12,26 @@
     <use value="official" />
     <text value="Gé Gevens-Dienst" />
     <family value="Gevens-Dienst" />
-    <given value="Gé" />
+    <given value="Gé">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="BR" />
+      </extension>
+    </given>
   </name>
   <gender value="female" />
   <birthDate value="2000-02-01" />
   <telecom>
-    <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
-      <valueCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/v3-TelecommunicationAddressUse" />
-          <code value="MC" />
-          <display value="Mobile contact" />
-        </coding>
-      </valueCodeableConcept>
-    </extension>
-    <system value="phone" />
+    <system value="phone">
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-AddressUse" />
+            <code value="MC" />
+            <display value="Mobile contact" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </system>
     <value value="+316-99990024" />
     <use value="home" />
   </telecom>

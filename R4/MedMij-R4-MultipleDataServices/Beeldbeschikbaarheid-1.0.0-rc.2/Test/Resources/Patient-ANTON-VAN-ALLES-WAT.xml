@@ -43,16 +43,17 @@
   </name>
   <birthDate value="1946-03-14" />
   <telecom>
-    <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
-      <valueCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/v3-TelecommunicationAddressUse" />
-          <code value="MC" />
-          <display value="Mobile Phone" />
-        </coding>
-      </valueCodeableConcept>
-    </extension>
-    <system value="phone" />
+    <system value="phone">
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-AddressUse" />
+            <code value="MC" />
+            <display value="Mobile contact" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </system>
     <value value="+316-99990080" />
     <use value="home" />
   </telecom>
@@ -164,7 +165,7 @@
       <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
         <valueCodeableConcept>
           <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-TelecommunicationAddressUse" />
+            <system value="http://terminology.hl7.org/CodeSystem/v3-AddressUse" />
             <code value="MC" />
             <display value="Mobile Phone" />
           </coding>

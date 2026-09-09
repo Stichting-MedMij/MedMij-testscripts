@@ -1,9 +1,27 @@
+# Oral Health and MedMij Core 1.0.0-rc.1 - data services 900000102-900000109
 
-# Mondzorg en R4 MedMij Core 1.0.0-rc.1
+FHIR R4 test data for **Gé Gevens-Dienst** and **Anton van Alles-Wat**.
 
-Samenhangend mondzorgmateriaal voor de release-candidate gegevensdiensten 900000102 t/m 900000109 en de bijbehorende R4 Core-resources.
+## Patient content
 
-- Gé: goede mondgezondheid, lichte zwangerschapsgerelateerde gingivitis, laag cariësrisico, PPS 1 en ASA II.
-- Anton: eigen dentitie met partiële bovenprothese, wortelcariës, slechte mondhygiëne, PPS 3, verhoogd cariësrisico en ASA III.
+| Patient | Content |
+| --- | --- |
+| Gé | Good oral health with mild pregnancy-related gingivitis, low caries risk, PPS 1 and ASA II. |
+| Anton | Partial upper denture, root caries, poor oral hygiene, increased caries risk, PPS 3 and ASA III. |
 
-Beide verhaallijnen bevatten een contact, behandel-/preventiedoelen, observaties en een uitgevoerde verrichting.
+Both patients have an oral-health encounter, observations, treatment and prevention goals, payer information and a performed procedure.
+
+## Resources
+
+| Resource type | Count |
+| --- | ---: |
+| Coverage | 2 |
+| Encounter | 2 |
+| Goal | 4 |
+| Location | 1 |
+| Observation | 12 |
+| Organization | 2 |
+| Patient | 2 |
+| Practitioner | 1 |
+| PractitionerRole | 1 |
+| Procedure | 2 |

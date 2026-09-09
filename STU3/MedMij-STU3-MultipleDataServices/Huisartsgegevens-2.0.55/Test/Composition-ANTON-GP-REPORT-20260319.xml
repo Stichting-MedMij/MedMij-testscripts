@@ -55,8 +55,8 @@
       </coding>
     </code>
     <text>
-      <status value="generated">COPD stabiel; inhalatietechniek vraagt herhaling, zonder benauwdheid in rust.</status>
-      <html:div>COPD met tijdelijk meer klachten tijdens het pollenseizoen; geen benauwdheid in rust.</html:div>
+      <status value="generated" />
+      <html:div>COPD stabiel; inhalatietechniek vraagt herhaling, zonder benauwdheid in rust.</html:div>
     </text>
     <entry>
       <reference value="Observation/ANTON-GP-JOURNAL-20260319-E" />
@@ -85,8 +85,8 @@
       </coding>
     </code>
     <text>
-      <status value="generated">Inhalatietechniek opnieuw geoefend; tiotropium dagelijks en salbutamol zo nodig gebruiken.</status>
-      <html:div>Inhalatietechniek opnieuw besproken; salbutamol zo nodig en vervolgcontrole ingepland.</html:div>
+      <status value="generated" />
+      <html:div>Inhalatietechniek opnieuw geoefend; tiotropium dagelijks en salbutamol zo nodig gebruiken.</html:div>
     </text>
     <entry>
       <reference value="Observation/ANTON-GP-JOURNAL-20260319-P" />

@@ -55,7 +55,7 @@
       </coding>
     </code>
     <text>
-      <status value="generated">Linker heupfractuur na een val van een huishoudtrapje thuis.</status>
+      <status value="generated" />
       <html:div>Linker heupfractuur na een val van een huishoudtrapje thuis.</html:div>
     </text>
     <entry>
@@ -85,8 +85,8 @@
       </coding>
     </code>
     <text>
-      <status value="generated">Belasten volgens advies van de orthopedie, pijnstilling voortzetten en contact opnemen bij toename van pijn of gevoelsverlies.</status>
-      <html:div>Enkel ontlasten en hoog houden; beoordeling en beeldvorming via de spoedzorg; contact opnemen bij meer pijn of gevoelsverlies.</html:div>
+      <status value="generated" />
+      <html:div>Belasten volgens advies van de orthopedie, pijnstilling voortzetten en contact opnemen bij toename van pijn of gevoelsverlies.</html:div>
     </text>
     <entry>
       <reference value="Observation/ANTON-GP-JOURNAL-20251103-P" />

@@ -55,7 +55,7 @@
       </coding>
     </code>
     <text>
-      <status value="generated">Atriumfibrilleren besproken; belang van therapietrouw en controle door de trombosedienst toegelicht.</status>
+      <status value="generated" />
       <html:div>Atriumfibrilleren besproken; belang van therapietrouw en controle door de trombosedienst toegelicht.</html:div>
     </text>
     <entry>
@@ -85,7 +85,7 @@
       </coding>
     </code>
     <text>
-      <status value="generated">Acenocoumarol volgens doseerschema voortzetten; wijzigingen afstemmen met huisarts en trombosedienst.</status>
+      <status value="generated" />
       <html:div>Acenocoumarol volgens doseerschema voortzetten; wijzigingen afstemmen met huisarts en trombosedienst.</html:div>
     </text>
     <entry>

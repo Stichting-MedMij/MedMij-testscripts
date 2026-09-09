@@ -1,6 +1,14 @@
+# MedMij Core zib2017/STU3 1.0.0-rc.3 - data services 900000401-900000407 and 900000409-900000412
 
-# MedMij Core zib2017/STU3 1.0.0-rc.3
+FHIR STU3 test data for **Gé Gevens-Dienst** and **Anton van Alles-Wat**.
 
-Routing- en aanvullingsset voor de release-candidate gegevensdiensten **900000401 t/m 900000407** en **900000409 t/m 900000412**.
+This folder contains the additional temperature, heart-rate, respiratory-rate and fluid-balance observations needed for the modular MedMij Core data services. Other applicable Core resources, such as blood pressure, body weight, alerts, nutrition, living situation and payer information, are already present elsewhere in the MultipleDataServices record and are not duplicated here.
 
-De bloeddruk-, lengte-, gewicht-, alert-, voedingsadvies-, woonsituatie- en betalerresources zijn al aanwezig in BgZ, Basisgegevens GGZ en Meetwaarden. Om dubbele logische ids te voorkomen worden die niet opnieuw gekopieerd. Deze map voegt alleen ontbrekende temperatuur-, pols-, ademhalings- en vochtbalansmetingen toe. Vochtbalans is uitsluitend voor Anton en hoort bij de opname rond zijn linker heupoperatie.
+The fluid-balance observation belongs only to Anton and relates to the admission for his left hip operation.
+
+## Resources
+
+| Resource type | Count |
+| --- | ---: |
+| Observation | 6 |
+| Patient | 2 |

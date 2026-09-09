@@ -70,7 +70,7 @@
     </extension>
     <coding>
       <system value="http://snomed.info/sct" />
-      <code value="70258002" />
+      <code value="29836001" />
       <display value="structuur van heupgewricht" />
     </coding>
   </bodySite>

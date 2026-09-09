@@ -10,9 +10,9 @@
   "code": {
     "coding": [
       {
-        "system": "http://loinc.org",
-        "code": "34549-3",
-        "display": "Fluid input and output panel"
+        "system": "http://snomed.info/sct",
+        "code": "364396009",
+        "display": "vochtbalans"
       }
     ],
     "text": "Vochtbalans"
@@ -31,9 +31,9 @@
       "code": {
         "coding": [
           {
-            "system": "http://loinc.org",
-            "code": "9187-6",
-            "display": "Fluid intake total"
+            "system": "http://snomed.info/sct",
+            "code": "251852001",
+            "display": "vochtinname"
           }
         ]
       },
@@ -48,9 +48,9 @@
       "code": {
         "coding": [
           {
-            "system": "http://loinc.org",
-            "code": "9192-6",
-            "display": "Fluid output total"
+            "system": "http://snomed.info/sct",
+            "code": "251841007",
+            "display": "vochtuitscheiding"
           }
         ]
       },

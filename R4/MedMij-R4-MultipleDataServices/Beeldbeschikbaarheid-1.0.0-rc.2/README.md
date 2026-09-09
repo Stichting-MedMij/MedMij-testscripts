@@ -1,9 +1,24 @@
+# Image Availability 1.0.0-rc.2 - data service 9000002
 
-# Beeldbeschikbaarheid 1.0.0-rc.2
+FHIR R4 test data for **Gé Gevens-Dienst** and **Anton van Alles-Wat**.
 
-Testmateriaal voor gegevensdienst **9000002** voor beide patiënten.
+## Patient content
 
-- Gé Gevens-Dienst: dateringsecho van 15 mei 2026, inclusief KOS-verwijzing en PDF-verslag. De verdikte nekplooi uit de zwangerschapskaart is ook in het verslag opgenomen.
-- Anton van Alles-Wat: beeldvorming van bekken en linker heup van 2 november 2025 na de hemi-artroplastiek links.
+| Patient | Content |
+| --- | --- |
+| Gé | Dating ultrasound of 15 May 2026, including a KOS reference and PDF report. The nuchal translucency is 2.9 mm. |
+| Anton | Imaging of the pelvis and left hip of 2 November 2025 after the left hemiarthroplasty. |
 
-De DICOM Study-, Series- en KOS-SOP-instance-UID's komen uit de aangeleverde PACS-export. De host `examplepacs.example.com` is bewust behouden: de laadpipeline vervangt deze voor de doelomgeving.
+## Resources
+
+| Resource type | Count |
+| --- | ---: |
+| Binary | 2 |
+| DocumentReference | 4 |
+| Location | 2 |
+| Organization | 2 |
+| Patient | 2 |
+| Practitioner | 2 |
+| PractitionerRole | 2 |
+
+The host `examplepacs.example.com` is deliberately retained because the loading pipeline replaces it for the target environment.

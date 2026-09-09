@@ -1,0 +1,10 @@
+{
+  "resourceType": "Location",
+  "id": "ImageAvailability-Location-Echopraktijk-Kijk-Eens",
+  "status": "active",
+  "name": "Echopraktijk Kijk Eens",
+  "managingOrganization": {
+    "reference": "Organization/ImageAvailability-Organization-Echopraktijk-Kijk-Eens",
+    "display": "Echopraktijk Kijk Eens"
+  }
+}

@@ -1,7 +1,23 @@
+# Vragenlijsten 2.0.54 - data services 59 and 60
 
-# Vragenlijsten 2.0.54
+FHIR STU3 test data for **Gé Gevens-Dienst** and **Anton van Alles-Wat**.
 
-Volledige voorbeeldflow voor gegevensdiensten **59** en **60**: verwijzing (Task requested/accepted), vragenlijst, beantwoording en afgeronde Task. `Test/Resources` bevat de op te halen vragenlijsten en aangevraagde Tasks; `Test/Transactions` bevat de daaropvolgende accepted/completed snapshots en antwoorden en moet niet als initiële serverinhoud worden geladen.
+## Patient content
 
-- Gé: vragenlijst over astmacontrole en de actuele zwangerschap.
-- Anton: vragenlijst over valrisico en herstel na de linker heupfractuur.
+| Patient | Questionnaire flow |
+| --- | --- |
+| Gé | Asthma control and the current pregnancy. |
+| Anton | Fall risk and recovery after the left hip fracture. |
+
+Each patient has a complete referral flow with a requested Task, an accepted Task, a QuestionnaireResponse and a completed Task.
+
+## Resources
+
+| Resource type | Count |
+| --- | ---: |
+| Patient | 2 |
+| Questionnaire | 2 |
+| QuestionnaireResponse | 2 |
+| Task | 6 |
+
+`Test/Resources` contains the resources available before completion. `Test/Transactions` contains the accepted and completed Task snapshots and the QuestionnaireResponse resources and must not be loaded as initial server content.

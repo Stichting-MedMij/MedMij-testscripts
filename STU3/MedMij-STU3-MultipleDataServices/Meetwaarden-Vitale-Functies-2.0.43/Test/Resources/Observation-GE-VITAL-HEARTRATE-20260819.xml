@@ -42,14 +42,14 @@
     <coding>
       <system value="http://snomed.info/sct" />
       <code value="271636001" />
-      <display value="Hartslag regelmatig" />
+      <display value="regelmatige pulsaties" />
     </coding>
   </interpretation>
   <method>
     <coding>
       <system value="http://snomed.info/sct" />
       <code value="46825001" />
-      <display value="Elektrocardiografische bewaking" />
+      <display value="ECG-bewaking" />
     </coding>
   </method>
 </Observation>
