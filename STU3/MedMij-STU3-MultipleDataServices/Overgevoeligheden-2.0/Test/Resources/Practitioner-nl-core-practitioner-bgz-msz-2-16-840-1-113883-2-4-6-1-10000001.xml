@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="nl-core-practitioner-bgz-msz-2-16-840-1-113883-2-4-6-1-10000001" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
+  </meta>
+  <identifier>
+    <system value="http://fhir.nl/fhir/NamingSystem/agb-z" />
+    <value value="10000001" />
+  </identifier>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
+      <valueCode value="NL1" />
+    </extension>
+    <family value="Attent">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Attent" />
+      </extension>
+    </family>
+    <given value="Huisdokter">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="BR" />
+      </extension>
+    </given>
+    <given value="H.">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="IN" />
+      </extension>
+    </given>
+    <given value="Huisarts">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="CL" />
+      </extension>
+    </given>
+  </name>
+  <telecom>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/v3/TelecommunicationAddressUse" />
+          <code value="MC" />
+          <display value="Mobile Phone" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <system value="phone" />
+    <value value="06-99990005" />
+    <use value="work" />
+  </telecom>
+  <telecom>
+    <system value="email" />
+    <value value="huisdokter.attent@van-aanpakken.example.test" />
+    <use value="work" />
+  </telecom>
+  <address>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/v3/AddressUse" />
+          <code value="WP" />
+          <display value="Werkadres" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <use value="work" />
+    <line value="Zorgtestlaan 10">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Zorgtestlaan" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="10" />
+      </extension>
+    </line>
+    <city value="Testdorp" />
+    <postalCode value="9999ZZ" />
+    <country value="Nederland">
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166" />
+            <code value="NL" />
+            <display value="Nederland" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </country>
+  </address>
+</Practitioner>

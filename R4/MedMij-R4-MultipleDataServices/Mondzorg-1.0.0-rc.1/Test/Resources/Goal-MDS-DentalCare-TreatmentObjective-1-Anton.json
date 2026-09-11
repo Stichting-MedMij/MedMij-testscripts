@@ -1,0 +1,35 @@
+{
+  "resourceType": "Goal",
+  "id": "MDS-DentalCare-TreatmentObjective-1-Anton",
+  "meta": {
+    "tag": [
+      {
+        "code": "1300",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
+    ]
+  },
+  "lifecycleStatus": "active",
+  "priority": {
+    "coding": [
+      {
+        "code": "high-priority",
+        "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
+        "display": "High Priority"
+      }
+    ]
+  },
+  "description": {
+    "text": "Pijnvrij kunnen eten met eigen gebit en partiële bovenprothese"
+  },
+  "subject": {
+    "reference": "Patient/MDS-DentalCare-Patient-Anton",
+    "display": "Anton van Alles-Wat",
+    "type": "Patient"
+  },
+  "startDate": "2026-07-09"
+}

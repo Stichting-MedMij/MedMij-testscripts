@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-31ec8cae-8936-4af3-b248-daa1258d4ed2" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-FetusObservation" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Zwangerschap 2 Gé Gevens-Dienst</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Bepalingdatum/tijd</html:th>
+            <html:td>Vanaf 2026-05-15</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Methode</html:th>
+            <html:td>
+              <html:span title="bepalen van schedelomtrek met echografie (verrichting) (31561000146107 - SNOMED CT)">bepalen van schedelomtrek met echografie (verrichting)</html:span>
+            </html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="hoofdomtrek (waarneembare entiteit) (363812007 - SNOMED CT)">hoofdomtrek (waarneembare entiteit)</html:span>
+            </html:td>
+            <html:td>74 mm</html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
+    <valueReference>
+      <reference value="BodySite/mds-ge-izk-b89db315-ddc8-43bd-8b08-7e6cb2cf5adb" />
+      <display value="Foetus 1 Zwangerschap 2 Gé Gevens-Dienst" />
+    </valueReference>
+  </extension>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="363812007" />
+      <display value="hoofdomtrek (waarneembare entiteit)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2026" />
+    <display value="Zwangerschap 2 Gé Gevens-Dienst" />
+  </context>
+  <effectivePeriod>
+    <start value="2026-05-15" />
+  </effectivePeriod>
+  <valueQuantity>
+    <value value="74" />
+    <unit value="mm" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="mm" />
+  </valueQuantity>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="31561000146107" />
+      <display value="bepalen van schedelomtrek met echografie (verrichting)" />
+    </coding>
+  </method>
+</Observation>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ProcedureRequest xmlns="http://hl7.org/fhir">
+  <id value="zib-ProcedureRequest-bgz-msz-anton-van-alles-wat-procedure2" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-ProcedureRequest" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6" />
+    <value value="bgz-msz-anton-van-alles-wat-procedure2" />
+  </identifier>
+  <status value="active" />
+  <intent value="plan" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="122531000146102" />
+      <display value="postoperatieve mobilisatietraining" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <occurrencePeriod>
+    <start value="2025-11-03T09:30:00+01:00" />
+  </occurrencePeriod>
+  <requester>
+    <agent>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+        <valueReference>
+          <reference value="PractitionerRole/nl-core-practitionerrole-bgz-msz-4567891201-03220000002" />
+          <display value="Beendokter B. Beendokter Aangenaam || Orthopedisch chirurg || Ziekenhuis de Aandacht" />
+        </valueReference>
+      </extension>
+      <reference value="Practitioner/nl-core-practitioner-bgz-msz-2-16-840-1-113883-2-4-6-1-45678912" />
+      <display value="Beendokter B. Beendokter Aangenaam" />
+    </agent>
+  </requester>
+  <performer>
+    <reference value="Organization/nl-core-organization-bgz-msz-2-16-840-1-113883-2-4-6-1-20000002" />
+    <display value="Ziekenhuis de Aandacht" />
+  </performer>
+  <reasonReference>
+    <reference value="Condition/zib-Problem-bgz-msz-anton-van-alles-wat-problem5" />
+    <display value="fractuur van heup" />
+  </reasonReference>
+  <bodySite>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="7771000" />
+          <display value="Left" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="29836001" />
+      <display value="structuur van heupgewricht" />
+    </coding>
+  </bodySite>
+</ProcedureRequest>

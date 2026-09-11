@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-0d47afc6-2063-11ec-1749-020000000000" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy-Parity" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Zwangerschap 1 Gé Gevens-Dienst</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="Pariteit [aantal] d.m.v. rapportage (11977-6 - LOINC)">Pariteit [aantal] d.m.v. rapportage</html:span>
+            </html:td>
+            <html:td>1 1</html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
+    <valueReference>
+      <reference value="Condition/mds-ge-izk-GE-PREGNANCY-CONDITION-2023" />
+      <display value="Zwangerschap 1 Gé Gevens-Dienst" />
+    </valueReference>
+  </extension>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="11977-6" />
+      <display value="Pariteit [aantal] d.m.v. rapportage" />
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="364325004" />
+      <display value="pariteit (waarneembare entiteit)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2023" />
+    <display value="Zwangerschap 1 Gé Gevens-Dienst" />
+  </context>
+  <valueQuantity>
+    <value value="1" />
+    <unit value="1" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="1" />
+  </valueQuantity>
+</Observation>

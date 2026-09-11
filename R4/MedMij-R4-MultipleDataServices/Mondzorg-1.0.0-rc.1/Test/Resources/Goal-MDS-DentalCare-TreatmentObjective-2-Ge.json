@@ -1,0 +1,35 @@
+{
+  "resourceType": "Goal",
+  "id": "MDS-DentalCare-TreatmentObjective-2-Ge",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
+    ]
+  },
+  "lifecycleStatus": "active",
+  "priority": {
+    "coding": [
+      {
+        "code": "low-priority",
+        "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
+        "display": "Low Priority"
+      }
+    ]
+  },
+  "description": {
+    "text": "Nieuwe cariës voorkomen"
+  },
+  "subject": {
+    "reference": "Patient/MDS-DentalCare-Patient-Ge",
+    "display": "Gé Gevens-Dienst",
+    "type": "Patient"
+  },
+  "startDate": "2026-06-18"
+}

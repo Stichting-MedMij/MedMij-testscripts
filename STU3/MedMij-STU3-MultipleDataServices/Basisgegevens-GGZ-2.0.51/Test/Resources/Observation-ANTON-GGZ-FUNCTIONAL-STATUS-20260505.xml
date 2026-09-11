@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ANTON-GGZ-FUNCTIONAL-STATUS-20260505" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-FunctionalOrMentalStatus" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="ANTON-GGZ-FUNCTIONAL-STATUS-20260505" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="384821006" />
+      <display value="Bevinding betreffende mentale toestand, gedrag en/of psychosociaal functioneren (bevinding)" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="224960004" />
+      <display value="Tiredness" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <effectivePeriod>
+    <start value="2026-05-05" />
+  </effectivePeriod>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="255604002" />
+      <display value="Mild" />
+    </coding>
+  </valueCodeableConcept>
+  <comment value="Lichte vermoeidheid en piekeren door onderbroken nachtrust. Dagelijks functioneren blijft intact." />
+</Observation>

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-612fb4cc-b27f-4a65-8205-fc51d9b7560a" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-FetusObservation" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Zwangerschap 2 Gé Gevens-Dienst</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Bepalingdatum/tijd</html:th>
+            <html:td>2026-05-15</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Methode</html:th>
+            <html:td>
+              <html:span title="echografie (kwalificatiewaarde) (278292003 - SNOMED CT)">echografie (kwalificatiewaarde)</html:span>
+            </html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="verdikte nekplooi van foetus (bevinding) (459053006 - SNOMED CT)">verdikte nekplooi van foetus (bevinding)</html:span>
+            </html:td>
+            <html:td>
+              <html:span title="Geen sonomarker geconstateerd (1 - 2.16.840.1.113883.2.4.4.13.54)">Geen sonomarker geconstateerd</html:span>
+            </html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
+    <valueReference>
+      <reference value="BodySite/mds-ge-izk-b89db315-ddc8-43bd-8b08-7e6cb2cf5adb" />
+      <display value="Foetus 1 Zwangerschap 2 Gé Gevens-Dienst" />
+    </valueReference>
+  </extension>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="459053006" />
+      <display value="verdikte nekplooi van foetus (bevinding)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2026" />
+    <display value="Zwangerschap 2 Gé Gevens-Dienst" />
+  </context>
+  <effectiveDateTime value="2026-05-15" />
+  <valueCodeableConcept>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.13.54" />
+      <code value="1" />
+      <display value="Geen sonomarker geconstateerd" />
+    </coding>
+  </valueCodeableConcept>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="278292003" />
+      <display value="echografie (kwalificatiewaarde)" />
+    </coding>
+  </method>
+</Observation>

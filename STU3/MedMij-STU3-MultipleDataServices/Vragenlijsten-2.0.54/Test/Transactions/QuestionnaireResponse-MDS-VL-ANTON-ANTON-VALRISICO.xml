@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="MDS-VL-ANTON-ANTON-VALRISICO-RESPONSE" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireResponse" />
+  </meta>
+  <language value="nl-NL" />
+  <questionnaire>
+    <reference value="Questionnaire/ANTON-VALRISICO" />
+    <display value="Valrisico en herstel" />
+  </questionnaire>
+  <status value="completed" />
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <authored value="2026-05-05T18:40:00+02:00" />
+  <author>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </author>
+  <item>
+    <linkId value="vallen" />
+    <answer>
+      <valueBoolean value="false" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="onzeker" />
+    <answer>
+      <valueString value="Soms buitenshuis" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="hulpmiddel" />
+    <answer>
+      <valueString value="Rollator buitenshuis, wandelstok binnenshuis" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="doel" />
+    <answer>
+      <valueString value="Zelf naar de brievenbus en terug, zonder dat de rollator de route bepaalt." />
+    </answer>
+  </item>
+</QuestionnaireResponse>

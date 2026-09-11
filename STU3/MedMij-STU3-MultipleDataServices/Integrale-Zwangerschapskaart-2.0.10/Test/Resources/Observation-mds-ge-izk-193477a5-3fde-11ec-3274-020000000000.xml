@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-193477a5-3fde-11ec-3274-020000000000" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-FamilySituationAssessment" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Status: definitief</html:caption>
+        <html:tfoot>
+          <html:tr>
+            <html:td colspan="2">Stabiele gezinssituatie. Goede hechting binnen het gezin</html:td>
+          </html:tr>
+        </html:tfoot>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Zwangerschap 1 Gé Gevens-Dienst</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Bepalingdatum/tijd</html:th>
+            <html:td>2023-09-15</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="observatie betreffende verstoring van leefstijl van familie (waarneembare entiteit) (423340009 - SNOMED CT)">observatie betreffende verstoring van leefstijl van familie (waarneembare entiteit)</html:span>
+            </html:td>
+            <html:td />
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="423340009" />
+      <display value="observatie betreffende verstoring van leefstijl van familie (waarneembare entiteit)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2023" />
+    <display value="Zwangerschap 1 Gé Gevens-Dienst" />
+  </context>
+  <effectiveDateTime value="2023-09-15" />
+  <comment value="Stabiele gezinssituatie. Goede hechting binnen het gezin" />
+</Observation>

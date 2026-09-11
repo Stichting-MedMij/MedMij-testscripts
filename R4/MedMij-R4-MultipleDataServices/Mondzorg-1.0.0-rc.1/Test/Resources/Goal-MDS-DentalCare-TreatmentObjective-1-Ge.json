@@ -1,0 +1,40 @@
+{
+  "resourceType": "Goal",
+  "id": "MDS-DentalCare-TreatmentObjective-1-Ge",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      },
+      {
+        "code": "8700",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Mondhygiënisten"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
+    ]
+  },
+  "lifecycleStatus": "active",
+  "priority": {
+    "coding": [
+      {
+        "code": "high-priority",
+        "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
+        "display": "High Priority"
+      }
+    ]
+  },
+  "description": {
+    "text": "Tandvlees rustig houden tijdens de zwangerschap"
+  },
+  "subject": {
+    "reference": "Patient/MDS-DentalCare-Patient-Ge",
+    "display": "Gé Gevens-Dienst",
+    "type": "Patient"
+  },
+  "startDate": "2026-06-18"
+}

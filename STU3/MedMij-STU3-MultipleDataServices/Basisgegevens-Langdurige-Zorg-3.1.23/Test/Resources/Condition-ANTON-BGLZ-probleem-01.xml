@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="ANTON-BGLZ-probleem-01" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Problem" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="914447db-e3e1-11eb-1233-020000000000" />
+  </identifier>
+  <clinicalStatus value="active">
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="55561003" />
+          <display value="Actueel" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </clinicalStatus>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="282291009" />
+      <display value="Diagnose" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="422504002" />
+      <display value="ischemisch cerebrovasculair accident" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <onsetDateTime value="2021-09-12" />
+  <note>
+    <text value="Ischemisch CVA in 2021 met lichte restzwakte links en milde afasie." />
+  </note>
+</Condition>

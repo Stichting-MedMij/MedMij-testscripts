@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ProcedureRequest xmlns="http://hl7.org/fhir">
+  <id value="ANTON-BGLZ-verrichting-aanvraag-03" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-ProcedureRequest" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="95f80beb-e3e1-11eb-1361-020000000000" />
+  </identifier>
+  <status value="completed" />
+  <intent value="plan" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="91251008" />
+      <display value="Fysiotherapie" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <requester>
+    <agent>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+        <valueReference>
+          <reference value="PractitionerRole/ANTON-BGLZ-zorgverlenerrol-02" />
+          <display value="Neuroloog" />
+        </valueReference>
+      </extension>
+      <reference value="Practitioner/ANTON-BGLZ-zorgverlener-02" />
+      <display value="Niels Helmond" />
+    </agent>
+  </requester>
+  <performer>
+    <reference value="Organization/ANTON-BGLZ-zorgaanbieder-01" />
+    <display value="AA-zkh - Noord" />
+  </performer>
+  <reasonReference>
+    <reference value="Condition/ANTON-BGLZ-probleem-05" />
+    <display value="probleem met lopen" />
+  </reasonReference>
+</ProcedureRequest>

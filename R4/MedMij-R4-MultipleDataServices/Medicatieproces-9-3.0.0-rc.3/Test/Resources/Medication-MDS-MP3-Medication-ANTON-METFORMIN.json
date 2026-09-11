@@ -1,0 +1,19 @@
+{
+  "resourceType": "Medication",
+  "id": "MDS-MP3-Medication-ANTON-METFORMIN",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.4.8",
+        "code": "14895196",
+        "display": "metformine 500 mg tablet"
+      }
+    ],
+    "text": "metformine 500 mg tablet"
+  }
+}

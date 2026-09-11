@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Composition xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="ANTON-GP-REPORT-20260703" />
+  <meta>
+    <lastUpdated value="2026-07-03T14:00:00+02:00" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport" />
+  </meta>
+  <identifier>
+    <system value="https://huisartsgegevens.example.test/identifier" />
+    <value value="ANTON-GP-REPORT-20260703" />
+  </identifier>
+  <status value="final" />
+  <type>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="67781-5" />
+      <display value="Summarization of encounter note Narrative" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <encounter>
+    <reference value="Encounter/ANTON-GP-ENCOUNTER-20260703" />
+    <display value="Medicatiebeoordeling bij polyfarmacie" />
+  </encounter>
+  <date value="2026-07-03T14:00:00+02:00" />
+  <author>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+      <valueReference>
+        <reference value="PractitionerRole/nl-core-practitionerrole-bgz-msz-1000000101-01520000001" />
+        <display value="Huisdokter H. Huisarts Attent" />
+      </valueReference>
+    </extension>
+    <reference value="Practitioner/nl-core-practitioner-bgz-msz-2-16-840-1-113883-2-4-6-1-10000001" />
+    <display value="Huisdokter H. Huisarts Attent" />
+  </author>
+  <title value="Contactverslag 2026-07-03" />
+  <section>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/sid/icpc-1-nl" />
+          <code value="K78" />
+          <display value="Atriumfibrilleren" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://fhir.nl/fhir/NamingSystem/journaalregeltypen" />
+        <code value="E" />
+        <display value="Evaluatie" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <html:div>Medicatiebeoordeling bij polyfarmacie uitgevoerd; geen actuele bijwerkingen en de medicatierol wordt correct gebruikt.</html:div>
+    </text>
+    <entry>
+      <reference value="Observation/ANTON-GP-JOURNAL-20260703-E" />
+      <display value="Medicatiebeoordeling bij polyfarmacie uitgevoerd; geen actuele bijwerkingen en de medicatierol wordt correct gebruikt." />
+    </entry>
+    <entry>
+      <reference value="EpisodeOfCare/ANTON-GP-EPISODE-ATRIAL-FIBRILLATION-2026" />
+      <display value="Episode Atriumfibrilleren" />
+    </entry>
+  </section>
+  <section>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/sid/icpc-1-nl" />
+          <code value="K78" />
+          <display value="Atriumfibrilleren" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://fhir.nl/fhir/NamingSystem/journaalregeltypen" />
+        <code value="P" />
+        <display value="Plan" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <html:div>Medicatieoverzicht afgestemd; medicatierol en acenocoumarol volgens het schema van de trombosedienst voortzetten.</html:div>
+    </text>
+    <entry>
+      <reference value="Observation/ANTON-GP-JOURNAL-20260703-P" />
+      <display value="Medicatieoverzicht afgestemd; medicatierol en acenocoumarol volgens het schema van de trombosedienst voortzetten." />
+    </entry>
+    <entry>
+      <reference value="EpisodeOfCare/ANTON-GP-EPISODE-ATRIAL-FIBRILLATION-2026" />
+      <display value="Episode Atriumfibrilleren" />
+    </entry>
+  </section>
+</Composition>

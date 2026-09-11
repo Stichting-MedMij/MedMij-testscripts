@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PractitionerRole xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-2-13-572-2-1217-3-1157740001" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Zorgverlenerrol. Id: 7d48bb99-w6r2-13e4-4211-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Zorgverlener</html:th>
+            <html:td>
+              <html:div>Eef Echo</html:div>
+              <html:div>Echopraktijk Kijk Eens</html:div>
+            </html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Specialisme</html:th>
+            <html:td>
+              <html:span title="Echoscopie (9018 - AGB-medisch specialisme)">Echoscopie</html:span>
+            </html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="7d48bb99-w6r2-13e4-4211-020000000000" />
+  </identifier>
+  <practitioner>
+    <reference value="Practitioner/mds-ge-izk-2-16-368-1-1357-3-115650601" />
+    <display value="Eef Echo" />
+  </practitioner>
+  <organization>
+    <reference value="Organization/mds-ge-izk-2-16-841-1-133487-8-9-6-108794321" />
+    <display value="Echopraktijk Kijk Eens" />
+  </organization>
+  <specialty>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.6.7" />
+      <code value="9018" />
+      <display value="Echoscopie" />
+    </coding>
+  </specialty>
+</PractitionerRole>

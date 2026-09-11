@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Medication xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="eToFHIRConversion-Product-mp9-2-16-840-1-113883-2-4-4-8-14039303" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/mp612-DispenseToFHIRConversion-Product" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:tbody>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:td>
+              <html:span title="SEREVENT DISKUS INHPDR 50MCG 60DO (14039303 - G-Standaard ZI_nummer)">SEREVENT DISKUS INHPDR 50MCG 60DO</html:span>
+            </html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.8" />
+      <code value="14039303" />
+      <display value="SEREVENT DISKUS INHPDR 50MCG 60DO" />
+      <userSelected value="true" />
+    </coding>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.7" />
+      <code value="1029746" />
+    </coding>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.1" />
+      <code value="87424" />
+    </coding>
+    <text value="SEREVENT DISKUS INHPDR 50MCG 60DO" />
+  </code>
+</Medication>

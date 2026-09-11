@@ -1,0 +1,61 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "MDS-MP3-MedicationAgreement-GE-FOLICACID",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier",
+      "valueIdentifier": {
+        "system": "https://medmij.example.test/fhir/NamingSystem/pharmaceutical-treatment",
+        "value": "MDS-GE-FOLICACID"
+      }
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime",
+      "valueDateTime": "2026-02-01T09:00:00+01:00"
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period",
+      "valuePeriod": {
+        "start": "2026-02-01"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://medmij.example.test/fhir/NamingSystem/medication-agreement",
+      "value": "MDS-MP3-MedicationAgreement-GE-FOLICACID"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "33633005",
+          "display": "Prescription of drug"
+        }
+      ]
+    }
+  ],
+  "medicationReference": {
+    "reference": "Medication/MDS-MP3-Medication-GE-FOLICACID",
+    "display": "foliumzuur 0,5 mg tablet"
+  },
+  "subject": {
+    "reference": "Patient/GE-GEVENS-DIENST",
+    "display": "Gé Gevens-Dienst"
+  },
+  "authoredOn": "2026-02-01T09:00:00+01:00",
+  "dosageInstruction": [
+    {
+      "text": "1 tablet per dag gedurende de zwangerschap"
+    }
+  ]
+}
