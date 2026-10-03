@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-0d47a3b4-2063-11ec-1751-020000000000" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Id: 7e5841d5-a6d9-11ed-1966-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <html:span title="bevinding betreffende laboratoriumonderzoek (bevinding) (49581000146104 - SNOMED CT)">bevinding betreffende laboratoriumonderzoek (bevinding)</html:span>, Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Zwangerschap 2 Gé Gevens-Dienst</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Bepalingdatum/tijd</html:th>
+            <html:td>12 mei 2021</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="D Ag [aanwezigheid] in bloed (1305-2 - LOINC)">D Ag [aanwezigheid] in bloed</html:span>
+            </html:td>
+            <html:td>
+              <html:span title="fenotype D-positief (bevinding) (165747007 - SNOMED CT)">fenotype D-positief (bevinding)</html:span>
+            </html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="7e5841d5-a6d9-11ed-1966-020000000000" />
+  </identifier>
+  <status value="final">
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+      <valueCodeableConcept>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1" />
+          <code value="final" />
+          <display value="Final" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </status>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="49581000146104" />
+      <display value="bevinding betreffende laboratoriumonderzoek (bevinding)" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="1305-2" />
+      <display value="D Ag [aanwezigheid] in bloed" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2026" />
+    <display value="Zwangerschap 2 Gé Gevens-Dienst" />
+  </context>
+  <effectiveDateTime value="2021-05-12" />
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="165747007" />
+      <display value="fenotype D-positief (bevinding)" />
+    </coding>
+  </valueCodeableConcept>
+</Observation>

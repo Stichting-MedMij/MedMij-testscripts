@@ -1,0 +1,50 @@
+{
+  "resourceType": "Observation",
+  "id": "MDS-LZ-NursingReport-ANTON-20260707",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/lz-NursingReport"
+    ],
+    "tag": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "code": "7500",
+        "display": "Thuiszorg, kruiswerk en gezinsverzorging"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medmij.example.test/fhir/NamingSystem/nursing-report",
+      "value": "ANTON-20260707-OCHTEND"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://medmij.nl/fhir/StructureDefinition/ext-NursingReport.ReportTitle",
+      "valueString": "Ochtendrapportage thuiszorg"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "11591000146107",
+        "display": "patiëntcontactverslag"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ANTON-VAN-ALLES-WAT",
+    "display": "Anton van Alles-Wat"
+  },
+  "effectiveDateTime": "2026-07-07T08:15:00+02:00",
+  "performer": [
+    {
+      "reference": "Organization/ANTON-BGLZ-zorgaanbieder-01",
+      "display": "AA-zkh - Noord"
+    }
+  ],
+  "valueString": "Anton heeft zelfstandig gedoucht met toezicht en is met de rollator naar de keuken gelopen. Geen valincidenten. Medicatie ingenomen volgens afspraak. De partiële bovenprothese lag al klaar; Anton meldde dat die vandaag eerder wakker was dan hijzelf. Eetlust goed. Afgesproken om de looproute vrij te houden en de oefeningen van de fysiotherapeut te herhalen."
+}

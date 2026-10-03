@@ -1,0 +1,34 @@
+{
+  "resourceType": "Coverage",
+  "id": "MDS-Core-Payer-Anton",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany"
+    ]
+  },
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1",
+        "code": "B",
+        "display": "Basis"
+      }
+    ]
+  },
+  "subscriberId": "99990011",
+  "beneficiary": {
+    "reference": "Patient/MDS-DentalCare-Patient-Anton",
+    "display": "Anton van Alles-Wat"
+  },
+  "period": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "payor": [
+    {
+      "reference": "Organization/MDS-Core-Organization-Interpolis",
+      "display": "Interpolis Zorgverzekeringen N.V."
+    }
+  ]
+}

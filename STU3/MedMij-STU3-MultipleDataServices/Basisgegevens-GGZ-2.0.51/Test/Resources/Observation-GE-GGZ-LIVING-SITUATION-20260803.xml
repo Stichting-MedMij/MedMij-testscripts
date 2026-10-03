@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="GE-GGZ-LIVING-SITUATION-20260803" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="GE-GGZ-LIVING-SITUATION-20260803" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="365508006" />
+      <display value="Bevinding betreffende woon- en huisvestingssituatie (bevinding)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <effectiveDateTime value="2026-08-03" />
+  <valueCodeableConcept>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1" />
+      <code value="EENGEZW" />
+      <display value="Eengezinswoning" />
+    </coding>
+  </valueCodeableConcept>
+</Observation>

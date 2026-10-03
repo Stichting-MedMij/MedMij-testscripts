@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="zib-BodyWeight-bgz-msz-anton-van-alles-wat-bodyweight2" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-BodyWeight" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6" />
+    <value value="bgz-msz-anton-van-alles-wat-bodyweight2" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/observation-category" />
+      <code value="vital-signs" />
+      <display value="Vital Signs" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="29463-7" />
+      <display value="Lichaamsgewicht [massa]" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <effectiveDateTime value="2025-11-03" />
+  <valueQuantity>
+    <value value="65.5" />
+    <unit value="kg" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="kg" />
+  </valueQuantity>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="8352-7" />
+        <display value="Clothing worn during measure" />
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.8.1" />
+        <code value="FULL" />
+        <display value="Fully dressed" />
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

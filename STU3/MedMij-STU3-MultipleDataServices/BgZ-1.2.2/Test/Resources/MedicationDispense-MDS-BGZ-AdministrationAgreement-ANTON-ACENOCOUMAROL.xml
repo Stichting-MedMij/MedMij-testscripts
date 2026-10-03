@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <id value="MDS-BGZ-AdministrationAgreement-ANTON-ACENOCOUMAROL" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-AdministrationAgreement" />
+  </meta>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-AdministrationAgreement-AuthoredOn">
+    <valueDateTime value="2026-08-20T10:00:00+02:00" />
+  </extension>
+  <status value="completed" />
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="422037009" />
+      <display value="Provider medication administration instructions (procedure)" />
+    </coding>
+    <text value="Toedieningsafspraak" />
+  </category>
+  <medicationReference>
+    <reference value="Medication/MDS-BGZ-Product-ANTON-ACENOCOUMAROL" />
+    <display value="acenocoumarol 1 mg tablet" />
+  </medicationReference>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <dosageInstruction>
+    <text value="volgens doseerkalender trombosedienst" />
+    <route>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.4.9" />
+        <code value="9" />
+        <display value="Oraal" />
+      </coding>
+    </route>
+  </dosageInstruction>
+</MedicationDispense>

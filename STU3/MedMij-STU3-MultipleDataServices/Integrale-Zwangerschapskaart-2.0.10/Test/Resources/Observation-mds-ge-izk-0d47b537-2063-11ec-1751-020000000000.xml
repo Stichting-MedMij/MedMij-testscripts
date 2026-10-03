@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-0d47b537-2063-11ec-1751-020000000000" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Id: 7d9afee1-a6d9-11ed-9730-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <html:span title="Vital Signs (vital-signs - observation-category)">Vital Signs</html:span>, Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Prenatale controle 19 augustus 2026</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Bepalingdatum/tijd</html:th>
+            <html:td>2026-08-19</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="Bloeddruk panel waarvan alle leden optioneel in arterieel vaatstelsel (85354-9 - LOINC)">Bloeddruk panel waarvan alle leden optioneel in arterieel vaatstelsel</html:span>
+            </html:td>
+            <html:td />
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel (8480-6 - LOINC)">Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel</html:span>
+            </html:td>
+            <html:td>155</html:td>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel (8462-4 - LOINC)">Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel</html:span>
+            </html:td>
+            <html:td>97</html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="7d9afee1-a6d9-11ed-9730-020000000000" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/observation-category" />
+      <code value="vital-signs" />
+      <display value="Vital Signs" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="85354-9" />
+      <display value="Bloeddruk panel waarvan alle leden optioneel in arterieel vaatstelsel" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="Encounter/mds-ge-izk-0d47afea-2063-11ec-1751-020000000000" />
+    <display value="Prenatale controle 19 augustus 2026" />
+  </context>
+  <effectiveDateTime value="2026-08-19" />
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="8480-6" />
+        <display value="Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel" />
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="155" />
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="8462-4" />
+        <display value="Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel" />
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="97" />
+    </valueQuantity>
+  </component>
+</Observation>

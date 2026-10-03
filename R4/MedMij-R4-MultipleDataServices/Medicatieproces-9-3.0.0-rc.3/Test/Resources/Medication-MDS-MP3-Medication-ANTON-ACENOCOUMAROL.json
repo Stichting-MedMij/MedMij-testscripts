@@ -1,0 +1,19 @@
+{
+  "resourceType": "Medication",
+  "id": "MDS-MP3-Medication-ANTON-ACENOCOUMAROL",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.4.4.8",
+        "code": "14840664",
+        "display": "acenocoumarol 1 mg tablet"
+      }
+    ],
+    "text": "acenocoumarol 1 mg tablet"
+  }
+}

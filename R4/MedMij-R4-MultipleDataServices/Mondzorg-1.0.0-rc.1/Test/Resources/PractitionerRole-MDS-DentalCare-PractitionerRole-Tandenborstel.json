@@ -1,0 +1,28 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "MDS-DentalCare-PractitionerRole-Tandenborstel",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
+    ]
+  },
+  "practitioner": {
+    "reference": "Practitioner/MDS-DentalCare-Practitioner-Tandenborstel",
+    "display": "T. Tandenborstel"
+  },
+  "organization": {
+    "reference": "Organization/MDS-DentalCare-Organization-Kieskeurig",
+    "display": "Tandartspraktijk Kieskeurig"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+          "code": "1200",
+          "display": "Tandartsen"
+        }
+      ]
+    }
+  ]
+}

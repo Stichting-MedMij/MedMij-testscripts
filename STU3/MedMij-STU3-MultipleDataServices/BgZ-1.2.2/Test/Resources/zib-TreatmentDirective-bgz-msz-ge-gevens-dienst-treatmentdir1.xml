@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="zib-TreatmentDirective-bgz-msz-ge-gevens-dienst-treatmentdir1" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective" />
+  </meta>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Verification">
+    <extension url="Verified">
+      <valueBoolean value="true" />
+    </extension>
+    <extension url="VerifiedWith">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="116154003" />
+          <display value="Patient" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="VerificationDate">
+      <valueDateTime value="2026-05-10" />
+    </extension>
+  </extension>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/Comment">
+    <valueString value="Voor behandeling met MRI; controleer vooraf of alle metalen testattributen zijn verwijderd." />
+  </extension>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Treatment">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/NullFlavor" />
+        <code value="OTH" />
+        <display value="Other" />
+      </coding>
+      <text value="MRI" />
+    </valueCodeableConcept>
+  </extension>
+  <modifierExtension url="http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-TreatmentPermitted">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4" />
+        <code value="JA_MAAR" />
+        <display value="Ja, maar met beperkingen" />
+      </coding>
+    </valueCodeableConcept>
+  </modifierExtension>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6" />
+    <value value="bgz-msz-ge-gevens-dienst-treatmentdir" />
+  </identifier>
+  <status value="active" />
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="11291000146105" />
+      <display value="behandelaanwijzing" />
+    </coding>
+  </category>
+  <patient>
+    <reference value="Patient/GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </patient>
+  <sourceReference>
+    <reference value="Consent/zib-AdvanceDirective-bgz-msz-ge-gevens-dienst-advdir1" />
+    <display value="Fictieve testwilsverklaring" />
+  </sourceReference>
+  <policy>
+    <uri value="http://wetten.overheid.nl/" />
+  </policy>
+  <except>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Restrictions">
+      <valueString value="Eerst overleg met Ere Dienst" />
+    </extension>
+    <type value="deny" />
+  </except>
+</Consent>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PractitionerRole xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-1234560123-120" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Zorgverlenerrol. Id: 7d48bb79-a6r9-12gd-4244-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Zorgverlener</html:th>
+            <html:td>
+              <html:div>Carolien Zorgzaam</html:div>
+              <html:div>Kraamzorg Het Blije Ei</html:div>
+            </html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Specialisme</html:th>
+            <html:td>
+              <html:span title="kraamverzorgende (beroep) (151531000146108 - SNOMED CT)">kraamverzorgende (beroep)</html:span>
+            </html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="7d48bb79-a6r9-12gd-4244-020000000000" />
+  </identifier>
+  <practitioner>
+    <reference value="Practitioner/mds-ge-izk-2-16-518-2-1007-3-115640001" />
+    <display value="Carolien Zorgzaam" />
+  </practitioner>
+  <organization>
+    <reference value="Organization/mds-ge-izk-2-16-840-1-113883-2-4-6-108006591" />
+    <display value="Kraamzorg Het Blije Ei" />
+  </organization>
+  <specialty>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="151531000146108" />
+      <display value="kraamverzorgende (beroep)" />
+    </coding>
+  </specialty>
+</PractitionerRole>

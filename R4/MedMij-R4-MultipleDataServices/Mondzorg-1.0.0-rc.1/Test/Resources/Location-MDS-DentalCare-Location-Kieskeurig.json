@@ -1,0 +1,24 @@
+{
+  "resourceType": "Location",
+  "id": "MDS-DentalCare-Location-Kieskeurig",
+  "status": "active",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
+    ]
+  },
+  "name": "Tandartspraktijk Kieskeurig",
+  "managingOrganization": {
+    "reference": "Organization/MDS-DentalCare-Organization-Kieskeurig",
+    "display": "Tandartspraktijk Kieskeurig"
+  },
+  "address": {
+    "use": "work",
+    "line": [
+      "Kiesstraat 12"
+    ],
+    "city": "Testdorp",
+    "postalCode": "9999TK",
+    "country": "Nederland"
+  }
+}

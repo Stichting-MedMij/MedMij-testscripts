@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-0d47b535-2063-11ec-1751-020000000000" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-BodyWeight" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Id: 7dd8161a-a6d9-11ed-1198-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <html:span title="Vital Signs (vital-signs - observation-category)">Vital Signs</html:span>, Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Prenatale intake 8 april 2026</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Bepalingdatum/tijd</html:th>
+            <html:td>2026-04-08</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="Lichaamsgewicht [massa] (29463-7 - LOINC)">Lichaamsgewicht [massa]</html:span>
+            </html:td>
+            <html:td>71 kg</html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="7dd8161a-a6d9-11ed-1198-020000000000" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/observation-category" />
+      <code value="vital-signs" />
+      <display value="Vital Signs" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="29463-7" />
+      <display value="Lichaamsgewicht [massa]" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="Encounter/mds-ge-izk-0d47afdc-2063-11ec-1751-020000000000" />
+    <display value="Prenatale intake 8 april 2026" />
+  </context>
+  <effectiveDateTime value="2026-04-08" />
+  <valueQuantity>
+    <value value="71" />
+    <unit value="kg" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="kg" />
+  </valueQuantity>
+</Observation>

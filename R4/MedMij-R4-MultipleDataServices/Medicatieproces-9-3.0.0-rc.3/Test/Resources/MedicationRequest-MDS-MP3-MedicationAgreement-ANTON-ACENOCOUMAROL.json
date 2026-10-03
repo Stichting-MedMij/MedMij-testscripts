@@ -1,0 +1,61 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "MDS-MP3-MedicationAgreement-ANTON-ACENOCOUMAROL",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier",
+      "valueIdentifier": {
+        "system": "https://medmij.example.test/fhir/NamingSystem/pharmaceutical-treatment",
+        "value": "MDS-ANTON-ACENOCOUMAROL"
+      }
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime",
+      "valueDateTime": "2026-01-01T09:00:00+01:00"
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period",
+      "valuePeriod": {
+        "start": "2026-01-01"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://medmij.example.test/fhir/NamingSystem/medication-agreement",
+      "value": "MDS-MP3-MedicationAgreement-ANTON-ACENOCOUMAROL"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "33633005",
+          "display": "Prescription of drug"
+        }
+      ]
+    }
+  ],
+  "medicationReference": {
+    "reference": "Medication/MDS-MP3-Medication-ANTON-ACENOCOUMAROL",
+    "display": "acenocoumarol 1 mg tablet"
+  },
+  "subject": {
+    "reference": "Patient/ANTON-VAN-ALLES-WAT",
+    "display": "Anton van Alles-Wat"
+  },
+  "authoredOn": "2026-01-01T09:00:00+01:00",
+  "dosageInstruction": [
+    {
+      "text": "volgens doseerkalender trombosedienst"
+    }
+  ]
+}

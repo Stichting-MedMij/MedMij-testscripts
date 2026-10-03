@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Device xmlns="http://hl7.org/fhir">
+  <id value="zib-MedicalDeviceProduct-bgz-msz-anton-van-alles-wat-medDevice2" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct" />
+  </meta>
+  <identifier>
+    <system value="https://www.gs1.org/gtin" />
+    <value value="5055785706734" />
+  </identifier>
+  <udi>
+    <carrierHRF value="5055785706734" />
+  </udi>
+  <status value="active" />
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="58938008" />
+      <display value="rolstoel" />
+    </coding>
+  </type>
+  <patient>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </patient>
+  <note>
+    <text value="Niet-gemotoriseerde rolstoel" />
+  </note>
+</Device>

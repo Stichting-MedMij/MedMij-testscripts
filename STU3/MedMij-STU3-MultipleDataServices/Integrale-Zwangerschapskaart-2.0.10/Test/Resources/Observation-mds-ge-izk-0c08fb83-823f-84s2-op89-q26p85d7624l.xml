@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-0c08fb83-823f-84s2-op89-q26p85d7624l" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-FamilySituation" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Id: 0c08fb83-823f-84s2-op89-q26p85d7624l (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Zwangerschap 1 Gé Gevens-Dienst</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="bevinding betreffende gegevens over gezin en gezinssamenstelling (bevinding) (365470003 - SNOMED CT)">bevinding betreffende gegevens over gezin en gezinssamenstelling (bevinding)</html:span>
+            </html:td>
+            <html:td />
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="gezinssamenstelling (waarneembare entiteit) (224130005 - SNOMED CT)">gezinssamenstelling (waarneembare entiteit)</html:span>
+            </html:td>
+            <html:td>
+              <html:span title="Samenwonend met partner (bevinding) (408821002 - SNOMED CT)">Samenwonend met partner (bevinding)</html:span>
+            </html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="0c08fb83-823f-84s2-op89-q26p85d7624l" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="365470003" />
+      <display value="bevinding betreffende gegevens over gezin en gezinssamenstelling (bevinding)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2023" />
+    <display value="Zwangerschap 1 Gé Gevens-Dienst" />
+  </context>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="224130005" />
+        <display value="gezinssamenstelling (waarneembare entiteit)" />
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="408821002" />
+        <display value="Samenwonend met partner (bevinding)" />
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

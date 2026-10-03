@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "MDS-DentalCare-ASAScore-Ge",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "413347006",
+        "display": "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/MDS-DentalCare-Patient-Ge",
+    "display": "Gé Gevens-Dienst",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2026-06-18T09:00:00+02:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/MDS-DentalCare-PractitionerRole-Tandenborstel",
+      "display": "T. Tandenborstel, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "413496000",
+        "display": "ASA-score 2"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Zwangerschap en astma, klinisch stabiel."
+    }
+  ]
+}

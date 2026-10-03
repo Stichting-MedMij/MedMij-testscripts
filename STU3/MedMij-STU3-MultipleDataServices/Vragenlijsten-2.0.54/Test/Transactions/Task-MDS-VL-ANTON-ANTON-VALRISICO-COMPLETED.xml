@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Task xmlns="http://hl7.org/fhir">
+  <id value="MDS-VL-ANTON-ANTON-VALRISICO-COMPLETED" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/vl-QuestionnaireProvisioningTask" />
+  </meta>
+  <status value="completed" />
+  <intent value="order" />
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="74468-0" />
+      <display value="Questionnaire form definition Document" />
+    </coding>
+  </code>
+  <description value="De vragenlijst 'Valrisico en herstel' is beschikbaar om in te vullen" />
+  <authoredOn value="2026-05-05T10:00:00+02:00" />
+  <lastModified value="2026-05-05T18:40:00+02:00" />
+  <owner>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </owner>
+  <input>
+    <type>
+      <text value="Questionnaire" />
+    </type>
+    <valueReference>
+      <reference value="Questionnaire/ANTON-VALRISICO" />
+      <display value="Valrisico en herstel" />
+    </valueReference>
+  </input>
+  <input>
+    <type>
+      <text value="Subject" />
+    </type>
+    <valueReference>
+      <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+      <display value="Anton van Alles-Wat" />
+    </valueReference>
+  </input>
+  <output>
+    <type>
+      <text value="QuestionnaireResponse" />
+    </type>
+    <valueReference>
+      <reference value="QuestionnaireResponse/MDS-VL-ANTON-ANTON-VALRISICO-RESPONSE" />
+      <display value="Beantwoording Valrisico en herstel" />
+    </valueReference>
+  </output>
+</Task>

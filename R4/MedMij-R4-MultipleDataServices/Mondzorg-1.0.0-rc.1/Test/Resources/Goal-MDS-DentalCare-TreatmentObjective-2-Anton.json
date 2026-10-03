@@ -1,0 +1,35 @@
+{
+  "resourceType": "Goal",
+  "id": "MDS-DentalCare-TreatmentObjective-2-Anton",
+  "meta": {
+    "tag": [
+      {
+        "code": "1300",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
+    ]
+  },
+  "lifecycleStatus": "active",
+  "priority": {
+    "coding": [
+      {
+        "code": "low-priority",
+        "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
+        "display": "Low Priority"
+      }
+    ]
+  },
+  "description": {
+    "text": "Verdere parodontale en carieuze achteruitgang beperken"
+  },
+  "subject": {
+    "reference": "Patient/MDS-DentalCare-Patient-Anton",
+    "display": "Anton van Alles-Wat",
+    "type": "Patient"
+  },
+  "startDate": "2026-07-09"
+}

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Practitioner xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-2-16-528-1-1007-3-112340001" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:div>Id 12340001 (UZI-NR-PERS), Id 7d27b85e-a6d9-11ed-2014-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), <html:span title="Naamsamenstelling: Eigennaam gevolgd door partnernaam">Veer Los-Baren</html:span>
+      </html:div>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="http://fhir.nl/fhir/NamingSystem/uzi-nr-pers" />
+    <value value="12340001" />
+  </identifier>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="7d27b85e-a6d9-11ed-2014-020000000000" />
+  </identifier>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
+      <valueCode value="NL4" />
+    </extension>
+    <family value="Los-Baren">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Los" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-name">
+        <valueString value="Baren" />
+      </extension>
+    </family>
+    <given value="Veer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="BR" />
+      </extension>
+    </given>
+  </name>
+</Practitioner>

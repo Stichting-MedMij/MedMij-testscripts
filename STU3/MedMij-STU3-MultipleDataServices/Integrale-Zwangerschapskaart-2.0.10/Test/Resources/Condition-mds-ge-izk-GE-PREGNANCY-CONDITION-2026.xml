@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-GE-PREGNANCY-CONDITION-2026" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Aandoening. Subject: Gé Gevens-Dienst. Id: f54f8a1c-a6d4-11ed-4775-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), 7eb9fe2f-a6d9-11ed-1085-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:td>
+              <html:span title="bevinding betreffende zwangerschap (bevinding) (118185001 - SNOMED CT)">bevinding betreffende zwangerschap (bevinding)</html:span>
+            </html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="f54f8a1c-a6d4-11ed-4775-020000000000" />
+  </identifier>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="7eb9fe2f-a6d9-11ed-1085-020000000000" />
+  </identifier>
+  <clinicalStatus value="active" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="118185001" />
+      <display value="bevinding betreffende zwangerschap (bevinding)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2026" />
+    <display value="Zwangerschap 2 Gé Gevens-Dienst" />
+  </context>
+</Condition>

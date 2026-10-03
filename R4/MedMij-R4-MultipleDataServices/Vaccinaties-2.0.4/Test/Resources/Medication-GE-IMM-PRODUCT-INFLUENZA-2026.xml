@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="GE-IMM-PRODUCT-INFLUENZA-2026" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/imm-Product" />
+  </meta>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="836377006" />
+      <display value="vaccin met antigeen van influenzavirus" />
+    </coding>
+  </code>
+</Medication>

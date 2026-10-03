@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<BodySite xmlns="http://hl7.org/fhir">
+  <id value="mds-ge-izk-b89db315-ddc8-43bd-8b08-7e6cb2cf5adb" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-Fetus" />
+  </meta>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="83418008" />
+      <display value="gehele foetus (lichaamsstructuur)" />
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </patient>
+</BodySite>

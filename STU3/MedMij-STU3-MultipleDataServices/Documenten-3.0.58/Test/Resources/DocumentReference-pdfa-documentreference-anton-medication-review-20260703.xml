@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="pdfa-documentreference-anton-medication-review-20260703" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference" />
+  </meta>
+  <contained>
+    <Practitioner>
+      <id value="author-medication-review-20260703" />
+      <name>
+        <text value="Huisdokter H. Huisarts Attent" />
+        <family value="Attent">
+          <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+            <valueString value="Attent" />
+          </extension>
+        </family>
+        <given value="Huisdokter" />
+        <prefix value="Huisarts" />
+      </name>
+    </Practitioner>
+  </contained>
+  <masterIdentifier>
+    <system value="urn:ietf:rfc:3986" />
+    <value value="urn:uuid:1906f76a-8b6e-5099-aed3-3bd1ae229cf1" />
+  </masterIdentifier>
+  <identifier>
+    <system value="https://example.test/fhir/NamingSystem/documentreference" />
+    <value value="pdfa-documentreference-anton-medication-review-20260703" />
+  </identifier>
+  <status value="current" />
+  <type>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="56445-0" />
+      <display value="Medication summary" />
+    </coding>
+    <text value="Medicatiebeoordeling polyfarmacie" />
+  </type>
+  <class>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="34133-9" />
+      <display value="Summary of episode note" />
+    </coding>
+  </class>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <indexed value="2026-07-03T14:10:00+02:00" />
+  <author>
+    <reference value="#author-medication-review-20260703" />
+    <display value="Huisdokter H. Huisarts Attent" />
+  </author>
+  <description value="Dit is de huisartsbrief over de medicatiebeoordeling bij polyfarmacie, inclusief afspraken over de medicatierol en controle door de trombosedienst." />
+  <securityLabel>
+    <coding>
+      <system value="http://hl7.org/fhir/v3/Confidentiality" />
+      <code value="N" />
+      <display value="normal" />
+    </coding>
+  </securityLabel>
+  <content>
+    <attachment>
+      <contentType value="application/pdf" />
+      <language value="nl-NL" />
+      <url value="Binary/pdfa-binary-anton-medication-review-20260703" />
+      <size value="24251" />
+      <hash value="W3zVtXwTKmwUP0ZGONlbVpC4qwJQM5yNjZHqRuS8k+I=" />
+      <title value="Medicatiebeoordeling polyfarmacie" />
+    </attachment>
+  </content>
+</DocumentReference>
