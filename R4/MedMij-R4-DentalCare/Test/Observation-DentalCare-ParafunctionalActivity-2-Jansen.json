@@ -1,0 +1,55 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-ParafunctionalActivity-2-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "110353005",
+        "system": "http://snomed.info/sct",
+        "display": "parafunctionele gewoonte"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:35<br/>Activiteit: Kaken klemmen overdag<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "a2b16d77-1c8f-4fba-a8cb-226ef664e756"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2022-04-11T09:35:00+02:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+      "display": "D. de Ruiter, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueString": "Kaken klemmen overdag",
+  "note": [
+    {
+      "text": "Naast nachtelijk knarsen ook overdag klemmen bij spanning; aandachtspunt na restauratie."
+    }
+  ]
+}

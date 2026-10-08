@@ -15,8 +15,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Trekken snijtand linksboven<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Trekken snijtand linksboven<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Malocclusie met scheefstand van de snijtand linksboven</div>"
   },
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "fa406aee-3588-4c45-b282-c4a3fb5464de"
+    }
+  ],
   "lifecycleStatus": "active",
   "priority": {
     "coding": [
@@ -34,5 +40,12 @@
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",
     "display": "Berend van de Stok",
     "type": "Patient"
-  }
+  },
+  "addresses": [
+    {
+      "reference": "Condition/DentalCare-Problem-Van-De-Stok",
+      "display": "Malocclusie met scheefstand van de snijtand linksboven",
+      "type": "Condition"
+    }
+  ]
 }

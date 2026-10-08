@@ -1,8 +1,13 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-OralHygiene-Van-Oranje",
+  "id": "DentalCare-OralHygiene-1-Jansen",
   "meta": {
     "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      },
       {
         "code": "8700",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
@@ -24,21 +29,21 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:45<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Mondhygiëne: zeer slecht<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
   },
   "identifier": [
     {
       "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
-      "value": "cc98117d-988c-4d3a-990a-a831fe580d8a"
+      "value": "83c98e03-c33f-4b68-881b-e4e2fdf437d1"
     }
   ],
   "status": "final",
   "subject": {
-    "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje",
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
-  "effectiveDateTime": "2025-05-20T10:45:00+01:00",
+  "effectiveDateTime": "2022-02-11T10:43:00+01:00",
   "performer": [
     {
       "reference": "PractitionerRole/DentalCare-PractitionerRole-Vermeer",
@@ -49,10 +54,15 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "556001",
+        "code": "1336219002",
         "system": "http://snomed.info/sct",
-        "display": "slecht"
+        "display": "zeer slecht"
       }
     ]
-  }
+  },
+  "note": [
+    {
+      "text": "Veel tandsteen aanwezig"
+    }
+  ]
 }

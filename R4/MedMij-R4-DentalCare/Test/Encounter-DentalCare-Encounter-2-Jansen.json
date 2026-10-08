@@ -1,6 +1,6 @@
 {
   "resourceType": "Encounter",
-  "id": "DentalCare-Encounter-2-Van-Oranje",
+  "id": "DentalCare-Encounter-2-Jansen",
   "meta": {
     "tag": [
       {
@@ -18,22 +18,22 @@
       "extension": [
         {
           "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
-          "valueString": "Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne."
+          "valueString": "Periodiek preventief onderzoek; kleine röntgenfoto gemaakt en beoordeeld, daarbij cariës rechterkies vastgesteld"
         }
       ],
-      "reference": "Condition/DentalCare-Problem-Van-Oranje",
-      "display": "Cariës rechterbovenkies",
-      "type": "Condition"
+      "reference": "Procedure/DentalCare-Procedure-1-Jansen",
+      "display": "Maken en beoordelen kleine röntgenfoto",
+      "type": "Procedure"
     }
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20 10:00<br/>Einddatum: 2025-05-20 11:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Periodiek preventief onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11 10:00<br/>Einddatum: 2022-02-11 11:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
   "identifier": [
     {
       "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
-      "value": "2ffbc4f2-95e8-4b98-a803-34386f4595e9"
+      "value": "522c2105-1c1a-4457-af16-108fca6930f3"
     }
   ],
   "status": "finished",
@@ -44,37 +44,26 @@
   },
   "type": [
     {
-      "text": "Tandarts Periodiek Preventief Onderzoek"
+      "text": "Periodiek preventief onderzoek"
     }
   ],
   "subject": {
-    "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje",
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
   "participant": [
     {
       "individual": {
-        "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
-        "display": "A.B.D.O. de Koning, Tandarts",
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+        "display": "D. de Ruiter, Tandarts",
         "type": "PractitionerRole"
       }
     }
   ],
   "period": {
-    "start": "2025-05-20T10:00:00+01:00",
-    "end": "2025-05-20T11:00:00+01:00"
-  },
-  "hospitalization": {
-    "admitSource": {
-      "coding": [
-        {
-          "code": "264362003",
-          "system": "http://snomed.info/sct",
-          "display": "thuis"
-        }
-      ]
-    }
+    "start": "2022-02-11T10:00:00+01:00",
+    "end": "2022-02-11T11:00:00+01:00"
   },
   "location": [
     {

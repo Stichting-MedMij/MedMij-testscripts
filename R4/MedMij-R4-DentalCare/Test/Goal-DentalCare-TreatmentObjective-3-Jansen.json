@@ -1,6 +1,6 @@
 {
   "resourceType": "Goal",
-  "id": "DentalCare-TreatmentObjective-1-Jansen",
+  "id": "DentalCare-TreatmentObjective-3-Jansen",
   "meta": {
     "tag": [
       {
@@ -15,26 +15,17 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Cariës rechterkies<br/>Toelichting: Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn.</div>"
   },
   "identifier": [
     {
       "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
-      "value": "dcc5a61e-c302-4aa3-acc3-837c0edb8882"
+      "value": "fa269297-4e4b-44b7-bff2-a83530298981"
     }
   ],
   "lifecycleStatus": "active",
-  "priority": {
-    "coding": [
-      {
-        "code": "high-priority",
-        "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
-        "display": "High Priority"
-      }
-    ]
-  },
   "description": {
-    "text": "Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal"
+    "text": "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen"
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
@@ -46,18 +37,18 @@
       "measure": {
         "coding": [
           {
-            "code": "80967001",
+            "code": "288919008",
             "system": "http://snomed.info/sct",
-            "display": "gaatje in je tand of kies"
+            "display": "kan kauwen"
           }
         ]
       },
       "detailCodeableConcept": {
         "coding": [
           {
-            "code": "17621005",
+            "code": "162019007",
             "system": "http://snomed.info/sct",
-            "display": "normaal"
+            "display": "geen probleem met kauwen"
           }
         ]
       },
@@ -73,7 +64,7 @@
   ],
   "note": [
     {
-      "text": "Caviteiten in de rechterkies restaureren met composiet."
+      "text": "Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn."
     }
   ]
 }

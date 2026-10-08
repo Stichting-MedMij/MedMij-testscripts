@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-ASAScore-Van-Oranje",
+  "id": "DentalCare-ASAScore-3-Jansen",
   "meta": {
     "tag": [
       {
@@ -24,28 +24,21 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-06-03 09:05<br/>Score: ASA-score 1<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Score: ASA-score 1</div>"
   },
   "identifier": [
     {
       "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
-      "value": "bdabb6dc-a6be-4124-85c5-49bd385a9868"
+      "value": "ce68e627-ef88-411d-9401-d7f6fd751c34"
     }
   ],
   "status": "final",
   "subject": {
-    "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje",
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
-  "effectiveDateTime": "2025-06-03T09:05:00+01:00",
-  "performer": [
-    {
-      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
-      "display": "A.B.D.O. de Koning, Tandarts",
-      "type": "PractitionerRole"
-    }
-  ],
+  "effectiveDateTime": "2015-01-01",
   "valueCodeableConcept": {
     "coding": [
       {
@@ -54,10 +47,5 @@
         "display": "ASA-score 1"
       }
     ]
-  },
-  "note": [
-    {
-      "text": "Geen relevante gezondheidsveranderingen sinds vorige keuring; patiënt is inzetbaar, geen medicatie of allergieën."
-    }
-  ]
+  }
 }

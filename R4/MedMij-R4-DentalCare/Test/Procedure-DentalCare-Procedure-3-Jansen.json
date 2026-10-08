@@ -1,0 +1,59 @@
+{
+  "resourceType": "Procedure",
+  "id": "DentalCare-Procedure-3-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "225362009",
+        "system": "http://snomed.info/sct",
+        "display": "tandheelkundige zorg"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Gebitsreiniging<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "db0ef50b-af32-4b6a-9286-4f21b94fc790"
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "M01",
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.10",
+        "display": "Gebitsreiniging"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
+    "type": "Patient"
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-Vermeer",
+        "display": "S. Vermeer, Mondhygiënist",
+        "type": "PractitionerRole"
+      }
+    }
+  ]
+}

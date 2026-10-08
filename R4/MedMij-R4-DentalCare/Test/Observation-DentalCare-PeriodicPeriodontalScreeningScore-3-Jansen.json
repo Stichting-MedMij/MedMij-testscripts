@@ -1,12 +1,12 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-PeriodicPeriodontalScreeningScore-Van-Oranje",
+  "id": "DentalCare-PeriodicPeriodontalScreeningScore-3-Jansen",
   "meta": {
     "tag": [
       {
-        "code": "8700",
+        "code": "1200",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Mondhygiënisten"
+        "display": "Tandartsen"
       }
     ],
     "profile": [
@@ -24,28 +24,21 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:05<br/>Score: Pockets 0-3 millimeter = in orde<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Score: Pockets 0-3 millimeter = in orde</div>"
   },
   "identifier": [
     {
       "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
-      "value": "8fed8eb5-5353-4ae6-88dc-ab283ad0afb3"
+      "value": "128a1416-ec48-4157-a7e7-8411f9cf2673"
     }
   ],
   "status": "final",
   "subject": {
-    "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje",
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
-  "effectiveDateTime": "2025-05-20T10:05:00+01:00",
-  "performer": [
-    {
-      "reference": "PractitionerRole/DentalCare-PractitionerRole-Vermeer",
-      "display": "S. Vermeer, Mondhygiënist",
-      "type": "PractitionerRole"
-    }
-  ],
+  "effectiveDateTime": "2015-01-01",
   "valueCodeableConcept": {
     "coding": [
       {
@@ -54,10 +47,5 @@
         "display": "Pockets 0-3 millimeter = in orde"
       }
     ]
-  },
-  "note": [
-    {
-      "text": "Geen parodontale vervolgbehandeling; wel gingivitis bij slechte mondhygiëne"
-    }
-  ]
+  }
 }

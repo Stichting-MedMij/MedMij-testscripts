@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-DentalFitness-Jansen",
+  "id": "DentalCare-DentalFitness-3-Jansen",
   "meta": {
     "tag": [
       {
@@ -24,30 +24,29 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2024-09-08 11:43<br/>Dental Fitness: Nooit gezien door een defensietandarts<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Dental Fitness: Vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "bab1ae05-c5e2-4e50-9fc3-973f07118a60"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
-  "effectiveDateTime": "2024-09-08T11:43:00+01:00",
-  "performer": [
-    {
-      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
-      "display": "D. de Ruiter, Tandarts",
-      "type": "PractitionerRole"
-    }
-  ],
+  "effectiveDateTime": "2015-01-01",
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "440351000146101",
+        "code": "258392002",
         "system": "http://snomed.info/sct",
-        "display": "klasse 0"
+        "display": "klasse 1"
       }
     ],
-    "text": "nooit gezien door een defensietandarts"
+    "text": "vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen"
   }
 }

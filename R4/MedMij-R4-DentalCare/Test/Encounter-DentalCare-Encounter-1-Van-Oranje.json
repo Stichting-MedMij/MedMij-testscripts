@@ -18,15 +18,22 @@
       "extension": [
         {
           "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
-          "valueString": "Laatste orthopantomogram (röntgenfoto) was in 2025"
+          "valueString": "Jaarlijkse periodiek preventief onderzoek"
         }
-      ]
+      ],
+      "text": "Vorige orthopantomogram (röntgenfoto) was in 2025"
     }
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-07-22T10:00:00<br/>Einddatum: 2026-07-22T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-05-20 10:00<br/>Einddatum: 2026-05-20 11:00<br/>Status: Gepland<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "071bba18-b651-4f76-a8d6-08f1661ad4cb"
+    }
+  ],
   "status": "planned",
   "class": {
     "code": "OTH",
@@ -53,16 +60,21 @@
     }
   ],
   "period": {
-    "start": "2026-07-22T10:00:00+01:00",
-    "end": "2026-07-22T11:00:00+01:00"
+    "start": "2026-05-20T10:00:00+01:00",
+    "end": "2026-05-20T11:00:00+01:00"
   },
   "location": [
     {
       "location": {
-        "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-        "display": "Vliegbasis Gilze-Rijen",
+        "reference": "Location/DentalCare-Location-Praktijklocatie-Lindenhof",
+        "display": "Praktijklocatie Lindenhof",
         "type": "Location"
       }
     }
-  ]
+  ],
+  "serviceProvider": {
+    "reference": "Organization/DentalCare-Organization-Mondzorgcentrum-Lindenhof",
+    "display": "Mondzorgcentrum Lindenhof",
+    "type": "Organization"
+  }
 }
