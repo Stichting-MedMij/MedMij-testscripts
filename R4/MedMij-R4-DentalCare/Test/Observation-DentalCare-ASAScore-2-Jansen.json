@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-ASAScore-Van-Oranje",
+  "id": "DentalCare-ASAScore-2-Jansen",
   "meta": {
     "tag": [
       {
@@ -24,40 +24,40 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-06-03 09:05<br/>Score: ASA-score 1<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:15<br/>Score: ASA-score 3<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
   "identifier": [
     {
       "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
-      "value": "bdabb6dc-a6be-4124-85c5-49bd385a9868"
+      "value": "d290cecc-5e93-4e71-939f-7cf60f52ab1b"
     }
   ],
   "status": "final",
   "subject": {
-    "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje",
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
-  "effectiveDateTime": "2025-06-03T09:05:00+01:00",
+  "effectiveDateTime": "2022-04-11T09:15:00+02:00",
   "performer": [
     {
-      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
-      "display": "A.B.D.O. de Koning, Tandarts",
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+      "display": "D. de Ruiter, Tandarts",
       "type": "PractitionerRole"
     }
   ],
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "413495001",
+        "code": "413497009",
         "system": "http://snomed.info/sct",
-        "display": "ASA-score 1"
+        "display": "ASA-score 3"
       }
     ]
   },
   "note": [
     {
-      "text": "Geen relevante gezondheidsveranderingen sinds vorige keuring; patiënt is inzetbaar, geen medicatie of allergieën."
+      "text": "Acute luchtwegklachten bij hooikoorts; rookt nog; Cetirizine onvoldoende werkzaam. Extra voorzichtigheid bij lokale anesthesie."
     }
   ]
 }

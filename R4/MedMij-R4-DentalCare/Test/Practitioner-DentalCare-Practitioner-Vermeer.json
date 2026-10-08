@@ -1,12 +1,12 @@
 {
   "resourceType": "Practitioner",
-  "id": "DentalCare-Practitioner-De-Ruiter",
+  "id": "DentalCare-Practitioner-Vermeer",
   "meta": {
     "tag": [
       {
-        "code": "1200",
+        "code": "8700",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Tandartsen"
+        "display": "Mondhygiënisten"
       }
     ],
     "profile": [
@@ -16,14 +16,14 @@
   "identifier": [
     {
       "system": "http://fhir.nl/fhir/NamingSystem/big",
-      "value": "12101002"
+      "value": "87001201"
     }
   ],
   "name": [
     {
       "use": "official",
       "given": [
-        "D."
+        "S."
       ],
       "_given": [
         {
@@ -35,17 +35,13 @@
           ]
         }
       ],
-      "text": "D. de Ruiter",
-      "family": "de Ruiter",
+      "text": "S. Vermeer",
+      "family": "Vermeer",
       "_family": {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
-            "valueString": "de"
-          },
-          {
             "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-            "valueString": "Ruiter"
+            "valueString": "Vermeer"
           }
         ]
       }
@@ -54,12 +50,12 @@
   "telecom": [
     {
       "system": "email",
-      "value": "deruiter@tandarts.nl",
+      "value": "vermeer@mondhygienist.nl",
       "use": "work"
     },
     {
       "system": "phone",
-      "value": "+31612345678",
+      "value": "+31612345603",
       "use": "work"
     }
   ],
@@ -120,6 +116,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: D. de Ruiter<br/>BIG-nummer: 12101002<br/>Telefoon: +31612345678<br/>E-mail: deruiter@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
-  }
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: S. Vermeer<br/>BIG-nummer: 87001201<br/>Geslacht: Vrouw<br/>Telefoon: +31612345603<br/>E-mail: vermeer@mondhygienist.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
+  },
+  "gender": "female"
 }

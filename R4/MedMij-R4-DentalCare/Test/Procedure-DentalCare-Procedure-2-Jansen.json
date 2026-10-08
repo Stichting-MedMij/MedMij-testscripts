@@ -1,6 +1,6 @@
 {
   "resourceType": "Procedure",
-  "id": "DentalCare-Procedure-Van-Oranje",
+  "id": "DentalCare-Procedure-2-Jansen",
   "meta": {
     "tag": [
       {
@@ -63,12 +63,12 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling composiet<br/>Patiënt: Erik van Oranje<br/>Startdatum: 2025-06-03 09:00<br/>Einddatum: 2025-06-03 09:45<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Praktijklocatie Lindenhof</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling composiet<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Startdatum: 2022-04-11 09:00<br/>Einddatum: 2022-04-11 09:45<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof<br/>Indicatie: Cariës rechterkies</div>"
   },
   "identifier": [
     {
       "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
-      "value": "1c2c7df9-8a1f-4ef9-9bfd-3640f8e39ec1"
+      "value": "d3be0dd5-79a9-435f-a9b5-54d676a18efc"
     }
   ],
   "status": "completed",
@@ -82,19 +82,19 @@
     ]
   },
   "subject": {
-    "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje",
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
   "performedPeriod": {
-    "start": "2025-06-03T09:00:00+01:00",
-    "end": "2025-06-03T09:45:00+01:00"
+    "start": "2022-04-11T09:00:00+02:00",
+    "end": "2022-04-11T09:45:00+02:00"
   },
   "performer": [
     {
       "actor": {
-        "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
-        "display": "A.B.D.O. de Koning, Tandarts",
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+        "display": "D. de Ruiter, Tandarts",
         "type": "PractitionerRole"
       }
     }
@@ -106,8 +106,8 @@
   },
   "reasonReference": [
     {
-      "reference": "Condition/DentalCare-Problem-Van-Oranje",
-      "display": "Cariës rechterbovenkies",
+      "reference": "Condition/DentalCare-Problem-Jansen",
+      "display": "Cariës rechterkies",
       "type": "Condition"
     }
   ]

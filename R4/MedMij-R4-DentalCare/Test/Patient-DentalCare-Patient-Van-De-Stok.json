@@ -60,7 +60,7 @@
     {
       "use": "usual",
       "given": [
-        "Berend"
+        "Beer"
       ]
     }
   ],
@@ -212,7 +212,7 @@
             {
               "code": "M",
               "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
-              "display": "Male"
+              "display": "Man"
             }
           ]
         }

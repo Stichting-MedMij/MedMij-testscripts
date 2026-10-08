@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-DentalFitness-Van-Oranje",
+  "id": "DentalCare-DentalFitness-2-Jansen",
   "meta": {
     "tag": [
       {
@@ -24,25 +24,25 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatiesysteem)<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:15<br/>Dental Fitness: Kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:25<br/>Dental Fitness: Kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
   "identifier": [
     {
       "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
-      "value": "3fd0d3e1-960d-4a05-8ab5-76adbc1ecdce"
+      "value": "9516c611-005c-46a6-a6d1-c5540f9453c2"
     }
   ],
   "status": "final",
   "subject": {
-    "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje",
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
-  "effectiveDateTime": "2025-05-20T10:15:00+01:00",
+  "effectiveDateTime": "2022-04-11T09:25:00+02:00",
   "performer": [
     {
-      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
-      "display": "A.B.D.O. de Koning, Tandarts",
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+      "display": "D. de Ruiter, Tandarts",
       "type": "PractitionerRole"
     }
   ],
@@ -58,7 +58,7 @@
   },
   "note": [
     {
-      "text": "Actieve cariës en gingivitis; restauratieve behandeling gepland."
+      "text": "Cariës rechterkies gerestaureerd; mondhygiëne nog matig, geen acute dreiging meer."
     }
   ]
 }

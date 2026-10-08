@@ -24,19 +24,25 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Score: Pockets groter of gelijk aan 6 millimeter = wellicht niet in orde<br/>Opmerking: Paro-traject<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Score: Pockets groter of gelijk aan 6 millimeter = wellicht niet in orde<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
   },
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "04f2e128-5ce8-491f-b518-b6afe4c69447"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",
     "display": "Berend van de Stok",
     "type": "Patient"
   },
-  "effectiveDateTime": "2024-01-01T08:43:00+01:00",
+  "effectiveDateTime": "2024-01-01T10:43:00+01:00",
   "performer": [
     {
       "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
-      "display": "B. Dijkstra, Tandarts",
+      "display": "B. Dijkstra, Orthodontist",
       "type": "PractitionerRole"
     }
   ],
@@ -51,7 +57,7 @@
   },
   "note": [
     {
-      "text": "Paro-traject"
+      "text": "Verwezen naar paro; orthodontische behandeling pas na paro-stabilisatie (jan–feb 2024)."
     }
   ]
 }

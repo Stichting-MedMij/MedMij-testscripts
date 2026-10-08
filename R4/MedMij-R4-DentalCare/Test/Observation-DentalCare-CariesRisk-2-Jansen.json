@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-CariesRisk-Jansen",
+  "id": "DentalCare-CariesRisk-2-Jansen",
   "meta": {
     "tag": [
       {
@@ -24,15 +24,21 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Cariësrisico: Verlaagd<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:20<br/>Cariësrisico: hoog<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "2d06eb52-b810-4cf9-9a75-8392c9bcec41"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
-  "effectiveDateTime": "2022-02-11T10:43:00+01:00",
+  "effectiveDateTime": "2022-04-11T09:20:00+02:00",
   "performer": [
     {
       "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
@@ -43,10 +49,15 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "1250004",
+        "code": "75540009",
         "system": "http://snomed.info/sct",
-        "display": "verlaagd"
+        "display": "hoog"
       }
     ]
-  }
+  },
+  "note": [
+    {
+      "text": "Actieve cariës rechterkies en aanhoudend hoog suikergebruik; restauratie vandaag uitgevoerd."
+    }
+  ]
 }

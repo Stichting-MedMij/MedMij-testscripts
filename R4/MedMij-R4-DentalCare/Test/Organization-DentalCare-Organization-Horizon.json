@@ -1,6 +1,6 @@
 {
   "resourceType": "Organization",
-  "id": "DentalCare-Organization-Zorgkantoor-Groningen",
+  "id": "DentalCare-Organization-Horizon",
   "meta": {
     "tag": [
       {
@@ -13,6 +13,12 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/uzovi",
+      "value": "9911"
+    }
+  ],
   "address": [
     {
       "extension": [
@@ -30,25 +36,25 @@
         }
       ],
       "line": [
-        "Winschoterdiep 70"
+        "Dennenlaan 40"
       ],
       "_line": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Winschoterdiep"
+              "valueString": "Dennenlaan"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "70"
+              "valueString": "40"
             }
           ]
         }
       ],
       "use": "work",
-      "city": "Groningen",
-      "postalCode": "9723 AB",
+      "city": "Arnhem",
+      "postalCode": "9993 XX",
       "country": "Nederland",
       "_country": {
         "extension": [
@@ -70,7 +76,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Zorgkantoor Groningen<br/>Adres: Winschoterdiep 70, 9723 AB Groningen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Zorgverzekeraar Horizon<br/>Adres: Dennenlaan 40, 9993 XX Arnhem</div>"
   },
-  "name": "Zorgkantoor Groningen"
+  "name": "Zorgverzekeraar Horizon N.V."
 }

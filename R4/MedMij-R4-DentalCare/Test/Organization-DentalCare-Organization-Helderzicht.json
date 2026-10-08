@@ -1,6 +1,6 @@
 {
-  "resourceType": "Practitioner",
-  "id": "DentalCare-Practitioner-Dijkstra",
+  "resourceType": "Organization",
+  "id": "DentalCare-Organization-Helderzicht",
   "meta": {
     "tag": [
       {
@@ -10,55 +10,9 @@
       }
     ],
     "profile": [
-      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization"
     ]
   },
-  "identifier": [
-    {
-      "system": "http://fhir.nl/fhir/NamingSystem/big",
-      "value": "12000003"
-    }
-  ],
-  "name": [
-    {
-      "use": "official",
-      "given": [
-        "B."
-      ],
-      "_given": [
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
-              "valueCode": "IN"
-            }
-          ]
-        }
-      ],
-      "text": "B. Dijkstra",
-      "family": "Dijkstra",
-      "_family": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-            "valueString": "Dijkstra"
-          }
-        ]
-      }
-    }
-  ],
-  "telecom": [
-    {
-      "system": "email",
-      "value": "dijkstra@orthodontiedijkstra.nl",
-      "use": "work"
-    },
-    {
-      "system": "phone",
-      "value": "+31612345604",
-      "use": "work"
-    }
-  ],
   "address": [
     {
       "extension": [
@@ -76,25 +30,25 @@
         }
       ],
       "line": [
-        "Stationsstraat 18"
+        "Parksingel 8"
       ],
       "_line": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Stationsstraat"
+              "valueString": "Parksingel"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "18"
+              "valueString": "8"
             }
           ]
         }
       ],
       "use": "work",
-      "city": "Bergen op Zoom",
-      "postalCode": "4611 XX",
+      "city": "Den Helder",
+      "postalCode": "9995 XX",
       "country": "Nederland",
       "_country": {
         "extension": [
@@ -116,6 +70,13 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: B. Dijkstra<br/>BIG-nummer: 12000003<br/>Telefoon: +31612345604<br/>E-mail: dijkstra@orthodontiedijkstra.nl<br/>Adres: Stationsstraat 18, 4611 XX Bergen op Zoom, Nederland</div>"
-  }
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Verzekeraar Helderzicht<br/>Adres: Parksingel 8, 9995 XX Den Helder</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "3920b8b8-8cb8-4d08-a034-f3516073287d"
+    }
+  ],
+  "name": "Verzekeraar Helderzicht"
 }

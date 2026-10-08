@@ -24,8 +24,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eerste consult<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Tandarts<br/>Locatie: Tandartspraktijk Dijkstra</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eerste consult<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Startdatum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Orthodontist<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
   },
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "1b48b2b6-2a04-41b6-a86b-06652937a253"
+    }
+  ],
   "status": "completed",
   "code": {
     "coding": [
@@ -46,14 +52,14 @@
     {
       "actor": {
         "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
-        "display": "B. Dijkstra, Tandarts",
+        "display": "B. Dijkstra, Orthodontist",
         "type": "PractitionerRole"
       }
     }
   ],
   "location": {
-    "reference": "Location/DentalCare-Location-CWZ-Nijmegen",
-    "display": "CWZ Nijmegen",
+    "reference": "Location/DentalCare-Location-Orthodontiepraktijk-Dijkstra",
+    "display": "Orthodontiepraktijk Dijkstra",
     "type": "Location"
   }
 }

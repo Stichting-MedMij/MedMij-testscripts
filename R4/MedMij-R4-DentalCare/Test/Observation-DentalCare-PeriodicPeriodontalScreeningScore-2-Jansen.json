@@ -1,12 +1,12 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-PeriodicPeriodontalScreeningScore-Van-Oranje",
+  "id": "DentalCare-PeriodicPeriodontalScreeningScore-2-Jansen",
   "meta": {
     "tag": [
       {
-        "code": "8700",
+        "code": "1200",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Mondhygiënisten"
+        "display": "Tandartsen"
       }
     ],
     "profile": [
@@ -24,40 +24,40 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:05<br/>Score: Pockets 0-3 millimeter = in orde<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:40<br/>Score: Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
   "identifier": [
     {
       "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
-      "value": "8fed8eb5-5353-4ae6-88dc-ab283ad0afb3"
+      "value": "eec9bfb6-6605-457d-8e46-3a19d4b9c3d5"
     }
   ],
   "status": "final",
   "subject": {
-    "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje",
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
-  "effectiveDateTime": "2025-05-20T10:05:00+01:00",
+  "effectiveDateTime": "2022-04-11T09:40:00+02:00",
   "performer": [
     {
-      "reference": "PractitionerRole/DentalCare-PractitionerRole-Vermeer",
-      "display": "S. Vermeer, Mondhygiënist",
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+      "display": "D. de Ruiter, Tandarts",
       "type": "PractitionerRole"
     }
   ],
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "ppsscore1",
+        "code": "ppsscore3",
         "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore",
-        "display": "Pockets 0-3 millimeter = in orde"
+        "display": "Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde"
       }
     ]
   },
   "note": [
     {
-      "text": "Geen parodontale vervolgbehandeling; wel gingivitis bij slechte mondhygiëne"
+      "text": "Locale verdieping bij rechterkies; herbeoordeling na hygiëneverbetering."
     }
   ]
 }
