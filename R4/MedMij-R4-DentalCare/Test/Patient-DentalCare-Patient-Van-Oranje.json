@@ -13,25 +13,6 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
     ]
   },
-  "extension": [
-    {
-      "extension": [
-        {
-          "url": "code",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "0001",
-                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.32",
-                "display": "Nederlandse"
-              }
-            ]
-          }
-        }
-      ],
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality"
-    }
-  ],
   "identifier": [
     {
       "system": "http://fhir.nl/fhir/NamingSystem/bsn",
@@ -48,6 +29,12 @@
   "name": [
     {
       "use": "official",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+          "valueCode": "NL1"
+        }
+      ],
       "given": [
         "Erik"
       ],
@@ -107,7 +94,7 @@
     },
     {
       "system": "email",
-      "value": "erikvanoranje@icloud.com",
+      "value": "erikvanoranje@test.com",
       "use": "home"
     }
   ],
@@ -175,6 +162,12 @@
     {
       "name": {
         "use": "official",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+            "valueCode": "NL4"
+          }
+        ],
         "given": [
           "Leo"
         ],
@@ -188,13 +181,125 @@
             ]
           }
         ],
-        "text": "Leo Jansen",
-        "family": "Jansen",
+        "text": "Leo Jansen-van der Heide MSc",
+        "family": "Jansen-van der Heide",
         "_family": {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
               "valueString": "Jansen"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix",
+              "valueString": "van der"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-name",
+              "valueString": "Heide"
+            }
+          ]
+        },
+        "suffix": [
+          "MSc"
+        ]
+      },
+      "telecom": [
+        {
+          "extension": [
+            {
+              "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
+              "valueString": "Bereikbaar op werkdagen tussen 9.00 en 17.00 uur"
+            }
+          ],
+          "system": "phone",
+          "_system": {
+            "extension": [
+              {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "MC",
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                      "display": "mobile contact"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "value": "+31612345611",
+          "use": "home"
+        },
+        {
+          "system": "email",
+          "value": "leojansen@test.com",
+          "use": "home"
+        }
+      ],
+      "address": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HP",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                  "display": "primary home"
+                }
+              ]
+            }
+          }
+        ],
+        "line": [
+          "bij Kerkstraat 12B"
+        ],
+        "_line": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                "valueString": "Kerkstraat"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                "valueString": "12"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+                "valueString": "B"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+                "valueString": "by"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
+                "valueString": "boven de bakkerij"
+              }
+            ]
+          }
+        ],
+        "use": "home",
+        "type": "both",
+        "city": "Didam",
+        "district": "Montferland",
+        "postalCode": "6942 AB",
+        "country": "Nederland",
+        "_country": {
+          "extension": [
+            {
+              "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "NL",
+                    "system": "urn:iso:std:iso:3166",
+                    "display": "Netherlands"
+                  }
+                ]
+              }
             }
           ]
         }
@@ -223,7 +328,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Nationaliteit: Nederlandse<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@icloud.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@test.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
   },
   "gender": "male",
   "_gender": {
@@ -235,7 +340,7 @@
             {
               "code": "M",
               "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
-              "display": "Male"
+              "display": "Man"
             }
           ]
         }

@@ -15,16 +15,22 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Koning, de<br/>Organisatie: Defensie Tandheelkundige Dienst<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Specialisme: Tandartsen, algemeen practicus<br/>Zorgverlener: Koning, de<br/>Organisatie: Mondzorgcentrum Lindenhof</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "34eca6f0-5677-4c23-af15-a26868950386"
+    }
+  ],
   "practitioner": {
     "reference": "Practitioner/DentalCare-Practitioner-De-Koning",
     "display": "A.B.D.O. de Koning",
     "type": "Practitioner"
   },
   "organization": {
-    "reference": "Organization/DentalCare-Organization-Defensie-Tandheelkundige-Dienst",
-    "display": "Defensie Tandheelkundige Dienst",
+    "reference": "Organization/DentalCare-Organization-Mondzorgcentrum-Lindenhof",
+    "display": "Mondzorgcentrum Lindenhof",
     "type": "Organization"
   },
   "specialty": [

@@ -1,12 +1,12 @@
 {
   "resourceType": "Location",
-  "id": "DentalCare-Location-CWZ-Nijmegen",
+  "id": "DentalCare-Location-Praktijklocatie-Lindenhof",
   "meta": {
     "tag": [
       {
-        "code": "1300",
+        "code": "1200",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+        "display": "Tandartsen"
       }
     ],
     "profile": [
@@ -29,25 +29,25 @@
       }
     ],
     "line": [
-      "Weg door Jonkerbos 100"
+      "Heideweg 3"
     ],
     "_line": [
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-            "valueString": "Weg door Jonkerbos"
+            "valueString": "Heideweg"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-            "valueString": "100"
+            "valueString": "3"
           }
         ]
       }
     ],
     "use": "work",
-    "city": "Nijmegen",
-    "postalCode": "6532 SZ",
+    "city": "Leiderdorp",
+    "postalCode": "9992 XX",
     "country": "Nederland",
     "_country": {
       "extension": [
@@ -68,19 +68,25 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: CWZ Nijmegen<br/>Telefoon: 0246412121<br/>Adres: Weg door Jonkerbos 100, 6532 SZ Nijmegen<br/>Beherende organisatie: Defensie Tandheelkundige Dienst</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Praktijklocatie Lindenhof<br/>Telefoon: 0881234567<br/>Adres: Heideweg 3, 9992 XX Leiderdorp<br/>Beherende organisatie: Mondzorgcentrum Lindenhof</div>"
   },
-  "name": "CWZ Nijmegen",
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "775c8df3-dab4-4059-a7b4-ae4ad9ae99e6"
+    }
+  ],
+  "name": "Praktijklocatie Lindenhof",
   "telecom": [
     {
       "system": "phone",
-      "value": "0246412121",
+      "value": "0881234567",
       "use": "work"
     }
   ],
   "managingOrganization": {
-    "reference": "Organization/DentalCare-Organization-Defensie-Tandheelkundige-Dienst",
-    "display": "Defensie Tandheelkundige Dienst",
+    "reference": "Organization/DentalCare-Organization-Mondzorgcentrum-Lindenhof",
+    "display": "Mondzorgcentrum Lindenhof",
     "type": "Organization"
   }
 }

@@ -1,0 +1,64 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-DentalFitness-1-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "440271000146100",
+        "system": "http://snomed.info/sct",
+        "display": "'dental fitness' volgens NAVO-classificatiesysteem"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Dental Fitness: Huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "272ca4a8-7fab-446b-95b8-238dd74a9839"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2022-02-11T10:43:00+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+      "display": "D. de Ruiter, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "258394001",
+        "system": "http://snomed.info/sct",
+        "display": "klasse 3"
+      }
+    ],
+    "text": "huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken"
+  },
+  "note": [
+    {
+      "text": "Actieve cariës en slechte mondhygiëne met aanhoudende klachten; onbehandeld waarschijnlijk noodgeval binnen 12 maanden."
+    }
+  ]
+}

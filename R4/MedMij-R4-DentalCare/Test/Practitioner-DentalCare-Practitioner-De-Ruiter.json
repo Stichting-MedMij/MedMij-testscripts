@@ -13,6 +13,12 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/big",
+      "value": "12101002"
+    }
+  ],
   "name": [
     {
       "use": "official",
@@ -45,6 +51,18 @@
       }
     }
   ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "deruiter@tandarts.nl",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "+31612345678",
+      "use": "work"
+    }
+  ],
   "address": [
     {
       "extension": [
@@ -69,7 +87,7 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Smitweg"
+              "valueString": "Simon Smitweg"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
@@ -103,23 +121,5 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: D. de Ruiter<br/>BIG-nummer: 12101002<br/>Telefoon: +31612345678<br/>E-mail: deruiter@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
-  },
-  "identifier": [
-    {
-      "system": "http://fhir.nl/fhir/NamingSystem/big",
-      "value": "12101002"
-    }
-  ],
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "+31612345678",
-      "use": "work"
-    },
-    {
-      "system": "email",
-      "value": "deruiter@tandarts.nl",
-      "use": "work"
-    }
-  ]
+  }
 }

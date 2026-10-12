@@ -4,9 +4,9 @@
   "meta": {
     "tag": [
       {
-        "code": "1200",
+        "code": "8700",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Tandartsen"
+        "display": "Mondhygiënisten"
       }
     ],
     "profile": [
@@ -15,8 +15,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Bekijken of vullingen op kroon nog goed aansluiten<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Laag</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Verbeteren mondhygiëne en tandsteenreductie<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Laag</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "7ea2de10-5d3f-4d7a-a4e5-1eb786ff212c"
+    }
+  ],
   "lifecycleStatus": "active",
   "priority": {
     "coding": [
@@ -28,11 +34,11 @@
     ]
   },
   "description": {
-    "text": "Bekijken of vullingen op kroon nog goed aansluiten"
+    "text": "Verbeteren mondhygiëne en tandsteenreductie"
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   }
 }

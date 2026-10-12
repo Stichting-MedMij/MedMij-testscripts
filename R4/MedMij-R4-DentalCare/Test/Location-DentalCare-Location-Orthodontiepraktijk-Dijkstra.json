@@ -1,12 +1,12 @@
 {
   "resourceType": "Location",
-  "id": "DentalCare-Location-Vliegbasis-Gilze-Rijen",
+  "id": "DentalCare-Location-Orthodontiepraktijk-Dijkstra",
   "meta": {
     "tag": [
       {
-        "code": "1200",
+        "code": "1300",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Tandartsen"
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
       }
     ],
     "profile": [
@@ -29,25 +29,25 @@
       }
     ],
     "line": [
-      "Rijksweg 121"
+      "Stationsstraat 18"
     ],
     "_line": [
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-            "valueString": "Rijksweg"
+            "valueString": "Stationsstraat"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-            "valueString": "121"
+            "valueString": "18"
           }
         ]
       }
     ],
     "use": "work",
-    "city": "Rijen",
-    "postalCode": "5120 AA",
+    "city": "Bergen op Zoom",
+    "postalCode": "4611 XX",
     "country": "Nederland",
     "_country": {
       "extension": [
@@ -68,19 +68,25 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Vliegbasis Gilze-Rijen<br/>Telefoon: 0889502753<br/>Adres: Rijksweg 121, 5120 AA Rijen<br/>Beherende organisatie: Defensie Tandheelkundige Dienst</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Orthodontiepraktijk Dijkstra<br/>Telefoon: 0164123456<br/>Adres: Stationsstraat 18, 4611 XX Bergen op Zoom<br/>Beherende organisatie: Orthodontiepraktijk Dijkstra</div>"
   },
-  "name": "Vliegbasis Gilze-Rijen",
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "7daa381e-1572-4ca9-b01b-478075bacc42"
+    }
+  ],
+  "name": "Orthodontiepraktijk Dijkstra",
   "telecom": [
     {
       "system": "phone",
-      "value": "0889502753",
+      "value": "0164123456",
       "use": "work"
     }
   ],
   "managingOrganization": {
-    "reference": "Organization/DentalCare-Organization-Defensie-Tandheelkundige-Dienst",
-    "display": "Defensie Tandheelkundige Dienst",
+    "reference": "Organization/DentalCare-Organization-Orthodontiepraktijk-Dijkstra",
+    "display": "Orthodontiepraktijk Dijkstra",
     "type": "Organization"
   }
 }

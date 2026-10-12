@@ -1,0 +1,63 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-ASAScore-2-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "413347006",
+        "display": "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:15<br/>Score: ASA-score 3<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "d290cecc-5e93-4e71-939f-7cf60f52ab1b"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2022-04-11T09:15:00+02:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+      "display": "D. de Ruiter, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "413497009",
+        "system": "http://snomed.info/sct",
+        "display": "ASA-score 3"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Acute luchtwegklachten bij hooikoorts; rookt nog; Cetirizine onvoldoende werkzaam. Extra voorzichtigheid bij lokale anesthesie."
+    }
+  ]
+}

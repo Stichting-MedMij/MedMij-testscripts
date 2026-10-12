@@ -13,6 +13,12 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/big",
+      "value": "12070100"
+    }
+  ],
   "name": [
     {
       "use": "official",
@@ -70,6 +76,18 @@
           }
         ]
       }
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "dekoning@tandarts.nl",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "+31612345601",
+      "use": "work"
     }
   ],
   "address": [
@@ -130,23 +148,5 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: A.B.D.O de Koning<br/>BIG-nummer: 12070100<br/>Telefoon: +31612345601<br/>E-mail: dekoning@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
-  },
-  "identifier": [
-    {
-      "system": "http://fhir.nl/fhir/NamingSystem/big",
-      "value": "12070100"
-    }
-  ],
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "+31612345601",
-      "use": "work"
-    },
-    {
-      "system": "email",
-      "value": "dekoning@tandarts.nl",
-      "use": "work"
-    }
-  ]
+  }
 }

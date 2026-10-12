@@ -18,25 +18,31 @@
       {
         "code": "364126007",
         "system": "http://snomed.info/sct",
-        "display": "oral hygiene status"
+        "display": "status van mondhygiëne"
       }
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:45<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "cc98117d-988c-4d3a-990a-a831fe580d8a"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",
     "display": "Erik van Oranje",
     "type": "Patient"
   },
-  "effectiveDateTime": "2024-04-29T06:43:00+01:00",
+  "effectiveDateTime": "2025-05-20T10:45:00+01:00",
   "performer": [
     {
-      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
-      "display": "A.B.D.O. de Koning, Tandarts",
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-Vermeer",
+      "display": "S. Vermeer, Mondhygiënist",
       "type": "PractitionerRole"
     }
   ],

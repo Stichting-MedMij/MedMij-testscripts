@@ -43,8 +43,14 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: Berend van de Stok</div>"
   },
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "d2987f88-2494-4bf5-aca4-7838c0d84d54"
+    }
+  ],
   "status": "active",
   "beneficiary": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",

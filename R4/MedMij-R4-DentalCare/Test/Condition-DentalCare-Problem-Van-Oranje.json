@@ -1,0 +1,112 @@
+{
+  "resourceType": "Condition",
+  "id": "DentalCare-Problem-Van-Oranje",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem"
+    ]
+  },
+  "bodySite": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "24028007",
+                "system": "http://snomed.info/sct",
+                "display": "rechts"
+              }
+            ]
+          }
+        }
+      ],
+      "coding": [
+        {
+          "code": "38199008",
+          "system": "http://snomed.info/sct",
+          "display": "tand en/of kies"
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: Cariës rechterbovenkies<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "e8abe925-81c6-409f-b9b1-e9ba7676197a"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "display": "Confirmed"
+      },
+      {
+        "code": "410605003",
+        "system": "http://snomed.info/sct",
+        "display": "aanwezigheid bevestigd"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "282291009",
+          "system": "http://snomed.info/sct",
+          "display": "interpretatie van diagnose"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "80967001",
+        "system": "http://snomed.info/sct",
+        "display": "gaatje in je tand of kies"
+      }
+    ],
+    "text": "Cariës rechterbovenkies"
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Van-Oranje",
+    "display": "Erik van Oranje",
+    "type": "Patient"
+  },
+  "onsetDateTime": "2025-05-20T10:00:00+01:00",
+  "recordedDate": "2025-05-20T10:15:00+01:00",
+  "asserter": {
+    "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
+    "display": "A.B.D.O. de Koning, Tandarts",
+    "type": "PractitionerRole"
+  },
+  "note": [
+    {
+      "text": "Actieve cariës vastgesteld tijdens periodiek preventief onderzoek. Restauratieve behandeling (éénvlaksvulling) en preventief advies besproken."
+    }
+  ]
+}

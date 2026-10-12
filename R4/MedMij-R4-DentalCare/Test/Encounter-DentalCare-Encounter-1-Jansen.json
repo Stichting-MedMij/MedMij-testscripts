@@ -1,0 +1,93 @@
+{
+  "resourceType": "Encounter",
+  "id": "DentalCare-Encounter-1-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
+    ]
+  },
+  "reasonReference": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
+          "valueString": "Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening"
+        }
+      ],
+      "reference": "Condition/DentalCare-Problem-Jansen",
+      "display": "Cariës rechterkies",
+      "type": "Condition"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Second opinion<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2023-07-22 09:00<br/>Einddatum: 2023-07-22 09:30<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "8f52785b-73e4-432d-9732-812c458da947"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "code": "OTH",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "display": "Anders"
+  },
+  "type": [
+    {
+      "text": "Second opinion"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
+    "type": "Patient"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+        "display": "D. de Ruiter, Tandarts",
+        "type": "PractitionerRole"
+      }
+    }
+  ],
+  "period": {
+    "start": "2023-07-22T09:00:00+01:00",
+    "end": "2023-07-22T09:30:00+01:00"
+  },
+  "hospitalization": {
+    "dischargeDisposition": {
+      "coding": [
+        {
+          "code": "264362003",
+          "system": "http://snomed.info/sct",
+          "display": "thuis"
+        }
+      ]
+    }
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/DentalCare-Location-Praktijklocatie-Lindenhof",
+        "display": "Praktijklocatie Lindenhof",
+        "type": "Location"
+      }
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/DentalCare-Organization-Mondzorgcentrum-Lindenhof",
+    "display": "Mondzorgcentrum Lindenhof",
+    "type": "Organization"
+  }
+}

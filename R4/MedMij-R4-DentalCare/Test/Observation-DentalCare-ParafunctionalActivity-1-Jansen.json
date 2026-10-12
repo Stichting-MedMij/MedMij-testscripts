@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-ParafunctionalActivity-Jansen",
+  "id": "DentalCare-ParafunctionalActivity-1-Jansen",
   "meta": {
     "tag": [
       {
@@ -24,12 +24,18 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Activiteit: Erosie door het drinken van vruchtensap<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Activiteit: Knarsen 's nachts<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "b26b3637-88b8-4d30-b79b-73a1e90149ee"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
   "effectiveDateTime": "2022-02-11T10:43:00+01:00",
@@ -40,5 +46,10 @@
       "type": "PractitionerRole"
     }
   ],
-  "valueString": "Erosie door het drinken van vruchtensap"
+  "valueString": "Knarsen 's nachts",
+  "note": [
+    {
+      "text": "Patiënt meldt ochtendklachten in de kaakspieren; mogelijk bijdragend aan klachten rechterkies."
+    }
+  ]
 }

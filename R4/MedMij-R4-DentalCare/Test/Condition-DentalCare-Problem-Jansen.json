@@ -1,0 +1,112 @@
+{
+  "resourceType": "Condition",
+  "id": "DentalCare-Problem-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem"
+    ]
+  },
+  "bodySite": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "24028007",
+                "system": "http://snomed.info/sct",
+                "display": "rechts"
+              }
+            ]
+          }
+        }
+      ],
+      "coding": [
+        {
+          "code": "38199008",
+          "system": "http://snomed.info/sct",
+          "display": "tand en/of kies"
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: Cariës rechterkies<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: D. de Ruiter, Tandarts</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "1ef15a8a-317e-47b4-81bc-107b276d7617"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "display": "Confirmed"
+      },
+      {
+        "code": "410605003",
+        "system": "http://snomed.info/sct",
+        "display": "aanwezigheid bevestigd"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "282291009",
+          "system": "http://snomed.info/sct",
+          "display": "interpretatie van diagnose"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "80967001",
+        "system": "http://snomed.info/sct",
+        "display": "gaatje in je tand of kies"
+      }
+    ],
+    "text": "Cariës rechterkies"
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
+    "type": "Patient"
+  },
+  "onsetDateTime": "2022-02-11",
+  "recordedDate": "2022-02-11",
+  "asserter": {
+    "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+    "display": "D. de Ruiter, Tandarts",
+    "type": "PractitionerRole"
+  },
+  "note": [
+    {
+      "text": "Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland."
+    }
+  ]
+}

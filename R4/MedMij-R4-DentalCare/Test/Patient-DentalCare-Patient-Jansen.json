@@ -29,6 +29,12 @@
   "name": [
     {
       "use": "official",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+          "valueCode": "NL4"
+        }
+      ],
       "given": [
         "Anita"
       ],
@@ -42,16 +48,27 @@
           ]
         }
       ],
-      "text": "Anita Jansen",
-      "family": "Jansen",
+      "text": "drs. Anita Jansen-van Dijk",
+      "family": "Jansen-van Dijk",
       "_family": {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
             "valueString": "Jansen"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix",
+            "valueString": "van"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-name",
+            "valueString": "Dijk"
           }
         ]
-      }
+      },
+      "prefix": [
+        "drs."
+      ]
     },
     {
       "use": "usual",
@@ -62,6 +79,12 @@
   ],
   "telecom": [
     {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
+          "valueString": "Bereikbaar na 16.00 uur"
+        }
+      ],
       "system": "phone",
       "_system": {
         "extension": [
@@ -105,7 +128,7 @@
         }
       ],
       "line": [
-        "Achillesstraat 12"
+        "t/o Achillesstraat 12"
       ],
       "_line": [
         {
@@ -117,13 +140,22 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
               "valueString": "12"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+              "valueString": "to"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
+              "valueString": "2 hoog achter"
             }
           ]
         }
       ],
       "use": "home",
       "type": "both",
-      "city": "Amsterdam",
+      "city": "Weesp",
+      "district": "Amsterdam",
       "postalCode": "1234 AA",
       "country": "Nederland",
       "_country": {
@@ -196,7 +228,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Anita Jansen<br/>Geboortedatum: 2010-03-15<br/>Geslacht: Vrouw<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam, Nederland<br/>Telefoon: +31612345678<br/>E-mail: anitajansen@icloud.com</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Anita Jansen-van Dijk<br/>Geboortedatum: 2010-03-15<br/>Geslacht: Vrouw<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam, Nederland<br/>Telefoon: +31612345678<br/>E-mail: anitajansen@icloud.com</div>"
   },
   "gender": "female",
   "_gender": {
@@ -208,7 +240,7 @@
             {
               "code": "F",
               "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
-              "display": "Female"
+              "display": "Vrouw"
             }
           ]
         }
@@ -216,5 +248,6 @@
     ]
   },
   "birthDate": "2010-03-15",
-  "deceasedBoolean": false
+  "deceasedBoolean": false,
+  "multipleBirthBoolean": false
 }

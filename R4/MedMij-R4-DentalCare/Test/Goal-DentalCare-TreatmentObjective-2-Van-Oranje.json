@@ -15,24 +15,36 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Doel: Brug monteren bij rechterbovenkies<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Laag</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Doel: Cariës rechterbovenkies restaureren<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Startdatum: 2025-05-20<br/>Vastgesteld door: S. Vermeer, Mondhygiënist</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "ff0bf74b-fb91-4054-acdc-4359df96036f"
+    }
+  ],
   "lifecycleStatus": "active",
   "priority": {
     "coding": [
       {
-        "code": "low-priority",
+        "code": "high-priority",
         "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
-        "display": "Low Priority"
+        "display": "High Priority"
       }
     ]
   },
   "description": {
-    "text": "Brug monteren bij rechterbovenkies"
+    "text": "Cariës rechterbovenkies restaureren"
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",
     "display": "Erik van Oranje",
     "type": "Patient"
+  },
+  "startDate": "2025-05-20",
+  "expressedBy": {
+    "reference": "PractitionerRole/DentalCare-PractitionerRole-Vermeer",
+    "display": "S. Vermeer, Mondhygiënist",
+    "type": "PractitionerRole"
   }
 }

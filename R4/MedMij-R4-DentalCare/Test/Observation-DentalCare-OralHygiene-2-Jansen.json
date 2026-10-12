@@ -1,0 +1,68 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-OralHygiene-2-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      },
+      {
+        "code": "8700",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Mondhygiënisten"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "364126007",
+        "system": "http://snomed.info/sct",
+        "display": "status van mondhygiëne"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:30<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "5163d496-5eaf-4224-8987-e5b933539da9"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2022-04-11T09:30:00+02:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-Vermeer",
+      "display": "S. Vermeer, Mondhygiënist",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "556001",
+        "system": "http://snomed.info/sct",
+        "display": "slecht"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Tandsteen deels gereduceerd na instructie; plaque buccaal nog aanwezig."
+    }
+  ]
+}

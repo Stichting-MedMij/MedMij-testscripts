@@ -15,8 +15,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Vullen gaatjes rechterkies<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "dcc5a61e-c302-4aa3-acc3-837c0edb8882"
+    }
+  ],
   "lifecycleStatus": "active",
   "priority": {
     "coding": [
@@ -28,11 +34,46 @@
     ]
   },
   "description": {
-    "text": "Vullen gaatjes rechterkies"
+    "text": "Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal"
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
-  }
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "code": "80967001",
+            "system": "http://snomed.info/sct",
+            "display": "gaatje in je tand of kies"
+          }
+        ]
+      },
+      "detailCodeableConcept": {
+        "coding": [
+          {
+            "code": "17621005",
+            "system": "http://snomed.info/sct",
+            "display": "normaal"
+          }
+        ]
+      },
+      "dueDate": "2022-04-11"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/DentalCare-Problem-Jansen",
+      "display": "Cariës rechterkies",
+      "type": "Condition"
+    }
+  ],
+  "note": [
+    {
+      "text": "Caviteiten in de rechterkies restaureren met composiet."
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-OralHygiene-Jansen",
+  "id": "DentalCare-OralHygiene-3-Jansen",
   "meta": {
     "tag": [
       {
@@ -23,34 +23,33 @@
       {
         "code": "364126007",
         "system": "http://snomed.info/sct",
-        "display": "oral hygiene status"
+        "display": "status van mondhygiëne"
       }
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Mondhygiëne: zeer slecht<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Mondhygiëne: goed</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "9f4eebd9-f643-4bd8-b9c2-29675d95bc4f"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
-  "effectiveDateTime": "2022-02-11T10:43:00+01:00",
-  "performer": [
-    {
-      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
-      "display": "D. de Ruiter, Tandarts",
-      "type": "PractitionerRole"
-    }
-  ],
+  "effectiveDateTime": "2015-01-01",
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "1336219002",
+        "code": "20572008",
         "system": "http://snomed.info/sct",
-        "display": "zeer slecht"
+        "display": "goed"
       }
     ]
   }

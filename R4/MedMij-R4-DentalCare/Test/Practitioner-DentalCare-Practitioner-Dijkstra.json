@@ -13,6 +13,12 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/big",
+      "value": "12000003"
+    }
+  ],
   "name": [
     {
       "use": "official",
@@ -41,6 +47,18 @@
       }
     }
   ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "dijkstra@orthodontiedijkstra.nl",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "+31612345604",
+      "use": "work"
+    }
+  ],
   "address": [
     {
       "extension": [
@@ -58,25 +76,25 @@
         }
       ],
       "line": [
-        "Simon Smitweg 1"
+        "Stationsstraat 18"
       ],
       "_line": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Simon Smitweg"
+              "valueString": "Stationsstraat"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "1"
+              "valueString": "18"
             }
           ]
         }
       ],
       "use": "work",
-      "city": "Leiderdorp",
-      "postalCode": "2353 GA",
+      "city": "Bergen op Zoom",
+      "postalCode": "4611 XX",
       "country": "Nederland",
       "_country": {
         "extension": [
@@ -98,24 +116,6 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: B. Dijkstra<br/>BIG-nummer: 12000003<br/>Telefoon: +31687654321<br/>E-mail: dijkstra@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
-  },
-  "identifier": [
-    {
-      "system": "http://fhir.nl/fhir/NamingSystem/big",
-      "value": "12000003"
-    }
-  ],
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "+31687654321",
-      "use": "work"
-    },
-    {
-      "system": "email",
-      "value": "dijkstra@tandarts.nl",
-      "use": "work"
-    }
-  ]
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: B. Dijkstra<br/>BIG-nummer: 12000003<br/>Telefoon: +31612345604<br/>E-mail: dijkstra@orthodontiedijkstra.nl<br/>Adres: Stationsstraat 18, 4611 XX Bergen op Zoom, Nederland</div>"
+  }
 }

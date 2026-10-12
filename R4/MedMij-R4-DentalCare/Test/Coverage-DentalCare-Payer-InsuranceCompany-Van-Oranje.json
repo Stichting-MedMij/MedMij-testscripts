@@ -15,8 +15,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: Zorgkantoor Groningen<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Zorgkantoor Groningen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: Zorgkantoor Noorderlicht<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Zorgkantoor Noorderlicht</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "b60e42e2-e133-4528-873c-292f0bb29093"
+    }
+  ],
   "status": "active",
   "type": {
     "coding": [
@@ -39,8 +45,8 @@
   },
   "payor": [
     {
-      "reference": "Organization/DentalCare-Organization-Zorgkantoor-Groningen",
-      "display": "Zorgkantoor Groningen",
+      "reference": "Organization/DentalCare-Organization-Zorgkantoor-Noorderlicht",
+      "display": "Zorgkantoor Noorderlicht",
       "type": "Organization"
     }
   ]

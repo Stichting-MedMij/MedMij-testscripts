@@ -13,20 +13,29 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
     ]
   },
-  "reasonCode": [
+  "reasonReference": [
     {
       "extension": [
         {
           "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
-          "valueString": "Extra controle vanwege bloedend tandvlees"
+          "valueString": "Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne."
         }
-      ]
+      ],
+      "reference": "Condition/DentalCare-Problem-Van-Oranje",
+      "display": "Cariës rechterbovenkies",
+      "type": "Condition"
     }
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Controleafspraak<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20 10:00<br/>Einddatum: 2025-05-20 11:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "2ffbc4f2-95e8-4b98-a803-34386f4595e9"
+    }
+  ],
   "status": "finished",
   "class": {
     "code": "OTH",
@@ -56,13 +65,29 @@
     "start": "2025-05-20T10:00:00+01:00",
     "end": "2025-05-20T11:00:00+01:00"
   },
+  "hospitalization": {
+    "admitSource": {
+      "coding": [
+        {
+          "code": "264362003",
+          "system": "http://snomed.info/sct",
+          "display": "thuis"
+        }
+      ]
+    }
+  },
   "location": [
     {
       "location": {
-        "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-        "display": "Vliegbasis Gilze-Rijen",
+        "reference": "Location/DentalCare-Location-Praktijklocatie-Lindenhof",
+        "display": "Praktijklocatie Lindenhof",
         "type": "Location"
       }
     }
-  ]
+  ],
+  "serviceProvider": {
+    "reference": "Organization/DentalCare-Organization-Mondzorgcentrum-Lindenhof",
+    "display": "Mondzorgcentrum Lindenhof",
+    "type": "Organization"
+  }
 }

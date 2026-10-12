@@ -1,0 +1,98 @@
+{
+  "resourceType": "Condition",
+  "id": "DentalCare-Problem-Van-De-Stok",
+  "meta": {
+    "tag": [
+      {
+        "code": "1300",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: Malocclusie met scheefstand van de snijtand linksboven<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2023-11-15<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: B. Dijkstra, Orthodontist</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "bc1d99b2-ec22-4ba7-a111-49741b584f03"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "display": "Confirmed"
+      },
+      {
+        "code": "410605003",
+        "system": "http://snomed.info/sct",
+        "display": "aanwezigheid bevestigd"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "282291009",
+          "system": "http://snomed.info/sct",
+          "display": "interpretatie van diagnose"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "47944004",
+        "system": "http://snomed.info/sct",
+        "display": "malocclusie van tanden en/of kiezen"
+      }
+    ],
+    "text": "Malocclusie met scheefstand van de snijtand linksboven"
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "39481002",
+          "system": "http://snomed.info/sct",
+          "display": "bovenste tandboog"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Van-De-Stok",
+    "display": "Berend van de Stok",
+    "type": "Patient"
+  },
+  "onsetDateTime": "2023-11-15",
+  "recordedDate": "2024-01-01T10:43:00+01:00",
+  "asserter": {
+    "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
+    "display": "B. Dijkstra, Orthodontist",
+    "type": "PractitionerRole"
+  },
+  "note": [
+    {
+      "text": "Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland na paro-stabilisatie en extractie."
+    }
+  ]
+}

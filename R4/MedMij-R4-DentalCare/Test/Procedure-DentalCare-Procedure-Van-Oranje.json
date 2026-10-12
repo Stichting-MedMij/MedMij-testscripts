@@ -7,11 +7,6 @@
         "code": "1200",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
         "display": "Tandartsen"
-      },
-      {
-        "code": "1201",
-        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Tandarts, implantoloog"
       }
     ],
     "profile": [
@@ -27,17 +22,62 @@
       }
     ]
   },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "257867005",
+            "system": "http://snomed.info/sct",
+            "display": "inbrengen"
+          }
+        ]
+      }
+    }
+  ],
+  "bodySite": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "24028007",
+                "system": "http://snomed.info/sct",
+                "display": "rechts"
+              }
+            ]
+          }
+        }
+      ],
+      "coding": [
+        {
+          "code": "38199008",
+          "system": "http://snomed.info/sct",
+          "display": "tand en/of kies"
+        }
+      ]
+    }
+  ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling composiet<br/>Patiënt: Erik van Oranje<br/>Startdatum: 2025-06-03 09:00<br/>Einddatum: 2025-06-03 09:45<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "1c2c7df9-8a1f-4ef9-9bfd-3640f8e39ec1"
+    }
+  ],
   "status": "completed",
   "code": {
     "coding": [
       {
-        "code": "R67",
+        "code": "V91",
         "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.10",
-        "display": "Plaatsen opbouw ten behoeve van implantaatkroon"
+        "display": "Eénvlaksvulling composiet"
       }
     ]
   },
@@ -46,7 +86,10 @@
     "display": "Erik van Oranje",
     "type": "Patient"
   },
-  "performedDateTime": "2024-04-29",
+  "performedPeriod": {
+    "start": "2025-06-03T09:00:00+01:00",
+    "end": "2025-06-03T09:45:00+01:00"
+  },
   "performer": [
     {
       "actor": {
@@ -57,8 +100,15 @@
     }
   ],
   "location": {
-    "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-    "display": "Vliegbasis Gilze-Rijen",
+    "reference": "Location/DentalCare-Location-Praktijklocatie-Lindenhof",
+    "display": "Praktijklocatie Lindenhof",
     "type": "Location"
-  }
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/DentalCare-Problem-Van-Oranje",
+      "display": "Cariës rechterbovenkies",
+      "type": "Condition"
+    }
+  ]
 }

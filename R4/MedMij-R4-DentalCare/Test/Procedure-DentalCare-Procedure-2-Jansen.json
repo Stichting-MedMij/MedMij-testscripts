@@ -1,0 +1,114 @@
+{
+  "resourceType": "Procedure",
+  "id": "DentalCare-Procedure-2-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "225362009",
+        "system": "http://snomed.info/sct",
+        "display": "tandheelkundige zorg"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "257867005",
+            "system": "http://snomed.info/sct",
+            "display": "inbrengen"
+          }
+        ]
+      }
+    }
+  ],
+  "bodySite": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "24028007",
+                "system": "http://snomed.info/sct",
+                "display": "rechts"
+              }
+            ]
+          }
+        }
+      ],
+      "coding": [
+        {
+          "code": "38199008",
+          "system": "http://snomed.info/sct",
+          "display": "tand en/of kies"
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling composiet<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Startdatum: 2022-04-11 09:00<br/>Einddatum: 2022-04-11 09:45<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof<br/>Indicatie: Cariës rechterkies</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "d3be0dd5-79a9-435f-a9b5-54d676a18efc"
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "V91",
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.10",
+        "display": "Eénvlaksvulling composiet"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
+    "type": "Patient"
+  },
+  "performedPeriod": {
+    "start": "2022-04-11T09:00:00+02:00",
+    "end": "2022-04-11T09:45:00+02:00"
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+        "display": "D. de Ruiter, Tandarts",
+        "type": "PractitionerRole"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/DentalCare-Location-Praktijklocatie-Lindenhof",
+    "display": "Praktijklocatie Lindenhof",
+    "type": "Location"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/DentalCare-Problem-Jansen",
+      "display": "Cariës rechterkies",
+      "type": "Condition"
+    }
+  ]
+}

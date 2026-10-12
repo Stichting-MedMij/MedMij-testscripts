@@ -1,6 +1,6 @@
 {
   "resourceType": "Organization",
-  "id": "DentalCare-Organization-ASR",
+  "id": "DentalCare-Organization-Orthodontiepraktijk-Dijkstra",
   "meta": {
     "tag": [
       {
@@ -10,9 +10,27 @@
       }
     ],
     "profile": [
-      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization"
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
+      "value": "13004567"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "info@orthodontiedijkstra.nl",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "0164123456",
+      "use": "work"
+    }
+  ],
   "address": [
     {
       "extension": [
@@ -30,25 +48,25 @@
         }
       ],
       "line": [
-        "Archimedeslaan 10"
+        "Stationsstraat 18"
       ],
       "_line": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Archimedeslaan"
+              "valueString": "Stationsstraat"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "10"
+              "valueString": "18"
             }
           ]
         }
       ],
       "use": "work",
-      "city": "Utrecht",
-      "postalCode": "3584 BA",
+      "city": "Bergen op Zoom",
+      "postalCode": "4611 XX",
       "country": "Nederland",
       "_country": {
         "extension": [
@@ -70,7 +88,18 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: A.S.R.<br/>Adres: Archimedeslaan 10, 3584 BA Utrecht</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Orthodontiepraktijk Dijkstra<br/>AGB-code: 13004567<br/>Telefoon: 0164123456<br/>E-mail: info@orthodontiedijkstra.nl<br/>Adres: Stationsstraat 18, 4611 XX Bergen op Zoom</div>"
   },
-  "name": "A.S.R."
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "1300",
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+          "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+        }
+      ]
+    }
+  ],
+  "name": "Orthodontiepraktijk Dijkstra"
 }

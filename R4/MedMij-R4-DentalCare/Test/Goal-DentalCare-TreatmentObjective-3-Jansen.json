@@ -1,0 +1,70 @@
+{
+  "resourceType": "Goal",
+  "id": "DentalCare-TreatmentObjective-3-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Cariës rechterkies<br/>Toelichting: Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn.</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "fa269297-4e4b-44b7-bff2-a83530298981"
+    }
+  ],
+  "lifecycleStatus": "active",
+  "description": {
+    "text": "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen"
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
+    "type": "Patient"
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "code": "288919008",
+            "system": "http://snomed.info/sct",
+            "display": "kan kauwen"
+          }
+        ]
+      },
+      "detailCodeableConcept": {
+        "coding": [
+          {
+            "code": "162019007",
+            "system": "http://snomed.info/sct",
+            "display": "geen probleem met kauwen"
+          }
+        ]
+      },
+      "dueDate": "2022-04-11"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/DentalCare-Problem-Jansen",
+      "display": "Cariës rechterkies",
+      "type": "Condition"
+    }
+  ],
+  "note": [
+    {
+      "text": "Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn."
+    }
+  ]
+}

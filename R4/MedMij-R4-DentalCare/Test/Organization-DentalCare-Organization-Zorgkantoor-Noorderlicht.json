@@ -1,6 +1,6 @@
 {
   "resourceType": "Organization",
-  "id": "DentalCare-Organization-Defensie-Tandheelkundige-Dienst",
+  "id": "DentalCare-Organization-Zorgkantoor-Noorderlicht",
   "meta": {
     "tag": [
       {
@@ -10,9 +10,15 @@
       }
     ],
     "profile": [
-      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/uzovi",
+      "value": "9901"
+    }
+  ],
   "address": [
     {
       "extension": [
@@ -30,25 +36,25 @@
         }
       ],
       "line": [
-        "Herculeslaan 1"
+        "Kadeweg 22"
       ],
       "_line": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Herculeslaan"
+              "valueString": "Kadeweg"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "1"
+              "valueString": "22"
             }
           ]
         }
       ],
       "use": "work",
-      "city": "Utrecht",
-      "postalCode": "3584 AB",
+      "city": "Harlingen",
+      "postalCode": "9994 XX",
       "country": "Nederland",
       "_country": {
         "extension": [
@@ -70,24 +76,13 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Defensie Tandheelkundige Dienst<br/>AGB-code: 12095095<br/>Telefoon: +31653603740<br/>E-mail: PJ.Jumpertz.01@mindef.nl<br/>Adres: Herculeslaan 1, 3584 AB Utrecht</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Zorgkantoor Noorderlicht<br/>Adres: Kadeweg 22, 9994 XX Harlingen</div>"
   },
-  "identifier": [
-    {
-      "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
-      "value": "12095095"
-    }
-  ],
-  "name": "Defensie Tandheelkundige Dienst",
+  "name": "Zorgkantoor Noorderlicht",
   "telecom": [
     {
       "system": "phone",
-      "value": "+31653603740",
-      "use": "work"
-    },
-    {
-      "system": "email",
-      "value": "PJ.Jumpertz.01@mindef.nl",
+      "value": "0501234567",
       "use": "work"
     }
   ]

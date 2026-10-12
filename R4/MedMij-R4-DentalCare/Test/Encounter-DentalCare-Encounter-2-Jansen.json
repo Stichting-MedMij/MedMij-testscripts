@@ -1,0 +1,82 @@
+{
+  "resourceType": "Encounter",
+  "id": "DentalCare-Encounter-2-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
+    ]
+  },
+  "reasonReference": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
+          "valueString": "Periodiek preventief onderzoek; kleine röntgenfoto gemaakt en beoordeeld, daarbij cariës rechterkies vastgesteld"
+        }
+      ],
+      "reference": "Procedure/DentalCare-Procedure-1-Jansen",
+      "display": "Maken en beoordelen kleine röntgenfoto",
+      "type": "Procedure"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Periodiek preventief onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11 10:00<br/>Einddatum: 2022-02-11 11:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "522c2105-1c1a-4457-af16-108fca6930f3"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "code": "OTH",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "display": "Anders"
+  },
+  "type": [
+    {
+      "text": "Periodiek preventief onderzoek"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
+    "type": "Patient"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+        "display": "D. de Ruiter, Tandarts",
+        "type": "PractitionerRole"
+      }
+    }
+  ],
+  "period": {
+    "start": "2022-02-11T10:00:00+01:00",
+    "end": "2022-02-11T11:00:00+01:00"
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/DentalCare-Location-Praktijklocatie-Lindenhof",
+        "display": "Praktijklocatie Lindenhof",
+        "type": "Location"
+      }
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/DentalCare-Organization-Mondzorgcentrum-Lindenhof",
+    "display": "Mondzorgcentrum Lindenhof",
+    "type": "Organization"
+  }
+}

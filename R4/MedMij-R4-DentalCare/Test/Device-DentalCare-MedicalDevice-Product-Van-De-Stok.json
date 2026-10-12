@@ -1,0 +1,56 @@
+{
+  "resourceType": "Device",
+  "id": "DentalCare-MedicalDevice-Product-Van-De-Stok",
+  "meta": {
+    "tag": [
+      {
+        "code": "1300",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.gs1.org/gtin",
+      "value": "08712345678906"
+    }
+  ],
+  "udiCarrier": [
+    {
+      "issuer": "https://www.gs1.org/gtin",
+      "deviceIdentifier": "08712345678906",
+      "carrierHRF": "(01)08712345678906(11)240115(17)290115(10)ORTHO24A(21)BVDS0001"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Product: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Producttype: Orthodontische apparatuur<br/>ProductID: (01)08712345678906(11)240115(17)290115(10)ORTHO24A(21)BVDS0001</div>"
+  },
+  "manufactureDate": "2024-01-15",
+  "expirationDate": "2029-01-15",
+  "lotNumber": "ORTHO24A",
+  "serialNumber": "BVDS0001",
+  "type": {
+    "coding": [
+      {
+        "code": "25742001",
+        "system": "http://snomed.info/sct",
+        "display": "orthodontische apparatuur"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/DentalCare-Patient-Van-De-Stok",
+    "display": "Berend van de Stok",
+    "type": "Patient"
+  },
+  "note": [
+    {
+      "text": "Vaste multibracket-beugel voor de bovenboog"
+    }
+  ]
+}
