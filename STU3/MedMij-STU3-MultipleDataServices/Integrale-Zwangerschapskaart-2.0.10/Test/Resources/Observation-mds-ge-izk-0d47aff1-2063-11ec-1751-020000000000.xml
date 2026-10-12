@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-0d47aff1-2063-11ec-1751-020000000000" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-PregnancyObservation" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Id: 7c727415-a6d9-11ed-2063-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</html:caption>
+        <html:tfoot>
+          <html:tr>
+            <html:td colspan="2">voelt sinds enkele dagen minder frequent bewegingen</html:td>
+          </html:tr>
+        </html:tfoot>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Prenatale controle 19 augustus 2026</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Bepalingdatum/tijd</html:th>
+            <html:td>2026-08-15</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Methode</html:th>
+            <html:td>
+              <html:span title="bevinding gerapporteerd door patiënt of andere bron van voorgeschiedenis (bevinding) (418799008 - SNOMED CT)">bevinding gerapporteerd door patiënt of andere bron van voorgeschiedenis (bevinding)</html:span>
+            </html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="bewegingspatroon van foetus (waarneembare entiteit) (364618000 - SNOMED CT)">bewegingspatroon van foetus (waarneembare entiteit)</html:span>
+            </html:td>
+            <html:td>
+              <html:span title="zwakke foetale bewegingen (bevinding) (276372004 - SNOMED CT)">zwakke foetale bewegingen (bevinding)</html:span>
+            </html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
+    <valueReference>
+      <reference value="Condition/mds-ge-izk-GE-PREGNANCY-CONDITION-2026" />
+      <display value="Zwangerschap 2 Gé Gevens-Dienst" />
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="7c727415-a6d9-11ed-2063-020000000000" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="364618000" />
+      <display value="bewegingspatroon van foetus (waarneembare entiteit)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="Encounter/mds-ge-izk-0d47afea-2063-11ec-1751-020000000000" />
+    <display value="Prenatale controle 19 augustus 2026" />
+  </context>
+  <effectiveDateTime value="2026-08-15" />
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="276372004" />
+      <display value="zwakke foetale bewegingen (bevinding)" />
+    </coding>
+  </valueCodeableConcept>
+  <comment value="voelt sinds enkele dagen minder frequent bewegingen" />
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="418799008" />
+      <display value="bevinding gerapporteerd door patiënt of andere bron van voorgeschiedenis (bevinding)" />
+    </coding>
+  </method>
+</Observation>

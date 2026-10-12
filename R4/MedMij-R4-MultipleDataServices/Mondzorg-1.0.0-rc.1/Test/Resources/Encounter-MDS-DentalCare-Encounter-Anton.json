@@ -1,0 +1,54 @@
+{
+  "resourceType": "Encounter",
+  "id": "MDS-DentalCare-Encounter-Anton",
+  "meta": {
+    "tag": [
+      {
+        "code": "1300",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
+    ]
+  },
+  "status": "finished",
+  "class": {
+    "code": "OTH",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "display": "Anders"
+  },
+  "type": [
+    {
+      "text": "Periodiek mondonderzoek"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/MDS-DentalCare-Patient-Anton",
+    "display": "Berend van de Stok",
+    "type": "Patient"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "PractitionerRole/MDS-DentalCare-PractitionerRole-Tandenborstel",
+        "display": "B. Dijkstra, Tandarts",
+        "type": "PractitionerRole"
+      }
+    }
+  ],
+  "period": {
+    "start": "2026-07-09T10:00:00+02:00",
+    "end": "2026-07-09T10:50:00+02:00"
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/MDS-DentalCare-Location-Kieskeurig",
+        "display": "Tandartspraktijk Kieskeurig",
+        "type": "Location"
+      }
+    }
+  ]
+}

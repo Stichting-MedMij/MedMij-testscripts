@@ -1,0 +1,52 @@
+{
+  "resourceType": "Practitioner",
+  "id": "ImageAvailability-Practitioner-Eef-Echo",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/uzi-nr-pers",
+      "value": "8452962"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "given": [
+        "Eef",
+        "H"
+      ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "BR"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "IN"
+            }
+          ]
+        }
+      ],
+      "text": "Eef H Echo",
+      "family": "Echo",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Echo"
+          }
+        ]
+      }
+    }
+  ]
+}

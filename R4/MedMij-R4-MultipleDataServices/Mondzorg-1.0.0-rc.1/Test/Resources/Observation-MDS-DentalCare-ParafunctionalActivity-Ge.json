@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "MDS-DentalCare-ParafunctionalActivity-Ge",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "110353005",
+        "system": "http://snomed.info/sct",
+        "display": "parafunctionele gewoonte"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/MDS-DentalCare-Patient-Ge",
+    "display": "Gé Gevens-Dienst",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2026-06-18T09:00:00+02:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/MDS-DentalCare-PractitionerRole-Tandenborstel",
+      "display": "T. Tandenborstel, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueString": "Incidenteel klemmen bij drukte; naar eigen zeggen vooral wanneer de agenda terugpraat."
+}

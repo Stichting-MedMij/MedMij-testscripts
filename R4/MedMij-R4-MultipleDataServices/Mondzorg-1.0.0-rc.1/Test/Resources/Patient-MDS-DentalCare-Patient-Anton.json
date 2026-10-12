@@ -1,0 +1,120 @@
+{
+  "resourceType": "Patient",
+  "id": "MDS-DentalCare-Patient-Anton",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+      "value": "999990123"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "text": "Anton van Alles-Wat",
+      "family": "van Alles-Wat",
+      "given": [
+        "Anton"
+      ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "BR"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "_system": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                  "code": "MC",
+                  "display": "Mobile contact"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "value": "+316-99990080",
+      "use": "home"
+    },
+    {
+      "system": "email",
+      "value": "anton.van.alles-wat@example.test",
+      "use": "home"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1946-03-14",
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                "code": "HP",
+                "display": "Primary home"
+              }
+            ]
+          }
+        }
+      ],
+      "use": "home",
+      "type": "physical",
+      "line": [
+        "Allesweg 80"
+      ],
+      "city": "Testdorp",
+      "postalCode": "9999AV",
+      "country": "Nederland"
+    }
+  ],
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "code": "WIFE",
+              "display": "Wife"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "text": "Manusje van Alles",
+        "family": "van Alles",
+        "given": [
+          "Manusje"
+        ]
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+316-99990081",
+          "use": "home"
+        }
+      ]
+    }
+  ]
+}

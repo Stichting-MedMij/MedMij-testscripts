@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="ANTON-GGZ-HELP-FROM-MANUSJE-20260505" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-HelpFromOthers" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="ANTON-GGZ-HELP-FROM-MANUSJE-20260505" />
+  </identifier>
+  <status value="active" />
+  <intent value="plan" />
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="243114000" />
+      <display value="Ondersteuning (regime/therapie)" />
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <activity>
+    <detail>
+      <category>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="386229000" />
+          <display value="Mantelzorg" />
+        </coding>
+      </category>
+      <code>
+        <text value="Praktische steun en rustmomenten tijdens de herstel na de heupfractuur" />
+      </code>
+      <status value="in-progress" />
+      <scheduledString value="Dagelijks in overleg" />
+      <performer>
+        <reference value="RelatedPerson/nl-core-relatedperson-bgz-msz-MANUSJE-VAN-ALLES" />
+        <display value="Manusje van Alles" />
+      </performer>
+    </detail>
+  </activity>
+</CarePlan>

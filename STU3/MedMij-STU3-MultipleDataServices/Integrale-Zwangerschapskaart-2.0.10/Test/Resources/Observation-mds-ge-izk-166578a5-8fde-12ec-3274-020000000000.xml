@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-166578a5-8fde-12ec-3274-020000000000" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-BodyTemperature" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Id: 166578a5-8fde-12ec-3274-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <html:span title="Vital Signs (vital-signs - observation-category)">Vital Signs</html:span>, Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Zwangerschap 1 Gé Gevens-Dienst</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Bepalingdatum/tijd</html:th>
+            <html:td>2023-12-04</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="Body temperature (8310-5 - LOINC)">Body temperature</html:span>
+            </html:td>
+            <html:td>36.7 Cel</html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="166578a5-8fde-12ec-3274-020000000000" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/observation-category" />
+      <code value="vital-signs" />
+      <display value="Vital Signs" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="8310-5" />
+      <display value="Body temperature" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2023" />
+    <display value="Zwangerschap 1 Gé Gevens-Dienst" />
+  </context>
+  <effectiveDateTime value="2023-12-04" />
+  <valueQuantity>
+    <value value="36.7" />
+    <unit value="Cel" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="Cel" />
+  </valueQuantity>
+</Observation>

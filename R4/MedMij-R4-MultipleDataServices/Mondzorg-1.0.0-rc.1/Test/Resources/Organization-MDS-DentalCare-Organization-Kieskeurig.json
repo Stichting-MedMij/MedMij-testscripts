@@ -1,0 +1,34 @@
+{
+  "resourceType": "Organization",
+  "id": "MDS-DentalCare-Organization-Kieskeurig",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
+      "value": "12009999"
+    }
+  ],
+  "name": "Tandartspraktijk Kieskeurig",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "010-9991200",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "line": [
+        "Kiesstraat 12"
+      ],
+      "city": "Testdorp",
+      "postalCode": "9999TK",
+      "country": "Nederland"
+    }
+  ]
+}

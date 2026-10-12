@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-0d47afe9-2063-11ec-1751-020000000000" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-TobaccoUse" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Gé Gevens-Dienst. Id: 7ed9fe38-a6d9-11ed-1859-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Prenatale intake 8 april 2026</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="bevinding betreffende tabakgebruik en blootstelling aan tabaksrook (bevinding) (365980008 - SNOMED CT)">bevinding betreffende tabakgebruik en blootstelling aan tabaksrook (bevinding)</html:span>
+            </html:td>
+            <html:td>
+              <html:span title="heeft nooit gerookt (bevinding) (266919005 - SNOMED CT)">heeft nooit gerookt (bevinding)</html:span>
+            </html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="7ed9fe38-a6d9-11ed-1859-020000000000" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="365980008" />
+      <display value="bevinding betreffende tabakgebruik en blootstelling aan tabaksrook (bevinding)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-GE-GEVENS-DIENST" />
+    <display value="Gé Gevens-Dienst" />
+  </subject>
+  <context>
+    <reference value="Encounter/mds-ge-izk-0d47afdc-2063-11ec-1751-020000000000" />
+    <display value="Prenatale intake 8 april 2026" />
+  </context>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="8517006" />
+      <display value="Ex-smoker" />
+    </coding>
+  </valueCodeableConcept>
+  <comment value="Rookte incidenteel in 2023 en 2024 en is sindsdien gestopt." />
+</Observation>

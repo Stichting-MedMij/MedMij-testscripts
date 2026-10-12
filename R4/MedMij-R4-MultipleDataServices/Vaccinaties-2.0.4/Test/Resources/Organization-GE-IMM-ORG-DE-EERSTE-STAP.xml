@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="GE-IMM-ORG-DE-EERSTE-STAP" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization" />
+  </meta>
+  <identifier>
+    <system value="http://fhir.nl/fhir/NamingSystem/ura" />
+    <value value="20000999" />
+  </identifier>
+  <name value="Verloskundigenpraktijk De Eerste Stap" />
+</Organization>

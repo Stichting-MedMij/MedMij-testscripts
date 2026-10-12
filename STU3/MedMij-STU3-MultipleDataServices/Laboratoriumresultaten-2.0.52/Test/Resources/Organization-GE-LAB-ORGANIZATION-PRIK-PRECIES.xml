@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="GE-LAB-ORGANIZATION-PRIK-PRECIES"/>
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Diagnostisch Laboratorium Prik &amp; Precies, Meetlaan 46, 9999ZL Testdorp.</p>
+    </div>
+  </text>
+  <identifier>
+    <system value="https://example.test/fhir/NamingSystem/organization"/>
+    <value value="TEST-LAB-0001"/>
+  </identifier>
+  <name value="Diagnostisch Laboratorium Prik &amp; Precies"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+316-99990046"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <line value="Meetlaan 46">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Meetlaan"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="46"/>
+      </extension>
+    </line>
+    <city value="Testdorp"/>
+    <postalCode value="9999ZL"/>
+    <country value="NLD"/>
+  </address>
+</Organization>

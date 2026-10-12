@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="GE-LAB-OBS-GLUCOSE-20260520"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <table>
+        <caption>Glucose nuchter bij Gé Gevens-Dienst op 20 mei 2026</caption>
+        <tbody>
+          <tr><th>Uitslag</th><td>4.6 mmol/L</td></tr>
+          <tr><th>Interpretatie</th><td>Normaal</td></tr>
+          <tr><th>Referentiewaarden</th><td>3.5 - 6.1 mmol/L</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </text>
+  <identifier>
+    <system value="https://example.test/fhir/NamingSystem/laboratory-result"/>
+    <value value="GE-LAB-OBS-GLUCOSE-20260520"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="49581000146104"/>
+      <display value="bevinding betreffende laboratoriumonderzoek"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="14749-6"/>
+      <display value="Glucose [Moles/volume] in Serum or Plasma"/>
+    </coding>
+    <text value="Glucose nuchter"/>
+  </code>
+  <subject>
+    <reference value="Patient/GE-GEVENS-DIENST"/>
+    <display value="Gé Gevens-Dienst"/>
+  </subject>
+  <effectiveDateTime value="2026-05-20T08:15:00+02:00"/>
+  <issued value="2026-05-20T12:00:00+02:00"/>
+  <performer>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+      <valueReference>
+        <reference value="PractitionerRole/GE-LAB-PRACTITIONERROLE-ANNA-LYSE"/>
+        <display value="Klinisch chemicus dr. Anna Lyse"/>
+      </valueReference>
+    </extension>
+    <display value="Klinisch chemicus dr. Anna Lyse"/>
+  </performer>
+  <valueQuantity>
+    <value value="4.6"/>
+    <unit value="mmol/L"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mmol/L"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://hl7.org/fhir/v2/0078"/>
+      <code value="N"/>
+      <display value="Normaal"/>
+    </coding>
+  </interpretation>
+  <specimen>
+    <reference value="Specimen/GE-LAB-SPECIMEN-BLOOD-20260520"/>
+    <display value="Monster GE-LAB-SPECIMEN-BLOOD-20260520"/>
+  </specimen>
+  <referenceRange>
+    <low>
+      <value value="3.5"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mmol/L"/>
+    </low>
+    <high>
+      <value value="6.1"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mmol/L"/>
+    </high>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/referencerange-meaning"/>
+        <code value="normal"/>
+        <display value="Normaalwaarden"/>
+      </coding>
+    </type>
+  </referenceRange>
+</Observation>

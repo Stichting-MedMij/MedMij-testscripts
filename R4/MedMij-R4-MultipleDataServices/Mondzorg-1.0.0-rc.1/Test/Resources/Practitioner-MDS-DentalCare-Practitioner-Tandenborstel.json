@@ -1,0 +1,19 @@
+{
+  "resourceType": "Practitioner",
+  "id": "MDS-DentalCare-Practitioner-Tandenborstel",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
+    ]
+  },
+  "name": [
+    {
+      "use": "official",
+      "text": "T. Tandenborstel",
+      "family": "Tandenborstel",
+      "given": [
+        "Tessa"
+      ]
+    }
+  ]
+}

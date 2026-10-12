@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="GE-IMM-PERTUSSIS-20260820" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/imm-Vaccination-event" />
+  </meta>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-imm-Vaccination.PharmaceuticalProduct">
+    <valueReference>
+      <reference value="Medication/GE-IMM-PRODUCT-PERTUSSIS-2026" />
+      <type value="Medication" />
+      <display value="vaccin tegen difterie, tetanus en kinkhoest" />
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.131.2" />
+    <value value="GE-IMM-PERTUSSIS-20260820" />
+  </identifier>
+  <status value="completed" />
+  <vaccineCode>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="871761004" />
+      <display value="vaccin tegen difterie, tetanus en kinkhoest" />
+    </coding>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/GE-GEVENS-DIENST" />
+    <type value="Patient" />
+    <display value="Patient, Gé Gevens-Dienst" />
+  </patient>
+  <occurrenceDateTime value="2026-08-20" />
+  <performer>
+    <function>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0443" />
+        <code value="AP" />
+        <display value="Administering Provider" />
+      </coding>
+    </function>
+    <actor>
+      <reference value="Organization/GE-IMM-ORG-DE-EERSTE-STAP" />
+      <type value="Organization" />
+      <display value="Verloskundigenpraktijk De Eerste Stap" />
+    </actor>
+  </performer>
+</Immunization>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ANTON-BGLZ-verrichting-03" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Procedure" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="94c0c46b-e3e1-11eb-7225-020000000000" />
+  </identifier>
+  <basedOn>
+    <reference value="ProcedureRequest/ANTON-BGLZ-verrichting-aanvraag-03" />
+    <display value="Aanvraag voor fysiotherapie" />
+  </basedOn>
+  <status value="completed" />
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="71388002" />
+      <display value="verrichting" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="91251008" />
+      <display value="fysiotherapie" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <performedPeriod>
+    <start value="2025-11-19" />
+  </performedPeriod>
+  <performer>
+    <actor>
+      <reference value="Organization/ANTON-BGLZ-zorgaanbieder-01" />
+      <display value="AA-zkh - Noord" />
+    </actor>
+  </performer>
+  <performer>
+    <actor>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+        <valueReference>
+          <reference value="PractitionerRole/ANTON-BGLZ-zorgverlenerrol-04" />
+          <display value="Fysiotherapeut" />
+        </valueReference>
+      </extension>
+      <reference value="Practitioner/ANTON-BGLZ-zorgverlener-04" />
+      <display value="Thomas Janssen" />
+    </actor>
+  </performer>
+  <reasonReference>
+    <reference value="Condition/ANTON-BGLZ-probleem-05" />
+    <display value="probleem met lopen" />
+  </reasonReference>
+</Procedure>

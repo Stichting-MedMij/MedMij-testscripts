@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="GE-GP-MEDICATIONREQUEST-SALBUTAMOL-20260710"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicationAgreement"/>
+  </meta>
+  <text>
+    <status value="extensions"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <b>Actuele medicatieafspraak</b>
+      <p>Salbutamol 100 microgram/dosis: één tot twee inhalaties zo nodig.</p>
+      <p>Inhalatietechniek besproken; gebruik tijdens zwangerschap afgestemd.</p>
+    </div>
+  </text>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-Medication-MedicationTreatment">
+    <valueIdentifier>
+      <system value="https://huisartsgegevens.example.test/medicamenteuzebehandeling"/>
+      <value value="GE-ASTHMA-2026"/>
+    </valueIdentifier>
+  </extension>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare">
+    <valueReference>
+      <reference value="EpisodeOfCare/GE-GP-EPISODE-ASTHMA"/>
+      <display value="Astma"/>
+    </valueReference>
+  </extension>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-Medication-PeriodOfUse">
+    <valuePeriod>
+      <start value="2026-07-10"/>
+    </valuePeriod>
+  </extension>
+  <identifier>
+    <system value="https://huisartsgegevens.example.test/identifier"/>
+    <value value="GE-GP-MEDICATIONREQUEST-SALBUTAMOL-20260710"/>
+  </identifier>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="16076005"/>
+      <display value="Voorschrijven"/>
+    </coding>
+  </category>
+  <medicationReference>
+    <reference value="Medication/GE-GP-MEDICATION-SALBUTAMOL"/>
+    <display value="SALBUTAMOL AEROSOL 100UG/DO 200DO AUTOH"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/GE-GEVENS-DIENST"/>
+    <display value="Gé Gevens-Dienst"/>
+  </subject>
+  <context>
+    <reference value="Encounter/GE-GP-ENCOUNTER-20260710"/>
+    <display value="Consult voor astmaklachten in het pollenseizoen"/>
+  </context>
+  <authoredOn value="2026-07-10T11:20:00+02:00"/>
+  <requester>
+    <agent>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+        <valueReference>
+          <reference value="PractitionerRole/nl-core-practitionerrole-bgz-msz-1000000101-01520000001"/>
+          <display value="Huisdokter H. Huisarts Attent"/>
+        </valueReference>
+      </extension>
+      <reference value="Practitioner/nl-core-practitioner-bgz-msz-2-16-840-1-113883-2-4-6-1-10000001"/>
+      <display value="Huisdokter H. Huisarts Attent"/>
+    </agent>
+  </requester>
+  <dosageInstruction>
+    <sequence value="1"/>
+    <text value="1 tot 2 inhalaties zo nodig, maximaal 4 maal per dag"/>
+    <additionalInstruction>
+      <coding>
+        <system value="https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek"/>
+        <code value="OTH"/>
+        <display value="overig"/>
+      </coding>
+      <text value="Zo nodig bij benauwdheid"/>
+    </additionalInstruction>
+    <route>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.4.9"/>
+        <code value="62"/>
+        <display value="INHALATIE"/>
+      </coding>
+    </route>
+    <doseQuantity>
+      <value value="2"/>
+      <unit value="Dosis"/>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.1.900.2"/>
+      <code value="208"/>
+    </doseQuantity>
+  </dosageInstruction>
+</MedicationRequest>

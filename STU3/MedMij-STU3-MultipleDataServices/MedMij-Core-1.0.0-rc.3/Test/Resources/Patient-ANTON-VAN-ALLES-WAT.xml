@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="ANTON-VAN-ALLES-WAT" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
+  </meta>
+  <identifier>
+    <system value="http://fhir.nl/fhir/NamingSystem/bsn" />
+    <value value="999990123" />
+  </identifier>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
+      <valueCode value="NL3" />
+    </extension>
+    <text value="Anton van Alles-Wat" />
+    <family value="van Alles-Wat">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Wat" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix">
+        <valueString value="van" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-name">
+        <valueString value="Alles" />
+      </extension>
+    </family>
+    <given value="Anton">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="BR" />
+      </extension>
+    </given>
+    <given value="A.">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="IN" />
+      </extension>
+    </given>
+    <given value="Anton">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="CL" />
+      </extension>
+    </given>
+  </name>
+  <gender value="male">
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/v3/AdministrativeGender" />
+          <code value="M" />
+          <display value="Male" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </gender>
+  <birthDate value="1946-03-14" />
+  <deceasedBoolean value="false" />
+  <maritalStatus>
+    <coding>
+      <system value="http://hl7.org/fhir/v3/MaritalStatus" />
+      <code value="M" />
+      <display value="Married" />
+    </coding>
+  </maritalStatus>
+  <multipleBirthBoolean value="false" />
+  <contact>
+    <relationship>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/RoleCode" />
+        <code value="WIFE" />
+        <display value="Wife" />
+      </coding>
+    </relationship>
+    <relationship>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.22.472" />
+        <code value="1" />
+        <display value="Eerste relatie/contactpersoon" />
+      </coding>
+    </relationship>
+    <name>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
+        <valueCode value="NL1" />
+      </extension>
+      <text value="Manusje van Alles" />
+      <family value="van Alles">
+        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+          <valueString value="van" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+          <valueString value="Alles" />
+        </extension>
+      </family>
+      <given value="Manusje">
+        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+          <valueCode value="BR" />
+        </extension>
+      </given>
+      <given value="M.">
+        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+          <valueCode value="IN" />
+        </extension>
+      </given>
+      <given value="Manusje">
+        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+          <valueCode value="CL" />
+        </extension>
+      </given>
+    </name>
+    <telecom>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/v3/TelecommunicationAddressUse" />
+            <code value="MC" />
+            <display value="Mobile Phone" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <system value="phone" />
+      <value value="+316-99990081" />
+      <use value="home" />
+    </telecom>
+    <telecom>
+      <system value="email" />
+      <value value="manusje.van.alles@example.test" />
+      <use value="home" />
+    </telecom>
+    <address>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/v3/AddressUse" />
+            <code value="HP" />
+            <display value="Officieel adres" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="http://fhir.nl/fhir/StructureDefinition/nl-core-address-official">
+        <valueBoolean value="true" />
+      </extension>
+      <use value="home" />
+      <type value="physical" />
+      <line value="Allesweg 80">
+        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+          <valueString value="Allesweg" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+          <valueString value="80" />
+        </extension>
+      </line>
+      <city value="Testdorp" />
+      <postalCode value="9999AV" />
+      <country value="Nederland">
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+          <valueCodeableConcept>
+            <coding>
+              <system value="urn:iso:std:iso:3166" />
+              <code value="NL" />
+              <display value="Nederland" />
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </country>
+    </address>
+  </contact>
+  <generalPractitioner>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+      <valueReference>
+        <reference value="PractitionerRole/nl-core-practitionerrole-bgz-msz-1000000101-01520000001" />
+        <display value="Huisdokter H. Huisarts Attent || Huisarts || Huisartsenpraktijk van Aanpakken" />
+      </valueReference>
+    </extension>
+    <reference value="Practitioner/nl-core-practitioner-bgz-msz-2-16-840-1-113883-2-4-6-1-10000001" />
+    <display value="Huisdokter H. Huisarts Attent" />
+  </generalPractitioner>
+  <telecom>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/v3/TelecommunicationAddressUse" />
+          <code value="MC" />
+          <display value="Mobile Phone" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <system value="phone" />
+    <value value="+316-99990080" />
+    <use value="home" />
+  </telecom>
+  <telecom>
+    <system value="email" />
+    <value value="anton.van.alles-wat@example.test" />
+    <use value="home" />
+  </telecom>
+  <address>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/v3/AddressUse" />
+          <code value="HP" />
+          <display value="Officieel adres" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://fhir.nl/fhir/StructureDefinition/nl-core-address-official">
+      <valueBoolean value="true" />
+    </extension>
+    <use value="home" />
+    <type value="physical" />
+    <line value="Allesweg 80">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Allesweg" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="80" />
+      </extension>
+    </line>
+    <city value="Testdorp" />
+    <postalCode value="9999AV" />
+    <country value="Nederland">
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166" />
+            <code value="NL" />
+            <display value="Nederland" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </country>
+  </address>
+</Patient>
