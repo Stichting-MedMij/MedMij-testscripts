@@ -1,6 +1,6 @@
 {
   "resourceType": "Task",
-  "id": "ProviderTasks-Task-Informatie-Gezonder-Leven",
+  "id": "ProviderTasks-Task-Informatie-Gezonder-Leven-1",
   "meta": {
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/pt-Task"
@@ -34,7 +34,7 @@
   "status": "requested",
   "intent": "order",
   "priority": "routine",
-  "description": "Lees tips voor een gezonder leven: voeding, bewegen en volhouden",
+  "description": "Lees tips voor een gezonder leven: voeding, bewegen en volhouden [1]",
   "for": {
     "reference": "Patient/ProviderTasks-Patient-Van-Duinen",
     "display": "Tom van Duinen"

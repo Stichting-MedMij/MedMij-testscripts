@@ -31,10 +31,10 @@
       "display": "Digitale zorgmodule Diabetes"
     }
   ],
-  "status": "received",
+  "status": "rejected",
   "intent": "order",
   "priority": "routine",
-  "description": "Deze meting helpt om inzicht te krijgen in de bloedsuikerspiegel.",
+  "description": "Deze meting helpt om inzicht te krijgen in de bloedsuikerspiegel. [rejected]",
   "focus": {
     "reference": "ServiceRequest/ProviderTasks-ServiceRequestExecution-Glucosemeting"
   },

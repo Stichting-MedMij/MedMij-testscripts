@@ -34,7 +34,7 @@
   "status": "cancelled",
   "intent": "order",
   "priority": "routine",
-  "description": "Deze meting helpt om inzicht te krijgen in de bloedsuikerspiegel.",
+  "description": "Deze meting helpt om inzicht te krijgen in de bloedsuikerspiegel. [cancelled]",
   "focus": {
     "reference": "ServiceRequest/ProviderTasks-ServiceRequestExecution-Glucosemeting"
   },
