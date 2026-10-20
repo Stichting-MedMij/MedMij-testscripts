@@ -31,7 +31,7 @@
       "display": "Digitale zorgmodule Diabetes"
     }
   ],
-  "status": "received",
+  "status": "failed",
   "intent": "order",
   "priority": "routine",
   "description": "Deze meting helpt om inzicht te krijgen in de bloedsuikerspiegel. [failed]",
