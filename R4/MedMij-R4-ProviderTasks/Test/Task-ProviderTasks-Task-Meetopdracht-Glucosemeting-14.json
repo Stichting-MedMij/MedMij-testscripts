@@ -31,10 +31,13 @@
       "display": "Digitale zorgmodule Diabetes"
     }
   ],
-  "status": "received",
+  "status": "on-hold",
   "intent": "order",
   "priority": "routine",
-  "description": "Deze meting helpt om inzicht te krijgen in de bloedsuikerspiegel.",
+  "description": "Deze meting helpt om inzicht te krijgen in de bloedsuikerspiegel. [on-hold]",
+  "focus": {
+    "reference": "ServiceRequest/ProviderTasks-ServiceRequestExecution-Glucosemeting"
+  },
   "for": {
     "reference": "Patient/ProviderTasks-Patient-Van-Duinen",
     "display": "Tom van Duinen"

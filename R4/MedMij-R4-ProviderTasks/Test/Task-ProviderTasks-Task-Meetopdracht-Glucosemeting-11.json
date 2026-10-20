@@ -31,10 +31,10 @@
       "display": "Digitale zorgmodule Diabetes"
     }
   ],
-  "status": "received",
+  "status": "in-progress",
   "intent": "order",
   "priority": "routine",
-  "description": "Deze meting helpt om inzicht te krijgen in de bloedsuikerspiegel.",
+  "description": "Deze meting helpt om inzicht te krijgen in de bloedsuikerspiegel. [in-progress]",
   "focus": {
     "reference": "ServiceRequest/ProviderTasks-ServiceRequestExecution-Glucosemeting"
   },

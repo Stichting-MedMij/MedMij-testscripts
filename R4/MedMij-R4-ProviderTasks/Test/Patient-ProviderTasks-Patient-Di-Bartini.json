@@ -1,0 +1,185 @@
+{
+  "resourceType": "Patient",
+  "id": "ProviderTasks-Patient-Di-Bartini",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "code",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "0001",
+                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.32",
+                "display": "Nederlandse"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Lucy"
+      ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "BR"
+            }
+          ]
+        }
+      ],
+      "use": "official",
+      "text": "Lucy Di Bartini",
+      "family": "Di Bartini",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+            "valueString": "Di"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Bartini"
+          }
+        ]
+      }
+    },
+    {
+      "use": "usual",
+      "given": [
+        "Lucy"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "_system": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "MC",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                  "display": "mobile contact"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "value": "+31655501234"
+    },
+    {
+      "system": "email",
+      "value": "Lucy.dibartini@voorbeeldmail.nl",
+      "use": "home"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "HP",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                "display": "primary home"
+              }
+            ]
+          }
+        }
+      ],
+      "line": [
+        "Parkweg 1130"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Parkweg"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "1130"
+            }
+          ]
+        }
+      ],
+      "use": "home",
+      "type": "both",
+      "city": "Voorburg",
+      "postalCode": "2271 AK",
+      "country": "Nederland",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NL",
+                  "system": "urn:iso:std:iso:3166",
+                  "display": "Netherlands"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "gender": "female",
+  "_gender": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "F",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+              "display": "Female"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "birthDate": "1999-07-01",
+  "deceasedBoolean": false
+}
