@@ -1,0 +1,10 @@
+{
+  "resourceType": "Location",
+  "id": "ImageAvailability-Location-Ziekenhuis-de-Aandacht-Radiologie",
+  "status": "active",
+  "name": "Ziekenhuis de Aandacht, afdeling Radiologie",
+  "managingOrganization": {
+    "reference": "Organization/ImageAvailability-Organization-Ziekenhuis-de-Aandacht",
+    "display": "Ziekenhuis de Aandacht"
+  }
+}

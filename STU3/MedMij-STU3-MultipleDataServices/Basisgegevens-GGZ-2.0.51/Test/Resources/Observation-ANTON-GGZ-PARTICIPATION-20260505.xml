@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ANTON-GGZ-PARTICIPATION-20260505" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-ParticipationInSociety" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="ANTON-GGZ-PARTICIPATION-20260505" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="314845004" />
+      <display value="Status van participatie van patiënt (bevinding)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="365469004" />
+        <display value="Bevinding betreffende netwerk van gezin, familie en ondersteuners (bevinding)" />
+      </coding>
+    </code>
+    <valueString value="Steunend contact met echtgenote Manusje van Alles, vrienden en collega's." />
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="405081003" />
+        <display value="Vrijetijdsgedrag (waarneembare entiteit)" />
+      </coding>
+    </code>
+    <valueString value="Leest, wandelt en fietst. Vermijdt voorlopig losliggende kleedjes." />
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="364703007" />
+        <display value="Arbeidssituatie (waarneembare entiteit)" />
+      </coding>
+    </code>
+    <valueString value="Functioneel tester in de zorg-ICT. Werkt tijdelijk iets minder uren tijdens de herstel na de heupfractuur." />
+  </component>
+</Observation>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <id value="ANTON-MP-MVE-COPD-RESCUE-20150302" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Dispense" />
+  </meta>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-Medication-MedicationTreatment">
+    <valueIdentifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1" />
+      <value value="ANTON-MBT-COPD-RESCUE" />
+    </valueIdentifier>
+  </extension>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.77.373784005.1" />
+    <value value="ANTON-MP-MVE-COPD-RESCUE-20150302" />
+  </identifier>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="373784005" />
+      <display value="Dispensing medication (procedure)" />
+    </coding>
+    <text value="Medicatieverstrekking" />
+  </category>
+  <medicationReference>
+    <reference value="Medication/ANTON-GP-MEDICATION-SALBUTAMOL" />
+    <display value="SALBUTAMOL AEROSOL 100UG/DO 200DO AUTOH" />
+  </medicationReference>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <performer>
+    <actor>
+      <reference value="Organization/ANTON-MP-ORGANIZATION-APOTHEEK-BIJSLUITER" />
+      <display value="Apotheek Bijsluiter" />
+    </actor>
+  </performer>
+  <authorizingPrescription>
+    <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.77.52711000146108.1" />
+      <value value="ANTON-MP-VV-COPD-RESCUE-20150302" />
+    </identifier>
+    <display value="Verstrekkingsverzoek ANTON-MP-VV-COPD-RESCUE-20150302" />
+  </authorizingPrescription>
+  <quantity>
+    <value value="1" />
+    <unit value="stuk" />
+    <system value="urn:oid:2.16.840.1.113883.2.4.4.1.900.2" />
+    <code value="245" />
+  </quantity>
+  <whenHandedOver value="2015-03-02T15:13:00+01:00" />
+  <note>
+    <text value="Fictieve verstrekking voor copd rescue." />
+  </note>
+</MedicationDispense>

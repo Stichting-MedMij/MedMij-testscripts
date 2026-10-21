@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ANTON-GP-DIAGNOSTIC-20260703-PULSE" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult" />
+  </meta>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare">
+    <valueReference>
+      <reference value="EpisodeOfCare/ANTON-GP-EPISODE-COPD" />
+      <display value="COPD" />
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="https://huisartsgegevens.example.test/identifier" />
+    <value value="ANTON-GP-DIAGNOSTIC-20260703-PULSE" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/observation-category" />
+      <code value="vital-signs" />
+      <display value="Vital Signs" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen" />
+      <code value="1875" />
+      <display value="polsfrequentie" />
+    </coding>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="8893-0" />
+      <display value="Heart rate Peripheral artery by Palpation" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <context>
+    <reference value="Encounter/ANTON-GP-ENCOUNTER-20260703" />
+    <display value="Huisartsconsult benauwdheid en COPDcontrole" />
+  </context>
+  <effectiveDateTime value="2026-07-03T09:20:00+02:00" />
+  <performer>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+      <valueReference>
+        <reference value="PractitionerRole/nl-core-practitionerrole-bgz-msz-1000000101-01520000001" />
+        <display value="Huisdokter H. Huisarts Attent" />
+      </valueReference>
+    </extension>
+    <reference value="Practitioner/nl-core-practitioner-bgz-msz-2-16-840-1-113883-2-4-6-1-10000001" />
+    <display value="Huisdokter H. Huisarts Attent" />
+  </performer>
+  <valueQuantity>
+    <value value="78" />
+    <unit value="/min" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="/min" />
+  </valueQuantity>
+</Observation>

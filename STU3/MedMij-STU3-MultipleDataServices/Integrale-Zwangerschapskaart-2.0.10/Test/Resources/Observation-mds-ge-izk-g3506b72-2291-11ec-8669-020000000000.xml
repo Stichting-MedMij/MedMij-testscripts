@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-g3506b72-2291-11ec-8669-020000000000" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-ChildObservation" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Joris Dienst. Id: 9121bw6d-a7d9-11ed-1913-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Zwangerschap 1 Gé Gevens-Dienst</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Bepalingdatum/tijd</html:th>
+            <html:td>2023-12-08</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="huilen (waarneembare entiteit) (28263002 - SNOMED CT)">huilen (waarneembare entiteit)</html:span>
+            </html:td>
+            <html:td>Kreunend</html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="9121bw6d-a7d9-11ed-1913-020000000000" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="28263002" />
+      <display value="huilen (waarneembare entiteit)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-JORIS-DIENST" />
+    <display value="Joris Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2023" />
+    <display value="Zwangerschap 1 Gé Gevens-Dienst" />
+  </context>
+  <effectiveDateTime value="2023-12-08" />
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/v3/NullFlavor" />
+      <code value="OTH" />
+      <display value="anders" />
+    </coding>
+    <text value="Kreunend" />
+  </valueCodeableConcept>
+</Observation>

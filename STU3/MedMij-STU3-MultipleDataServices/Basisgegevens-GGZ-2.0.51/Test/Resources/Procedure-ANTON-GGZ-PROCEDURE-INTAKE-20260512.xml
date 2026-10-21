@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ANTON-GGZ-PROCEDURE-INTAKE-20260512" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Procedure" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="ANTON-GGZ-PROCEDURE-INTAKE-20260512" />
+  </identifier>
+  <basedOn>
+    <reference value="ProcedureRequest/ANTON-GGZ-PROCEDURE-REQUEST-INTAKE-20260505" />
+    <display value="Aanvraag voor psychologische intake" />
+  </basedOn>
+  <status value="completed" />
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="410223002" />
+      <display value="Evaluatie van geestelijke gezondheidszorg (verrichting)" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="84100007" />
+      <display value="Afnemen van anamnese" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <performedPeriod>
+    <start value="2026-05-12T10:00:00+02:00" />
+    <end value="2026-05-12T10:50:00+02:00" />
+  </performedPeriod>
+  <performer>
+    <actor>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference">
+        <valueReference>
+          <reference value="PractitionerRole/ANTON-GGZ-PRACTITIONERROLE-ROMY-RUST" />
+          <display value="Romy Rust uit Praktijk Hoofdzaak" />
+        </valueReference>
+      </extension>
+      <reference value="Practitioner/ANTON-GGZ-PRACTITIONER-ROMY-RUST" />
+      <display value="Romy Rust" />
+    </actor>
+  </performer>
+  <performer>
+    <actor>
+      <reference value="Organization/ANTON-GGZ-ORGANIZATION-PRAKTIJK-HOOFDZAAK" />
+      <display value="Praktijk Hoofdzaak" />
+    </actor>
+  </performer>
+  <reasonReference>
+    <reference value="Condition/ANTON-GGZ-CONDITION-ANXIETY-2026" />
+    <display value="Lichte angst- en spanningsklachten" />
+  </reasonReference>
+  <report>
+    <reference value="DiagnosticReport/ANTON-GGZ-DIAGNOSTICREPORT-INTAKE-20260512" />
+    <display value="Verslag psychologische intake" />
+  </report>
+</Procedure>

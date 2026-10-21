@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="mds-ge-izk-b7859b34-2291-11ec-8669-020000000000" />
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-observation" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-ChildObservation" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <html:div>
+      <html:table>
+        <html:caption>Observatie/bepaling. Subject: Joris Dienst. Id: 9121bw6d-a7d9-11ed-1913-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</html:caption>
+        <html:tbody>
+          <html:tr>
+            <html:th>Context</html:th>
+            <html:td>Zwangerschap 1 Gé Gevens-Dienst</html:td>
+          </html:tr>
+          <html:tr>
+            <html:th>Code</html:th>
+            <html:th>Waarde</html:th>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="hielprik (verrichting) (77262006 - SNOMED CT)">hielprik (verrichting)</html:span>
+            </html:td>
+            <html:td>ja</html:td>
+          </html:tr>
+          <html:tr>
+            <html:td>
+              <html:span title="datum van gebeurtenis (waarneembare entiteit) (439771001 - SNOMED CT)">datum van gebeurtenis (waarneembare entiteit)</html:span>
+            </html:td>
+            <html:td>2023-12-10</html:td>
+          </html:tr>
+        </html:tbody>
+      </html:table>
+    </html:div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6" />
+    <value value="9121bw6d-a7d9-11ed-1913-020000000000" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="77262006" />
+      <display value="hielprik (verrichting)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/mds-ge-izk-JORIS-DIENST" />
+    <display value="Joris Dienst" />
+  </subject>
+  <context>
+    <reference value="EpisodeOfCare/mds-ge-izk-GE-PREGNANCY-2023" />
+    <display value="Zwangerschap 1 Gé Gevens-Dienst" />
+  </context>
+  <valueBoolean value="true" />
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="439771001" />
+        <display value="datum van gebeurtenis (waarneembare entiteit)" />
+      </coding>
+    </code>
+    <valueDateTime value="2023-12-10" />
+  </component>
+</Observation>

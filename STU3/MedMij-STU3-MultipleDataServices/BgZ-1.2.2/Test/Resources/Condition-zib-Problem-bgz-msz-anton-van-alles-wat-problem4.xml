@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="zib-Problem-bgz-msz-anton-van-alles-wat-problem4" />
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-Problem" />
+  </meta>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6" />
+    <value value="bgz-msz-anton-van-alles-wat-problem4" />
+  </identifier>
+  <clinicalStatus value="active">
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="55561003" />
+          <display value="Active" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </clinicalStatus>
+  <verificationStatus value="confirmed">
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="410605003" />
+          <display value="Confirmed present" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="248536006" />
+      <display value="Functional Limitation" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="15188001" />
+      <display value="gehoorverlies" />
+    </coding>
+  </code>
+  <bodySite>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="24028007" />
+          <display value="Right" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="368567003" />
+      <display value="geheel rechter uitwendig oor" />
+    </coding>
+  </bodySite>
+  <subject>
+    <reference value="Patient/ANTON-VAN-ALLES-WAT" />
+    <display value="Anton van Alles-Wat" />
+  </subject>
+  <onsetDateTime value="2010-06-18" />
+  <note>
+    <text value="Gehoorverlies na een festivalbezoek vlak naast de luidspreker." />
+  </note>
+</Condition>

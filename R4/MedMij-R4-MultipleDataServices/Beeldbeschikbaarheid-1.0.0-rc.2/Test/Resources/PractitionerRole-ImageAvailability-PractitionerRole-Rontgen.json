@@ -1,0 +1,24 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "ImageAvailability-PractitionerRole-Rontgen",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
+    ]
+  },
+  "practitioner": {
+    "reference": "Practitioner/ImageAvailability-Practitioner-Rontgen",
+    "display": "Wilhelm Rontgen"
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "code": "01.039",
+          "system": "http://fhir.nl/fhir/NamingSystem/uzi-rolcode",
+          "display": "Radioloog"
+        }
+      ]
+    }
+  ]
+}
